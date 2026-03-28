@@ -48,9 +48,7 @@
       <div class="container">
         <!-- Question text -->
         <div class="question-body">
-          <div class="question-text-card">
-            水100 molに成分Aを20 mol溶解した水溶液がある。これに、純粋なトルエン100 molを加え、容器の中で撹拌し、静置したところ、2液相に分離した。上層に含まれる成分Aの量として、最も近い値はどれか。水とトルエンの相互溶解度は無視できる。溶液平衡の実験データを下表に示す。根の公式は次の通りである。
-          </div>
+          <div class="question-text-card">水100 molに成分Aを20 mol溶解した水溶液がある。これに、純粋なトルエン100 molを加え、容器の中で撹拌し、静置したところ、2液相に分離した。上層に含まれる成分Aの量として、最も近い値はどれか。水とトルエンの相互溶解度は無視できる。溶液平衡の実験データを下表に示す。根の公式は次の通りである。</div>
           <div class="question-image">
             <img src="../../images/2024/q32/image-668.png" alt="根の公式" loading="lazy" style="max-width: 300px; margin-bottom: var(--space-md);">
             <img src="../../images/2024/q32/image-669.png" alt="溶液平衡データ" loading="lazy">
@@ -113,31 +111,55 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-                正答は4番です。<br><br>
-                水の密度は約1.0 g/cm³、トルエンの密度は約0.87 g/cm³であるため、<b>上層がトルエン相</b>、<b>下層が水相</b>となります。<br><br>
-                <b>1. 分配係数（分配比）の確認</b><br>
-                与えられた平衡データから、トルエン相のモル分率 $y_{tol}$ と水相のモル分率 $x_{water}$ の比（分配係数 $K$）を求めます。<br>
-                ・実験1： $K = 2.6 / 7.8 = 1/3$<br>
-                ・実験2： $K = 5.0 / 15.0 = 1/3$<br>
-                いずれも $K = 1/3$ となり、希薄溶液近似が成り立つことがわかります。<br><br>
-                <b>2. 物質収支による立式</b><br>
-                上層（トルエン相）に移行した成分Aの物質量を $n_A$ [mol] とします。<br>
-                ・トルエン相のモル分率：$y_{tol} = \frac{n_A}{100 + n_A}$<br>
-                ・水相の成分Aの物質量：$20 - n_A$ [mol]<br>
-                ・水相のモル分率：$x_{water} = \frac{20 - n_A}{100 + (20 - n_A)} = \frac{20 - n_A}{120 - n_A}$<br><br>
-                平衡関係 $y_{tol} = \frac{1}{3} x_{water}$ より：<br>
-                $$\frac{n_A}{100 + n_A} = \frac{1}{3} \times \frac{20 - n_A}{120 - n_A}$$<br>
-                $3n_A (120 - n_A) = (20 - n_A) (100 + n_A)$<br>
-                $360n_A - 3n_A^2 = 2000 + 20n_A - 100n_A - n_A^2$<br>
-                $2n_A^2 - 440n_A + 2000 = 0$<br>
-                $n_A^2 - 220n_A + 1000 = 0$<br><br>
-                <b>3. 解の算出</b><br>
-                根の公式より：<br>
-                $n_A = \frac{220 \pm \sqrt{220^2 - 4 \times 1 \times 1000}}{2} = 110 \pm \frac{\sqrt{48400 - 4000}}{2} = 110 \pm \frac{\sqrt{44400}}{2} = 110 \pm 10\sqrt{111}$<br><br>
-                $\sqrt{111} \approx 10.54$ とすると、<br>
-                $n_A \approx 110 \pm 105.4$<br>
-                $n_A \approx 4.6$ mol または $215.4$ mol<br>
-                成分Aの全量は20 molであるため、物理的に妥当な解は<b>4.6 mol</b>です。
+正答は4番です。
+
+水の密度は約1.0 g/cm³、トルエンの密度は約0.87 g/cm³であるため、<b>上層がトルエン相</b>、<b>下層が水相</b>となります。
+
+<b>1. 分配係数（分配比）の確認</b>
+
+与えられた平衡データから、トルエン相のモル分率 $y_{tol}$ と水相のモル分率 $x_{water}$ の比（分配係数 $K$）を求めます。
+
+・実験1： $K = 2.6 / 7.8 = 1/3$
+
+・実験2： $K = 5.0 / 15.0 = 1/3$
+
+いずれも $K = 1/3$ となり、希薄溶液近似が成り立つことがわかります。
+
+<b>2. 物質収支による立式</b>
+
+上層（トルエン相）に移行した成分Aの物質量を $n_A$ [mol] とします。
+
+・トルエン相のモル分率：$y_{tol} = \frac{n_A}{100 + n_A}$
+
+・水相の成分Aの物質量：$20 - n_A$ [mol]
+
+・水相のモル分率：$x_{water} = \frac{20 - n_A}{100 + (20 - n_A)} = \frac{20 - n_A}{120 - n_A}$
+
+平衡関係 $y_{tol} = \frac{1}{3} x_{water}$ より：
+
+$$\frac{n_A}{100 + n_A} = \frac{1}{3} \times \frac{20 - n_A}{120 - n_A}$$
+
+$3n_A (120 - n_A) = (20 - n_A) (100 + n_A)$
+
+$360n_A - 3n_A^2 = 2000 + 20n_A - 100n_A - n_A^2$
+
+$2n_A^2 - 440n_A + 2000 = 0$
+
+$n_A^2 - 220n_A + 1000 = 0$
+
+<b>3. 解の算出</b>
+
+根の公式より：
+
+$n_A = \frac{220 \pm \sqrt{220^2 - 4 \times 1 \times 1000}}{2} = 110 \pm \frac{\sqrt{48400 - 4000}}{2} = 110 \pm \frac{\sqrt{44400}}{2} = 110 \pm 10\sqrt{111}$
+
+$\sqrt{111} \approx 10.54$ とすると、
+
+$n_A \approx 110 \pm 105.4$
+
+$n_A \approx 4.6$ mol または $215.4$ mol
+
+成分Aの全量は20 molであるため、物理的に妥当な解は<b>4.6 mol</b>です。
               </div>
             </div>
           </div>
@@ -174,13 +196,6 @@
             <div>
               <div class="question-nav-label">前の問題</div>
               <div>問31</div>
-            </div>
-          </a>
-          <a href="../" class="question-nav-btn">
-            <span>↑</span>
-            <div>
-              <div class="question-nav-label">年度一覧</div>
-              <div>令和6年度</div>
             </div>
           </a>
           <a href="../q33/" class="question-nav-btn">
