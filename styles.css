@@ -443,6 +443,61 @@ img {
   flex-shrink: 0;
 }
 
+/* Question Table (for tables within question text) */
+.question-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: var(--space-md);
+  font-size: 0.9rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.question-table th {
+  background: var(--color-bg-secondary);
+  padding: var(--space-sm) var(--space-md);
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.question-table td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  vertical-align: middle;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* Specific column settings for better balance */
+.question-table th:nth-child(1), .question-table td:nth-child(1) { width: 60px; }
+.question-table th:nth-child(2), .question-table td:nth-child(2) { min-width: 120px; }
+
+.question-table th:last-child,
+.question-table td:last-child {
+  border-right: none;
+}
+
+.question-table tr:last-child td {
+  border-bottom: none;
+}
+
+.chem-formula {
+  max-width: 100%;
+  max-height: 60px; /* Reduced for better row density */
+  object-fit: contain;
+  display: block;
+  margin: var(--space-xs) auto;
+  filter: var(--mix-blend-multiply); /* Helps if background is not pure white */
+}
+
+/* Choice click logic (question page) */
 /* Small variant for year/question pages */
 .note-promo-sm {
   padding: var(--space-md) var(--space-lg);
@@ -871,6 +926,175 @@ img {
 
 .choice-text {
   color: var(--color-text);
+}
+
+/* ============================================
+   CHOICES TABLE (for matrix-style questions)
+   ============================================ */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--space-md);
+}
+
+.choices-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 500px;
+  font-size: 0.9rem;
+}
+
+.choices-table th {
+  padding: var(--space-md);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  border-bottom: 2px solid var(--color-border);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.choices-table td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.choices-table td:first-child,
+.choices-table td.td-eliminate {
+  padding: var(--space-xs);
+  padding-right: var(--space-md) !important;
+  width: 60px !important;
+}
+
+.choices-table td.td-choice-num {
+  padding-left: var(--space-md) !important;
+  width: 50px;
+}
+
+/* Make choice-item inside table essentially invisible structure-wise */
+.choices-table .choice-item,
+.choices-table .choice-item.selected,
+.choices-table .choice-item.correct,
+.choices-table .choice-item.incorrect-selected,
+.choices-table .choice-item.answered {
+  width: 100%;
+  padding: var(--space-sm) 0;
+  margin: 0;
+  justify-content: center;
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  opacity: 1 !important; /* The TR handles opacity for answered state */
+}
+
+.choices-table tbody tr {
+  cursor: pointer;
+  transition: background 0.2s;
+  display: table-row; /* Override display:flex if choice-wrapper is applied */
+}
+
+/* Remove choice item click animation inside table rows */
+.choices-table .choice-item:active,
+.choices-table .choice-item:hover {
+  transform: none !important;
+}
+
+
+/* Table Row Highlight (excluding 1st column) */
+.choices-table tbody tr:not(.answered):not(.eliminated):hover td:nth-child(n+2) {
+  box-shadow: 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
+  background: var(--color-surface);
+}
+.choices-table tbody tr:not(.answered):not(.eliminated):hover td:nth-child(2) {
+  box-shadow: 2px 0 0 0 var(--color-primary) inset, 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
+  border-top-left-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
+}
+.choices-table tbody tr:not(.answered):not(.eliminated):hover td:last-child {
+  box-shadow: -2px 0 0 0 var(--color-primary) inset, 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+}
+
+/* Selected */
+.choices-table tbody tr.selected td:nth-child(n+2) {
+  box-shadow: 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
+  background: var(--color-primary-bg);
+}
+.choices-table tbody tr.selected td:nth-child(2) {
+  box-shadow: 2px 0 0 0 var(--color-primary) inset, 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
+  border-top-left-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
+}
+.choices-table tbody tr.selected td:last-child {
+  box-shadow: -2px 0 0 0 var(--color-primary) inset, 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+}
+
+/* Correct */
+.choices-table tbody tr.correct td:nth-child(n+2) {
+  box-shadow: 0 2px 0 0 #22c55e inset, 0 -2px 0 0 #22c55e inset;
+  background: #f0fdf4;
+}
+.choices-table tbody tr.correct td:nth-child(2) {
+  box-shadow: 2px 0 0 0 #22c55e inset, 0 2px 0 0 #22c55e inset, 0 -2px 0 0 #22c55e inset;
+  border-top-left-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
+}
+.choices-table tbody tr.correct td:last-child {
+  box-shadow: -2px 0 0 0 #22c55e inset, 0 2px 0 0 #22c55e inset, 0 -2px 0 0 #22c55e inset;
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+}
+
+/* Incorrect */
+.choices-table tbody tr.incorrect-selected td:nth-child(n+2) {
+  box-shadow: 0 2px 0 0 #ef4444 inset, 0 -2px 0 0 #ef4444 inset;
+  background: #fef2f2;
+}
+.choices-table tbody tr.incorrect-selected td:nth-child(2) {
+  box-shadow: 2px 0 0 0 #ef4444 inset, 0 2px 0 0 #ef4444 inset, 0 -2px 0 0 #ef4444 inset;
+  border-top-left-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
+}
+.choices-table tbody tr.incorrect-selected td:last-child {
+  box-shadow: -2px 0 0 0 #ef4444 inset, 0 2px 0 0 #ef4444 inset, 0 -2px 0 0 #ef4444 inset;
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+}
+.choices-table tbody tr.selected .choice-num,
+.choices-table tbody tr.correct .choice-num,
+.choices-table tbody tr.incorrect-selected .choice-num {
+  color: var(--color-primary-dark);
+}
+
+.choices-table tbody tr.eliminated td {
+  opacity: 0.5;
+  background: var(--color-bg-tertiary);
+}
+
+.choices-table tbody tr.eliminated td:not(:first-child) {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+
+
+.choices-table tbody tr.answered {
+  cursor: default;
+}
+
+.choices-table tbody tr.answered td {
+  opacity: 0.5;
+  background: var(--color-bg-tertiary);
+}
+
+.choices-table tbody tr.answered.correct td,
+.choices-table tbody tr.answered.incorrect-selected td {
+  opacity: 1;
 }
 
 /* Answer & explanation section */

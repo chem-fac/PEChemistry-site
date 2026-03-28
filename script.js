@@ -68,7 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Answer selection logic
-      choice.addEventListener("click", function () {
+      const clickTarget = wrapper.tagName.toLowerCase() === 'tr' ? wrapper : choice;
+      
+      clickTarget.addEventListener("click", function (e) {
+        if (e.target.closest('.choice-eliminate-btn')) return;
+
         // If already answered or eliminated, do nothing
         if (answerContent.classList.contains("visible")) return;
         if (wrapper.classList.contains("eliminated")) return;
@@ -76,15 +80,20 @@ document.addEventListener("DOMContentLoaded", function () {
         // Mark all choices as answered
         allChoices.forEach(function (c) {
           c.classList.add("answered");
+          const tr = c.closest("tr");
+          if (tr) tr.classList.add("answered");
           
           if (c === choice) {
             c.classList.add("selected");
+            if (tr) tr.classList.add("selected");
           }
           
           if (c.getAttribute("data-correct") === "true") {
             c.classList.add("correct");
+            if (tr) tr.classList.add("correct");
           } else if (c === choice) {
             c.classList.add("incorrect-selected");
+            if (tr) tr.classList.add("incorrect-selected");
           }
         });
 
