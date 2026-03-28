@@ -184,13 +184,13 @@ def build_top_page(data, changelog):
       <div class="container">
 {note_promo_html()}
         <div class="article-links" style="margin-top: var(--space-lg);">
-          <a href="https://chem-fac.com/pe-chem-benefits/" target="_blank" rel="noopener" class="article-link-card">
+          <a href="./articles/pe-chem-benefits/" class="article-link-card">
             <div class="article-link-card-text">
               <h4>技術士(化学部門)が得られる特典を調べてみた</h4>
               <p>技術士資格のメリットについて</p>
             </div>
           </a>
-          <a href="https://chem-fac.com/pe-exam-data/" target="_blank" rel="noopener" class="article-link-card">
+          <a href="./articles/pe-exam-data/" class="article-link-card">
             <div class="article-link-card-text">
               <h4>技術士（化学部門）の受験者数や合格者数データ</h4>
               <p>過去の試験データまとめ</p>
@@ -373,7 +373,7 @@ def build_question_page(q, year_data, all_years):
         refs_html = f"""
         <div class="references-section">
           <details class="reference-details">
-            <summary class="reference-summary">参考資料はコチラ！</summary>
+            <summary class="reference-summary">参考資料</summary>
             <div class="reference-list">
 {ref_items}
             </div>

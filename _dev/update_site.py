@@ -38,7 +38,7 @@ def update_build_site():
     new_refs = '''        refs_html = f"""
         <div class="references-section">
           <details class="reference-details">
-            <summary class="reference-summary">参考資料はコチラ！</summary>
+            <summary class="reference-summary">参考資料</summary>
             <div class="reference-list">
 {ref_items}
             </div>
