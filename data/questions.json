@@ -1,0 +1,177 @@
+{
+  "years": [
+    {
+      "year": 2024,
+      "label": "令和6年度",
+      "slug": "2024",
+      "questions": [
+        {
+          "number": 1,
+          "slug": "q01",
+          "title": "令和6年度 問1",
+          "subject": "有機化学及び燃料",
+          "question_text": "化学反応に関する次のA～Eの記述のうち、最も不適切なものの組合せはどれか。\n\nA. 1－ブロモ－2－フェニルエタンの塩基によるE2反応は、炭素－臭素結合の自発的開裂から始まる。\nB. 一般にキラルなハロゲン化アルキルを基質とするSN2反応は、第三級ハロゲン化アルキルよりも第二級の方が進行しやすく、ラセミ体の生成物を与える。\nC. Diels-Alder反応は典型的な [4+2] 環化付加反応である。\nD. アルドール反応は塩基触媒存在下の反応が一般的であるが、酸触媒でも進行する。\nE. α, β－不飽和カルボニル化合物はMichael付加反応の基質になりえる。",
+          "choices": [
+            "AとB",
+            "AとC",
+            "BとD",
+            "CとD",
+            "CとE"
+          ],
+          "answer": 1,
+          "explanation": "正答は1番です。\nAのE2反応は炭素-臭素結合の開裂と同時に塩基による水素の引き抜きが起こります。自発的な炭素-臭素結合の開裂から始まるわけではありません。\nBのSN2反応は第三級よりも第二級ハロゲン化アルキルの方が進行しやすいですが、立体反転を伴うため、ラセミ体ではなく光学活性体を与えます。SN1反応の場合はラセミ体に近い割合の生成物が得られます。\nCのDiels-Alder反応は4つのπ電子を持つジエンと2つのπ電子を持つジエノフィルの間で起こる[4+2]環化付加反応の代表例です。\nDのアルドール反応は通常塩基触媒で行われますが、酸触媒でも進行することが可能です。\nEのMichael付加反応は、α, β-不飽和カルボニル化合物（Michael受容体）に求核剤が付加する反応です。",
+          "references": [
+            {
+              "title": "ディールス・アルダー反応 Diels-Alder Reaction",
+              "url": "https://www.chem-station.com/odos/2009/06/diels-alder.html"
+            },
+            {
+              "title": "脱離反応（E1反応とE2反応）",
+              "url": "https://www.chem.s.u-tokyo.ac.jp/users/bioorg/member/Goto_class/ORC_06_handout_2019.pdf"
+            },
+            {
+              "title": "アルドール反応",
+              "url": "https://www.tcichemicals.com/JP/ja/product/name_reaction/Aldol_Reaction"
+            },
+            {
+              "title": "求核置換反応（SN2反応とSN1反応）",
+              "url": "https://www.chem.s.u-tokyo.ac.jp/users/bioorg/member/Goto_class/ORC_05_handout_2018.pdf"
+            },
+            {
+              "title": "マイケル付加 Michael Addition",
+              "url": "https://www.chem-station.com/odos/2009/06/michael-michael-addition.html"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "slug": "q02",
+          "title": "令和6年度 問2",
+          "subject": "有機化学及び燃料",
+          "question_text": "分子の電子遷移過程の間で、各原子の位置が変化しないことを示す最も適切なものはどれか。",
+          "choices": [
+            "ボルン－オッペンハイマー近似",
+            "カッシャの規則",
+            "フランク－コンドンの原理",
+            "デクスター機構",
+            "ランベルト－ベールの法則"
+          ],
+          "answer": 3,
+          "explanation": "正答は3番です。\nフランク－コンドンの原理は、分子の電子遷移が原子核の運動に比べて非常に速く起こることを表します。これは核が電子よりも約1,840倍重いことに起因します。\nその他、選択肢にある項目についても簡単に紹介しておきます。\n1. ボルン－オッペンハイマー近似：電子状態を計算する際、原子核が固定されているものとして扱う\n2. カッシャの規則：発光（蛍光もしくは燐光）のほとんどは、与えられた多重度の最低励起状態から起こる\n3. デクスター機構：励起電子状態がある分子（ドナー）から別の分子（アクセプター）へ移動することによる消光機構\n4. ランベルト－ベールの法則：光の物質による吸収は、伝搬距離と溶液の濃度に比例する",
+          "references": [
+            {
+              "title": "フランク・コンドンの原理",
+              "url": "https://www.st.hirosaki-u.ac.jp/~jun/mhp0603/mhp0603_34.html"
+            },
+            {
+              "title": "ボルン-オッペンハイマー近似",
+              "url": "http://acbio2.acbio.u-fukui.ac.jp/phychem/maeda/kougi/BQC/2012/11MAY12.pdf"
+            },
+            {
+              "title": "カシャ（Kasha）の法則",
+              "url": "https://olab.co.jp/words/%E3%82%AB%E3%82%B7%E3%83%A3%EF%BC%88kasha%EF%BC%89%E3%81%AE%E6%B3%95%E5%89%87/"
+            },
+            {
+              "title": "デクスター機構",
+              "url": "https://www.chem-station.com/yukitopics/energy.htm"
+            },
+            {
+              "title": "ランベルト－ベールの法則",
+              "url": "https://www.optics-words.com/kogaku_kiso/Lambert-Beers-law.html"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "slug": "q03",
+          "title": "令和6年度 問3",
+          "subject": "有機化学及び燃料",
+          "question_text": "次の化合物のうち、キラルな分子として、最も適切なものはどれか。",
+          "choices": [
+            "[IMAGE] images/2024_q03_c1.png",
+            "[IMAGE] images/2024_q03_c2.png",
+            "[IMAGE] images/2024_q03_c3.png",
+            "[IMAGE] images/2024_q03_c4.png",
+            "[IMAGE] images/2024_q03_c5.png"
+          ],
+          "answer": 3,
+          "explanation": "正答は3番です。\n立体障害の関係で単結合の回転が阻害されて鏡像異性体を持つ分子です。このような炭素原子1つではなく結合軸を基に不斉が発生しているため軸不斉と呼ばれ、軸不斉を持つ化合物はアトロプ異性体と呼ばれます。\nその他の選択肢は炭素原子上に水素やメチル基が2つ結合しているような不斉炭素を持たない化合物です。",
+          "references": [
+            {
+              "title": "軸不斉のRとS",
+              "url": "https://www.chem-station.com/blog/2008/07/-rs.html"
+            },
+            {
+              "title": "有機化学基礎 講義資料 第11章「不斉中心を持つ化合物」",
+              "url": "https://www1.meijo-u.ac.jp/~tnagata/education/ochemb/2021/ochemb_11.pdf"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "slug": "q04",
+          "title": "令和6年度 問4",
+          "subject": "有機化学及び燃料",
+          "question_text": "Markovnikov則に関する次の記述のうち、最も不適切なものはどれか。",
+          "choices": [
+            "Markovnikov付加は位置選択的である。",
+            "アルケンにオキシ水銀化－脱水銀によってアルコールを合成する反応は2段階で生じ、Markovnikov則に従う。",
+            "Markovnikov則とは、アルケンにハロゲン化水素HXが付加するとき、水素はより多くの水素を持つ炭素原子に付加するという規則である。",
+            "アルケンへの酸触媒水和は、Markovnikov則に従うので、エテンの水和のような特別な場合を除いて、第一級アルコールを得ることはできない。",
+            "アルケンへの酸触媒水和反応は、一段階の反応機構で進行する。"
+          ],
+          "answer": 5,
+          "explanation": "正答は5番です。\nアルケンへの酸触媒水和反応は、一段階ではなく多段階の反応機構で進行します。反応の第一段階で、酸触媒（プロトン）がアルケンに付加します。その後、水分子が反応中間体に攻撃し、最終的にアルコールが生成されます。\nカルボカチオンは水素置換数の少ない（級数の大きい）炭素原子ほど超共役効果によって安定化されます。これがマルコフニコフ則です。そしてマルコフニコフ付加は第3級＞2級＞1級炭素の順に反応が起こりやすいことを意味します。\n水和反応にはいくつか種類があり、反応の仕方によって付加位置が変わります。\n1. 酸触媒水和：マルコフニコフ付加\n2. ヒドロホウ素化：アンチマルコフニコフ付加\n3. オキシ水銀化：マルコフニコフ付加",
+          "references": [
+            {
+              "title": "アルケンの反応 オキシ水銀化 ヒドロホウ素化",
+              "url": "https://w3pharm.u-shizuoka-ken.ac.jp/yakka/Japanese/manabeCLASS/yuki_2/2010_5_slides.pdf"
+            },
+            {
+              "title": "Markovnikov(マルコフニコフ)則の話",
+              "url": "http://orgchemical.seesaa.net/article/474429787.html"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "slug": "q05",
+          "title": "令和6年度 問5",
+          "subject": "有機化学及び燃料",
+          "question_text": "赤外吸収スペクトル法での測定結果として得られるIRスペクトルに関する次の記述のうち、最も適切なものはどれか。",
+          "choices": [
+            "IRスペクトルは水素と炭素の近傍の構造を精査し、分子内の原子のつながりに関する情報を提供する分析法である。",
+            "IRスペクトルは化合物のπ電子系について情報が得られ、共役化合物と非共役化合物を判別できる分析法である。",
+            "IRスペクトルは試料分子を高真空のもとで加熱気化させてイオン化し、電磁気的に分離して検出する分析法である。",
+            "IRスペクトルは電荷を持つ物質を直流電場におき、物質の電荷、分子の大きさによって移動する差を検出する分析法である。",
+            "IRスペクトルは固有の振動をしている分子に赤外線を照射し、振動エネルギーに対応したスペクトルを得る分析法である。"
+          ],
+          "answer": 5,
+          "explanation": "正答は5番です。\nIRスペクトルは固有の振動をしている分子に赤外線を照射し、振動エネルギーに対応したスペクトルを得る分析法です。分子に赤外線を照射すると、分子の振動エネルギーと一致する波長の赤外線が吸収されます。\n1番の水素と炭素の近傍構造の精査はNMRの特徴です。\n2番のπ電子系の情報は紫外可視分光法の特徴です。\n3番の試料の加熱気化とイオン化は質量分析法の特徴です。\n4番の電荷を持つ物質の直流電場での移動は電気泳動法の特徴です。",
+          "references": [
+            {
+              "title": "FTIRの基礎（1） 赤外分光法の原理",
+              "url": "https://www.jasco.co.jp/jpn/technique/internet-seminar/ftir/ftir1.html"
+            },
+            {
+              "title": "NMRの基礎知識【原理編】",
+              "url": "https://www.kanto.co.jp/media/2022/11/10/67"
+            },
+            {
+              "title": "［UV-Vis］紫外可視分光法",
+              "url": "https://www.mst.or.jp/method/tabid/1222/Default.aspx"
+            },
+            {
+              "title": "質量分析法",
+              "url": "https://www.jaima.or.jp/jp/analytical/basic/mass/method/"
+            },
+            {
+              "title": "電気泳動",
+              "url": "https://www.3d-gene.com/about/article/art_005.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
