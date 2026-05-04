@@ -45,7 +45,61 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   initShareButtons();
+  initRandomButtons();
 });
+
+
+// Random question buttons (top page / year page / question page)
+function initRandomButtons() {
+  const buttons = document.querySelectorAll(".btn-random[data-random-target]");
+  if (buttons.length === 0) return;
+
+  const siteRoot = getSiteRootFromScript();
+  let cache = null;
+  let loading = null;
+
+  function loadIndex() {
+    if (cache) return Promise.resolve(cache);
+    if (loading) return loading;
+    loading = fetch(siteRoot + "data/random_index.json", { cache: "no-cache" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (json) { cache = json; return json; });
+    return loading;
+  }
+
+  function pickAndGo() {
+    return loadIndex().then(function (items) {
+      if (!items || items.length === 0) return;
+      // Avoid landing on the same question we're already on.
+      const here = window.location.pathname.replace(/\/+$/, "");
+      let pick;
+      for (let attempt = 0; attempt < 10; attempt++) {
+        pick = items[Math.floor(Math.random() * items.length)];
+        const target = "/" + pick.year + "/" + pick.q;
+        if (!here.endsWith(target)) break;
+      }
+      window.location.href = siteRoot + pick.year + "/" + pick.q + "/";
+    }).catch(function (err) {
+      console.error("Random index load failed:", err);
+      alert("ランダム問題の読み込みに失敗しました。時間をおいて再度お試しください。");
+    });
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      btn.disabled = true;
+      pickAndGo().finally(function () { btn.disabled = false; });
+    });
+  });
+
+  // Pre-warm the index after first idle
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(function () { loadIndex(); });
+  }
+}
 
 
 // Choice click logic (question page)
