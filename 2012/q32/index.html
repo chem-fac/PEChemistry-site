@@ -40,17 +40,17 @@
       <div class="container">
         <h1>
           平成24年度 問32
-          <span class="subject-tag" data-subject="有機化学及び燃料">有機化学及び燃料</span>
+          <span class="subject-tag" data-subject="化学プロセス">化学プロセス</span>
         </h1>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
+        <!-- Question text -->
         <div class="question-body">
-          <div class="question-text-card"><p>反応物濃度をCとしたとき、反応速度がdC/dt=-kC（k：反応速度定数、t：時間）で示される反応において、その反応物の溶液が入った回分反応槽で、30分間の反応によって、その50%が反応した。この反応物の最終反応率を99%としたとき1回の操作にかかる時間、すなわち1サイクルの時間として最も近い値はどれか。<br/>ただし、回分反応槽への原料仕込み、及び製品の取出しに合計1時間要するものとする。<br/>なお、log2=0.693、log100=4.605とする。</p></div>
+          <div class="question-text-card">反応物濃度をCとしたとき、反応速度がdC/dt=-kC（k：反応速度定数、t：時間）で示される反応において、その反応物の溶液が入った回分反応槽で、30分間の反応によって、その50%が反応した。この反応物の最終反応率を99%としたとき1回の操作にかかる時間、すなわち1サイクルの時間として最も近い値はどれか。 ただし、回分反応槽への原料仕込み、及び製品の取出しに合計1時間要するものとする。 なお、log2=0.693、log100=4.605とする。</div>
         </div>
-
 
         <!-- Choices -->
         <div class="choices">
@@ -94,8 +94,10 @@
               <span class="choice-text">0時間</span>
             </div>
           </div>
+
         </div>
 
+        <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
             <div class="answer-box">
@@ -103,14 +105,16 @@
               <div class="answer-value">④ 5時間</div>
             </div>
 
+            <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>反応速度式dC/dt=-kCは微分方程式であるため分離変数法で分解します。</p><p>まず変数Cとtで分けるためdC/C＝-kdtの形に変形します。</p><p><em>C</em>の関数として左辺を、tの関数として右辺をそれぞれ積分します。<br/>∫(1/​C)dC＝∫−kdt<br/>log|C|＝-kt＋定数</p><p>初期条件、t＝0の時の濃度を C<sub>0</sub>とすると、log|C<sub>0</sub>|＝-k × 0 + 定数となり、log|C<sub>0</sub>|＝定数が成り立ちます。この式を元の積分後の式に代入します。<br/>log|C|＝-kt＋log|C<sub>0</sub>|<br/>log|C/C<sub>0</sub>|＝-kt</p><p>C/C<sub>0</sub>は分子が反応後の原料濃度、分母が反応前の原料濃度ですので、残存率とみなすことが出来ます。ln(C/C<sub>0</sub>)＝-ktを用いて、30分間の反応によって50％反応した時を考えます。<br/>log|1-0.5|＝-0.5k<br/>-log(0.5)/0.5＝k</p><p>反応速度定数kが求まりましたので、99％反応した時の反応時間を考えます。<br/>log(1-0.99)＝-{-log(0.5)/0.5}t<br/>log(0.01)＝log(0.5)/0.5 × t<br/>log(100<sup>-1</sup>)＝log(2<sup>-1</sup>)/0.5 × t<br/>-log100＝-log2 × t/0.5 <br/>t＝0.5 × (-4.605) / (-0.693)<br/>t＝3.32 時間</p><p>「回分反応槽への原料仕込み、及び製品の取出しに合計1時間要する」と記載されていますので、1サイクルの時間は3.32＋1.00＝4.32時間です。最も近い値は4.5時間です。</p>
+反応速度式dC/dt=-kCは微分方程式であるため分離変数法で分解します。 まず変数Cとtで分けるためdC/C＝-kdtの形に変形します。 C の関数として左辺を、tの関数として右辺をそれぞれ積分します。 ∫(1/​C)dC＝∫−kdt log|C|＝-kt＋定数 初期条件、t＝0の時の濃度を C 0 とすると、log|C 0 |＝-k × 0 + 定数となり、log|C 0 |＝定数が成り立ちます。この式を元の積分後の式に代入します。 log|C|＝-kt＋log|C 0 | log|C/C 0 |＝-kt C/C 0 は分子が反応後の原料濃度、分母が反応前の原料濃度ですので、残存率とみなすことが出来ます。ln(C/C 0 )＝-ktを用いて、30分間の反応によって50％反応した時を考えます。 log|1-0.5|＝-0.5k -log(0.5)/0.5＝k 反応速度定数kが求まりましたので、99％反応した時の反応時間を考えます。 log(1-0.99)＝-{-log(0.5)/0.5}t log(0.01)＝log(0.5)/0.5 × t log(100 -1 )＝log(2 -1 )/0.5 × t -log100＝-log2 × t/0.5 t＝0.5 × (-4.605) / (-0.693) t＝3.32 時間 「回分反応槽への原料仕込み、及び製品の取出しに合計1時間要する」と記載されていますので、1サイクルの時間は3.32＋1.00＝4.32時間です。最も近い値は4.5時間です。
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Note promo (subtle) -->
         <div style="margin-top: var(--space-lg);">
 
     <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener" class="note-promo note-promo-sm">
@@ -123,25 +127,27 @@
 
         </div>
 
+        <!-- References -->
 
 
+        <!-- Question navigation -->
         <div class="question-nav" style="margin-top: var(--space-xl);">
-
-          <a href="../q31/" class="question-nav-btn">
-            <span>←</span>
-            <div>
-              <div class="question-nav-label">前の問題</div>
-              <div>問31</div>
-            </div>
-          </a>
-
-          <a href="../q33/" class="question-nav-btn">
-            <div style="text-align:right;">
-              <div class="question-nav-label">次の問題</div>
-              <div>問33</div>
-            </div>
-            <span>→</span>
-          </a>
+          
+        <a href="../q31/" class="question-nav-btn">
+          <span>←</span>
+          <div>
+            <div class="question-nav-label">前の問題</div>
+            <div>問31</div>
+          </div>
+        </a>
+          
+        <a href="../q33/" class="question-nav-btn">
+          <div style="text-align:right;">
+            <div class="question-nav-label">次の問題</div>
+            <div>問33</div>
+          </div>
+          <span>→</span>
+        </a>
         </div>
       </div>
     </section>
