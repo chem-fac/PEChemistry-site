@@ -780,6 +780,76 @@ img {
    .question-text-card 内に同居して、原本のレイアウトを再現する */
 .question-text-card .question-text {
   display: block;
+  white-space: normal;
+}
+
+.question-text-card .question-text p {
+  margin: 0 0 var(--space-sm);
+}
+
+.question-text-card .question-text p:last-child {
+  margin-bottom: 0;
+}
+
+.question-text-card .question-text u {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.question-text-card .question-text .q-mark {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 2px;
+  color: var(--color-primary, #0a6cff);
+}
+
+.question-text-card .question-text figure {
+  display: block;
+  margin: var(--space-lg) auto;
+  text-align: center;
+}
+
+.question-text-card .question-text figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.question-text-card .question-text figcaption {
+  margin-top: var(--space-xs);
+  font-size: 0.88rem;
+  color: var(--color-text-secondary, #666);
+  text-align: center;
+}
+
+.question-text-card .question-text table {
+  border-collapse: collapse;
+  margin: var(--space-md) auto;
+  background: #fff;
+}
+
+.question-text-card .question-text table td,
+.question-text-card .question-text table th {
+  border: 1px solid var(--color-border, #d0d0d0);
+  padding: 8px 16px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.question-text-card .question-text table tr:first-child td {
+  background: #f4f4f4;
+  font-weight: 600;
+}
+
+.question-text-card .question-text .notice {
+  display: block;
+  margin: 0 0 var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
+  background: #fff8e1;
+  border-left: 4px solid #f0b400;
+  border-radius: 4px;
+  font-size: 0.92rem;
 }
 
 .question-figure {
@@ -1002,9 +1072,19 @@ img {
 }
 
 .choices.choices-image-rows {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.choice-item-image-inline {
+  align-items: center;
+}
+
+.choice-item-image-inline .choice-image {
+  max-height: 120px;
+  width: auto;
+  flex: 0 1 auto;
 }
 
 .choices.choices-numeric {
