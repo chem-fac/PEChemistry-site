@@ -33,7 +33,7 @@
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="./">年度一覧</a>
-        <a href="./#search">検索</a>
+        <a href="./#search" onclick="event.preventDefault(); document.getElementById('search').scrollIntoView({behavior:'smooth'}); document.getElementById('search-input').focus({preventScroll:true});">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
@@ -260,7 +260,7 @@
             <li>
               <span class="profile-link-label">運営サイト</span>
               <a href="https://chem-fac.com/" target="_blank" rel="noopener" class="profile-link">ケムファク</a>
-              <span class="profile-link-desc">化学プラント技術の解説サイト</span>
+              <span class="profile-link-desc">プラント技術の解説サイト</span>
             </li>
             <li>
               <span class="profile-link-label">ポッドキャスト</span>
@@ -270,12 +270,12 @@
             <li>
               <span class="profile-link-label">外部メディア連載</span>
               <a href="https://monoist.itmedia.co.jp/mn/series/45879/" target="_blank" rel="noopener" class="profile-link">MONOist「はじめての化学工学」</a>
-              <span class="profile-link-desc">毎月連載</span>
+              <span class="profile-link-desc">製造業向けWebメディアにて毎月連載</span>
             </li>
             <li>
-              <span class="profile-link-label">noteコラム記事</span>
-              <a href="https://note.com/chem_fac" target="_blank" rel="noopener" class="profile-link">かねまるのnote</a>
-              <span class="profile-link-desc">技術コラムを随時更新</span>
+              <span class="profile-link-label">コラム記事</span>
+              <a href="https://note.com/chem_fac" target="_blank" rel="noopener" class="profile-link">note</a>
+              <span class="profile-link-desc">活動レポートや書籍情報など日々の思いを記載</span>
             </li>
             <li>
               <span class="profile-link-label">noteメンバーシップ</span>
@@ -285,7 +285,7 @@
             <li>
               <span class="profile-link-label">SNS</span>
               <a href="https://x.com/chem_fac" target="_blank" rel="noopener" class="profile-link">X (Twitter) @chem_fac</a>
-              <span class="profile-link-desc">日々の発信</span>
+              <span class="profile-link-desc">日々の発信や宣伝</span>
             </li>
           </ul>
         </div>
