@@ -1087,6 +1087,24 @@ img {
   flex: 0 1 auto;
 }
 
+.choice-item-text-image {
+  align-items: flex-start;
+}
+
+.choice-text-image-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+  min-width: 0;
+}
+
+.choice-text-image-body .choice-image {
+  max-height: 110px;
+  width: auto;
+  align-self: center;
+}
+
 .choices.choices-numeric {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
