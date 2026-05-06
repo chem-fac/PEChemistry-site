@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="../../" class="header-logo">
+        <img src="../../images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="../../">年度一覧</a>
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="../../support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -58,7 +64,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">一酸化炭素1kgを空気比1.1で完全燃焼させるときに必要な空気量［m 3 ］に最も近い値はどれか。空気、一酸化炭素、燃焼ガスはともに0℃、101.3 kPaの条件下にあり。反応は次の式による。 2CO+O 2 →2CO 2 ただし、空気中の酸素濃度、窒素濃度はそれぞれ21.0 vol%、79.0 vol%とし、1 mol当たりの質量は、C：12 g/mol、O：16 g/molとする。</div>
+            <div class="question-text"><p>一酸化炭素1kgを空気比1.1で完全燃焼させるときに必要な空気量［m<sup>3</sup>］に最も近い値はどれか。空気、一酸化炭素、燃焼ガスはともに0℃、101.3 kPaの条件下にあり。反応は次の式による。<br/>　2CO+O<sub>2</sub>→2CO<sub>2</sub><br/>ただし、空気中の酸素濃度、窒素濃度はそれぞれ21.0 vol%、79.0 vol%とし、1 mol当たりの質量は、C：12 g/mol、O：16 g/molとする。</p></div>
           </div>
         </div>
 
@@ -69,7 +75,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">①</span>
-              <span class="choice-text">8</span>
+              <span class="choice-text">1.8</span>
             </div>
           </div>
 
@@ -77,7 +83,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">②</span>
-              <span class="choice-text">1</span>
+              <span class="choice-text">2.1</span>
             </div>
           </div>
 
@@ -85,7 +91,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">4</span>
+              <span class="choice-text">2.4</span>
             </div>
           </div>
 
@@ -93,7 +99,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">7</span>
+              <span class="choice-text">2.7</span>
             </div>
           </div>
 
@@ -101,7 +107,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">⑤</span>
-              <span class="choice-text">0</span>
+              <span class="choice-text">3.0</span>
             </div>
           </div>
 
@@ -110,15 +116,17 @@
         <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
+
             <div class="answer-box">
               <div class="answer-label">正答</div>
-              <div class="answer-value">② 1</div>
+              <div class="answer-value">② 2.1</div>
             </div>
+
 
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-空気比とは、燃料を完全に燃焼させるために理論的に必要な空気量（理論空気量）と実際に燃焼用として送り込まれた空気量との比です。燃焼において酸素が足りない状態だと不完全燃焼となりCOが発生してしまうため若干空気比を1より高めに設定します。 一酸化炭素の分子量は28です。1kgでは35.7mol（1,000g/28）です。一酸化炭素1kg（35.7mol）に対して必要な酸素の量は35.7÷2＝17.9molです。標準状態（0℃、1気圧）のとき気体は22.4L/molであるため、必要な酸素の量は17.9mol×22.4L/mol＝401L（0.401m 3 ）です。 空気中の酸素濃度、窒素濃度はそれぞれ21.0 vol%、79.0 vol%であることから、0.401m 3 ×100/21＝1.9m 3 の空気が必要だと分かります。空気比を1.1に設定しているため、空気量は1.9m 3 ×1.1＝2.1m 3 となります。
+<p>正答は<strong>2番</strong>です。</p><p>空気比とは、燃料を完全に燃焼させるために理論的に必要な空気量（理論空気量）と実際に燃焼用として送り込まれた空気量との比です。燃焼において酸素が足りない状態だと不完全燃焼となりCOが発生してしまうため若干空気比を1より高めに設定します。</p><p>一酸化炭素の分子量は28です。1kgでは35.7mol（1,000g/28）です。一酸化炭素1kg（35.7mol）に対して必要な酸素の量は35.7÷2＝17.9molです。標準状態（0℃、1気圧）のとき気体は22.4L/molであるため、必要な酸素の量は17.9mol×22.4L/mol＝401L（0.401m<sup>3</sup>）です。</p><p>空気中の酸素濃度、窒素濃度はそれぞれ21.0 vol%、79.0 vol%であることから、0.401m<sup>3</sup>×100/21＝1.9m<sup>3</sup>の空気が必要だと分かります。空気比を1.1に設定しているため、空気量は1.9m<sup>3</sup>×1.1＝2.1m<sup>3</sup>となります。</p>
               </div>
             </div>
           </div>
@@ -189,6 +197,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="../../about/">当サイトについて</a></li>
+            <li><a href="../../support/">当サイトを支援する</a></li>
             <li><a href="../../privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>

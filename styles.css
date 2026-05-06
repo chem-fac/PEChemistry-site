@@ -152,6 +152,13 @@ img {
   text-decoration: none;
 }
 
+.header-logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .header-logo-icon {
   width: 28px;
   height: 28px;
@@ -1877,6 +1884,42 @@ img {
 .doc-page .qa .a {
   margin: 0;
   color: var(--color-text-muted);
+}
+
+/* ===== Support page ===== */
+.doc-page .support-h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.5em 0 0.5em;
+}
+.doc-page .support-cta {
+  margin: 0.8em 0;
+}
+.support-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid var(--color-primary);
+  transition: opacity 0.15s;
+}
+.support-btn:hover { opacity: 0.85; }
+.support-btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.support-qr {
+  margin: 0.8em 0;
+}
+.support-qr img {
+  width: 160px;
+  height: 160px;
+  border: 1px solid var(--color-border, #e5e7eb);
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) {

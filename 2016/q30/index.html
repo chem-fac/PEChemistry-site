@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="../../" class="header-logo">
+        <img src="../../images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="../../">年度一覧</a>
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="../../support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -58,7 +64,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">撹拌槽を幾何学的相似を保って、スケールアップする際、大型撹拌槽での回転数n 2 ［s -1 ］が、最も小さくなるのは、スケールアップの前後で次のどの変数量を一定とした場合か、最も適切なものはどれか。 なお、記号の意味は次のとおりである、n：翼回転数、d：翼直径、μ：粘度、g：重力加速度、p：密度、N p ：動力数。</div>
+            <div class="question-text"><p>　撹拌槽を幾何学的相似を保って、スケールアップする際、大型撹拌槽での回転数n<sub>2</sub>［s<sup>-1</sup>］が、最も小さくなるのは、スケールアップの前後で次のどの変数量を一定とした場合か、最も適切なものはどれか。<br/>　なお、記号の意味は次のとおりである、n：翼回転数、d：翼直径、μ：粘度、g：重力加速度、p：密度、N<sub>p</sub>：動力数。</p></div>
           </div>
         </div>
 
@@ -69,7 +75,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">①</span>
-              <span class="choice-text">撹拌レイノルズ数：ρnd 2 /μ</span>
+              <span class="choice-text">撹拌レイノルズ数：ρnd<sup>2</sup>/μ</span>
             </div>
           </div>
 
@@ -85,7 +91,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">フルード数：n 2 d/g</span>
+              <span class="choice-text">フルード数：n<sup>2</sup>d/g</span>
             </div>
           </div>
 
@@ -93,7 +99,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">単位容積当たりの消費動力：N p ρn 3 d 2</span>
+              <span class="choice-text">単位容積当たりの消費動力：N<sub>p</sub>ρn<sup>3</sup>d<sup>2</sup></span>
             </div>
           </div>
 
@@ -110,15 +116,17 @@
         <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
+
             <div class="answer-box">
               <div class="answer-label">正答</div>
               <div class="answer-value">① 撹拌レイノルズ数：ρnd 2 /μ</div>
             </div>
 
+
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-大型撹拌槽での回転数n 2 が最も小さくなるのは、翼直径dに対する累乗が大きく、翼回転数nに対する累乗が小さい変数量です。よって撹拌レイノルズ数が該当します。 確認のため、各変数量を一定にして回転数の比n 2 /n 1 を計算してみます。スケールアップ前を添字1、スケールアップ後を添字2とします。 撹拌レイノルズ数 ：ρn 2 d 2 2 /μ＝ρn 1 d 1 2 /μ n 2 /n 1 ＝(d 2 /d 1 ) 2 翼回転数 ：n 2 ＝n 1 n 2 /n 1 ＝1 n 2 /n 1 ＝(d 2 /d 1 ) 0 フルード数 ：n 2 2 d 2 /g＝n 1 2 d 1 /g n 2 /n 1 ＝(d 2 /d 1 ) 1/2 単位容積当たりの消費動力 ：N p ρn 2 3 d 2 2 ＝N p ρn 1 3 d 1 2 n 2 /n 1 ＝(d 2 /d 1 ) 2/3 翼先端速度 ：πn 2 d 2 ＝πn 1 d 1 n 2 /n 1 ＝(d 2 /d 1 ) 1 「単位容積当たりの消費動力」における動力数N p は、乱流域でのN p はほぼ一定の値を示します。明確に記載されていませんが、撹拌槽では乱流で扱うことが一般的なため今回N p で計算しています。
+<p>正答は<strong>1番</strong>です。</p><p>大型撹拌槽での回転数n<sub>2</sub>が最も小さくなるのは、翼直径dに対する累乗が大きく、翼回転数nに対する累乗が小さい変数量です。よって撹拌レイノルズ数が該当します。</p><p>確認のため、各変数量を一定にして回転数の比n<sub>2</sub>/n<sub>1</sub>を計算してみます。スケールアップ前を添字1、スケールアップ後を添字2とします。</p><ol><li><strong>撹拌レイノルズ数</strong>：ρn<sub>2</sub>d<sub>2</sub><sup>2</sup>/μ＝ρn<sub>1</sub>d<sub>1</sub><sup>2</sup>/μ<br/>n<sub>2</sub>/n<sub>1</sub>＝(d<sub>2</sub>/d<sub>1</sub>)<sup>2</sup></li><li><strong>翼回転数</strong>：n<sub>2</sub>＝n<sub>1</sub><br/>n<sub>2</sub>/n<sub>1</sub>＝1<br/>n<sub>2</sub>/n<sub>1</sub>＝(d<sub>2</sub>/d<sub>1</sub>)<sup>0</sup></li><li><strong>フルード数</strong>：n<sub>2</sub><sup>2</sup>d<sub>2</sub>/g＝n<sub>1</sub><sup>2</sup>d<sub>1</sub>/g<br/>n<sub>2</sub>/n<sub>1</sub>＝(d<sub>2</sub>/d<sub>1</sub>)<sup>1/2</sup></li><li><strong>単位容積当たりの消費動力</strong>：N<sub>p</sub>ρn<sub>2</sub><sup>3</sup>d<sub>2</sub><sup>2</sup>＝N<sub>p</sub>ρn<sub>1</sub><sup>3</sup>d<sub>1</sub><sup>2</sup><br/>n<sub>2</sub>/n<sub>1</sub>＝(d<sub>2</sub>/d<sub>1</sub>)<sup>2/3</sup></li><li><strong>翼先端速度</strong>：πn<sub>2</sub>d<sub>2</sub>＝πn<sub>1</sub>d<sub>1</sub><br/>n<sub>2</sub>/n<sub>1</sub>＝(d<sub>2</sub>/d<sub>1</sub>)<sup>1</sup></li></ol><p>「単位容積当たりの消費動力」における動力数N<sub>p</sub>は、乱流域でのN<sub>p</sub>はほぼ一定の値を示します。明確に記載されていませんが、撹拌槽では乱流で扱うことが一般的なため今回N<sub>p</sub>で計算しています。</p>
               </div>
             </div>
           </div>
@@ -175,6 +183,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="../../about/">当サイトについて</a></li>
+            <li><a href="../../support/">当サイトを支援する</a></li>
             <li><a href="../../privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>

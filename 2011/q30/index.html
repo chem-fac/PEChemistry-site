@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="../../" class="header-logo">
+        <img src="../../images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="../../">年度一覧</a>
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="../../support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -58,7 +64,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">2種類の材料から構成される炉壁がある。内側は厚さb 1 =10 mmの耐火レンガで熱伝導率はk 1 =0.90 W・m -1 ・K -1 、外側は厚さb 2 =20mmの断熱レンガで熱伝導率はk 2 =0.12 W・m -1 ・K -1 である。炉壁の内外表面温度がそれぞれT 1 =1,200 K, T 3 =350 Kの場合、レンガの接触面温度T 2 に最も近いものは次のうちどれか。</div>
+            <div class="question-text"><p>2種類の材料から構成される炉壁がある。内側は厚さb<sub>1</sub>=10 mmの耐火レンガで熱伝導率はk<sub>1</sub>=0.90 W・m<sup>-1</sup>・K<sup>-1</sup>、外側は厚さb<sub>2</sub>=20mmの断熱レンガで熱伝導率はk<sub>2</sub>=0.12 W・m<sup>-1</sup>・K<sup>-1</sup>である。炉壁の内外表面温度がそれぞれT<sub>1</sub>=1,200 K, T<sub>3</sub>=350 Kの場合、レンガの接触面温度T<sub>2</sub>に最も近いものは次のうちどれか。</p><div><div><img alt="" loading="lazy" src="../../images/2011/q30/image-404.png" style="max-width: 100%; height: auto;"/></div></div></div>
           </div>
         </div>
 
@@ -69,7 +75,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">①</span>
-              <span class="choice-text">03 K</span>
+              <span class="choice-text">403 K</span>
             </div>
           </div>
 
@@ -85,7 +91,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">,100 K</span>
+              <span class="choice-text">1,100 K</span>
             </div>
           </div>
 
@@ -93,7 +99,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">④</span>
-              <span class="choice-text">,150 K</span>
+              <span class="choice-text">1,150 K</span>
             </div>
           </div>
 
@@ -101,7 +107,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">⑤</span>
-              <span class="choice-text">,180 K</span>
+              <span class="choice-text">1,180 K</span>
             </div>
           </div>
 
@@ -110,15 +116,17 @@
         <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
+
             <div class="answer-box">
               <div class="answer-label">正答</div>
-              <div class="answer-value">④ ,150 K</div>
+              <div class="answer-value">④ 1,150 K</div>
             </div>
+
 
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-この問題はフーリエの法則q＝－k（dT/dx）を用いて計算します。（dT/dx）は温度の変化量dTと距離の変化量dxの比であることを表します。つまり今回は温度減少量と伝熱距離の比に相当します。 耐火レンガの熱流束q 1 ：-0.90×（1,200－T 2 ）/ 0.010 断熱レンガの熱流束q 2 ：-0.12×（T 2 -350）/ 0.020 熱流束qの単位Wm -2 はWを変形してJ/(s・m 2 )とも記載できます。つまり熱流束は、ある断面に対して直交する方向に伝わる、単位時間当たりの熱量を意味します。そのため断熱材1と2のように密着して連続的に伝熱する状態では、各断熱材における熱流束q 1 とq 2 の値は同じとなります。 各断熱材における熱流束を求めた2式で方程式を解くとT 2 ＝1,146.9℃と求まります。よって最も近いものは1,150℃です。
+<p>正答は<strong>4番</strong>です。</p><p>この問題はフーリエの法則q＝－k（dT/dx）を用いて計算します。（dT/dx）は温度の変化量dTと距離の変化量dxの比であることを表します。つまり今回は温度減少量と伝熱距離の比に相当します。</p><ul><li><strong>耐火レンガの熱流束q<sub>1</sub></strong>：-0.90×（1,200－T<sub>2</sub>）/ 0.010</li><li><strong>断熱レンガの熱流束q<sub>2</sub></strong>：-0.12×（T<sub>2</sub>-350）/ 0.020</li></ul><p>熱流束qの単位Wm<sup>-2</sup>はWを変形してJ/(s・m<sup>2</sup>)とも記載できます。つまり熱流束は、ある断面に対して直交する方向に伝わる、単位時間当たりの熱量を意味します。そのため断熱材1と2のように密着して連続的に伝熱する状態では、各断熱材における熱流束q<sub>1</sub>とq<sub>2</sub>の値は同じとなります。</p><p>各断熱材における熱流束を求めた2式で方程式を解くとT<sub>2</sub>＝1,146.9℃と求まります。よって最も近いものは1,150℃です。</p>
               </div>
             </div>
           </div>
@@ -189,6 +197,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="../../about/">当サイトについて</a></li>
+            <li><a href="../../support/">当サイトを支援する</a></li>
             <li><a href="../../privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>

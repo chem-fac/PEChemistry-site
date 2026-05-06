@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="../../" class="header-logo">
+        <img src="../../images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="../../">年度一覧</a>
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="../../support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -58,7 +64,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">内径19.8 mm×外径22.2 mmの内管を設置した二重管型熱交換器において、環状部に150℃の熱媒油を流量1.0 kg・s -1 で流し、内管部を流量0.5 kg・s -1 で流れる90℃の水を120℃まで温めたい。流体を向流で流した場合に必要な伝熱管長さはいくらか。次の値のうち最も近いものを選べ。 ただし、熱媒油と水の比熱はそれぞれ2.1 kJ・kg -1 ・K -1 及び4.2 kJ・kg -1 ・K -1 で、外径基準の総括伝熱係数はU＝540 W・m -2 ・K -1 とする。また、熱交換器内部の流体温差平均値ΔT m は両端の流体温度差ΔT 1 とΔT 2 の相加平均として算出してよい。</div>
+            <div class="question-text"><p>　内径19.8 mm×外径22.2 mmの内管を設置した二重管型熱交換器において、環状部に150℃の熱媒油を流量1.0 kg・s<sup>-1</sup>で流し、内管部を流量0.5 kg・s<sup>-1</sup>で流れる90℃の水を120℃まで温めたい。流体を向流で流した場合に必要な伝熱管長さはいくらか。次の値のうち最も近いものを選べ。<br/>　ただし、熱媒油と水の比熱はそれぞれ2.1 kJ・kg<sup>-1</sup>・K<sup>-1</sup>及び4.2 kJ・kg<sup>-1</sup>・K<sup>-1</sup>で、外径基準の総括伝熱係数はU＝540 W・m<sup>-2</sup>・K<sup>-1</sup>とする。また、熱交換器内部の流体温差平均値ΔT<sub>m</sub>は両端の流体温度差ΔT<sub>1</sub>とΔT<sub>2</sub>の相加平均として算出してよい。</p></div>
           </div>
         </div>
 
@@ -69,7 +75,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">①</span>
-              <span class="choice-text">0 m</span>
+              <span class="choice-text">20 m</span>
             </div>
           </div>
 
@@ -77,7 +83,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">②</span>
-              <span class="choice-text">7 m</span>
+              <span class="choice-text">27 m</span>
             </div>
           </div>
 
@@ -85,7 +91,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">8 m</span>
+              <span class="choice-text">48 m</span>
             </div>
           </div>
 
@@ -93,7 +99,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">④</span>
-              <span class="choice-text">6 m</span>
+              <span class="choice-text">56 m</span>
             </div>
           </div>
 
@@ -110,15 +116,17 @@
         <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
+
             <div class="answer-box">
               <div class="answer-label">正答</div>
-              <div class="answer-value">④ 6 m</div>
+              <div class="answer-value">④ 56 m</div>
             </div>
+
 
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-伝熱により水へ与える熱量を計算します。 4.2 kJ kg -1 K -1 × (120-90) K × 0.5 kg s -1 ＝63 kJ s -1 水に与えた熱量だけ熱媒油は熱を奪われます。熱交換後の熱媒油の温度をTとします。 2.1 kJ kg -1 K -1 × (150-T) K × 1.0 kg s -1 ＝63 kJ s -1 T＝120℃ 熱交換後の熱媒油の温度は水と同じ120℃でした。偶然にも両流体の出口温度が同じです。向流の場合、高温側の出口温度より低温側の出口温度が高くなる現象が起きます。そのため、短絡的に水の出口温度である120℃に熱媒油も変わると考えてはいけません。 両端の流体温度差ΔT1、ΔT2を求めます。 ΔT1＝（熱媒側入口）－（水側出口）＝150－120＝30 K ΔT2＝（水側入口）－（熱媒側出口）＝90－120＝-30 K → 温度差30 K 問題にて熱交換器内部の流体温度差平均値ΔTmは両端の流体温度差ΔT1とΔT2の相加平均として算出してよいとされています。相加平均は一般に世の中で使われる平均です。 ΔTm＝(30＋30) / 2 ＝30 K 二重管における熱交換の等式を立てます。熱交換量は先に求めた63 kJ s -1 であり、kJ s -1 ＝kWと同義です。つまり熱交換量は63,000 Wです。求める伝熱管長さをLとします。 63,000 W＝540 W m -2 K -1 × πL(22.2×10 -3 ) m 2 × 30 K L＝55.78 m 最も近い値は56 mです。円周は2πrと覚えますが、与えられているのが管直径なため、πDで計算しますので注意してください。
+<p>正答は<strong>4番</strong>です。</p><p>伝熱により水へ与える熱量を計算します。<br/>4.2 kJ kg<sup>-1</sup> K<sup>-1</sup> × (120-90) K × 0.5 kg s<sup>-1</sup>＝63 kJ s<sup>-1</sup></p><p>水に与えた熱量だけ熱媒油は熱を奪われます。熱交換後の熱媒油の温度をTとします。<br/>2.1 kJ kg<sup>-1</sup> K<sup>-1</sup> × (150-T) K × 1.0 kg s<sup>-1</sup>＝63 kJ s<sup>-1</sup><br/>T＝120℃</p><p>熱交換後の熱媒油の温度は水と同じ120℃でした。偶然にも両流体の出口温度が同じです。向流の場合、高温側の出口温度より低温側の出口温度が高くなる現象が起きます。そのため、短絡的に水の出口温度である120℃に熱媒油も変わると考えてはいけません。</p><p>両端の流体温度差ΔT1、ΔT2を求めます。<br/>ΔT1＝（熱媒側入口）－（水側出口）＝150－120＝30 K<br/>ΔT2＝（水側入口）－（熱媒側出口）＝90－120＝-30 K → 温度差30 K</p><p>問題にて熱交換器内部の流体温度差平均値ΔTmは両端の流体温度差ΔT1とΔT2の相加平均として算出してよいとされています。相加平均は一般に世の中で使われる平均です。<br/>ΔTm＝(30＋30) / 2 ＝30 K</p><p>二重管における熱交換の等式を立てます。熱交換量は先に求めた63 kJ s<sup>-1</sup>であり、kJ s<sup>-1</sup>＝kWと同義です。つまり熱交換量は63,000 Wです。求める伝熱管長さをLとします。<br/>63,000 W＝540 W m<sup>-2</sup> K<sup>-1</sup> × πL(22.2×10<sup>-3</sup>) m<sup>2</sup> × 30 K<br/>L＝55.78 m</p><p>最も近い値は56 mです。円周は2πrと覚えますが、与えられているのが管直径なため、πDで計算しますので注意してください。</p>
               </div>
             </div>
           </div>
@@ -175,6 +183,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="../../about/">当サイトについて</a></li>
+            <li><a href="../../support/">当サイトを支援する</a></li>
             <li><a href="../../privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>

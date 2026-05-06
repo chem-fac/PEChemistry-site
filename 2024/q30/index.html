@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="../../" class="header-logo">
+        <img src="../../images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="../../">年度一覧</a>
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="../../support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -58,7 +64,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">ラウールの法則によれば、希薄溶液の蒸気圧Pは、純溶媒の蒸気圧P 0 と溶媒のモル分率X 溶媒 との積で求められる。1気圧、室温における15wt%の食塩水の蒸気圧は、同じ温度の純水の蒸気圧の何倍になるか。最も近い値を答えよ。 ただし、食塩は水溶液中で100%解離するものとし、イオン化されたNa + 及びCl - は非揮発性とする。水の分子量は18、ナトリウムと塩素の原子量は、それぞれ23と35.5である。 NaCl → Na + + Cl -</div>
+            <div class="question-text"><p>ラウールの法則によれば、希薄溶液の蒸気圧Pは、純溶媒の蒸気圧P<sub>0</sub>と溶媒のモル分率X<sub>溶媒</sub>との積で求められる。1気圧、室温における15wt%の食塩水の蒸気圧は、同じ温度の純水の蒸気圧の何倍になるか。最も近い値を答えよ。<br/>　ただし、食塩は水溶液中で100%解離するものとし、イオン化されたNa<sup>+</sup>及びCl<sup>-</sup>は非揮発性とする。水の分子量は18、ナトリウムと塩素の原子量は、それぞれ23と35.5である。</p><p>NaCl→Na<sup>+</sup>+Cl<sup>-</sup></p></div>
           </div>
         </div>
 
@@ -110,15 +116,17 @@
         <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
+
             <div class="answer-box">
               <div class="answer-label">正答</div>
               <div class="answer-value">③ 0.90</div>
             </div>
 
+
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-
+<p>正答は<strong>3番</strong>です。</p><p>問題文に記載のラウールの式を記述するとP＝P<sub>0</sub>X<sub>溶媒</sub>で表されます。P/P<sub>0</sub>＝X<sub>溶媒</sub>と変形できます。食塩水の蒸気圧と水の蒸気圧の比率を求められていることから、X<sub>溶媒</sub>がそのまま答えになります。</p><p>ラウールの式の注意点として、イオンされた分子はイオンを基準に計算します。つまりNaClの場合、イオン化されてNa<sup>+</sup>とCl<sup>-</sup>に分かれていることから、NaClの2倍の物質量となります。</p><p>食塩水が100 gあるとして、15wt%の食塩水における食塩と水の分子量を求めます。塩化ナトリウムの分子量は23+35.5＝58.5です。<br/>NaCl：15 [g] / 58.5 [g/mol] × 2＝0.512 mol<br/>H<sub>2</sub>O：85 [g] / 18 [g/mol]＝4.72 mol</p><p>よって、X<sub>溶媒</sub>＝4.72 / (0.512+4.72)＝0.90です。</p>
               </div>
             </div>
           </div>
@@ -175,6 +183,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="../../about/">当サイトについて</a></li>
+            <li><a href="../../support/">当サイトを支援する</a></li>
             <li><a href="../../privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>

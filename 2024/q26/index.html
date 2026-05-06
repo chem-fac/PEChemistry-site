@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="../../" class="header-logo">
+        <img src="../../images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="../../">年度一覧</a>
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="../../support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -58,7 +64,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">セラミックスの機械的性質に関する次の記述のうち、最も不適切なものはどれか。</div>
+            <div class="question-text"><p>セラミックスの機械的性質に関する次の記述のうち、最も不適切なものはどれか。</p></div>
           </div>
         </div>
 
@@ -69,7 +75,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">①</span>
-              <span class="choice-text">弾性率 ： 弾性体における歪みに対する応力の比。</span>
+              <span class="choice-text">弾性率：弾性体における歪みに対する応力の比。</span>
             </div>
           </div>
 
@@ -77,7 +83,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">②</span>
-              <span class="choice-text">曲げ強さ ： 曲げモーメントが付加された試験片において、最大引張り応力の作用点周辺を起点として引張り破壊が巨視的に起きたときの最大引張り応力。</span>
+              <span class="choice-text">曲げ強さ：曲げモーメントが付加された試験片において、最大引張り応力の作用点周辺を起点として引張り破壊が巨視的に起きたときの最大引張り応力。</span>
             </div>
           </div>
 
@@ -85,7 +91,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">③</span>
-              <span class="choice-text">モース硬さ ： 正４角錐（対面角136°）のダイヤモンド圧子を試料に押しこんだとき、荷重とくぼみの表面積の比から定義される硬さ。</span>
+              <span class="choice-text">モース硬さ：正４角錐（対面角136°）のダイヤモンド圧子を試料に押しこんだとき、荷重とくぼみの表面積の比から定義される硬さ。</span>
             </div>
           </div>
 
@@ -93,7 +99,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">破壊靭性 ： 材料の不安定亀裂進展開始を規定する応力拡大係数の値。</span>
+              <span class="choice-text">破壊靭性：材料の不安定亀裂進展開始を規定する応力拡大係数の値。</span>
             </div>
           </div>
 
@@ -101,7 +107,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">⑤</span>
-              <span class="choice-text">ワイブル分布 ： 最弱リンク説に基づく破壊確率分布の一種。ワイブル分布を規定する種々のパラメーターのうち、特に、形状母数 m はワイブル係数とも呼ばれ、測定値のばらつきの程度を表す。</span>
+              <span class="choice-text">ワイブル分布：最弱リンク説に基づく破壊確率分布の一種。ワイブル分布を規定する種々のパラメーターのうち、特に、形状母数<em>m</em>はワイブル係数とも呼ばれ、測定値のばらつきの程度を表す。</span>
             </div>
           </div>
 
@@ -110,15 +116,17 @@
         <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
+
             <div class="answer-box">
               <div class="answer-label">正答</div>
-              <div class="answer-value">③ モース硬さ ： 正４角錐（対面角136°）のダイヤモンド圧子を試料に押しこんだとき、荷重とくぼみの表面積の比から定義される硬さ。</div>
+              <div class="answer-value">③ モース硬さ：正４角錐（対面角136°）のダイヤモンド圧子を試料に押しこんだとき、荷重とくぼみの表面積の比から定義される硬さ。</div>
             </div>
+
 
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-
+<p>正答は<strong>3番</strong>です。</p><p>モース硬さは、実際には鉱物の相対的な硬さを表す尺度であり、10段階の基準鉱物を用いて定義されます。</p><p>記述されている硬さ測定方法は、ビッカース硬さ試験に関するものです。ビッカース硬さ試験では、正四角錐のダイヤモンド圧子（対面角136°）を用いて、荷重とくぼみの表面積の比から硬さを定義します。</p>
               </div>
             </div>
           </div>
@@ -144,14 +152,14 @@
             <summary class="reference-summary">参考資料</summary>
             <div class="reference-list">
 
-            <a href="https://www.asuzac-ceramics.jp/technical/prop_mech.html" target="_blank" rel="noopener" class="reference-link">
-              <span class="reference-link-title">セラミックスの機械的性質 | アスザック</span>
-              <span class="reference-link-domain">www.asuzac-ceramics.jp</span>
+            <a href="https://ajour.jp/column/what-is-mohs-scale-of-mineral-hardness/" target="_blank" rel="noopener" class="reference-link">
+              <span class="reference-link-title">モース硬度ってなに？</span>
+              <span class="reference-link-domain">ajour.jp</span>
             </a>
 
-            <a href="https://www.shimadzu.co.jp/test/p_support/tensile/hardness.html" target="_blank" rel="noopener" class="reference-link">
-              <span class="reference-link-title">硬さ試験の種類と原理 | 島津製作所</span>
-              <span class="reference-link-domain">www.shimadzu.co.jp</span>
+            <a href="https://marketing.ipros.jp/contents/basics/basic-ceramics10/" target="_blank" rel="noopener" class="reference-link">
+              <span class="reference-link-title">セラミックスの物理的特性評価と化学的特性評価</span>
+              <span class="reference-link-domain">marketing.ipros.jp</span>
             </a>
 
             </div>
@@ -194,6 +202,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="../../about/">当サイトについて</a></li>
+            <li><a href="../../support/">当サイトを支援する</a></li>
             <li><a href="../../privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>

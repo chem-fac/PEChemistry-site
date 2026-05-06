@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="./" class="header-logo">
+        <img src="./images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="./">年度一覧</a>
-        <a href="./#search" onclick="event.preventDefault(); document.getElementById('search').scrollIntoView({behavior:'smooth'}); document.getElementById('search-input').focus({preventScroll:true});">検索</a>
+        <a href="./#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="./support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -260,7 +266,7 @@
             <li>
               <span class="profile-link-label">運営サイト</span>
               <a href="https://chem-fac.com/" target="_blank" rel="noopener" class="profile-link">ケムファク</a>
-              <span class="profile-link-desc">プラント技術の解説サイト</span>
+              <span class="profile-link-desc">化学プラント技術の解説サイト</span>
             </li>
             <li>
               <span class="profile-link-label">ポッドキャスト</span>
@@ -270,22 +276,22 @@
             <li>
               <span class="profile-link-label">外部メディア連載</span>
               <a href="https://monoist.itmedia.co.jp/mn/series/45879/" target="_blank" rel="noopener" class="profile-link">MONOist「はじめての化学工学」</a>
-              <span class="profile-link-desc">製造業向けWebメディアにて毎月連載</span>
+              <span class="profile-link-desc">毎月連載</span>
             </li>
             <li>
-              <span class="profile-link-label">コラム記事</span>
-              <a href="https://note.com/chem_fac" target="_blank" rel="noopener" class="profile-link">note</a>
-              <span class="profile-link-desc">活動レポートや書籍情報など日々の思いを記載</span>
+              <span class="profile-link-label">noteコラム記事</span>
+              <a href="https://note.com/chem_fac" target="_blank" rel="noopener" class="profile-link">かねまるのnote</a>
+              <span class="profile-link-desc">技術コラムを随時更新</span>
             </li>
             <li>
               <span class="profile-link-label">noteメンバーシップ</span>
               <a href="https://note.com/chem_fac/membership" target="_blank" rel="noopener" class="profile-link">かねまるの「ここだけの話」</a>
-              <span class="profile-link-desc">「未完成の思考」「地道なプロセス」「個人的な本音」を、ありのままに共有</span>
+              <span class="profile-link-desc">月額制で限定記事を公開</span>
             </li>
             <li>
               <span class="profile-link-label">SNS</span>
               <a href="https://x.com/chem_fac" target="_blank" rel="noopener" class="profile-link">X (Twitter) @chem_fac</a>
-              <span class="profile-link-desc">日々の発信や宣伝</span>
+              <span class="profile-link-desc">日々の発信</span>
             </li>
           </ul>
         </div>
@@ -300,18 +306,13 @@
         <ul class="changelog-list">
 
           <li class="changelog-item">
-            <span class="changelog-date">2026-05-05</span>
-            <span class="changelog-text">ランダム出題機能を追加しました</span>
-          </li>
-
-          <li class="changelog-item">
             <span class="changelog-date">2026-03-29</span>
             <span class="changelog-text">令和7年度の過去問を追加しました</span>
           </li>
 
           <li class="changelog-item">
             <span class="changelog-date">2026-03-28</span>
-            <span class="changelog-text">令和6年度から平成23年度までの過去問を追加しました</span>
+            <span class="changelog-text">令和5年度から平成23年度までの過去問を追加しました</span>
           </li>
 
           <li class="changelog-item">
@@ -330,6 +331,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="./about/">当サイトについて</a></li>
+            <li><a href="./support/">当サイトを支援する</a></li>
             <li><a href="./privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>
@@ -357,7 +359,7 @@
       </div>
     </div>
   </footer>
-  <script src="./script.js"></script>
+<script src="./script.js"></script>
   <script src="./search.js"></script>
 </body>
 </html>

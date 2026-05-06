@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -29,12 +33,14 @@
   <header class="header">
     <div class="header-inner">
       <a href="../../" class="header-logo">
+        <img src="../../images/Book_and_molecule_logo_design.png" alt="技術士（化学部門）一次試験 過去問解説">
         <span>技術士（化学部門）一次試験 過去問解説</span>
       </a>
       <nav class="header-nav" id="header-nav">
         <a href="../../">年度一覧</a>
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
+        <a href="../../support/">支援する</a>
         <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
@@ -58,7 +64,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">一酸化炭素CO（気）、二酸化炭素CO 2 （気）、水H 2 O（液）の標準生成エンタルピーは、順に-111 kJ/mol、-394 kJ/mol、286 kJ/molである。以下の1～5の反応の標準反応エンタルピーを推算して、発熱反応であるものはどれか。</div>
+            <div class="question-text"><p>一酸化炭素CO（気）、二酸化炭素CO<sub>2</sub>（気）、水H<sub>2</sub>O（液）の標準生成エンタルピーは、順に-111 kJ/mol、-394 kJ/mol、286 kJ/molである。以下の1～5の反応の標準反応エンタルピーを推算して、発熱反応であるものはどれか。</p></div>
           </div>
         </div>
 
@@ -69,7 +75,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">①</span>
-              <span class="choice-text">CO（気）+H 2 （気）→ C（黒鉛）+H 2 O（液）</span>
+              <span class="choice-text">CO（気）+H<sub>2</sub>（気）→ C（黒鉛）+H<sub>2</sub>O（液）</span>
             </div>
           </div>
 
@@ -77,7 +83,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">②</span>
-              <span class="choice-text">CO（気）+H 2 O（液）→ H 2 （気）+CO 2 （気）</span>
+              <span class="choice-text">CO（気）+H<sub>2</sub>O（液）→ H<sub>2</sub>（気）+CO<sub>2</sub>（気）</span>
             </div>
           </div>
 
@@ -85,7 +91,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">CO 2 （気）→ CO（気）+(1/2)O 2 （気）</span>
+              <span class="choice-text">CO<sub>2</sub>（気）→ CO（気）+(1/2)O<sub>2</sub>（気）</span>
             </div>
           </div>
 
@@ -93,7 +99,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">C（黒鉛）+CO 2 （気）→ 2CO（気）</span>
+              <span class="choice-text">C（黒鉛）+CO<sub>2</sub>（気）→ 2CO（気）</span>
             </div>
           </div>
 
@@ -101,7 +107,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">⑤</span>
-              <span class="choice-text">C（黒鉛）+2H 2 O（液）→ 2H 2 （気）+CO 2 （気）</span>
+              <span class="choice-text">C（黒鉛）+2H<sub>2</sub>O（液）→ 2H<sub>2</sub>（気）+CO<sub>2</sub>（気）</span>
             </div>
           </div>
 
@@ -110,15 +116,17 @@
         <!-- Answer reveal -->
         <div class="answer-section">
           <div class="answer-content" id="answer-content">
+
             <div class="answer-box">
               <div class="answer-label">正答</div>
               <div class="answer-value">① CO（気）+H 2 （気）→ C（黒鉛）+H 2 O（液）</div>
             </div>
 
+
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-生成物のエンタルピーと反応物のエンタルピーの差を計算して、マイナスの値になれば発熱反応、プラスの値は吸熱反応です。注意点として、単体元素は最も安定な形態であるとみなし、標準状態での単体元素の標準生成エンタルピーは定義上0 kJ/molとされています。 -286 – (-111)＝-175 -394 – (-111-286)＝3 -111 – (-394)＝283 -111 × 2 – (-394)＝172 -394 – (-286 × 2)＝178 よって、1番が発熱反応です。
+<p>正答は<strong>1番</strong>です。</p><p>生成物のエンタルピーと反応物のエンタルピーの差を計算して、マイナスの値になれば発熱反応、プラスの値は吸熱反応です。注意点として、単体元素は最も安定な形態であるとみなし、標準状態での単体元素の標準生成エンタルピーは定義上0 kJ/molとされています。</p><ol><li>-286 – (-111)＝-175</li><li>-394 – (-111-286)＝3</li><li>-111 – (-394)＝283</li><li>-111 × 2 – (-394)＝172</li><li>-394 – (-286 × 2)＝178</li></ol><p>よって、1番が発熱反応です。</p>
               </div>
             </div>
           </div>
@@ -175,6 +183,7 @@
           <h4 class="footer-col-title">サイトについて</h4>
           <ul class="footer-col-list">
             <li><a href="../../about/">当サイトについて</a></li>
+            <li><a href="../../support/">当サイトを支援する</a></li>
             <li><a href="../../privacy/">プライバシーポリシー</a></li>
           </ul>
         </div>
