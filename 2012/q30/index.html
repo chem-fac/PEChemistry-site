@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>分子量が100,000、200,000、300,000の高分子がそれぞれ1個、2個、3個存在する場合の重量平均分子量は、次のどの範囲にあるか。</p></div>
+            <div class="question-text"><p>分子量が 100,000、200,000、300,000 の高分子がそれぞれ 1 個、2 個、3 個存在する場合の重量平均分子量は、次のどの範囲にあるか。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>5番</strong>です。</p><p>ある高分子が分子量M<sub>i</sub>の分子N<sub>i</sub>個からなる混合物である場合、その数平均分子量M<sub>n</sub>は式（1）で表され、分子の個数によって平均した値として求められます。また、重量平均分子量M<sub>w</sub>は重量分率による分子量の平均であり、式（2）で与えられます。さらに、高分子量成分の平均分子量への寄与を重視したものがz平均分子量M<sub>z</sub>であり、式（3）のように定義されています。</p><div><div><img alt="" loading="lazy" src="../../images/2012/q30/image-457.png" style="max-width: 100%; height: auto;"/></div></div><p>重量平均分子量M<sub>w</sub>は(100,000<sup>2</sup>×1＋200,000<sup>2</sup>×2＋300,000<sup>2</sup>×3) / (100,000×1＋200,000×2＋300,000×3)＝257,143です。よって250,001～300,000の範囲に入ります。</p>
+<p>正答は<strong>5番</strong>です。</p><p>ある高分子が分子量 \(M_i\) の分子 \(N_i\) 個からなる混合物である場合、その数平均分子量 \(M_n\) は分子の個数によって平均した値です。重量平均分子量 \(M_w\) は重量分率による分子量の平均であり、次式で与えられます。</p>$$M_w = \frac{\sum_i N_i M_i^{2}}{\sum_i N_i M_i}$$<p>計算すると</p>$$M_w = \frac{100{,}000^{2}\times 1 + 200{,}000^{2}\times 2 + 300{,}000^{2}\times 3}{100{,}000\times 1 + 200{,}000\times 2 + 300{,}000\times 3} = 257{,}143$$<p>よって 250,001～300,000 の範囲に入ります。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

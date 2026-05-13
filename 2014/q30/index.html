@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　1辺4 mの四角形の水槽がある。水槽には底面から高さ100 mmの所に内径φ20 mmのノズルが付いている。この水槽に水を入れ、そのノズルより排出される水の量を計測したところ10秒間に0.013 m<sup>3</sup>であった。このときの水槽の液深として、最も近い値はどれか。<br/>　なお、ノズルから水が流出するときの圧力損失は考慮しないものとし、ノズルからの水の流出速度はトリチェリの定理\( u=\sqrt{2gH}\)に従うものとする。<br/>u：流出流速（単位面積単位時間当たりの排出量）［m/s］、H：水面の高さ［m］、g：重力加速度9.8 m/s<sup>2</sup>、水の密度：1,000 kg/m<sup>3</sup></p></div>
+            <div class="question-text"><p>1 辺 4 m の四角形の水槽がある。水槽には底面から高さ 100 mm の所に内径 \(\phi 20\) mm のノズルが付いている。この水槽に水を入れ、そのノズルより排出される水の量を計測したところ 10 秒間に \(0.013\ \mathrm{m^{3}}\) であった。このときの水槽の液深として、最も近い値はどれか。なお、ノズルから水が流出するときの圧力損失は考慮しないものとし、ノズルからの水の流出速度はトリチェリの定理 \(u = \sqrt{2gH}\) に従うものとする。\(u\)：流出流速 \([\mathrm{m/s}]\)、\(H\)：水面の高さ \([\mathrm{m}]\)、\(g\)：重力加速度 \(9.8\ \mathrm{m/s^{2}}\)、水の密度 \(= 1{,}000\ \mathrm{kg/m^{3}}\)。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>5番</strong>です。</p><p>内径φ20 mmのノズルであるため、断面積は0.02<sup>2</sup>π/4＝0.000314 m<sup>2</sup>です。</p><p>そのノズルから排出される水が10秒間に0.013 m<sup>3</sup>であるため、流量は0.013 m<sup>3</sup>/10＝0.0013m<sup>3</sup>/sです。</p><p>流量と断面積より、ノズルからの水の流出速度uは（0.0013m<sup>3</sup>/s）/（0.000314 m<sup>2</sup>）＝4.14 m/sとなります。</p><p>トリチェリの定理u＝（2gH）<sup>1/2</sup>を用いてノズル位置からの水面の高さを求めると4.14＝（2×9.8×H）<sup>1/2</sup>となり、H＝0.87 mmです。</p><p>（式変形参考）<br/>4.14＝(2×9.8×H)<sup>1/2</sup><br/>(4.14)<sup>2</sup>＝{(2×9.8×H)<sup>1/2</sup>}<sup>2</sup><br/>(4.14)<sup>2</sup>＝(2×9.8×H)<br/>H＝(4.14)<sup>2</sup>/(2×9.8)<br/>H＝0.87</p><p>ノズルは底面から高さ100 mmの所に取り付いているため、水槽の液深は0.874＋0.1＝0.97 mmです。</p>
+<p>正答は<strong>5番</strong>です。</p><p>内径 \(\phi 20\) mm のノズルの断面積は \(0.02^{2}\pi/4 = 0.000314\ \mathrm{m^{2}}\) です。流量は \(0.013/10 = 0.0013\ \mathrm{m^{3}/s}\)、流出速度 \(u = 0.0013/0.000314 = 4.14\ \mathrm{m/s}\) です。</p>$$H = \frac{u^{2}}{2g} = \frac{4.14^{2}}{2\times 9.8} \approx 0.87\ \mathrm{m}$$<p>ノズルは底面から高さ 100 mm の所に取り付いているため、水槽の液深は \(0.87 + 0.1 = 0.97\) m です。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

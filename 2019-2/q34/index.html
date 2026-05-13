@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>大気開放タンクに一定深さh＝0.34 mで水が入っている。タンク底に長さL＝1 m、管内径D＝3 mmの円管を水平に接続し、大気中に水を流出させたとき、管内の平均流速u［m/s］として最も近い値はどれか？管入口出口間の圧力損失は、ΔP=4f (ρu<sup>2</sup>/2)(L/D)で計算され、これがタンク底の静水圧に等しい。ただし、管摩擦係数f＝0.005、水の密度ρ＝1,000 kg/m<sup>3</sup>、重力加速度g＝9.8 m<sup>2</sup>/sとする。</p><div><div><img alt="" loading="lazy" src="../../images/2019-2/q34/image-603.png" style="max-width: 100%; height: auto;"/></div></div></div>
+            <div class="question-text"><p>大気開放タンクに一定深さ \(h = 0.34\ \mathrm{m}\) で水が入っている。タンク底に長さ \(L = 1\ \mathrm{m}\)、管内径 \(D = 3\ \mathrm{mm}\) の円管を水平に接続し、大気中に水を流出させたとき、管内の平均流速 \(u\ [\mathrm{m/s}]\) として最も近い値はどれか。管入口出口間の圧力損失は、</p>$$\Delta P = 4f\,\frac{\rho u^{2}}{2}\cdot\frac{L}{D}$$<p>で計算され、これがタンク底の静水圧に等しい。ただし、管摩擦係数 \(f = 0.005\)、水の密度 \(\rho = 1{,}000\ \mathrm{kg/m^{3}}\)、重力加速度 \(g = 9.8\ \mathrm{m/s^{2}}\) とする。</p><div><img alt="" loading="lazy" src="../../images/2019-2/q34/image-603.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>ベルヌーイの定理より、理想流体では位置エネルギーや圧力エネルギー、速度エネルギーの和が一定になることを利用します。つまりタンク液面部とタンク底部のエネルギ－は一定であると考えられます。</p><p>ベルヌーイの定理（圧力換算）［Pa］$$\rho gz+P+\frac{ \rho \ u^2\ }{2}=一定$$ρ：密度［kg/m<sup>3</sup>］、g：重力加速度［m/s<sup>2</sup>］、z：高さ［m］<br/>P：圧力［Pa］、u：速度［m/s］</p><p>大気開放タンクのため圧力エネルギーは両位置においても大気圧がかかっており一定です。タンク液面部においてはタンク径が十分に大きく、タンク底から液が出る時に液面高さが変わらないとすると、速度エネルギーはゼロとみなせます。タンク底部においては高さがゼロであるため位置エネルギーがゼロとなります。よって理想流体においては、タンク液面の位置エネルギー（ρgh）はタンク底部の速度エネルギー（ρu<sup>2</sup>/2）に全て変換されます。更にここから流れによる損失を加味して計算します。</p><p>配管内を流体が流れる時、摩擦によるエネルギー損失が発生します。その時のエネルギー損失量を圧力で表した値が圧力損失です。問題では静水圧（タンク液面の位置エネルギー）と圧力損失が等しくなるとあります。圧力損失は問題に記載されているΔP=4f (ρu<sup>2</sup>/2)(L/D)を用います。</p><p>ρgh＝4f (ρu<sup>2</sup>/2)(L/D)<br/>gh=4f (u<sup>2</sup>/2)(L/D)<br/>9.8×0.34＝4×0.005×(u<sup>2</sup>/2)×(1/0.003)</p><p>上記方程式を解くと、管内の平均流速uは1.0 m/sです。</p>
+<p>正答は<strong>3番</strong>です。</p><p>ベルヌーイの定理より、理想流体では位置エネルギーや圧力エネルギー、速度エネルギーの和が一定になることを利用します。つまりタンク液面部とタンク底部のエネルギーは一定であると考えられます。</p><p>ベルヌーイの定理（圧力換算）\([\mathrm{Pa}]\)：</p>$$\rho g z + P + \frac{\rho u^{2}}{2} = \text{一定}$$<p>\(\rho\)：密度 \([\mathrm{kg/m^{3}}]\)、\(g\)：重力加速度 \([\mathrm{m/s^{2}}]\)、\(z\)：高さ \([\mathrm{m}]\)、\(P\)：圧力 \([\mathrm{Pa}]\)、\(u\)：速度 \([\mathrm{m/s}]\)</p><p>大気開放タンクのため圧力エネルギーは両位置においても大気圧がかかっており一定です。タンク液面部においてはタンク径が十分に大きく、タンク底から液が出るときに液面高さが変わらないとすると、速度エネルギーはゼロとみなせます。タンク底部においては高さがゼロであるため位置エネルギーがゼロとなります。よって理想流体においては、タンク液面の位置エネルギー \(\rho g h\) はタンク底部の速度エネルギー \(\rho u^{2}/2\) に全て変換されます。更にここから流れによる損失を加味して計算します。</p><p>配管内を流体が流れるとき、摩擦によるエネルギー損失が発生します。その時のエネルギー損失量を圧力で表した値が圧力損失です。問題では静水圧（タンク液面の位置エネルギー）と圧力損失が等しくなるとあります。圧力損失は問題に記載されている \(\Delta P = 4f(\rho u^{2}/2)(L/D)\) を用います。</p>$$\rho g h = 4f\,\frac{\rho u^{2}}{2}\cdot\frac{L}{D}\;\Rightarrow\; g h = 4f\,\frac{u^{2}}{2}\cdot\frac{L}{D}$$$$9.8\times 0.34 = 4\times 0.005\times\frac{u^{2}}{2}\times\frac{1}{0.003}$$<p>上記方程式を解くと、管内の平均流速 \(u\) は 1.0 m/s です。</p>
               </div>
             </div>
           </div>
@@ -209,7 +213,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

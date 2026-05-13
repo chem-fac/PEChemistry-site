@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　一般的に撹拌所要動力PはP=N<sub>p</sub>ρn<sup>3</sup>d<sup>5</sup>（N<sub>p</sub>：動力数、ρ：液密度、n：回転数、d：翼径）で表示される。今、図Aの1m<sup>3</sup>撹拌槽を基に相似形として図Bのとおりにスケールアップした。図Aの撹拌槽における撹拌所要動力は撹拌回転数150 rpmのとき、0.75kWであった。スケールアップ槽撹拌翼の回転数を50 rpmとしたとき、スケールアップ槽撹拌機の撹拌所要動力として最も近い値はどれか。<br/>　ただし、N<sub>p</sub>は一定とし、撹拌機減速機、及びシール部等の機械的な消費動力は考慮しないものとする。</p><div><div><img alt="" loading="lazy" src="../../images/2012/q31/image-412.png" style="max-width: 100%; height: auto;"/></div></div></div>
+            <div class="question-text"><p>一般的に撹拌所要動力 \(P\) は \(P = N_p\,\rho\,n^{3}\,d^{5}\)（\(N_p\)：動力数、\(\rho\)：液密度、\(n\)：回転数、\(d\)：翼径）で表示される。今、図 A の \(1\ \mathrm{m^{3}}\) 撹拌槽を基に相似形として図 B のとおりにスケールアップした。図 A の撹拌槽における撹拌所要動力は撹拌回転数 150 rpm のとき、0.75 kW であった。スケールアップ槽撹拌翼の回転数を 50 rpm としたとき、スケールアップ槽撹拌機の撹拌所要動力として最も近い値はどれか。ただし、\(N_p\) は一定とし、撹拌機減速機、及びシール部等の機械的な消費動力は考慮しないものとする。</p><div><img alt="" loading="lazy" src="../../images/2012/q31/image-412.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>2番</strong>です。</p><p>まずスケールアップ前の動力数を求めます。液密度はρの定数として扱います。0.75=N<sub>p</sub>ρ × 150<sup>3</sup> × 0.5<sup>5</sup>となり、N<sub>p</sub>＝0.75 / (ρ × 150<sup>3</sup> × 0.5<sup>5</sup>)です。</p><p>動力数は一定のため、スケールアップ時の撹拌所要動力P＝{0.75 / (ρ × 150<sup>3</sup> × 0.5<sup>5</sup>)} × ρ × 50<sup>3</sup> × 1.5<sup>5</sup>＝6.75 kWです。</p>
+<p>正答は<strong>2番</strong>です。</p><p>スケールアップ前の動力数：</p>$$0.75 = N_p\,\rho\,\times 150^{3}\times 0.5^{5} \;\Rightarrow\; N_p = \frac{0.75}{\rho\times 150^{3}\times 0.5^{5}}$$<p>スケールアップ時の撹拌所要動力：</p>$$P = N_p\,\rho\times 50^{3}\times 1.5^{5} = \frac{0.75}{\rho\times 150^{3}\times 0.5^{5}}\times \rho\times 50^{3}\times 1.5^{5} = 6.75\ \mathrm{kW}$$<p>最も近い値は 7 kW です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

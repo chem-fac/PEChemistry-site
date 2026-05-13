@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>温度が一定に保たれた回分反応装置でA→Bの反応を行った。反応速度はA成分濃度の2乗に比例する。反応を開始してから1時間後に反応率が50%になった。反応率が75%となるのは、反応を開始してから何時間後か最も近いものはどれか。</p></div>
+            <div class="question-text"><p>温度が一定に保たれた回分反応装置で \(\mathrm{A}\rightarrow\mathrm{B}\) の反応を行った。反応速度は A 成分濃度の 2 乗に比例する。反応を開始してから 1 時間後に反応率が 50% になった。反応率が 75% となるのは、反応を開始してから何時間後か最も近いものはどれか。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>「反応速度はA成分濃度の2乗に比例する」とあるため、反応速度式dC/dt=-kC<sup>2</sup>（k：反応速度定数、t：時間）という微分方程式が立てられます。分離変数法で分解します。</p><p>まず変数Cとtで分けるためdC/C<sup>2</sup>＝-kdtの形に変形します。</p><p><em>C</em>の関数として左辺を、tの関数として右辺をそれぞれ積分します。<br/>∫(1/​C<sup>2</sup>)dC＝∫−kdt<br/>-1/C＝-kt＋定数</p><p>初期条件、t＝0の時の濃度を C<sub>0</sub>とすると、-1/C<sub>0</sub>＝-k × 0 + 定数となり、-1/C<sub>0</sub>＝定数が成り立ちます。この式を元の積分後の式に代入します。<br/>-1/C＝-kt＋(-1/C<sub>0</sub>)<br/>1/C＝kt＋1/C<sub>0</sub></p><p>Cは反応後の原料濃度ですので、50％反応した時はC=C<sub>0</sub>/2とみなせます。1時間後に反応率が50%になっていることから反応速度定数を求めます。<br/>1/C＝kt＋1/C<sub>0</sub><br/>1/(C<sub>0</sub>/2)＝k × 1＋1/C<sub>0</sub><br/>2/C<sub>0</sub>＝k＋1/C<sub>0</sub><br/>k＝1/C<sub>0</sub></p><p>反応定数kが求まりましたので、75％反応した時の反応時間を考えます。C=C<sub>0</sub>/4です。<br/>1/C＝kt＋1/C<sub>0</sub><br/>1/(C<sub>0</sub>/4)＝(1/C<sub>0</sub>)t＋1/C<sub>0</sub><br/>4/C<sub>0</sub>＝t/C<sub>0</sub> ＋1/C<sub>0</sub><br/>4＝t＋1<br/>t＝ 3 時間</p><p>よって反応率が75%となるのは、反応を開始してから3時間後です。</p>
+<p>正答は<strong>3番</strong>です。</p><p>「反応速度は A 成分濃度の 2 乗に比例する」とあるため、反応速度式</p>$$\frac{dC}{dt} = -k\,C^{2}\quad(k：反応速度定数、t：時間)$$<p>という微分方程式が立てられます。分離変数法で分解し、\(dC/C^{2} = -k\,dt\) の形に変形して両辺を積分します。</p>$$-\frac{1}{C} = -k\,t + \text{定数}$$<p>初期条件 \(t = 0\) の時の濃度を \(C_0\) とすると、\(-1/C_0 = \text{定数}\) です。代入して</p>$$\frac{1}{C} = k\,t + \frac{1}{C_0}$$<p>50% 反応したとき \(C = C_0/2\)。1 時間後に反応率 50% であることから</p>$$\frac{1}{C_0/2} = k\times 1 + \frac{1}{C_0} \;\Rightarrow\; k = \frac{1}{C_0}$$<p>75% 反応したとき \(C = C_0/4\)。</p>$$\frac{1}{C_0/4} = \frac{1}{C_0}\,t + \frac{1}{C_0} \;\Rightarrow\; t = 3\ \text{時間}$$<p>よって反応率が 75% となるのは、反応を開始してから 3 時間後です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

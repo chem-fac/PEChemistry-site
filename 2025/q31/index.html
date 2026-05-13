@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">体積V、濃度C 0 のフェノールの水溶液がある。これに活性炭をWだけ投入して吸着平衡に達したとき、水溶液中のフェノール濃度Cとして、最も近い値はどれか。吸着平衡は活性炭中のフェノール濃度をq * として、次式のフロイントリッヒ型で表せるとする。 q * = 0.5 C 1/2 [kg-phenol/kg-活性炭] 変数、単位と数値は以下の通りとする。 フェノール水溶液の濃度 C 0 = 0.10 kg-phenol/m 3 -water フェノール水溶液の体積 V = 10 m 3 活性炭投入量 W = 20 kg 吸着平衡時の水溶液中のフェノール濃度 C [kg-phenol/m 3 -water] 根の公式は次の通りである。 0 = ay 2 + by + c、y = (-b ± √(b 2 - 4ac)) / 2a</div>
+            <div class="question-text">体積 \(V\)、濃度 \(C_0\) のフェノールの水溶液がある。これに活性炭を \(W\) だけ投入して吸着平衡に達したとき、水溶液中のフェノール濃度 \(C\) として、最も近い値はどれか。吸着平衡は活性炭中のフェノール濃度を \(q^{*}\) として、次式のフロイントリッヒ型で表せるとする。$$q^{*} = 0.5\,C^{1/2}\quad[\mathrm{kg\text{-}phenol/kg\text{-}活性炭}]$$変数、単位と数値は以下の通りとする。フェノール水溶液の濃度 \(C_0 = 0.10\ \mathrm{kg\text{-}phenol/m^{3}\text{-}water}\)、フェノール水溶液の体積 \(V = 10\ \mathrm{m^{3}}\)、活性炭投入量 \(W = 20\ \mathrm{kg}\)、吸着平衡時の水溶液中のフェノール濃度 \(C\) \([\mathrm{kg\text{-}phenol/m^{3}\text{-}water}]\)。根の公式は次の通りである。$$0 = ay^{2} + by + c,\quad y = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$$</div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-フェノールの物質収支は C 0 V = CV + qW で、q = 0.5 C^{1/2} を代入すると 1 = 10C + 10√C になります。x = √C とおけば x 2 + x − 0.1 = 0 で、C ≈ 0.0084 だから②。
+フェノールの物質収支は \(C_0 V = CV + qW\) で、\(q = 0.5\,C^{1/2}\) を代入すると$$1 = 10C + 10\sqrt{C}$$になります。\(x = \sqrt{C}\) とおけば$$x^{2} + x - 0.1 = 0$$で、\(C \approx 0.0084\) だから②です。
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　酸素ガスと窒素ガスの混合気体を303 Kの水に通気したときに水溶液中の酸素濃度が20質量ppmとなった。混合ガス中の酸素濃度として最も近い値はどれか。<br/>　なお、P<sub>A</sub>=HC<sub>A</sub>（P<sub>A</sub>：平衡ガス分圧/Pa、H：ヘンリー定数/Pa m<sup>3</sup> mol<sup>-1</sup>、C<sub>A</sub>：ガスAの溶解度/mol m<sup>-3</sup>）、酸素ガスの303 Kでのヘンリー定数Hは8.66×10<sup>4</sup> Pa m<sup>3</sup> mol<sup>-1</sup>とする。<br/>　また、水の分子量は18、酸素の分子量は32、混合気体の圧力は1.013×10<sup>5</sup> Paとする。</p></div>
+            <div class="question-text"><p>酸素ガスと窒素ガスの混合気体を 303 K の水に通気したときに水溶液中の酸素濃度が 20 質量 ppm となった。混合ガス中の酸素濃度として最も近い値はどれか。</p><p>なお、</p>$$P_A = H\,C_A$$<p>（\(P_A\)：平衡ガス分圧 [Pa]、\(H\)：ヘンリー定数 \([\mathrm{Pa\,m^{3}\,mol^{-1}}]\)、\(C_A\)：ガス A の溶解度 \([\mathrm{mol/m^{3}}]\)）、酸素ガスの 303 K でのヘンリー定数 \(H = 8.66\times 10^{4}\ \mathrm{Pa\,m^{3}\,mol^{-1}}\) とする。また、水の分子量は 18、酸素の分子量は 32、混合気体の圧力は \(1.013\times 10^{5}\) Pa とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>水溶液中の酸素濃度が20質量ppmとあるため、水1,000,000 gに20g、つまり1kgの水に20mgの酸素が溶解している計算です。今回、ガスAの溶解度C<sub>A</sub>をmol m<sup>-3</sup>の単位で計算しますので水1 m<sup>3</sup>（＝1000 L＝1000 kg）あたりの酸素溶解量は20gです。</p><p>酸素20gの分子量は20/32 molです。これがC<sub>A</sub>の値となります。</p><p>酸素ガスの303 Kでのヘンリー定数Hが8.66×10<sup>4</sup> Pa m<sup>3</sup> mol<sup>-1</sup>とされています。</p><p>ヘンリーの法則を用いるとP<sub>A</sub>=8.66×10<sup>4</sup>×20/32＝5.41×10<sup>4</sup> Paです。</p><p>混合気体の圧力が1.013×10<sup>5</sup> Paであるため、5.41×10<sup>4</sup> / 1.013×10<sup>5</sup>×100＝53％です。つまり50％が一番近い値となります。</p>
+<p>正答は<strong>3番</strong>です。</p><p>水溶液中の酸素濃度が 20 質量 ppm とあるため、水 \(1\ \mathrm{m^{3}}\)（\(= 1000\) kg）あたりの酸素溶解量は 20 g です。酸素 20 g の物質量は \(20/32\) mol で、これが \(C_A\) の値となります。</p><p>ヘンリーの法則より \(P_A = 8.66\times 10^{4}\times 20/32 = 5.41\times 10^{4}\) Pa です。混合気体の圧力が \(1.013\times 10^{5}\) Pa であるため、\(5.41\times 10^{4}/1.013\times 10^{5}\times 100 = 53\%\) です。最も近い値は 50% です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

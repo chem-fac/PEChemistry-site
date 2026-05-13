@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　ジアミンとジカルボン酸から高重合度のポリアミドを合成するためには、反応度（p）を1に近づけることが必要である。また、両モノマーのモル比を正確に1：1にすることも必要であり、モル比が1：1からずれると、到達する平均重合度が低下する。言い換えれば、両モノマーの仕込みモル比を調節することにより、得られるポリアミドの平均重合度を制御することができる。モノマーAの仕込みモル量（N<sub>A</sub>）がモノマーBの仕込みモル量（N<sub>B</sub>）より少ない（N<sub>A</sub>＜N<sub>B</sub>）場合、反応度がpになったときに達し得る数平均重合度（P<sub>n</sub>）は次式で表される。</p><p>$$ P_{n}=\frac{1+r}{2r(1-p)+(1-r)}　　(ただし r=N_{A}/N_{B})$$</p><p>アジピン酸をヘキサメチレンジアミンよりも0.5モル%少なく仕込んで反応度が1になるまで溶融重縮合を行った場合に達し得る数平均重合度に最も近い値はどれか。</p></div>
+            <div class="question-text"><p>ジアミンとジカルボン酸から高重合度のポリアミドを合成するためには、反応度 \(p\) を 1 に近づけることが必要である。また、両モノマーのモル比を正確に 1:1 にすることも必要であり、モル比が 1:1 からずれると、到達する平均重合度が低下する。言い換えれば、両モノマーの仕込みモル比を調節することにより、得られるポリアミドの平均重合度を制御することができる。モノマー A の仕込みモル量 \(N_A\) がモノマー B の仕込みモル量 \(N_B\) より少ない（\(N_A < N_B\)）場合、反応度が \(p\) になったときに達し得る数平均重合度 \(P_n\) は次式で表される。</p>$$P_n = \frac{1 + r}{2r(1 - p) + (1 - r)}\quad(\text{ただし }r = N_A/N_B)$$<p>アジピン酸をヘキサメチレンジアミンよりも 0.5 mol% 少なく仕込んで反応度が 1 になるまで溶融重縮合を行った場合に達し得る数平均重合度に最も近い値はどれか。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>反応度が1になった時、与えられた式にp=1を代入すると、Pn＝(1+r)/(1-r)で表せます。</p><p>アジピン酸（モノマーA）がヘキサメチレンジアミン（モノマーB）より0.5モル%少ないということは、N<sub>A</sub>＝N<sub>B</sub>-0.005N<sub>B</sub>と表現できます。よってr＝N<sub>A</sub> / N<sub>B</sub>＝(N<sub>B</sub>-0.005N<sub>B</sub>) / N<sub>B</sub>＝0.995です。</p><p>Pn＝(1+r) / (1-r)＝(1+0.995) / (1-0.995)＝399となり、最も近い値は400です。</p>
+<p>正答は<strong>4番</strong>です。</p><p>反応度が 1 になったとき、与えられた式に \(p = 1\) を代入すると \(P_n = (1 + r)/(1 - r)\) で表せます。</p><p>アジピン酸（モノマー A）がヘキサメチレンジアミン（モノマー B）より 0.5 mol% 少ないということは、\(N_A = N_B - 0.005\,N_B\) と表現できます。よって \(r = N_A/N_B = 0.995\)。</p>$$P_n = \frac{1 + 0.995}{1 - 0.995} = 399$$<p>最も近い値は 400 です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

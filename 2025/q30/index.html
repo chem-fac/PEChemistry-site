@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">内容積1,000リットル、圧力p=1.00気圧、温度300Kの密閉タンクに、ジメチルエーテル（CH 3 OCH 3 、DME）の蒸気が6.00vol%、空気が94.0vol%（酸素19.7vol%、窒素74.3vol%）入っている。この混合ガスを燃焼させてDMEを完全燃焼させ、DMEをすべて二酸化炭素と水に変えた。400Kに下がったときの密閉タンク内の圧力pとして、最も近い値はどれか。 燃焼前後のガスはすべて理想気体であると仮定する。必要であれば、以下の値を用いて良い。 気体定数 R=0.08206 L・atm mol -1 K -1</div>
+            <div class="question-text">内容積 1,000 リットル、圧力 \(p = 1.00\) 気圧、温度 300 K の密閉タンクに、ジメチルエーテル（\(\mathrm{CH_3OCH_3}\)、DME）の蒸気が 6.00 vol%、空気が 94.0 vol%（酸素 19.7 vol%、窒素 74.3 vol%）入っている。この混合ガスを燃焼させて DME を完全燃焼させ、DME をすべて二酸化炭素と水に変えた。400 K に下がったときの密閉タンク内の圧力 \(p\) として、最も近い値はどれか。燃焼前後のガスはすべて理想気体であると仮定する。必要であれば、以下の値を用いて良い。気体定数 \(R = 0.08206\ \mathrm{L\cdot atm\cdot mol^{-1}\cdot K^{-1}}\)</div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-反応は CH 3 OCH 3 + 3O 2 → 2CO 2 + 3H 2 O で、初期 100 mol 中 DME 6 mol、O 2 19.7 mol なら O 2 は 1.7 mol 余る。生成後の総モル数は 106 mol なので、定容条件で P 2 /P 1 = (106/100)×(400/300) ≈ 1.41 となり④です。
+反応は$$\mathrm{CH_3OCH_3} + 3\,\mathrm{O_2} \rightarrow 2\,\mathrm{CO_2} + 3\,\mathrm{H_2O}$$で、初期 100 mol 中 DME 6 mol、\(\mathrm{O_2}\) 19.7 mol なら \(\mathrm{O_2}\) は 1.7 mol 余る。生成後の総モル数は 106 mol なので、定容条件で$$\frac{P_2}{P_1} = \frac{106}{100}\times\frac{400}{300} \approx 1.41$$となり④です。
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

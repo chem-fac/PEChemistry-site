@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>次のように、トラック輸送を鉄道輸送に転換した場合のCO<sub>2</sub>削減率として、最も近い値はどれか。</p><p>発地A、着地B、発地側積み替え駅A1、着地側積み替え駅B1<br/>年間貨物量：5,000 t<br/>現状輸送経路：A－（トラック500 km）→ B<br/>転換後輸送経路：A－（トラック45 km）→ A1－（鉄道450 km）→ B1－（トラック50 km）→ B<br/>鉄道のCO<sub>2</sub>排出原単位：21 g CO<sub>2</sub> t<sup>-1</sup>km<sup>-1</sup><br/>トラックのCO<sub>2</sub>排出原単位を以下の条件をもとに計算せよ。<br/>トラックの燃料消費原単位は、56 g燃料 t<sup>-1</sup>km<sup>-1</sup>とする。<br/>トラック用燃料の成分は、C<sub>17</sub>H<sub>34</sub>とする。<br/>燃料は完全燃焼する。<br/>C、H、Oの原子量は、それぞれ12、1、16とする。</p></div>
+            <div class="question-text"><p>次のように、トラック輸送を鉄道輸送に転換した場合の \(\mathrm{CO_2}\) 削減率として、最も近い値はどれか。</p><p>発地 A、着地 B、発地側積み替え駅 A1、着地側積み替え駅 B1<br/>年間貨物量：5,000 t<br/>現状輸送経路：A －（トラック 500 km）→ B<br/>転換後輸送経路：A －（トラック 45 km）→ A1 －（鉄道 450 km）→ B1 －（トラック 50 km）→ B<br/>鉄道の \(\mathrm{CO_2}\) 排出原単位：\(21\ \mathrm{g\,CO_2\,t^{-1}\,km^{-1}}\)</p><p>トラックの \(\mathrm{CO_2}\) 排出原単位を以下の条件をもとに計算せよ。トラックの燃料消費原単位は、\(56\ \mathrm{g燃料\,t^{-1}\,km^{-1}}\) とする。トラック用燃料の成分は、\(\mathrm{C_{17}H_{34}}\) とする。燃料は完全燃焼する。C、H、O の原子量は、それぞれ 12、1、16 とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>5番</strong>です。</p><p>鉄道のCO<sub>2</sub>排出原単位は、問題より21 g CO<sub>2</sub> t<sup>-1</sup>km<sup>-1</sup>です。</p><p>トラックのCO<sub>2</sub>排出原単位は、燃料原単位56 g燃料 t<sup>-1</sup>km<sup>-1</sup>から計算します。燃料はC<sub>17</sub>H<sub>34</sub>ですので、燃焼式を考えます。</p><p>C<sub>17</sub>H<sub>34</sub> ＋25.5 O<sub>2</sub> → 17 CO<sub>2</sub>＋17 H<sub>2</sub>O</p><p>燃料1モルを燃焼するとCO<sub>2</sub>が17モル発生することが分かります。C<sub>17</sub>H<sub>34</sub>およびCO<sub>2</sub>の分子量は、それぞれ238と44です。トラックのCO<sub>2</sub>排出原単位は56 / 238 × 17 × 44＝176 g CO<sub>2</sub> t<sup>-1</sup>km<sup>-1</sup>となります。</p><p>輸送経路の変更前後でのCO<sub>2</sub>排出量を計算します。</p><p>現状輸送経路：500 × 176＝88,000 g CO<sub>2</sub> t<sup>-1</sup><br/>転換後輸送経路：(95 × 176)＋(450 × 21)＝9,450 g CO<sub>2</sub> t<sup>-1</sup></p><p>得られた単位が g CO<sub>2</sub> t<sup>-1</sup>ですが、年間貨物量5,000 tは変わらず、今回求めるのは削減率ですのでそのまま使用できます。</p><p>輸送方法を変更したとき、9,450 / 88,000 × 100＝30％に減少していますので、削減率は70％です。</p>
+<p>正答は<strong>5番</strong>です。</p><p>燃焼式：</p>$$\mathrm{C_{17}H_{34}} + 25.5\,\mathrm{O_2} \rightarrow 17\mathrm{CO_2} + 17\mathrm{H_2O}$$<p>燃料 1 モルを燃焼すると \(\mathrm{CO_2}\) が 17 モル発生。\(\mathrm{C_{17}H_{34}}\) と \(\mathrm{CO_2}\) の分子量は 238、44 です。トラックの \(\mathrm{CO_2}\) 排出原単位は \(56/238\times 17\times 44 = 176\ \mathrm{g\,CO_2\,t^{-1}\,km^{-1}}\)。</p><p>現状：\(500\times 176 = 88{,}000\ \mathrm{g\,CO_2/t}\)<br/>転換後：\((95\times 176) + (450\times 21) = 9{,}450\ \mathrm{g\,CO_2/t}\)<br/>比率：\(9{,}450/88{,}000\times 100 = 30\%\) に減少。削減率は 70% です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

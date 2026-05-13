@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>口径3.0 mmのノズルから噴水が20 mの高さに上がっている。</p><div><img alt="" loading="lazy" src="../../images/2018/q31/image-459.png" style="max-width: 100%; height: auto;"/></div><p>（u：流速、g：重力加速度、z：位置、p：圧力、ρ：流体密度）<br/>を用いると、水の単位時間当たりの噴出量に最も近い値はどれか。</p><div><img alt="" loading="lazy" src="../../images/2018/q31/image-618.png" style="max-width: 100%; height: auto;"/></div></div>
+            <div class="question-text"><p>口径 3.0 mm のノズルから噴水が 20 m の高さに上がっている。</p><div><img alt="" loading="lazy" src="../../images/2018/q31/image-459.png" style="max-width: 100%; height: auto;"/></div><p>（\(u\)：流速、\(g\)：重力加速度、\(z\)：位置、\(p\)：圧力、\(\rho\)：流体密度）を用いると、水の単位時間当たりの噴出量に最も近い値はどれか。</p><div><img alt="" loading="lazy" src="../../images/2018/q31/image-618.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -75,7 +79,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">①</span>
-              <span class="choice-text">1.5 L min<sup>-1</sup></span>
+              <span class="choice-text">1.5 L min -1</span>
             </div>
           </div>
 
@@ -83,7 +87,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">②</span>
-              <span class="choice-text">8.4 L min<sup>-1</sup></span>
+              <span class="choice-text">8.4 L min -1</span>
             </div>
           </div>
 
@@ -91,7 +95,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">21 L min<sup>-1</sup></span>
+              <span class="choice-text">21 L min -1</span>
             </div>
           </div>
 
@@ -99,7 +103,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">84 L min<sup>-1</sup></span>
+              <span class="choice-text">84 L min -1</span>
             </div>
           </div>
 
@@ -107,7 +111,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">⑤</span>
-              <span class="choice-text">840 L min<sup>-1</sup></span>
+              <span class="choice-text">840 L min -1</span>
             </div>
           </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>2番</strong>です。</p><p>まず、ベルヌーイの定理を用いて噴出速度を求めます。ノズルの出口と噴水の最高点で適用すると、両点で大気圧がかかる事は同じなため圧力項p/ρgは無視できます。またノズル出口のポテンシャル(位置)項zは0、ノズル噴水最高点の速度項u2/2gは0です。u<sup>2</sup>/2×9.8＝20と立てられ、u＝20 m/sです。この考え方により導かれる速度式はトリチェリの定理と呼ばれます。</p><p>ノズルの断面積は(0.003)<sup>2</sup>π/4 m<sup>2</sup>であり、流量Ｑは20 m/s × (0.003)<sup>2</sup>π/4 m<sup>2</sup>＝1.41 × 10<sup>-4</sup> m<sup>3</sup>/sです。回答の単位L/minに合わせると、1.41 × 10<sup>-4</sup> m<sup>3</sup>/s × 60 × 1000＝8.49 L/minとなり、最も近い値は8.4 L/minです。</p>
+<p>正答は<strong>2番</strong>です。</p><p>まず、ベルヌーイの定理を用いて噴出速度を求めます。ノズルの出口と噴水の最高点で適用すると、両点で大気圧がかかることは同じなため圧力項 \(p/(\rho g)\) は無視できます。またノズル出口のポテンシャル（位置）項 \(z\) は 0、噴水最高点の速度項 \(u^{2}/(2g)\) は 0 です。よって \(u^{2}/(2\times 9.8) = 20\) と立てられ、\(u = 20\ \mathrm{m/s}\) です。この考え方により導かれる速度式はトリチェリの定理と呼ばれます。</p><p>ノズルの断面積は \((0.003)^{2}\pi/4\ \mathrm{m^{2}}\) であり、流量 \(Q\) は</p>$$Q = 20\ \mathrm{m/s}\times\frac{(0.003)^{2}\pi}{4}\ \mathrm{m^{2}} = 1.41\times 10^{-4}\ \mathrm{m^{3}/s}$$<p>です。回答の単位 L/min に合わせると、\(1.41\times 10^{-4}\ \mathrm{m^{3}/s}\times 60\times 1000 = 8.49\ \mathrm{L/min}\) となり、最も近い値は 8.4 L/min です。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

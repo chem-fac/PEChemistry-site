@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　15wt%の食塩水の1気圧における沸点について、最も近い温度はどれか。<br/>　ただし、食塩は水溶液中で100%解離するものとし、イオン化されたNa及びClは非揮発性とする。</p><p>　　NaCl→Na<sup>+</sup>+Cl<sup>–</sup></p><p>　また、水の気液平衡係数K<sub>H2O</sub>は次式で表されるとする。ここで、p*<sub>H2O</sub>は水の蒸気圧、Pは全圧とする。</p><p>　　K<sub>H2O</sub>=p*<sub>H2O</sub> / P</p><p>　NaCl及びH<sub>2</sub>Oの分子量はそれぞれ、58.5、18.0とする。また、水の蒸気圧は以下を参照のこと。</p><div class="table-responsive"><table class="question-table"><tbody><tr><td>温度（℃）</td><td>100</td><td>101</td><td>102</td><td>103</td><td>104</td><td>105</td><td>106</td></tr><tr><td>蒸気圧（MPa）</td><td>0.1000</td><td>0.1036</td><td>0.1074</td><td>0.1112</td><td>0.1152</td><td>0.1192</td><td>0.1234</td></tr></tbody></table></div></div>
+            <div class="question-text"><p>15 wt% の食塩水の 1 気圧における沸点について、最も近い温度はどれか。ただし、食塩は水溶液中で 100% 解離するものとし、イオン化された Na 及び Cl は非揮発性とする。</p>$$\mathrm{NaCl} \rightarrow \mathrm{Na^{+}} + \mathrm{Cl^{-}}$$<p>また、水の気液平衡係数 \(K_{\mathrm{H_2O}}\) は次式で表されるとする。ここで、\(p^{*}_{\mathrm{H_2O}}\) は水の蒸気圧、\(P\) は全圧とする。</p>$$K_{\mathrm{H_2O}} = p^{*}_{\mathrm{H_2O}}/P$$<p>NaCl 及び \(\mathrm{H_2O}\) の分子量はそれぞれ 58.5、18.0 とする。また、水の蒸気圧は以下を参照のこと。</p><div class="table-responsive"><table class="question-table"><tbody><tr><td>温度 [℃]</td><td>100</td><td>101</td><td>102</td><td>103</td><td>104</td><td>105</td><td>106</td></tr><tr><td>蒸気圧 [MPa]</td><td>0.1000</td><td>0.1036</td><td>0.1074</td><td>0.1112</td><td>0.1152</td><td>0.1192</td><td>0.1234</td></tr></tbody></table></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>15wt%の食塩水を100g用意したとすると、塩化ナトリウムが15g、水が85g含まれています。よって、塩化ナトリウムが15/58.5＝0.256 mol、水が85/18＝4.72 molとなります。</p><p>食塩は水溶液中で100％乖離するとされていますので、Na<sup>+</sup>とCl<sup>–</sup>が存在します。そのため塩化ナトリウム0.256 molでは0.256 × 2＝0.512 molのイオンが存在することとなります。このイオンが存在する分だけ水分子の蒸発を妨げます。水の濃度は4.72 / (4.72＋0.512)＝0.902です。</p><p>水の気液平衡係数K<sub>H2O</sub>は液体から気体への状態変化に対する平衡定数ですので、K<sub>H2O</sub>＝[H<sub>2</sub>O(g)：気相中の水の濃度] / [H<sub>2</sub>O(l)：液相中の水の濃度]＝1.000 / 0.902＝1.11です。塩化ナトリウムは蒸発しないことから、気相中の水の濃度は1.000とみなすことが出来ます。</p><p>問題よりK<sub>H2O</sub>=p*<sub>H2O</sub> / Pを用います。<br/>K<sub>H2O</sub>=p*<sub>H2O</sub> / P<br/>p*<sub>H2O</sub>＝P × K<sub>H2O</sub><br/>p*<sub>H2O</sub>＝0.1 × 1.11<br/>p*<sub>H2O</sub>＝0.111 MPa</p><p>よって最も近い値は0.1112 MPaの蒸気圧で103℃です。</p>
+<p>正答は<strong>3番</strong>です。</p><p>15 wt% の食塩水を 100 g 用意したとすると、塩化ナトリウム 15 g、水 85 g。塩化ナトリウムが \(15/58.5 = 0.256\) mol、水が \(85/18 = 4.72\) mol となります。</p><p>食塩は水溶液中で 100% 解離するため \(\mathrm{Na^{+}}\) と \(\mathrm{Cl^{-}}\) が存在します。塩化ナトリウム 0.256 mol では \(0.256\times 2 = 0.512\) mol のイオンが存在することとなります。水の濃度は \(4.72/(4.72 + 0.512) = 0.902\) です。</p><p>水の気液平衡係数 \(K_{\mathrm{H_2O}} = 1.000/0.902 = 1.11\) です。塩化ナトリウムは蒸発しないことから、気相中の水の濃度は 1.000 とみなせます。</p><p>問題式より \(p^{*}_{\mathrm{H_2O}} = P\times K_{\mathrm{H_2O}} = 0.1\times 1.11 = 0.111\) MPa。よって最も近い値は 0.1112 MPa の蒸気圧で 103 ℃ です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

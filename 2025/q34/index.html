@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">空気温度T 2 =29.0℃、人体内温度T 0 =36.5℃のとき、皮膚表面温度T 1 ［℃］に最も近い値はどれか。</div>
+            <div class="question-text">空気温度 \(T_2 = 29.0\ ^\circ\mathrm{C}\)、人体内温度 \(T_0 = 36.5\ ^\circ\mathrm{C}\) のとき、皮膚表面温度 \(T_1\ [^\circ\mathrm{C}]\) に最も近い値はどれか。皮膚の下に厚さ \(\delta = 4.00\ \mathrm{mm}\) の温度境膜（皮膚境膜）を考え、熱伝導率 \(\lambda = 0.21\ \mathrm{W\,m^{-1}\,K^{-1}}\) とする。また、皮膚表面空気側の熱伝達係数を \(h = 8.8\ \mathrm{W\,m^{-2}\,K^{-1}}\) とする。</div>
             <figure class="question-figure">
               <img src="../../images/2025/q34/figure.png" alt="問34の図" loading="lazy">
             </figure>
@@ -129,7 +133,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-皮膚境膜内の熱伝導と皮膚表面から空気への対流が等しいので、λ(T 0 −T 1 )/δ = h(T 1 −T 2 ) を解く。T 0 =36.5℃、T 2 =29.0℃、δ=0.004 m、λ=0.21、h=8.8 を代入すると T 1 ≈ 35.4℃ で、最も近いのは④です。
+皮膚境膜内の熱伝導と皮膚表面から空気への対流が等しいので、$$\frac{\lambda(T_0 - T_1)}{\delta} = h(T_1 - T_2)$$を解く。\(T_0 = 36.5\ ^\circ\mathrm{C}\)、\(T_2 = 29.0\ ^\circ\mathrm{C}\)、\(\delta = 0.004\ \mathrm{m}\)、\(\lambda = 0.21\)、\(h = 8.8\) を代入すると \(T_1 \approx 35.4\ ^\circ\mathrm{C}\) で、最も近いのは④です。
               </div>
             </div>
           </div>
@@ -193,7 +197,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

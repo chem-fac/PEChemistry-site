@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>反応速度定数kと絶対温度Tとの関係Arrheniusの式：<br/>　k=A exp（-E/RT）<br/>で表される。50℃における1次反応の反応速度定数はk<sub>50</sub>＝0.0425 min<sup>-1</sup>である。活性化エネルギーが80.1 kJ・mol<sup>-1</sup>であった。100℃における1次反応の反応速度定数k<sub>100</sub>は50℃の反応速度定数k<sub>50</sub>に比べておよそ何倍となるか。ただし、Eは活性化エネルギー、R＝8.314 J・K<sup>-1</sup>・mol<sup>-1</sup>、e＝2.72とする。</p></div>
+            <div class="question-text"><p>反応速度定数 \(k\) と絶対温度 \(T\) との関係 Arrhenius の式：</p>$$k = A\exp\!\left(-\frac{E}{RT}\right)$$<p>で表される。50 ℃ における 1 次反応の反応速度定数は \(k_{50} = 0.0425\ \mathrm{min^{-1}}\) である。活性化エネルギーが \(80.1\ \mathrm{kJ\cdot mol^{-1}}\) であった。100 ℃ における 1 次反応の反応速度定数 \(k_{100}\) は 50 ℃ の反応速度定数 \(k_{50}\) に比べておよそ何倍となるか。ただし、\(E\) は活性化エネルギー、\(R = 8.314\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}\)、\(e = 2.72\) とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>1番</strong>です。</p><p>温度以外の実験条件は固定であるとして、活性化エネルギーEと頻度因子Aは固定値になります。この条件を使い反応速度定数の比をとり計算します。</p><p>k<sub>100 </sub>/ k<sub>50</sub>＝Aexp(-E/RT<sub>100</sub>) / Aexp(-E/RT<sub>50</sub>)<br/>k<sub>100 </sub>/ k<sub>50</sub>＝exp(-E/RT<sub>100</sub>) / exp(-E/RT<sub>50</sub>)<br/>k<sub>100 </sub>/ k<sub>50</sub>＝exp[(-E/RT<sub>100</sub>) – (-E/RT<sub>50</sub>)]<br/>k<sub>100 </sub>/ k<sub>50</sub>＝exp[-E/R(1/T<sub>100</sub> – 1/T<sub>50</sub>)]<br/>k<sub>100 </sub>/ k<sub>50</sub>＝exp[-80.1×10<sup>3</sup> / 8.314 x (1/373 – 1/323)]<br/>k<sub>100 </sub>/ k<sub>50</sub>＝exp[-9634 × (0.00268 – 0.00310)]<br/>k<sub>100 </sub>/ k<sub>50</sub>＝exp(4)<br/>k<sub>100 </sub>/ k<sub>50</sub>＝54.7</p><p>最も近い値は55倍です。</p><h2>年度選択に戻る</h2><div><div><div><a href="https://chem-fac.com/pe-first/" rel="noopener" target="_blank"><div><dl><dt><img loading="lazy" src="../../images/2020/q35/技術士化学部門解説-1-scaled.png" style="max-width: 100%; height: auto;"/></dt><dd><p>技術士（化学部門）一次試験解説</p><div><p>技術士一次試験の専門科目（化学部門）に関する解説ページです。 各年度ごと、1問ずつ解説しています。 過去問題は公益社団法人日本技術士会の許可を得て掲載しております。転載される際はご注意ください。 ht … </p></div></dd></dl></div></a></div></div></div>
+<p>正答は<strong>1番</strong>です。</p><p>温度以外の実験条件は固定であるとして、活性化エネルギー \(E\) と頻度因子 \(A\) は固定値になります。この条件を使い反応速度定数の比をとり計算します。</p>$$\begin{aligned}\frac{k_{100}}{k_{50}} &= \frac{A\exp(-E/RT_{100})}{A\exp(-E/RT_{50})}\\&= \exp\!\left[-\frac{E}{R}\!\left(\frac{1}{T_{100}} - \frac{1}{T_{50}}\right)\right]\\&= \exp\!\left[-\frac{80.1\times 10^{3}}{8.314}\times\!\left(\frac{1}{373} - \frac{1}{323}\right)\right]\\&= \exp[-9634\times(0.00268 - 0.00310)]\\&= \exp(4) \approx 54.7\end{aligned}$$<p>最も近い値は 55 倍です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

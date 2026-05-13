@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>メタン1 molを完全燃焼して二酸化炭素と水蒸気にしたときに発生する熱は802.3 kJである。30%過剰空気でメタンを燃焼したときの燃焼ガス温度に最も近い値はどれか。ただし、空気は酸素21%、窒素79%の混合物とし、これより30%過剰空気のとき、メタン1 molに対する供給空気は酸素2.6 mol、窒素9.78 molである。また、メタンと空気は25℃で供給され、簡単のため、すべての気体の熱容量は36.0 JmolKとする。</p></div>
+            <div class="question-text"><p>メタン 1 mol を完全燃焼して二酸化炭素と水蒸気にしたときに発生する熱は 802.3 kJ である。30% 過剰空気でメタンを燃焼したときの燃焼ガス温度に最も近い値はどれか。ただし、空気は酸素 21%、窒素 79% の混合物とし、これより 30% 過剰空気のとき、メタン 1 mol に対する供給空気は酸素 2.6 mol、窒素 9.78 mol である。また、メタンと空気は 25 ℃ で供給され、簡単のため、すべての気体の熱容量は \(36.0\ \mathrm{J/(mol\cdot K)}\) とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>メタンの燃焼式はCH<sub>4</sub>＋2O<sub>2</sub>→CO<sub>2</sub>＋2H<sub>2</sub>Oです。この過程で発生する熱量が802.3 kJです。</p><p>燃焼式より、メタン1 molが燃焼する時、2 molの酸素を使用し、1 molの二酸化炭素と2 molの水蒸気が発生します。</p><p>「30%過剰空気のとき、メタン1 molに対する供給空気は酸素2.6 mol、窒素9.78 molである」と問題にあるため、メタン1 molが燃焼する時に残る酸素は2.6－2.0＝0.6 molです。</p><p>つまり、メタン1 molが燃焼した時に系内の気体は、二酸化炭素1 mol＋水蒸気2 mol＋酸素0.6 mol＋窒素9.78 mol＝13.38 molあることが分かります。</p><p>すべての気体の熱容量は36.0 J mol<sup>-1</sup> K<sup>-1</sup>と設定しているため、燃焼熱により系内の温度上昇量は802.3×10<sup>3</sup> J ÷ 36.0 J mol<sup>-1</sup> K<sup>-1</sup> ÷ 13.38 mol＝1,665.6℃です。25℃で供給されているため、燃焼ガス温度は1665.6℃＋25℃＝1,690.6℃であり、最も近い値は1,700℃です。</p>
+<p>正答は<strong>4番</strong>です。</p><p>メタンの燃焼式は</p>$$\mathrm{CH_4} + 2\mathrm{O_2} \rightarrow \mathrm{CO_2} + 2\mathrm{H_2O}$$<p>です。この過程で発生する熱量が 802.3 kJ です。</p><p>燃焼式より、メタン 1 mol が燃焼するとき、2 mol の酸素を使用し、1 mol の二酸化炭素と 2 mol の水蒸気が発生します。</p><p>「30% 過剰空気のとき、メタン 1 mol に対する供給空気は酸素 2.6 mol、窒素 9.78 mol である」と問題にあるため、メタン 1 mol が燃焼するときに残る酸素は \(2.6 - 2.0 = 0.6\) mol です。</p><p>つまり、メタン 1 mol が燃焼したときに系内の気体は、二酸化炭素 1 mol ＋ 水蒸気 2 mol ＋ 酸素 0.6 mol ＋ 窒素 9.78 mol \(= 13.38\) mol あることが分かります。</p><p>すべての気体の熱容量は \(36.0\ \mathrm{J\,mol^{-1}\,K^{-1}}\) と設定しているため、燃焼熱により系内の温度上昇量は</p>$$\frac{802.3\times 10^{3}\ \mathrm{J}}{36.0\ \mathrm{J\,mol^{-1}\,K^{-1}} \times 13.38\ \mathrm{mol}} \approx 1{,}665.6\ ^\circ\mathrm{C}$$<p>25 ℃ で供給されているため、燃焼ガス温度は \(1665.6 + 25 = 1{,}690.6\ ^\circ\mathrm{C}\) であり、最も近い値は 1,700 ℃ です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

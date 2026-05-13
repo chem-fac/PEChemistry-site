@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　メタンから水素を作る改質炉メタンから水素を作る改質炉では、原料メタンの改質反応の反応熱を、熱源メタンの燃焼熱で補給して、所定の反応温度を保つ。<br/>　原料メタンの改質反応（吸熱反応）CH<sub>4</sub>（g）+H<sub>2</sub>O（g）→CO（g）+3H<sub>2</sub>（g）（1）<br/>　熱源メタンの燃焼反応（発熱反応）CH<sub>4</sub>（g）+2O<sub>2</sub>（g）→CO<sub>2</sub>（g）+2H<sub>2</sub>O（g）（2）<br/>以下の各成分の標準生成エンタルピーΔ<sub>r</sub>H°から推算して、原料メタン1.0 molに対して必要な熱源メタンの量として最も近い値はどれか。</p><div class="table-responsive"><table class="question-table"><tbody><tr><td>ガス種</td><td>CH<sub>4</sub>（g）</td><td>H<sub>2</sub>O（g）</td><td>CO（g）</td><td>H<sub>2</sub>（g）</td><td>O<sub>2</sub>（g）</td><td>CO<sub>2</sub>（g）</td></tr><tr><td>Δ<sub>r</sub>H°［kJ・mol<sup>-1</sup>］</td><td>-74.8</td><td>-241.8</td><td>-110.5</td><td>0</td><td>0</td><td>-393.5</td></tr></tbody></table></div></div>
+            <div class="question-text"><p>メタンから水素を作る改質炉では、原料メタンの改質反応の反応熱を、熱源メタンの燃焼熱で補給して、所定の反応温度を保つ。</p><p>原料メタンの改質反応（吸熱反応）</p>$$\mathrm{CH_4}(\mathrm{g}) + \mathrm{H_2O}(\mathrm{g}) \rightarrow \mathrm{CO}(\mathrm{g}) + 3\mathrm{H_2}(\mathrm{g})\qquad(1)$$<p>熱源メタンの燃焼反応（発熱反応）</p>$$\mathrm{CH_4}(\mathrm{g}) + 2\mathrm{O_2}(\mathrm{g}) \rightarrow \mathrm{CO_2}(\mathrm{g}) + 2\mathrm{H_2O}(\mathrm{g})\qquad(2)$$<p>以下の各成分の標準生成エンタルピー \(\Delta_r H^{\circ}\) から推算して、原料メタン 1.0 mol に対して必要な熱源メタンの量として最も近い値はどれか。</p><div class="table-responsive"><table class="question-table"><tbody><tr><td>ガス種</td><td>\(\mathrm{CH_4}\)(g)</td><td>\(\mathrm{H_2O}\)(g)</td><td>\(\mathrm{CO}\)(g)</td><td>\(\mathrm{H_2}\)(g)</td><td>\(\mathrm{O_2}\)(g)</td><td>\(\mathrm{CO_2}\)(g)</td></tr><tr><td>\(\Delta_r H^{\circ}\ [\mathrm{kJ\cdot mol^{-1}}]\)</td><td>\(-74.8\)</td><td>\(-241.8\)</td><td>\(-110.5\)</td><td>0</td><td>0</td><td>\(-393.5\)</td></tr></tbody></table></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>反応に伴うエンタルピー変化（ΔH）を計算する際は、生成物の標準生成エンタルピーの和から反応物の標準生成エンタルピーの和を引きます。酸素や水素は単体元素であり最も安定な形態であるとみなし、標準状態での単体元素の標準生成エンタルピーは定義上0 kJ/molとされています。</p><p>原料メタンの改質反応に伴うエンタルピー変化は-110.5 – {-74.8＋(-241.8)}＝206.1 kJ/molです。値がプラスなため吸熱反応です。</p><p>熱源メタンの燃焼反応に伴うエンタルピー変化は{-393.5＋(-241.8 × 2)} – (-74.8)＝-802.3 kJ/molです。値がマイナスなため発熱反応です。</p><p>両反応はメタン1 molに対する反応熱ですので、（発熱反応量）/（吸熱反応量）＝206.1/802.3＝0.26倍、つまり0.26 molの熱源メタンが必要になります。最も近い値は0.25 molです。</p>
+<p>正答は<strong>4番</strong>です。</p><p>反応に伴うエンタルピー変化（\(\Delta H\)）を計算する際は、生成物の標準生成エンタルピーの和から反応物の標準生成エンタルピーの和を引きます。酸素や水素は単体元素であり最も安定な形態であるとみなし、標準状態での単体元素の標準生成エンタルピーは定義上 0 kJ/mol とされています。</p><p>原料メタンの改質反応に伴うエンタルピー変化は \(-110.5 - \{-74.8 + (-241.8)\} = 206.1\) kJ/mol です。値がプラスなため吸熱反応です。</p><p>熱源メタンの燃焼反応に伴うエンタルピー変化は \(\{-393.5 + (-241.8\times 2)\} - (-74.8) = -802.3\) kJ/mol です。値がマイナスなため発熱反応です。</p><p>両反応はメタン 1 mol に対する反応熱ですので、(発熱反応量)/(吸熱反応量) \(= 206.1/802.3 = 0.26\) 倍、つまり 0.26 mol の熱源メタンが必要になります。最も近い値は 0.25 mol です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

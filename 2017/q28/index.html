@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　ある燃料油の組成は炭素90 wt%、水素10 wt%である。この燃料油に理論空気量の1.5倍の空気を供給し完全燃焼させたとき、水蒸気を除く燃焼ガス中の窒素濃度に最も近い値はどれか。燃焼ガスは0℃、100 kPaの条件下にあり、反応は次式による。</p><div><div><img alt="" loading="lazy" src="../../images/2017/q28/image-445.png" style="max-width: 100%; height: auto;"/></div></div><p>　ただし、空気中の酸素濃度、窒素濃度はそれぞれ21.0 vol%、79.0 vol%とし、各元素の原子量は、H=1、C=12、O=16とする。</p></div>
+            <div class="question-text"><p>ある燃料油の組成は炭素 90 wt%、水素 10 wt% である。この燃料油に理論空気量の 1.5 倍の空気を供給し完全燃焼させたとき、水蒸気を除く燃焼ガス中の窒素濃度に最も近い値はどれか。燃焼ガスは 0 ℃、100 kPa の条件下にあり、反応は次式による。</p>$$\mathrm{C} + \mathrm{O_2} \rightarrow \mathrm{CO_2}$$$$\mathrm{H} + \tfrac{1}{4}\,\mathrm{O_2} \rightarrow \tfrac{1}{2}\,\mathrm{H_2O}$$<p>ただし、空気中の酸素濃度、窒素濃度はそれぞれ 21.0 vol%、79.0 vol% とし、各元素の原子量は、H = 1、C = 12、O = 16 とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>与えられた燃焼の式において水素はHで記載されていることから、ここでは水素原子として扱い計算します。</p><p>燃料油が100gあるとして考えます。この時、炭素90ｇ、水素10gが含まれています。炭素の物質量は90 / 12=7.5 mol、水素の物質量は10 / 1=10 molです。</p><p>燃焼に必要な酸素の量は7.5 × 1＋10 × (1/4) ＝10 molです。つまり理論空気量は10 × 100/21＝47.6 molとなります。今回、理論空気量の1.5倍の空気を供給しているため、47.6 × 1.5＝71.4 molの空気を供給しています。</p><p>供給空気量を基に窒素、二酸化炭素、そして過剰に供給された酸素の量を計算します。<br/>窒素：71.4 × 0.79＝56.4 mol<br/>二酸化炭素：7.5 × 1＝7.5 mol<br/>過剰に供給された酸素：(71.4 – 47.6) × 0.21＝5.0 mol</p><p>よって、燃焼ガス量は56.4＋7.5＋5.0＝68.9 m<sup>3</sup>となり、そのうち窒素の割合は56.4 / 68.9 × 100＝82％です。</p>
+<p>正答は<strong>4番</strong>です。</p><p>燃料油が 100 g あるとして考えます。炭素 90 g、水素 10 g が含まれています。炭素の物質量は \(90/12 = 7.5\) mol、水素の物質量は \(10/1 = 10\) mol です。</p><p>燃焼に必要な酸素の量は \(7.5\times 1 + 10\times(1/4) = 10\) mol です。理論空気量は \(10\times 100/21 = 47.6\) mol、その 1.5 倍の \(71.4\) mol の空気を供給しています。</p><p>窒素：\(71.4\times 0.79 = 56.4\) mol<br/>二酸化炭素：\(7.5\) mol<br/>過剰に供給された酸素：\((71.4 - 47.6)\times 0.21 = 5.0\) mol</p><p>燃焼ガス量は \(56.4 + 7.5 + 5.0 = 68.9\) mol となり、そのうち窒素の割合は \(56.4/68.9\times 100 = 82\%\) です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

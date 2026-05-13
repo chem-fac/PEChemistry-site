@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>撹拌動力Pと無次元動力数N<sub>p</sub>はN<sub>p</sub>=P/(ρn<sup>3</sup>D<sup>5</sup>)で相関される。ある混合槽において1.5 kWのモーター付きで、200 rpmまで回転数を上げることができる撹拌機が付いている。この撹拌機の動力を2.2 kWに替えた場合、回転数の上限として最も近い値はどれか。<br/>ただし、N<sub>p</sub>=6とする。<br/>なお、ρ：液密度［kg m<sup>-3</sup>］、n：回転数［s<sup>-1</sup>］、D：羽径［m］である。</p></div>
+            <div class="question-text"><p>撹拌動力 \(P\) と無次元動力数 \(N_p\) は \(N_p = P/(\rho n^{3} D^{5})\) で相関される。ある混合槽において 1.5 kW のモーター付きで、200 rpm まで回転数を上げることができる撹拌機が付いている。この撹拌機の動力を 2.2 kW に替えた場合、回転数の上限として最も近い値はどれか。ただし、\(N_p = 6\) とする。なお、\(\rho\)：液密度 \([\mathrm{kg/m^{3}}]\)、\(n\)：回転数 \([\mathrm{s^{-1}}]\)、\(D\)：羽径 [m] である。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>1番</strong>です。</p><p>同程度の撹拌能力を得るために無次元動力数を合わせてスケールアップさせます。</p><p>まず1.5 kWの場合に対して、無次元動力数の式に代入します。流体と撹拌槽が同じなため、ρとDは固定値になります。計算しやすいようρD<sup>5</sup>をaと置きます。また回転数200 rpmは1分当たりの回転数なので1秒当たりの回転数200/60＝3.33 s<sup>-1</sup>に変換します。<br/>6＝1.5 / 3.33<sup>3</sup>a<br/>a＝0.006752</p><p>2.2 kWの場合に対して、無次元動力数の式に代入します。<br/>6＝2.2 / 0.006752n<sup>3</sup><br/>n＝3.8  s<sup>-1</sup></p><p>求める回転数の単位はrpmですので、3.8×60＝228 rpmとなります。最も近い値は227 rpmです。</p>
+<p>正答は<strong>1番</strong>です。</p><p>流体と撹拌槽が同じなため \(\rho\) と \(D\) は固定値。\(\rho D^{5} = a\) と置きます。200 rpm を 1 秒当たりに変換すると \(200/60 = 3.33\ \mathrm{s^{-1}}\)。</p>$$6 = \frac{1.5}{3.33^{3}\,a} \;\Rightarrow\; a = 0.006752$$<p>2.2 kW の場合：</p>$$6 = \frac{2.2}{0.006752\,n^{3}} \;\Rightarrow\; n = 3.8\ \mathrm{s^{-1}}$$<p>rpm に直すと \(3.8\times 60 = 228\) rpm。最も近い値は 227 rpm です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

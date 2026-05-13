@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>100kPa、27℃の空気で充満されている100 m<sup>2</sup>の密閉した室内で、純度100%の硫黄80 gを完全燃焼させた。室内の二酸化硫黄濃度の増加に最も近い値はどれか。ただし、気体定数R=8.3 m<sup>3</sup> Pa K<sup><sup>-1</sup></sup> mol<sup>-1</sup>、硫黄の原子量は32、酸素の原子量は16とし、室内の温度上昇は無視できるものとする。</p></div>
+            <div class="question-text"><p>100 kPa、27 ℃ の空気で充満されている \(100\ \mathrm{m^{3}}\) の密閉した室内で、純度 100% の硫黄 80 g を完全燃焼させた。室内の二酸化硫黄濃度の増加に最も近い値はどれか。ただし、気体定数 \(R = 8.3\ \mathrm{m^{3}\,Pa\,K^{-1}\,mol^{-1}}\)、硫黄の原子量は 32、酸素の原子量は 16 とし、室内の温度上昇は無視できるものとする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>硫黄の原子量は32であり、純度100%の硫黄80gは2.5molです。また硫黄1molが燃焼する時、1molの二酸化硫黄が生成します。<br/>S + O<sub>2</sub> = SO<sub>2</sub></p><p>理想気体の状態方程式PV=nRTより、生成する二酸化硫黄の体積を求めます。<br/>V＝nRT/P＝2.5 mol × 8.3 m<sup>3</sup> Pa K<sup>-1</sup> mol<sup>-1</sup> × 300 K / 100×10<sup>3</sup> Pa＝0.0623 m<sup>3</sup></p><p>100 m<sup>3</sup>の密閉した室内に対して燃焼する硫黄80gは微小量ですので、燃焼時の体積や温度への影響は無視すると考えます。空気100 m<sup>3</sup>に対し二酸化硫黄0.0623 m<sup>3</sup>のため0.0623/100＝0.000623（747×10<sup>-6</sup>）、ppmオーダーで表すため1,000,000（10<sup>6</sup>）で割ると623volppmです。</p>
+<p>正答は<strong>3番</strong>です。</p><p>硫黄の原子量は 32 であり、純度 100% の硫黄 80 g は 2.5 mol です。また硫黄 1 mol が燃焼するとき、1 mol の二酸化硫黄が生成します。</p>$$\mathrm{S} + \mathrm{O_2} \rightarrow \mathrm{SO_2}$$<p>理想気体の状態方程式 \(PV = nRT\) より、生成する二酸化硫黄の体積を求めます。</p>$$V = \frac{nRT}{P} = \frac{2.5\times 8.3\times 300}{100\times 10^{3}} = 0.0623\ \mathrm{m^{3}}$$<p>\(100\ \mathrm{m^{3}}\) の密閉した室内に対して燃焼する硫黄 80 g は微小量ですので、燃焼時の体積や温度への影響は無視すると考えます。空気 \(100\ \mathrm{m^{3}}\) に対し二酸化硫黄 \(0.0623\ \mathrm{m^{3}}\) のため \(0.0623/100 = 6.23\times 10^{-4}\)、ppm オーダーで表すため \(10^{6}\) を掛けると 623 volppm です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">AとBからCを生成する化学反応が（1）式で表される。中間体C&#x27;が関与するため、素反応は（2）式と（3）式で表される。定常状態でC&#x27;が生成されているとき、Cの生成速度はBの濃度の何乗に比例するか。最も適切なものはどれか。なお、（2）式が（3）式より著しく遅い条件で作動する。 （1）A + 3B → 2C （2）A + B → C&#x27; （3）2B + C&#x27; → 2C （2）式と（3）式の反応速度定数は、それぞれk 2 、k 3 とする。</div>
+            <div class="question-text">A と B から C を生成する化学反応が（1）式で表される。中間体 \(\mathrm{C}'\) が関与するため、素反応は（2）式と（3）式で表される。定常状態で C が生成されているとき、C の生成速度は B の濃度の何乗に比例するか。最も適切なものはどれか。なお、（2）式が（3）式より著しく遅い条件で作動する。$$\begin{aligned}(1)\ &\mathrm{A} + 3\mathrm{B} \rightarrow 2\mathrm{C}\\(2)\ &\mathrm{A} + \mathrm{B} \rightarrow \mathrm{C}'\\(3)\ &2\mathrm{B} + \mathrm{C}' \rightarrow 2\mathrm{C}\end{aligned}$$（2）式と（3）式の反応速度定数は、それぞれ \(k_2,\ k_3\) とする。</div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-定常状態では中間体 C&#x27; の生成速度と消費速度が等しいので、k 2 [A][B] = k 3 [B] 2 [C&#x27;] が成り立つ。したがって、[C&#x27;] ∝ [A]/[B] となり、C の生成速度 k 3 [B] 2 [C&#x27;] は [A][B] に比例するので、B に対して 1 乗の①です。
+定常状態では中間体 \(\mathrm{C}'\) の生成速度と消費速度が等しいので、$$k_2[\mathrm{A}][\mathrm{B}] = k_3[\mathrm{B}]^{2}[\mathrm{C}']$$が成り立つ。したがって \([\mathrm{C}'] \propto [\mathrm{A}]/[\mathrm{B}]\) となり、C の生成速度 \(k_3[\mathrm{B}]^{2}[\mathrm{C}']\) は \([\mathrm{A}][\mathrm{B}]\) に比例するので、B に対して 1 乗の①です。
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

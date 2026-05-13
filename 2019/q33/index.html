@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>貯水池から長さL＝1,000 m、管内径d=1.0 mのパイプを通して水を流し、水力発電機へ供給している。系の圧力変動を吸収するため下図のようにサージタンクが設けられている。基準高さからの貯水池水面高さはH＝50 mである。サージタンク水面はh［m］の高さにあった。パイプ内の平均流速u＝3.0 ms<sup>-1</sup>のとき、hとして、次のうち、最も近い値はどれか。ただし水の密度ρ＝1,000 kg m<sup>-3</sup>、管摩擦係数f＝0.0032、重力加速度g＝9.8 m s<sup>-2</sup>。管内流れの圧力損失はΔP=-2fLu<sup>2</sup>ρ/d［Pa＝kg m<sup>-1</sup> s<sup>-2</sup>］である。</p><div><div><img alt="" loading="lazy" src="../../images/2019/q33/image-471.png" style="max-width: 100%; height: auto;"/></div></div></div>
+            <div class="question-text"><p>貯水池から長さ \(L = 1{,}000\ \mathrm{m}\)、管内径 \(d = 1.0\ \mathrm{m}\) のパイプを通して水を流し、水力発電機へ供給している。系の圧力変動を吸収するため下図のようにサージタンクが設けられている。基準高さからの貯水池水面高さは \(H = 50\ \mathrm{m}\) である。サージタンク水面は \(h\ [\mathrm{m}]\) の高さにあった。パイプ内の平均流速 \(u = 3.0\ \mathrm{m/s}\) のとき、\(h\) として、次のうち、最も近い値はどれか。ただし水の密度 \(\rho = 1{,}000\ \mathrm{kg/m^{3}}\)、管摩擦係数 \(f = 0.0032\)、重力加速度 \(g = 9.8\ \mathrm{m/s^{2}}\)。管内流れの圧力損失は</p>$$\Delta P = -\frac{2fLu^{2}\rho}{d}\ [\mathrm{Pa} = \mathrm{kg\,m^{-1}\,s^{-2}}]$$<p>である。</p><div><img alt="" loading="lazy" src="../../images/2019/q33/image-471.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>まず貯水池の水からかかる位置エネルギーを求めます。ρgh（ρ：密度［kg/m<sup>3</sup>］、g：重力加速度［m/s<sup>2</sup>］、z：高さ［m］）で［Pa］単位の位置エネルギーが計算できます。位置エネルギーは1000×9.8×50＝4.9×10<sup>5</sup> Paとなります。</p><p>（単位変換参考）<br/>ρgh：kg/m<sup>3</sup>×m/s<sup>2</sup>×m＝kg / (m・s<sup>2</sup>)<br/>Pa＝N/m<sup>2</sup>＝ (kg×m/s<sup>2</sup>) / m<sup>2</sup>＝kg / (m・s<sup>2</sup>)</p><p>配管内を流体が流れる時、摩擦によるエネルギー損失が発生します。その時のエネルギー損失量を圧力で表した<strong>圧力損失</strong>を計算します。計算式は問題に記載されているΔP=-2fLu<sup>2</sup>ρ/d［Pa＝kg m<sup>-1</sup> s<sup>-2</sup>］を用います。圧力損失は2×0.0032×1,000×3.0<sup>2</sup>×1,000/1.0＝5.76×10<sup>4</sup> Pa（0.576×10<sup>5</sup> Pa）となります。</p><p>サージタンクに液が流れ着いたとき、圧力損失により減少した4.9×10<sup>5</sup>-0.576×10<sup>5</sup>＝4.324×10<sup>5</sup> Paのエネルギーが発生しています。この時のエネルギーを位置エネルギーの式から高さに換算すると、4.324×10<sup>5</sup> Pa÷1,000 kg m<sup>-3</sup>÷9.8 m/s<sup>2</sup>＝44.12 mです。よって最も近い値は45 mです。</p>
+<p>正答は<strong>4番</strong>です。</p><p>まず貯水池の水からかかる位置エネルギーを求めます。\(\rho g h\)（\(\rho\)：密度、\(g\)：重力加速度、\(h\)：高さ）で [Pa] 単位の位置エネルギーが計算できます。位置エネルギーは \(1000\times 9.8\times 50 = 4.9\times 10^{5}\) Pa となります。</p><p>（単位変換参考）<br/>\(\rho g h:\ \mathrm{kg/m^{3}}\times\mathrm{m/s^{2}}\times\mathrm{m} = \mathrm{kg/(m\cdot s^{2})}\)<br/>\(\mathrm{Pa} = \mathrm{N/m^{2}} = (\mathrm{kg}\times\mathrm{m/s^{2}})/\mathrm{m^{2}} = \mathrm{kg/(m\cdot s^{2})}\)</p><p>配管内を流体が流れるとき、摩擦によるエネルギー損失が発生します。その時のエネルギー損失量を圧力で表した<strong>圧力損失</strong>を計算します。計算式は問題に記載されている \(\Delta P = -2fLu^{2}\rho/d\) を用います。圧力損失は \(2\times 0.0032\times 1{,}000\times 3.0^{2}\times 1{,}000/1.0 = 5.76\times 10^{4}\) Pa（\(0.576\times 10^{5}\) Pa）となります。</p><p>サージタンクに液が流れ着いたとき、圧力損失により減少した \(4.9\times 10^{5} - 0.576\times 10^{5} = 4.324\times 10^{5}\) Pa のエネルギーが発生しています。この時のエネルギーを位置エネルギーの式から高さに換算すると、\(4.324\times 10^{5}\ \mathrm{Pa}/(1{,}000\ \mathrm{kg/m^{3}}\times 9.8\ \mathrm{m/s^{2}}) = 44.12\) m です。よって最も近い値は 45 m です。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

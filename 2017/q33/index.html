@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　内径19.8mm×外径22.2mmの内管を設置した二重管型熱交換器において、環状部に150℃の熱媒油を流量1.0［kg・s<sup>-1</sup>］で流し、内管部を流量0.5［kg・s<sup>-1</sup>］で流れる水を90℃から120℃まで温めたい。流体を向流で流した場合に必要な伝熱管長さは、次の値のうち最も近いものはどれか。<br/>　ただし、熱媒油と水の比熱はそれぞれ2.1［kJ・kg<sup>-1</sup>・K<sup>-1</sup>］及び4.2［kJ・kg<sup>-1</sup>・K<sup>-1</sup>］で、外径基準の総括伝熱係数はU=540［W・m<sup>-2</sup>・K<sup>-1</sup>］とする。また、熱交換器内部の流体温度差平均値ΔTmは両端の流体温度差ΔT1とΔT2の相加平均として算出してよい。</p></div>
+            <div class="question-text"><p>内径 19.8 mm × 外径 22.2 mm の内管を設置した二重管型熱交換器において、環状部に 150 ℃ の熱媒油を流量 \(1.0\ \mathrm{kg/s}\) で流し、内管部を流量 \(0.5\ \mathrm{kg/s}\) で流れる水を 90 ℃ から 120 ℃ まで温めたい。流体を向流で流した場合に必要な伝熱管長さは、次の値のうち最も近いものはどれか。ただし、熱媒油と水の比熱はそれぞれ \(2.1\ \mathrm{kJ/(kg\cdot K)}\) 及び \(4.2\ \mathrm{kJ/(kg\cdot K)}\) で、外径基準の総括伝熱係数は \(U = 540\ \mathrm{W/(m^{2}\cdot K)}\) とする。また、\(\Delta T_m\) は両端の流体温度差 \(\Delta T_1\) と \(\Delta T_2\) の相加平均として算出してよい。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>伝熱により水へ与える熱量を計算します。<br/>4.2 kJ kg<sup>-1</sup> K<sup>-1</sup> × (120-90) K × 0.5 kg s<sup>-1</sup>＝63 kJ s<sup>-1</sup></p><p>水に与えた熱量だけ熱媒油は熱を奪われます。熱交換後の熱媒油の温度をTとします。<br/>2.1 kJ kg<sup>-1</sup> K<sup>-1</sup> × (150-T) K × 1.0 kg s<sup>-1</sup>＝63 kJ s<sup>-1</sup><br/>T＝120℃</p><p>熱交換後の熱媒油の温度は水と同じ120℃でした。偶然にも両流体の出口温度が同じです。向流の場合、高温側の出口温度より低温側の出口温度が高くなる現象が起きます。そのため、短絡的に水の出口温度である120℃に熱媒油も変わると考えてはいけません。</p><p>両端の流体温度差ΔT1、ΔT2を求めます。<br/>ΔT1＝（熱媒側入口）－（水側出口）＝150－120＝30 K<br/>ΔT2＝（水側入口）－（熱媒側出口）＝90－120＝-30 K → 温度差30 K</p><p>問題にて熱交換器内部の流体温度差平均値ΔTmは両端の流体温度差ΔT1とΔT2の相加平均として算出してよいとされています。相加平均は一般に世の中で使われる平均です。<br/>ΔTm＝(30＋30) / 2 ＝30 K</p><p>二重管における熱交換の等式を立てます。熱交換量は先に求めた63 kJ s<sup>-1</sup>であり、kJ s<sup>-1</sup>＝kWと同義です。つまり熱交換量は63,000 Wです。求める伝熱管長さをLとします。総括伝熱係数は問題文に外径基準と記載されていることに注意してください。<br/>63,000 W＝540 W m<sup>-2</sup> K<sup>-1</sup> × πL(22.2×10<sup>-3</sup>) m<sup>2</sup> × 30 K<br/>L＝55.78 m</p><p>最も近い値は56 mです。円周は2πrと覚えますが、与えられているのが管直径なため、πDで計算しますので注意してください。</p>
+<p>正答は<strong>3番</strong>です。</p><p>水へ与える熱量：\(4.2\times(120 - 90)\times 0.5 = 63\ \mathrm{kJ/s}\)。熱交換後の熱媒油の温度を \(T\) とすると、\(2.1\times(150 - T)\times 1.0 = 63 \Rightarrow T = 120\ ^\circ\mathrm{C}\)。</p><p>\(\Delta T_1 = 150 - 120 = 30\) K、\(\Delta T_2 = 90 - 120 = -30\) K → 温度差 30 K。\(\Delta T_m = (30 + 30)/2 = 30\) K。</p><p>熱交換量は 63,000 W。求める伝熱管長さを \(L\) とすると、</p>$$63{,}000 = 540\times\pi L\,(22.2\times 10^{-3})\times 30 \;\Rightarrow\; L = 55.78\ \mathrm{m}$$<p>最も近い値は 56 m です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

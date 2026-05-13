@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　閉じたバルブにより接続された大小2基のタンクがある。100 m<sup>3</sup>のタンク1には1 MPaの気体が充填されており、5 m<sup>3</sup>のタンク2には100 MPaの気体が充填されている。気体は共に同じ理想気体であり、温度は共に25℃である。閉じていたバルブを開けて、2基のタンク内の圧力を均一とした場合の圧力として、最も適切な値はどれか。<br/>断熱膨張による温度変化は考慮せず、25℃一定とする。<br/>　また、気体の状態方程式はPV＝nRTであり、Pは圧力（Pa）、Vは容積（m<sup>3</sup>）、nは気体の物質量（mol）、Rは気体定数（Jmol<sup>-1</sup>K<sup>-1</sup>）、Tは気体の温度（K）である。</p><div><div><img alt="" loading="lazy" src="../../images/2023/q30/image-557.png" style="max-width: 100%; height: auto;"/></div></div></div>
+            <div class="question-text"><p>閉じたバルブにより接続された大小 2 基のタンクがある。\(100\ \mathrm{m^{3}}\) のタンク 1 には 1 MPa の気体が充填されており、\(5\ \mathrm{m^{3}}\) のタンク 2 には 100 MPa の気体が充填されている。気体は共に同じ理想気体であり、温度は共に 25 ℃ である。閉じていたバルブを開けて、2 基のタンク内の圧力を均一とした場合の圧力として、最も適切な値はどれか。<br/>断熱膨張による温度変化は考慮せず、25 ℃ 一定とする。<br/>また、気体の状態方程式は \(PV = nRT\) であり、\(P\) は圧力 \([\mathrm{Pa}]\)、\(V\) は容積 \([\mathrm{m^{3}}]\)、\(n\) は気体の物質量 \([\mathrm{mol}]\)、\(R\) は気体定数 \([\mathrm{J\,mol^{-1}\,K^{-1}}]\)、\(T\) は気体の温度 \([\mathrm{K}]\) である。</p><div><img alt="" loading="lazy" src="../../images/2023/q30/image-557.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>2番</strong>です。</p><p>バルブを開けた時、全体の体積Vは100+5＝105 m<sup>3</sup>です。また25℃の時の絶対温度Tは25+273=298Kです。</p><p>理想気体の状態方程式PV＝nRTより、各タンク内に含まれる気体の分子量はn＝PV/RTを計算すれば求まります。バルブを開けた後は、各タンクの分子量を合計した値となります。</p><ul><li><strong>タンク1の気体の分子量n<sub>1</sub></strong>：1×10<sup>6</sup>×100/(R×298)</li><li><strong>タンク2の気体の分子量n<sub>2</sub></strong>：100×10<sup>6</sup>×5/(R×298)</li></ul><p>理想気体の状態方程式より、バルブを開けた後の圧力Pは(n<sub>1</sub>+n<sub>2</sub>)RT/Vで計算できます。計算量が複雑に見えますが、MPaへの変換のために10<sup>6</sup>は計算せず残しておくことが可能で、(R×298)は約分して消せます。</p><p>P＝nRT/V＝{1×10<sup>6</sup>×100/(R×298)+100×10<sup>6</sup>×5/(R×298)}×R×298 / 105 = 600/105 MPa = 5.7 MPa</p>
+<p>正答は<strong>2番</strong>です。</p><p>バルブを開けたとき、全体の体積 \(V\) は \(100 + 5 = 105\ \mathrm{m^{3}}\) です。また 25 ℃ のときの絶対温度 \(T\) は \(25 + 273 = 298\ \mathrm{K}\) です。</p><p>理想気体の状態方程式 \(PV = nRT\) より、各タンク内に含まれる気体の物質量は \(n = PV/(RT)\) で求まります。バルブを開けた後は、各タンクの物質量を合計した値となります。</p>$$n_1 = \frac{1\times 10^{6}\times 100}{R\times 298},\quad n_2 = \frac{100\times 10^{6}\times 5}{R\times 298}$$<p>理想気体の状態方程式より、バルブを開けた後の圧力 \(P\) は \((n_1 + n_2) RT / V\) で計算できます。MPa への変換のために \(10^{6}\) は計算せず残しておき、\(R\times 298\) は約分して消せます。</p>$$P = \frac{(n_1 + n_2)\,R\,T}{V} = \frac{1\times 10^{6}\times 100 + 100\times 10^{6}\times 5}{105} = \frac{600}{105}\ \mathrm{MPa} \approx 5.7\ \mathrm{MPa}$$
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

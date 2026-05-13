@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>40Aの鋼管（内径42 mm）で冷却水の配管を行った。この配管内を10 m<sup>3</sup>h<sup>-1</sup>で冷却水を流した場合、1,000 m当たりの圧力損失に最も近い値はどれか。<br/>なお、エルボ、バルブ等での圧力損失は考慮しないものとする。<br/>また、圧力損失ΔP=4f(ρu<sub>a</sub><sup>2</sup>/2)(L/D) Pa、配管摩擦係数f=0.005、水の密度ρ=1,000 kg m<sup>-3</sup>とする。<br/>u<sub>a</sub>：管内の平均流速［m s<sup>-1</sup>］、L：配管の長さ［m］、D：配管の内径［m］</p></div>
+            <div class="question-text"><p>40A の鋼管（内径 42 mm）で冷却水の配管を行った。この配管内を \(10\ \mathrm{m^{3}/h}\) で冷却水を流した場合、1,000 m 当たりの圧力損失に最も近い値はどれか。なお、エルボ、バルブ等での圧力損失は考慮しないものとする。また、圧力損失</p>$$\Delta P = 4f\,\frac{\rho u_a^{2}}{2}\cdot\frac{L}{D}\ \mathrm{Pa}$$<p>配管摩擦係数 \(f = 0.005\)、水の密度 \(\rho = 1{,}000\ \mathrm{kg/m^{3}}\) とする。\(u_a\)：管内の平均流速 \([\mathrm{m/s}]\)、\(L\)：配管の長さ [m]、\(D\)：配管の内径 [m]。</p></div>
           </div>
         </div>
 
@@ -75,7 +79,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">①</span>
-              <span class="choice-text">9.5×10<sup>3</sup> Pa</span>
+              <span class="choice-text">9.5×10 3 Pa</span>
             </div>
           </div>
 
@@ -83,7 +87,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">②</span>
-              <span class="choice-text">9.5×10<sup>4</sup> Pa</span>
+              <span class="choice-text">9.5×10 4 Pa</span>
             </div>
           </div>
 
@@ -91,7 +95,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">③</span>
-              <span class="choice-text">9.5×10<sup>5</sup> Pa</span>
+              <span class="choice-text">9.5×10 5 Pa</span>
             </div>
           </div>
 
@@ -99,7 +103,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">9.5×10<sup>6</sup> Pa</span>
+              <span class="choice-text">9.5×10 6 Pa</span>
             </div>
           </div>
 
@@ -107,7 +111,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">⑤</span>
-              <span class="choice-text">9.5×10<sup>7</sup> Pa</span>
+              <span class="choice-text">9.5×10 7 Pa</span>
             </div>
           </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>圧力損失計算のために管内流速を求めます。内径42 mm（0.042 m）の鋼管の断面積はπD<sup>2</sup>/4＝3.14×0.042<sup>2</sup>/4＝1.385×10<sup>-3</sup> m<sup>2</sup>です。流量が10 m<sup>3</sup>/h（10/3600 m<sup>3</sup>/s）であるため、流速は10/3600 m<sup>3</sup>/s ÷ 1.385×10<sup>-3</sup> m<sup>2</sup>＝2.01 m/sです。</p><p>圧力損失を計算するとΔP=4f(ρu<sub>a</sub><sup>2</sup>/2)(L/D)＝4×0.005× (1,000×2.01<sup>2</sup>/2)(1,000/0.042) ＝ 9.62×10<sup>5</sup> Paです。よって最も近い値は9.5×10<sup>5</sup> Paです。</p>
+<p>正答は<strong>3番</strong>です。</p><p>内径 42 mm の鋼管の断面積は \(\pi D^{2}/4 = 3.14\times 0.042^{2}/4 = 1.385\times 10^{-3}\ \mathrm{m^{2}}\) です。流量 \(10\ \mathrm{m^{3}/h} = 10/3600\ \mathrm{m^{3}/s}\)、流速 \(u_a = (10/3600)/(1.385\times 10^{-3}) = 2.01\ \mathrm{m/s}\) です。</p>$$\Delta P = 4\times 0.005\times\frac{1{,}000\times 2.01^{2}}{2}\cdot\frac{1{,}000}{0.042} = 9.62\times 10^{5}\ \mathrm{Pa}$$<p>最も近い値は \(9.5\times 10^{5}\) Pa です。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

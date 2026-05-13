@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>1次反応で崩壊するヨウ素131の半減期は8日である。ヨウ素131に基づく放射能の量が100万ベクレル（Bq）であった。放射能の量が1,000ベクレル（Bq）になるには、おおよそ何日かかるか。<br/>ただし、log<sub>10</sub>2=0.301である。</p></div>
+            <div class="question-text"><p>1 次反応で崩壊するヨウ素 131 の半減期は 8 日である。ヨウ素 131 に基づく放射能の量が 100 万ベクレル（Bq）であった。放射能の量が 1,000 ベクレル（Bq）になるには、おおよそ何日かかるか。ただし、\(\log_{10} 2 = 0.301\) である。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>2番</strong>です。</p><p>半減期は不安定な原子核の半数(半分)が崩壊するのにかかる時間を意味します。</p><p>まず、n回半減期を迎えたとします。すると1,000,000 / 2<sup>n</sup>＝1,000と立式できますのでnを求めます。</p><p>1,000,000 / 2<sup>n</sup>＝1,000<br/>10<sup>6</sup> / 2<sup>n</sup>＝10<sup>3</sup><br/>10<sup>6</sup> / 10<sup>3</sup>＝ 2<sup>n</sup><br/>10<sup>3</sup>＝ 2<sup>n</sup><br/>log<sub>10</sub>(2<sup>n</sup>)＝3<br/>n × log<sub>10</sub>(2)＝3<br/>n × 0.301＝3<br/>n＝10</p><p>10回半減期を迎えたことが分かります。1回の半減期を迎えるのに8日かかるため、8日/回 × 10回＝80日かかります。</p>
+<p>正答は<strong>2番</strong>です。</p><p>\(n\) 回半減期を迎えたとします。\(1{,}000{,}000/2^{n} = 1{,}000\) より、</p>$$2^{n} = 10^{3} \;\Rightarrow\; n\log_{10} 2 = 3 \;\Rightarrow\; n = 3/0.301 = 10$$<p>1 回 8 日かかるため、\(8\times 10 = 80\) 日かかります。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

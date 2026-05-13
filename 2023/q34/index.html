@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>内側に厚さx<sub>1</sub>＝150 mm、熱伝導度k<sub>1</sub>＝1.5 Wm<sup>-1</sup>K<sup>-1</sup>の断熱材を使い、外側に厚さx<sub>2</sub>＝100 mm、熱伝導度λ<sub>2</sub>＝0.2 Wm<sup>-1</sup>K<sup>-1</sup>の断熱材を用いた炉がある。定常状態において、炉内温度がT<sub>1</sub>＝800℃、外面温度T<sub>2</sub>＝140℃の時、内側の断熱材と外側の断熱材の境界面の温度Tとして最も適切なものはどれか。</p><div><div><img alt="" loading="lazy" src="../../images/2023/q34/image-559.png" style="max-width: 100%; height: auto;"/></div></div><p>熱伝導において、熱流束q（Wm<sup>-2</sup>）はフーリエの法則q＝－k（dT/dx）に従うものとする。</p></div>
+            <div class="question-text"><p>内側に厚さ \(x_1 = 150\ \mathrm{mm}\)、熱伝導度 \(k_1 = 1.5\ \mathrm{W\,m^{-1}\,K^{-1}}\) の断熱材を使い、外側に厚さ \(x_2 = 100\ \mathrm{mm}\)、熱伝導度 \(\lambda_2 = 0.2\ \mathrm{W\,m^{-1}\,K^{-1}}\) の断熱材を用いた炉がある。定常状態において、炉内温度が \(T_1 = 800\ ^\circ\mathrm{C}\)、外面温度 \(T_2 = 140\ ^\circ\mathrm{C}\) のとき、内側の断熱材と外側の断熱材の境界面の温度 \(T\) として最も適切なものはどれか。</p><div><img alt="" loading="lazy" src="../../images/2023/q34/image-559.png" style="max-width: 100%; height: auto;"/></div><p>熱伝導において、熱流束 \(q\ [\mathrm{W/m^{2}}]\) はフーリエの法則 \(q = -k\,(dT/dx)\) に従うものとする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>1番</strong>です。</p><p>この問題におけるフーリエの法則q＝－k（dT/dx）をまず理解します。（dT/dx）は温度の変化量dTと距離の変化量dxの比であることを表します。つまり今回は温度減少量と伝熱距離の比に相当します。</p><ul><li><strong>断熱材1の熱流束q<sub>1</sub></strong>：-1.5×（800－T）/ 0.15</li><li><strong>断熱材1の熱流束q<sub>2</sub></strong>：-0.2×（T-140）/ 0.10</li></ul><p>熱流束qの単位Wm<sup>-2</sup>はWを変形してJ/s・m<sup>-2</sup>とも記載できます。つまり熱流束は、ある断面に対して直交する方向に伝わる、単位時間当たりの熱量を意味します。そのため断熱材1と2のように密着して連続的に伝熱する状態では、各断熱材における熱流束q<sub>1</sub>とq<sub>2</sub>の値は同じとなります。</p><p>各断熱材における熱流束を求めた2式で方程式を解くとT＝690℃と求まります。</p>
+<p>正答は<strong>1番</strong>です。</p><p>この問題におけるフーリエの法則 \(q = -k\,dT/dx\) をまず理解します。\(dT/dx\) は温度の変化量 \(dT\) と距離の変化量 \(dx\) の比であることを表します。つまり今回は温度減少量と伝熱距離の比に相当します。</p>$$q_1 = -1.5\times\frac{800 - T}{0.15},\quad q_2 = -0.2\times\frac{T - 140}{0.10}$$<p>熱流束 \(q\) の単位 \(\mathrm{W/m^{2}}\) は \(\mathrm{W}\) を変形して \(\mathrm{J/(s\cdot m^{2})}\) とも記載できます。つまり熱流束は、ある断面に対して直交する方向に伝わる、単位時間当たりの熱量を意味します。そのため断熱材 1 と 2 のように密着して連続的に伝熱する状態では、各断熱材における熱流束 \(q_1\) と \(q_2\) の値は同じとなります。</p><p>各断熱材における熱流束を求めた 2 式で方程式を解くと \(T = 690\ ^\circ\mathrm{C}\) と求まります。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

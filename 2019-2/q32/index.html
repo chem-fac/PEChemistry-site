@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>気温36.0℃、水蒸気分圧p［kPa］の空気中の水滴温度（湿球温度）がT<sub>a</sub>＝29.0℃であった。水滴表面の水蒸気分圧p<sub>a</sub>は水滴湿度の飽和蒸気圧であり、p<sub>s</sub>＝3.95 kPaである。また36.0℃での飽和水蒸気圧はp*＝5.92 kPaである。<br/>空気から水滴表面への顕熱移動速度q<sub>s</sub>［W/m<sup>2</sup>］は次式で求められる。<br/>　q<sub>s</sub>＝h（T－T<sub>s</sub>）　（h＝13.2 W／（m<sup>2</sup>K）：伝熱係数）<br/>一方、水蒸気分圧差を推進力とする水の蒸発速度N［mol／（m<sup>2</sup>s）］は次式である。<br/>　N＝k（p<sub>s</sub>－p）　（k＝0.0056 mol／（m<sup>2</sup> s kPa）：物質移動係数）<br/>これより水滴表面での潜熱移動速度q<sub>l</sub>［W/m<sup>2</sup>］は次式である。<br/>　q<sub>l</sub>＝Δ<sub>ν</sub>H×N　（Δ<sub>ν</sub>H＝43720 J/mol：水の蒸発潜熱）<br/>顕熱移動と潜熱移動が等しいこと（q<sub>s</sub>＝q<sub>l</sub>）から空気中の水蒸気分圧pが求められる。以上よりこの空気の相対湿度（=100×(p/p*)）として最も近い値はどれか。</p></div>
+            <div class="question-text"><p>気温 36.0 ℃、水蒸気分圧 \(p\ [\mathrm{kPa}]\) の空気中の水滴温度（湿球温度）が \(T_s = 29.0\ ^\circ\mathrm{C}\) であった。水滴表面の水蒸気分圧 \(p_s\) は水滴温度の飽和蒸気圧であり、\(p_s = 3.95\) kPa である。また 36.0 ℃ での飽和水蒸気圧は \(p^{*} = 5.92\) kPa である。</p><p>空気から水滴表面への顕熱移動速度 \(q_s\ [\mathrm{W/m^{2}}]\) は次式で求められる。</p>$$q_s = h\,(T - T_s)\quad(h = 13.2\ \mathrm{W/(m^{2}\,K)}：伝熱係数)$$<p>一方、水蒸気分圧差を推進力とする水の蒸発速度 \(N\ [\mathrm{mol/(m^{2}\,s)}]\) は次式である。</p>$$N = k\,(p_s - p)\quad(k = 0.0056\ \mathrm{mol/(m^{2}\,s\,kPa)}：物質移動係数)$$<p>これより水滴表面での潜熱移動速度 \(q_l\ [\mathrm{W/m^{2}}]\) は次式である。</p>$$q_l = \Delta_v H \times N\quad(\Delta_v H = 43720\ \mathrm{J/mol}：水の蒸発潜熱)$$<p>顕熱移動と潜熱移動が等しいこと \((q_s = q_l)\) から空気中の水蒸気分圧 \(p\) が求められる。以上よりこの空気の相対湿度 \((= 100\times(p/p^{*}))\) として最も近い値はどれか。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>飽和水蒸気圧p*は与えられているため、残る水蒸気分圧pを求める問題です。内容は複雑ですが、問題文に与えられた式を計算するだけで回答が導けます。</p><p>顕熱移動と潜熱移動が等しいこと（q<sub>s</sub>＝q<sub>l</sub>）と問題に記載されており、h(T－T<sub>s</sub>)＝Δ<sub>ν</sub>H×Nが立式できます。更にN＝k（p<sub>s</sub>－p）であるため、h(T－T<sub>s</sub>)＝Δ<sub>ν</sub>H×k(p<sub>s</sub>－p)となります。この式に与えられた値を代入します。</p><p>h(T－T<sub>s</sub>)＝Δ<sub>ν</sub>H × k(p<sub>s</sub>－p)<br/>13.2(36.0－29.0)＝43720 × 0.0056(3.95－p)<br/>p＝3.57 kPa</p><p>よって、相対湿度は100 × (3.57/5.92)＝60.3％、最も近い値は60％です。</p>
+<p>正答は<strong>4番</strong>です。</p><p>飽和水蒸気圧 \(p^{*}\) は与えられているため、残る水蒸気分圧 \(p\) を求める問題です。内容は複雑ですが、問題文に与えられた式を計算するだけで回答が導けます。</p><p>顕熱移動と潜熱移動が等しいこと \((q_s = q_l)\) と問題に記載されており、\(h(T - T_s) = \Delta_v H\times N\) が立式できます。更に \(N = k(p_s - p)\) であるため、\(h(T - T_s) = \Delta_v H\times k(p_s - p)\) となります。この式に与えられた値を代入します。</p>$$13.2\,(36.0 - 29.0) = 43720\times 0.0056\,(3.95 - p) \;\Rightarrow\; p = 3.57\ \mathrm{kPa}$$<p>よって、相対湿度は \(100\times(3.57/5.92) = 60.3\%\)、最も近い値は 60% です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

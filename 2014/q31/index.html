@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>内層に厚み150 mm、熱伝導度1.5 W/m・Kの断熱材を用い、外層に厚み200 mm、熱伝導度0.2 W/m・Kの保温材を用いた炉がある。炉内面温度が800℃、外面温度が140℃のとき、断熱材と保湿材の境界面における温度として、最も適切な値はどれか。<br/>伝熱量（伝熱速度）は\( Q=-kA\frac{dT}{dx}\)で表される。なお、Q：伝熱量［W］、k：熱伝導度［W/m・K］、A：伝熱面積［m<sup>2</sup>］、T：温度［K］、x：位置（厚さ）［m］である。</p></div>
+            <div class="question-text"><p>内層に厚み 150 mm、熱伝導度 \(1.5\ \mathrm{W/(m\cdot K)}\) の断熱材を用い、外層に厚み 200 mm、熱伝導度 \(0.2\ \mathrm{W/(m\cdot K)}\) の保温材を用いた炉がある。炉内面温度が 800 ℃、外面温度が 140 ℃ のとき、断熱材と保温材の境界面における温度として、最も適切な値はどれか。伝熱量（伝熱速度）は</p>$$Q = -k A\,\frac{dT}{dx}$$<p>で表される。なお、\(Q\)：伝熱量 [W]、\(k\)：熱伝導度 \([\mathrm{W/(m\cdot K)}]\)、\(A\)：伝熱面積 \([\mathrm{m^{2}}]\)、\(T\)：温度 [K]、\(x\)：位置（厚さ）[m] である。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>この問題における伝熱量（伝熱速度）\( Q=-kA\frac{dT}{dx}\)をまず理解します。（dT/dx）は温度の変化量dTと距離の変化量dxの比であることを表します。つまり今回は温度減少量と伝熱距離の比に相当します。</p><ul><li><strong>断熱材1のQ伝熱量Q<sub>1</sub></strong>：-1.5A×（800－T）/ 0.15</li><li><strong>断熱材1の伝熱量Q<sub>2</sub></strong>：-0.2A×（T-140）/ 0.20</li></ul><p>伝熱量Qの単位Wは変形してJ/sとも記載できます。つまり熱流束は、単位時間当たりに伝わる熱量を意味します。そのため断熱材1と2のように密着して連続的に伝熱する状態では断面積Aも等しく、各断熱材における熱流束（Wm<sup>-2</sup>）が同じとなります。つまりQ<sub>1</sub>＝Q<sub>2</sub>とおいて方程式が解けます。方程式を解くとT＝740℃と求まります。</p>
+<p>正答は<strong>3番</strong>です。</p><p>断熱材 1 の伝熱量 \(Q_1 = -1.5 A\times(800 - T)/0.15\)、断熱材 2 の伝熱量 \(Q_2 = -0.2 A\times(T - 140)/0.20\)。密着して連続的に伝熱する状態では \(Q_1 = Q_2\) なので、方程式を解くと \(T = 740\ ^\circ\mathrm{C}\) と求まります。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　室内空間容積6,000 m<sup>3</sup>の作業場がある。作業場内は、作業環境保護のため外気を送風量12,000 m<sup>3</sup>/hの換気扇で換気している。作業場には換気扇の他に循環風量8,000 m<sup>3</sup>/h、冷却能力20 kWh（一定値）のクーラーを設置している。外気温が30℃のとき室内温度として、最も近い値はどれか。<br/>　なお、室内空気は完全に混合されていて、室内外ともに圧力変動はないものとする。 また、空気比熱は1,010 J/(kg・℃)、空気密度は1.1 kg/m³、1 kWh=3.6×10<sup>6</sup> Jの一定値とする。</p><div><div><img alt="" loading="lazy" src="../../images/2024/q31/image-665.png" style="max-width: 100%; height: auto;"/></div></div></div>
+            <div class="question-text">室内空間容積 \(6{,}000\ \mathrm{m^{3}}\) の作業場がある。作業場内は、作業環境保護のため外気を送風量 \(12{,}000\ \mathrm{m^{3}/h}\) の換気扇で換気している。作業場には換気扇の他に循環風量 \(8{,}000\ \mathrm{m^{3}/h}\)、冷却能力 20 kWh（一定値）のクーラーを設置している。外気温が 30 ℃ のとき室内温度として、最も近い値はどれか。なお、室内空気は完全に混合されていて、室内外ともに圧力変動はないものとする。また、空気比熱は \(1{,}010\ \mathrm{J/(kg\cdot ^\circ C)}\)、空気密度は \(1.1\ \mathrm{kg/m^{3}}\)、\(1\ \mathrm{kWh} = 3.6\times 10^{6}\ \mathrm{J}\) の一定値とする。<div><img alt="" loading="lazy" src="../../images/2024/q31/image-665.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>まず換気とクーラーによる質量流量を計算します。<br/>換気：12,000 m<sup>3</sup>/h × 1.1 kg/m<sup>3</sup> = 13,200 kg/h<br/>クーラー：8,000 m<sup>3</sup>/h × 1.1 kg/m<sup>3</sup> = 8,800 kg/h</p><p>求めたい室温をTとします。換気により外気温から室内空気へ与える熱量は13,200 kg/h × 1,010 J/(kg・℃) × (30 - T)℃＝13.3(30 - T) ＭJ/hです。</p><p>クーラーの冷却能力を熱量に変換すると、20 kWh × (3.6 × 10<sup>6</sup>) J/kWh = 72 MJです。1 kWhは1時間あたりのエネルギー量であるため、72 MJ/hとみなせます（参考：W＝J/sです）。</p><p>室温Tは換気による加熱量とクーラーによる冷却量のバランスが取れた時の室温ですので、同じ熱量が移動したと考えられます。つまり13.3(30 - T)＝72と表せます。</p><p>よってT＝24.6℃となり、最も近いのは25℃です。</p>
+<p>正答は<strong>3番</strong>です。</p><p>まず換気とクーラーによる質量流量を計算します。<br/>換気： \(12{,}000\ \mathrm{m^{3}/h} \times 1.1\ \mathrm{kg/m^{3}} = 13{,}200\ \mathrm{kg/h}\)<br/>クーラー： \(8{,}000\ \mathrm{m^{3}/h} \times 1.1\ \mathrm{kg/m^{3}} = 8{,}800\ \mathrm{kg/h}\)</p><p>求めたい室温を \(T\) とします。換気により外気温から室内空気へ与える熱量は $$13{,}200\ \mathrm{kg/h} \times 1{,}010\ \mathrm{J/(kg\cdot ^\circ C)} \times (30 - T)\ ^\circ\mathrm{C} = 13.3(30 - T)\ \mathrm{MJ/h}$$です。</p><p>クーラーの冷却能力を熱量に変換すると、\(20\ \mathrm{kWh} \times 3.6\times 10^{6}\ \mathrm{J/kWh} = 72\ \mathrm{MJ}\) です。1 kWh は 1 時間あたりのエネルギー量であるため、72 MJ/h とみなせます（参考：\(\mathrm{W} = \mathrm{J/s}\)）。</p><p>室温 \(T\) は換気による加熱量とクーラーによる冷却量のバランスが取れたときの室温なので、同じ熱量が移動したと考えられます。つまり $$13.3(30 - T) = 72$$と表せます。</p><p>よって \(T = 24.6\ ^\circ\mathrm{C}\) となり、最も近いのは 25 ℃ です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

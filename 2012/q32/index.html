@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>反応物濃度をCとしたとき、反応速度がdC/dt=-kC（k：反応速度定数、t：時間）で示される反応において、その反応物の溶液が入った回分反応槽で、30分間の反応によって、その50%が反応した。この反応物の最終反応率を99%としたとき1回の操作にかかる時間、すなわち1サイクルの時間として最も近い値はどれか。<br/>ただし、回分反応槽への原料仕込み、及び製品の取出しに合計1時間要するものとする。<br/>なお、log2=0.693、log100=4.605とする。</p></div>
+            <div class="question-text"><p>反応物濃度を \(C\) としたとき、反応速度が \(dC/dt = -k\,C\)（\(k\)：反応速度定数、\(t\)：時間）で示される反応において、その反応物の溶液が入った回分反応槽で、30 分間の反応によって、その 50% が反応した。この反応物の最終反応率を 99% としたとき 1 回の操作にかかる時間、すなわち 1 サイクルの時間として最も近い値はどれか。ただし、回分反応槽への原料仕込み、及び製品の取出しに合計 1 時間要するものとする。なお、\(\log 2 = 0.693\)、\(\log 100 = 4.605\) とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>反応速度式dC/dt=-kCは微分方程式であるため分離変数法で分解します。</p><p>まず変数Cとtで分けるためdC/C＝-kdtの形に変形します。</p><p><em>C</em>の関数として左辺を、tの関数として右辺をそれぞれ積分します。<br/>∫(1/​C)dC＝∫−kdt<br/>log|C|＝-kt＋定数</p><p>初期条件、t＝0の時の濃度を C<sub>0</sub>とすると、log|C<sub>0</sub>|＝-k × 0 + 定数となり、log|C<sub>0</sub>|＝定数が成り立ちます。この式を元の積分後の式に代入します。<br/>log|C|＝-kt＋log|C<sub>0</sub>|<br/>log|C/C<sub>0</sub>|＝-kt</p><p>C/C<sub>0</sub>は分子が反応後の原料濃度、分母が反応前の原料濃度ですので、残存率とみなすことが出来ます。ln(C/C<sub>0</sub>)＝-ktを用いて、30分間の反応によって50％反応した時を考えます。<br/>log|1-0.5|＝-0.5k<br/>-log(0.5)/0.5＝k</p><p>反応速度定数kが求まりましたので、99％反応した時の反応時間を考えます。<br/>log(1-0.99)＝-{-log(0.5)/0.5}t<br/>log(0.01)＝log(0.5)/0.5 × t<br/>log(100<sup>-1</sup>)＝log(2<sup>-1</sup>)/0.5 × t<br/>-log100＝-log2 × t/0.5 <br/>t＝0.5 × (-4.605) / (-0.693)<br/>t＝3.32 時間</p><p>「回分反応槽への原料仕込み、及び製品の取出しに合計1時間要する」と記載されていますので、1サイクルの時間は3.32＋1.00＝4.32時間です。最も近い値は4.5時間です。</p>
+<p>正答は<strong>4番</strong>です。</p><p>反応速度式 \(dC/dt = -k\,C\) を分離変数法で積分すると、\(\log(C/C_0) = -k\,t\) が得られます。</p><p>30 分間で 50% 反応したことから、\(\log 0.5 = -0.5\,k \Rightarrow k = -\log 0.5/0.5\)。</p><p>99% 反応した時の反応時間：</p>$$\log 0.01 = -k\,t \;\Rightarrow\; t = \frac{0.5\times(-\log 100)}{-\log 2}\times(-1) = \frac{0.5\times 4.605}{0.693} \approx 3.32\ \text{時間}$$<p>1 サイクルは仕込み・取り出し 1 時間を加えて \(3.32 + 1.00 = 4.32\) 時間。最も近い値は 4.5 時間です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

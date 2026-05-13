@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>外気温が35℃で室温が25℃の場合。厚さ4 mmで熱伝導度λ＝0.75 W／（mK）のガラス窓を通過する熱流束に最も近い値はどれか。ただし、室内外の伝熱係数（熱伝達係数）はそれぞれ10 W/（m<sup>2</sup>K）、及び50 W/（m<sup>2</sup>K）とする。</p></div>
+            <div class="question-text"><p>外気温が 35 ℃ で室温が 25 ℃ の場合、厚さ 4 mm で熱伝導度 \(\lambda = 0.75\ \mathrm{W/(m\cdot K)}\) のガラス窓を通過する熱流束に最も近い値はどれか。ただし、室内外の伝熱係数（熱伝達係数）はそれぞれ \(10\ \mathrm{W/(m^{2}\cdot K)}\) 及び \(50\ \mathrm{W/(m^{2}\cdot K)}\) とする。</p></div>
           </div>
         </div>
 
@@ -75,7 +79,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="true">
               <span class="choice-num">①</span>
-              <span class="choice-text">80 W／m<sup>2</sup></span>
+              <span class="choice-text">\(80\ \mathrm{W/m^{2}}\)</span>
             </div>
           </div>
 
@@ -83,7 +87,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">②</span>
-              <span class="choice-text">100 W／m<sup>2</sup></span>
+              <span class="choice-text">\(100\ \mathrm{W/m^{2}}\)</span>
             </div>
           </div>
 
@@ -91,7 +95,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">130 W／m<sup>2</sup></span>
+              <span class="choice-text">\(130\ \mathrm{W/m^{2}}\)</span>
             </div>
           </div>
 
@@ -99,7 +103,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">290 W／m<sup>2</sup></span>
+              <span class="choice-text">\(290\ \mathrm{W/m^{2}}\)</span>
             </div>
           </div>
 
@@ -107,7 +111,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <div class="choice-item" data-correct="false">
               <span class="choice-num">⑤</span>
-              <span class="choice-text">480 W／m<sup>2</sup></span>
+              <span class="choice-text">\(480\ \mathrm{W/m^{2}}\)</span>
             </div>
           </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>1番</strong>です。</p><p>それぞれの熱伝導度および伝熱係数を用いて総括伝熱係数Uを計算します。伝熱係数は逆数を、熱伝導は厚さを熱伝導度で割って足し合わせます。</p><p>1/U＝(1/10)＋(0.004/0.75)＋(1/50)＝1/8となり、U＝8です。</p><p>熱流束Q/A＝U（T<sub>H</sub>-T<sub>L</sub>）[W/m<sup>2</sup>]であることから、8 × (35 – 25)＝80 W / m<sup>2</sup>です。</p><h2>年度選択に戻る</h2><div><div><div><a href="https://chem-fac.com/pe-first/" rel="noopener" target="_blank"><div><dl><dt><img loading="lazy" src="../../images/2021/q35/技術士化学部門解説-1-scaled.png" style="max-width: 100%; height: auto;"/></dt><dd><p>技術士（化学部門）一次試験解説</p><div><p>技術士一次試験の専門科目（化学部門）に関する解説ページです。 各年度ごと、1問ずつ解説しています。 過去問題は公益社団法人日本技術士会の許可を得て掲載しております。転載される際はご注意ください。 ht … </p></div></dd></dl></div></a></div></div></div>
+<p>正答は<strong>1番</strong>です。</p><p>それぞれの熱伝導度および伝熱係数を用いて総括伝熱係数 \(U\) を計算します。伝熱係数は逆数を、熱伝導は厚さを熱伝導度で割って足し合わせます。</p>$$\frac{1}{U} = \frac{1}{10} + \frac{0.004}{0.75} + \frac{1}{50} = \frac{1}{8}\;\Rightarrow\; U = 8$$<p>熱流束 \(Q/A = U(T_H - T_L)\ [\mathrm{W/m^{2}}]\) であることから、\(8\times(35 - 25) = 80\ \mathrm{W/m^{2}}\) です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

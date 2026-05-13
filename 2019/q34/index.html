@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>気温T<sub>2</sub>＝29.0℃、人体の体内温T＝36.0℃のとき、皮膚表面温度T<sub>1</sub>［℃］に最も近い値はどれか。ただし、皮膚と一体内に厚さδ＝4 mmの温度境膜（皮膚膜）を考え、皮膚の熱伝導率λ＝0.21 W m<sup>-1</sup> K<sup>-1</sup>とする。また、皮膚表面空気側の伝熱係数をh＝8.8 W m<sup>-2</sup> K<sup>-1</sup>とする。</p><div><div><img alt="" loading="lazy" src="../../images/2019/q34/image-472.png" style="max-width: 100%; height: auto;"/></div></div></div>
+            <div class="question-text"><p>気温 \(T_2 = 29.0\ ^\circ\mathrm{C}\)、人体の体内温 \(T = 36.0\ ^\circ\mathrm{C}\) のとき、皮膚表面温度 \(T_1\ [^\circ\mathrm{C}]\) に最も近い値はどれか。ただし、皮膚と体内の間に厚さ \(\delta = 4\ \mathrm{mm}\) の温度境膜（皮膚膜）を考え、皮膚の熱伝導率 \(\lambda = 0.21\ \mathrm{W\,m^{-1}\,K^{-1}}\) とする。また、皮膚表面空気側の伝熱係数を \(h = 8.8\ \mathrm{W\,m^{-2}\,K^{-1}}\) とする。</p><div><img alt="" loading="lazy" src="../../images/2019/q34/image-472.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>1番</strong>です。</p><p>固体の熱流束はフーリエの法則q＝－k（dT/dx）から計算できます。（dT/dx）は温度の変化量dTと距離の変化量dxの比であることを表します。</p><p>熱流束qの単位Wm<sup>-2</sup>はWを変形してJ/s・m<sup>-2</sup>とも記載できます。つまり熱流束は、ある断面に対して直交する方向に伝わる、単位時間当たりの熱量を意味します。そのため皮膚と空気のように密着して連続的に伝熱する状態では、同一面積における皮膚と空気の伝熱量（熱流束）が同じとして計算できます。</p><p>フーリエの法則より、皮膚の熱流束は0.21 W m<sup>-1</sup> K<sup>-1</sup>×（36.0-T<sub>1</sub>）K / 0.004 m＝1,890-52.5T<sub>1</sub> W/m<sup>2</sup>です。</p><p>空気の熱流束は8.8 W m<sup>-2</sup> K<sup>-1</sup>× (T<sub>1</sub>-29.0) K＝8.8T<sub>1</sub>-255.2 W/m<sup>2</sup>です。</p><p>2式で方程式を解くとT<sub>1</sub>＝35.0℃と求まります。</p>
+<p>正答は<strong>1番</strong>です。</p><p>固体の熱流束はフーリエの法則 \(q = -k\,(dT/dx)\) から計算できます。皮膚と空気のように密着して連続的に伝熱する状態では、同一面積における皮膚と空気の伝熱量（熱流束）が同じとして計算できます。</p><p>フーリエの法則より、皮膚の熱流束は</p>$$\frac{0.21\ \mathrm{W\,m^{-1}\,K^{-1}}\times(36.0 - T_1)\,\mathrm{K}}{0.004\,\mathrm{m}} = 1{,}890 - 52.5\,T_1\ \mathrm{W/m^{2}}$$<p>空気の熱流束は \(8.8\times(T_1 - 29.0) = 8.8\,T_1 - 255.2\ \mathrm{W/m^{2}}\) です。</p><p>2 式で方程式を解くと \(T_1 = 35.0\ ^\circ\mathrm{C}\) と求まります。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

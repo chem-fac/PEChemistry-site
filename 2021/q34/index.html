@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　排水中に直径d<sub>p</sub>＝6.0×10<sup>-5</sup> m、粒子密度ρ<sub>p</sub>＝1200 kg/m<sup>3</sup>の粒子のみが懸濁している。粒子の沈降速度u<sub>t</sub>［m/s］は次式のストークスの式に従うものとする。<br/>　　ストークスの式：u<sub>t</sub>＝（ρ<sub>p</sub>－ρ）gd<sub>p</sub><sup>2</sup> / 18μ<br/>　ここで、ρ：水の密度（＝1000 kg/m<sup>3</sup>）、g：重力加速度（＝9.8 m/s<sup>2</sup>）、μ：水の粘度（＝0.0010 Pa s）である。<br/>　深さH＝5 mの横流式沈殿池（下図）を用いてこのd<sub>p</sub>、ρ<sub>p</sub>の粒子のみを含む排水から粒子を60%除去したい。そのために必要な沈殿池の長さL［m］として、最も近い値はどれか。ただし、水の流れは水平方向の速度v＝0.0034 m/sで均一とする。</p><div><div><img alt="" loading="lazy" src="../../images/2021/q34/image-518.png" style="max-width: 100%; height: auto;"/><figcaption>図 横流式沈殿池</figcaption></div></div></div>
+            <div class="question-text"><p>排水中に直径 \(d_p = 6.0\times 10^{-5}\ \mathrm{m}\)、粒子密度 \(\rho_p = 1200\ \mathrm{kg/m^{3}}\) の粒子のみが懸濁している。粒子の沈降速度 \(u_t\ [\mathrm{m/s}]\) は次式のストークスの式に従うものとする。</p>$$u_t = \frac{(\rho_p - \rho)\,g\,d_p^{2}}{18\mu}\quad(\text{ストークスの式})$$<p>ここで、\(\rho\)：水の密度（\(= 1000\ \mathrm{kg/m^{3}}\)）、\(g\)：重力加速度（\(= 9.8\ \mathrm{m/s^{2}}\)）、\(\mu\)：水の粘度（\(= 0.0010\ \mathrm{Pa\cdot s}\)）である。<br/>深さ \(H = 5\ \mathrm{m}\) の横流式沈殿池（下図）を用いてこの \(d_p, \rho_p\) の粒子のみを含む排水から粒子を 60% 除去したい。そのために必要な沈殿池の長さ \(L\ [\mathrm{m}]\) として、最も近い値はどれか。ただし、水の流れは水平方向の速度 \(v = 0.0034\ \mathrm{m/s}\) で均一とする。</p><div><img alt="" loading="lazy" src="../../images/2021/q34/image-518.png" style="max-width: 100%; height: auto;"/><figcaption>図 横流式沈殿池</figcaption></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>2番</strong>です。</p><p>ストークスの式を解きます。</p><p>u<sub>t</sub>＝（1,200－1,000）× 9.8 × (6 × 10<sup>-5</sup>)<sup>2</sup> / (18 × 0.0010)<br/>u<sub>t</sub>＝200× 9.8 × 36 × 10<sup>-10</sup> / (18 × 10<sup>-3</sup>)<br/>u<sub>t</sub>＝0.000392 m/s</p><p>粒子の60％を除去するため、高さ5 mの60％沈降すれば良い計算となります。沈降に要する時間は5 × 0.6 / 0.000392＝7653 sです。</p><p>水の水平方向の流れを考えると、必要となる距離は7653 × 0.0034＝26 mです。</p>
+<p>正答は<strong>2番</strong>です。</p><p>ストークスの式を解きます。</p>$$u_t = \frac{(1{,}200 - 1{,}000)\times 9.8\times (6\times 10^{-5})^{2}}{18\times 0.0010} = 0.000392\ \mathrm{m/s}$$<p>粒子の 60% を除去するため、高さ 5 m の 60% 沈降すれば良い計算となります。沈降に要する時間は \(5\times 0.6 / 0.000392 = 7653\ \mathrm{s}\) です。</p><p>水の水平方向の流れを考えると、必要となる距離は \(7653\times 0.0034 = 26\ \mathrm{m}\) です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　バルブを介して遮断されている2基の密閉したタンクがある。100 m<sup>3</sup>のタンクには1 MPaの気体が充填されており、5 m<sup>3</sup>のタンクには100 MPaの気体が充填されている。気体は共に同じもので理想気体であり。温度は共に25℃である。遮断しているバルブを開けて、2基のタンク内の圧力を均一とした場合の圧力として、最も適切な値はどれか。<br/>　なお、断熱膨張は考慮せず。温度は25℃一定とする。<br/>　また、気体の状態方程式はPV=nRTであり、Pは圧力［MPa］、Vは容積［m<sup>3</sup>］、nは気体のmol数［mol］、Rは気体定数［MPam<sup>3</sup>mol<sup>-1</sup>K<sup>-1</sup>］、Tは気体の温度［K］である。</p><div><div><img alt="" loading="lazy" src="../../images/2015/q32/image-434.png" style="max-width: 100%; height: auto;"/></div></div></div>
+            <div class="question-text"><p>バルブを介して遮断されている 2 基の密閉したタンクがある。\(100\ \mathrm{m^{3}}\) のタンクには 1 MPa の気体が充填されており、\(5\ \mathrm{m^{3}}\) のタンクには 100 MPa の気体が充填されている。気体は共に同じもので理想気体であり、温度は共に 25 ℃ である。遮断しているバルブを開けて、2 基のタンク内の圧力を均一とした場合の圧力として、最も適切な値はどれか。なお、断熱膨張は考慮せず、温度は 25 ℃ 一定とする。また、気体の状態方程式は \(PV = nRT\) であり、\(P\) は圧力 [MPa]、\(V\) は容積 \([\mathrm{m^{3}}]\)、\(n\) は気体の物質量 [mol]、\(R\) は気体定数 \([\mathrm{MPa\,m^{3}\,mol^{-1}\,K^{-1}}]\)、\(T\) は気体の温度 [K] である。</p><div><img alt="" loading="lazy" src="../../images/2015/q32/image-434.png" style="max-width: 100%; height: auto;"/></div></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>バルブを開けた時、全体の体積Vは100+5＝105 m<sup>3</sup>です。また25℃の時の絶対温度Tは25+273=298Kです。</p><p>理想気体の状態方程式PV＝nRTより、各タンク内に含まれる気体の分子量はn＝PV/RTを計算すれば求まります。バルブを開けた後は、各タンクの分子量を合計した値となります。</p><ul><li><strong>タンク1の気体の分子量n<sub>1</sub></strong>：1×10<sup>6</sup>×100/(R×298)</li><li><strong>タンク2の気体の分子量n<sub>2</sub></strong>：100×10<sup>6</sup>×5/(R×298)</li></ul><p>理想気体の状態方程式より、バルブを開けた後の圧力Pは(n<sub>1</sub>+n<sub>2</sub>)RT/Vで計算できます。計算量が複雑に見えますが、MPaへの変換のために10<sup>6</sup>は計算せず残しておくことが可能で、(R×298)は約分して消せます。</p><p>P＝nRT/V＝{1×10<sup>6</sup>×100/(R×298)+100×10<sup>6</sup>×5/(R×298)}×R×298 / 105 = 600/105 MPa = 5.7 MPa</p>
+<p>正答は<strong>3番</strong>です。</p><p>バルブを開けたとき、全体の体積 \(V = 100 + 5 = 105\ \mathrm{m^{3}}\)。\(T = 298\) K。</p>$$n_1 = \frac{1\times 10^{6}\times 100}{R\times 298},\quad n_2 = \frac{100\times 10^{6}\times 5}{R\times 298}$$$$P = \frac{(n_1 + n_2)RT}{V} = \frac{1\times 10^{6}\times 100 + 100\times 10^{6}\times 5}{105} = \frac{600}{105}\ \mathrm{MPa} \approx 5.7\ \mathrm{MPa}$$
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

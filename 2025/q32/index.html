@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text">槽の中に直径dp=6.0×10 -5 m、粒子密度ρp=1200 kg/m 3 の粒子のみが懸濁している。粒子の沈降速度up[m/s]は、次式のストークスの式に従うものとする。 up = ((ρp - ρ) g dp 2 ) / (18μ) ここで、 ρ：水の密度 1000 kg/m 3 g：重力加速度 9.8 m/s 2 μ：水の粘度 0.0010 Pa・s である。 深さH=5 mの槽が上端まで水で満たされているとき、水面から3 mの深さまで粒子を沈降させるための時間[s]として、最も近い値はどれか。</div>
+            <div class="question-text">槽の中に直径 \(d_p = 6.0\times 10^{-5}\ \mathrm{m}\)、粒子密度 \(\rho_p = 1200\ \mathrm{kg/m^{3}}\) の粒子のみが懸濁している。粒子の沈降速度 \(u_p\ [\mathrm{m/s}]\) は、次式のストークスの式に従うものとする。$$u_p = \frac{(\rho_p - \rho)\,g\,d_p^{2}}{18\mu}$$ここで、\(\rho\)：水の密度 \(1000\ \mathrm{kg/m^{3}}\)、\(g\)：重力加速度 \(9.8\ \mathrm{m/s^{2}}\)、\(\mu\)：水の粘度 \(0.0010\ \mathrm{Pa\cdot s}\) である。深さ \(H = 5\ \mathrm{m}\) の槽が上端まで水で満たされているとき、水面から 3 m の深さまで粒子を沈降させるための時間 \([\mathrm{s}]\) として、最も近い値はどれか。</div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-ストークスの式より沈降速度は u = ((ρp−ρ)gd 2 )/(18μ) ≈ 3.9×10 -4 m/s となります。3 m 沈降する時間は t = 3/u ≈ 7.6×10 3 s なので⑤です。
+ストークスの式より沈降速度は$$u = \frac{(\rho_p - \rho)\,g\,d_p^{2}}{18\mu} \approx 3.9\times 10^{-4}\ \mathrm{m/s}$$となります。3 m 沈降する時間は$$t = \frac{3}{u} \approx 7.6\times 10^{3}\ \mathrm{s}$$なので⑤です。
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

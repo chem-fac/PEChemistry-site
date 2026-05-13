@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>内容積1,000 L、圧力p=1.0 atm、温度300Kの密閉タンクに、ジメチルエーテル（DME、CH<sub>3</sub>OCH<sub>3</sub>）の蒸気が6.0%、空気が94%（すなわちO<sub>3</sub>が19.7%、N<sub>3</sub>が74.3%）入っている。この混合ガスに着火して、DMEを完全燃焼させたとき、密閉タンク内の圧力pとして最も近い値はどれか。燃焼ガスは全成分理想気体と仮定する。DMEの燃焼エンタルピーΔH<sub>c</sub>＝-1,328 kJ mol<sup>-1</sup>（発熱）、燃焼ガスの定積熱容量C<sub>v</sub>＝30 J mol<sup>-1</sup> K<sup>-1</sup>で一定とする。気体定数R＝0.08206 L atm mol<sup>-1</sup> K<sup>-1</sup>である。</p></div>
+            <div class="question-text"><p>内容積 1,000 L、圧力 \(p = 1.0\ \mathrm{atm}\)、温度 300 K の密閉タンクに、ジメチルエーテル（DME、\(\mathrm{CH_3OCH_3}\)）の蒸気が 6.0%、空気が 94%（すなわち \(\mathrm{O_2}\) が 19.7%、\(\mathrm{N_2}\) が 74.3%）入っている。この混合ガスに着火して、DME を完全燃焼させたとき、密閉タンク内の圧力 \(p\) として最も近い値はどれか。燃焼ガスは全成分理想気体と仮定する。DME の燃焼エンタルピー \(\Delta H_c = -1{,}328\ \mathrm{kJ\,mol^{-1}}\)（発熱）、燃焼ガスの定積熱容量 \(C_v = 30\ \mathrm{J\,mol^{-1}\,K^{-1}}\) で一定とする。気体定数 \(R = 0.08206\ \mathrm{L\,atm\,mol^{-1}\,K^{-1}}\) である。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>気体の状態方程式PV＝nRTより、密閉タンク内の物質量n＝RT/PV＝（1.0×1000）/（0.08206×300）＝40.62 molです。そのうちDMEの物質量6％であるため40.62×0.06＝2.44 molです。</p><p>2.44 molのDMEを燃焼するときに発生する熱量は、燃焼エンタルピーΔH<sub>c</sub>＝-1,328 kJ mol<sup>-1</sup>より-1,328 ×2.44＝-3,240 kJです。問題に記載の通り発熱反応となります。</p><p>ここで、問題にある定積熱容量C<sub>v</sub>は体積一定条件における熱容量を表します。今回のように密閉容器であり温度が上がっても体積が変わらない状態で使用されます。与えられた熱は仕事に使われず、全て温度上昇に使われます。C<sub>v</sub>＝30 J mol<sup>-1</sup> K<sup>-1</sup>（30×10<sup>-3</sup> kJ mol<sup>-1</sup> K<sup>-1</sup>）であるため、温度上昇量は3,240 kJ /（30×10<sup>-3</sup> kJ mol<sup>-1</sup> K<sup>-1</sup>×40.62 mol）＝ 2,659 Kです。</p><p>燃焼により温度が上昇したときの圧力はP＝nRT/Vで計算できるため、40.62 mol×0.08206 L atm mol<sup>-1</sup> K<sup>-1</sup>×（300＋2,659）K ÷ 1,000 L＝9.9 atmです。よって最も近い答えは10 atmです。</p>
+<p>正答は<strong>4番</strong>です。</p><p>気体の状態方程式 \(PV = nRT\) より、密閉タンク内の物質量は</p>$$n = \frac{PV}{RT} = \frac{1.0\times 1000}{0.08206\times 300} = 40.62\ \mathrm{mol}$$<p>そのうち DME の物質量は 6% であるため \(40.62\times 0.06 = 2.44\) mol です。</p><p>2.44 mol の DME を燃焼するときに発生する熱量は、燃焼エンタルピー \(\Delta H_c = -1{,}328\ \mathrm{kJ\,mol^{-1}}\) より \(-1{,}328\times 2.44 = -3{,}240\) kJ です。問題に記載の通り発熱反応となります。</p><p>ここで、問題にある定積熱容量 \(C_v\) は体積一定条件における熱容量を表します。今回のように密閉容器であり温度が上がっても体積が変わらない状態で使用されます。与えられた熱は仕事に使われず、全て温度上昇に使われます。\(C_v = 30\ \mathrm{J\,mol^{-1}\,K^{-1}}\)（\(30\times 10^{-3}\ \mathrm{kJ\,mol^{-1}\,K^{-1}}\)）であるため、温度上昇量は</p>$$\frac{3{,}240\ \mathrm{kJ}}{30\times 10^{-3}\ \mathrm{kJ\,mol^{-1}\,K^{-1}}\times 40.62\ \mathrm{mol}} \approx 2{,}659\ \mathrm{K}$$<p>燃焼により温度が上昇したときの圧力は \(P = nRT/V\) で計算できるため、</p>$$P = \frac{40.62\times 0.08206\times(300 + 2{,}659)}{1{,}000} \approx 9.9\ \mathrm{atm}$$<p>よって最も近い答えは 10 atm です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　95℃、1 atm（0.1013 MPa）において、ベンゼンとトルエンの混合物が気液平衡の状態になっている。ベンゼンの液相中のモル分率に最も近い値はどれか。<br/>　ただし、この系の気液平衡は以下のラウールの法則に従うものとし、95℃のベンゼン、トルエンの蒸気圧はそれぞれ、1,177 mmHg（0.1569 MPa）、477 mmHg（0.0636 MPa）とする。<br/>ラウールの法則：Py<sub>i</sub>＝p<sub>i</sub>x<sub>i</sub><br/>P：平衡圧（全圧）<br/>x<sub>i</sub>、y<sub>i</sub>：成分iの液相、気相中のモル分率<br/>p<sub>i</sub>：平衡温度における成分iの蒸気圧</p></div>
+            <div class="question-text"><p>95 ℃、1 atm（0.1013 MPa）において、ベンゼンとトルエンの混合物が気液平衡の状態になっている。ベンゼンの液相中のモル分率に最も近い値はどれか。ただし、この系の気液平衡は以下のラウールの法則に従うものとし、95 ℃ のベンゼン、トルエンの蒸気圧はそれぞれ 1,177 mmHg（0.1569 MPa）、477 mmHg（0.0636 MPa）とする。</p><p>ラウールの法則：</p>$$P\,y_i = p_i\,x_i$$<p>\(P\)：平衡圧（全圧）、\(x_i, y_i\)：成分 \(i\) の液相、気相中のモル分率、\(p_i\)：平衡温度における成分 \(i\) の蒸気圧</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>2番</strong>です。</p><p>ドルトンの分圧の法則より、気体の全圧Pは各成分（ベンゼンおよびトルエン）の分圧の和に等しくなります。<br/>つまりラウールの法則から全圧P＝p <sub>benzen</sub> x <sub>benzen</sub>＋p <sub>toluene</sub> x<sub> toluene</sub>となります。</p><p>液相側のモル分率は合計が1のため、x<sub> toluene</sub>＝（1 – x <sub>benzen</sub>）となります。全圧および各成分の蒸気圧が分かっているため、方程式を解きベンゼンの液相のモル分率x <sub>benzen</sub>を求めます。</p><p>0.1013＝0.1569 x <sub>benzen</sub>＋0.0636 ×（1 – x <sub>benzen</sub>）<br/>x <sub>benzen</sub>＝0.40</p>
+<p>正答は<strong>2番</strong>です。</p><p>ドルトンの分圧の法則より、気体の全圧 \(P\) は各成分（ベンゼンおよびトルエン）の分圧の和に等しくなります。つまりラウールの法則から全圧 \(P = p_{\text{benzen}}\,x_{\text{benzen}} + p_{\text{toluene}}\,x_{\text{toluene}}\) となります。</p><p>液相側のモル分率は合計が 1 のため、\(x_{\text{toluene}} = 1 - x_{\text{benzen}}\) となります。</p>$$0.1013 = 0.1569\,x_{\text{benzen}} + 0.0636\,(1 - x_{\text{benzen}}) \;\Rightarrow\; x_{\text{benzen}} = 0.40$$
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

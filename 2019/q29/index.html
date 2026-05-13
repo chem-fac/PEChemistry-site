@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　プロパン1 kgを14.5 m<sup>3</sup>の空気で完全燃焼させたときの空気比に最も近い値はどれか。プロパンガス、燃焼ガスはともに0℃、101.3 kPaの条件下にあり、反応は次の式による。<br/>　　C<sub>3</sub>H<sub>8</sub>＋5O<sub>2</sub>→3CO<sub>2</sub>＋4H<sub>2</sub>O<br/>　ただし、空気中の酸素濃度、窒素濃度はそれぞれ21.0 vol%、79.0 vol%とし、各元素の原子量は、H=1、C=12、O=16とする。</p></div>
+            <div class="question-text"><p>プロパン 1 kg を \(14.5\ \mathrm{m^{3}}\) の空気で完全燃焼させたときの空気比に最も近い値はどれか。プロパンガス、燃焼ガスはともに 0 ℃、101.3 kPa の条件下にあり、反応は次の式による。</p>$$\mathrm{C_3H_8} + 5\mathrm{O_2} \rightarrow 3\mathrm{CO_2} + 4\mathrm{H_2O}$$<p>ただし、空気中の酸素濃度、窒素濃度はそれぞれ 21.0 vol%、79.0 vol% とし、各元素の原子量は、H = 1、C = 12、O = 16 とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>2番</strong>です。</p><p>空気比とは、燃料を完全に燃焼させるために理論的に必要な空気量（理論空気量）と実際に燃焼用として送り込まれた空気量との比です。燃焼において酸素が足りない状態だと不完全燃焼となりCOが発生してしまうため若干空気比を1より高めに設定します。</p><p>プロパンの分子量は44です。1kgでは22.7mol（1,000g/44）です。プロパン1kg（22.7mol）に対して必要な酸素の量は22.7×5＝113.5molです。標準状態（0℃、1気圧）のとき気体は22.4L/molであるため、必要な酸素の量は113.5mol×22.4L/mol＝2,542L（2.54m<sup>3</sup>）です。</p><p>空気中の酸素濃度、窒素濃度はそれぞれ21.0 vol%、79.0 vol%であることから、2.54m<sup>3</sup>×100/21＝12.1m<sup>3</sup>の空気が必要だと分かります。燃焼に使用した空気量が14.5m<sup>3</sup>であるため、空気比は14.5÷12.1＝1.2倍となります。</p>
+<p>正答は<strong>2番</strong>です。</p><p>空気比とは、燃料を完全に燃焼させるために理論的に必要な空気量（理論空気量）と実際に燃焼用として送り込まれた空気量との比です。</p><p>プロパンの分子量は 44 です。1 kg では \(1{,}000/44 = 22.7\) mol です。プロパン 1 kg（22.7 mol）に対して必要な酸素の量は \(22.7\times 5 = 113.5\) mol です。標準状態（0 ℃、1 気圧）のとき気体は 22.4 L/mol であるため、必要な酸素の量は \(113.5\ \mathrm{mol}\times 22.4\ \mathrm{L/mol} = 2{,}542\ \mathrm{L}\)（\(2.54\ \mathrm{m^{3}}\)）です。</p><p>空気中の酸素濃度、窒素濃度はそれぞれ 21.0 vol%、79.0 vol% であることから、\(2.54\ \mathrm{m^{3}}\times 100/21 = 12.1\ \mathrm{m^{3}}\) の空気が必要だと分かります。燃焼に使用した空気量が \(14.5\ \mathrm{m^{3}}\) であるため、空気比は \(14.5/12.1 = 1.2\) 倍となります。</p>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

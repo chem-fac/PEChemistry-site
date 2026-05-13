@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　回分反応器でA→Bの反応を行った。この反応は反応物Aの濃度c<sub>A</sub>の二次反応である（次式）。</p><p>$$ \frac{dc_{A}}{dt}=-kc_{A}^{2}$$</p><p>（t：時間、k：反応速度定数）<br/>　初期濃度c<sub>A0</sub>から反応を開始して、t＝1時間でc<sub>A</sub>＝0.5c<sub>A0</sub>となった。c<sub>A</sub>＝0.25c<sub>A0</sub>となるのは反応開始から何時間後か。次のうち最も近い値はどれか。</p></div>
+            <div class="question-text"><p>回分反応器で \(\mathrm{A} \rightarrow \mathrm{B}\) の反応を行った。この反応は反応物 A の濃度 \(c_A\) の二次反応である（次式）。</p>$$\frac{dc_A}{dt} = -k\,c_A^{2}$$<p>（\(t\)：時間、\(k\)：反応速度定数）<br/>初期濃度 \(c_{A0}\) から反応を開始して、\(t = 1\) 時間で \(c_A = 0.5\,c_{A0}\) となった。\(c_A = 0.25\,c_{A0}\) となるのは反応開始から何時間後か。次のうち最も近い値はどれか。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>反応速度式dc<sub>A</sub>/dt=-kc<sub>A</sub><sup>2</sup>は微分方程式であるため分離変数法で分解します。</p><p>まず変数Cとtで分けるためdc<sub>A</sub>/c<sub>A</sub><sup>2</sup>＝-kdtの形に変形します。</p><p><em>c<sub>A</sub></em>の関数として左辺を、tの関数として右辺をそれぞれ積分します。<br/>∫(1/​c<sub>A</sub><sup>2</sup>)dc<sub>A</sub>＝∫−kdt<br/>-1/c<sub>A</sub>＝-kt＋定数</p><p>初期条件、t＝0の時、-1/c<sub>A0</sub>＝-k × 0 + 定数となり、-1/c<sub>A0</sub>＝定数が成り立ちます。この式を元の積分後の式に代入します。<br/>-1/c<sub>A</sub>＝-kt＋(-1/c<sub>A0</sub>)<br/>1/c<sub>A</sub>＝kt＋1/c<sub>A0</sub></p><p>Cは反応後の原料濃度ですので、50％反応した時はc<sub>A</sub>=0.5c<sub>A0</sub>とみなせます。1時間後に反応率が50%になっていることから反応速度定数を求めます。<br/>1/c<sub>A</sub>＝kt＋1/c<sub>A0</sub><br/>1/(0.5c<sub>A0</sub>)＝k × 1＋1/c<sub>A0</sub><br/>2/c<sub>A0</sub>＝k＋1/c<sub>A0</sub><br/>k＝1/c<sub>A0</sub></p><p>反応定数kが求まりましたので、c<sub>A</sub>=0.25c<sub>A0</sub>の時の反応時間を考えます。75％反応したことを意味します。<br/>1/c<sub>A</sub>＝kt＋1/c<sub>A0</sub><br/>1/(0.25c<sub>A0</sub>)＝(1/c<sub>A0</sub>)t＋1/c<sub>A0</sub><br/>4/c<sub>A0</sub>＝t/c<sub>A0</sub> ＋1/c<sub>A0</sub><br/>4＝t＋1<br/>t＝ 3 時間</p><p>よってc<sub>A</sub>＝0.25c<sub>A0</sub>となるのは、反応を開始してから3時間後です。</p><h2>年度選択に戻る</h2><div><div><div><a href="https://chem-fac.com/pe-first/" rel="noopener" target="_blank"><div><dl><dt><img loading="lazy" src="../../images/2022/q35/技術士化学部門解説-1-scaled.png" style="max-width: 100%; height: auto;"/></dt><dd><p>技術士（化学部門）一次試験解説</p><div><p>技術士一次試験の専門科目（化学部門）に関する解説ページです。 各年度ごと、1問ずつ解説しています。 過去問題は公益社団法人日本技術士会の許可を得て掲載しております。転載される際はご注意ください。 ht … </p></div></dd></dl></div></a></div></div></div>
+<p>正答は<strong>4番</strong>です。</p><p>反応速度式 \(dc_A/dt = -k\,c_A^{2}\) は微分方程式であるため分離変数法で分解します。</p><p>まず変数 \(c_A\) と \(t\) で分けるため \(dc_A / c_A^{2} = -k\,dt\) の形に変形します。\(c_A\) の関数として左辺を、\(t\) の関数として右辺をそれぞれ積分します。</p>$$\int \frac{1}{c_A^{2}}\,dc_A = \int -k\,dt$$$$-\frac{1}{c_A} = -k\,t + \text{定数}$$<p>初期条件、\(t = 0\) の時、\(-1/c_{A0} = -k\times 0 + \text{定数}\) となり、\(-1/c_{A0} = \text{定数}\) が成り立ちます。この式を元の積分後の式に代入します。</p>$$-\frac{1}{c_A} = -k\,t - \frac{1}{c_{A0}},\quad \frac{1}{c_A} = k\,t + \frac{1}{c_{A0}}$$<p>\(c_A\) は反応後の原料濃度ですので、50% 反応した時は \(c_A = 0.5\,c_{A0}\) とみなせます。1 時間後に反応率が 50% になっていることから反応速度定数を求めます。</p>$$\frac{1}{0.5\,c_{A0}} = k\times 1 + \frac{1}{c_{A0}} \;\Rightarrow\; \frac{2}{c_{A0}} = k + \frac{1}{c_{A0}} \;\Rightarrow\; k = \frac{1}{c_{A0}}$$<p>反応定数 \(k\) が求まりましたので、\(c_A = 0.25\,c_{A0}\) の時の反応時間を考えます。75% 反応したことを意味します。</p>$$\frac{1}{0.25\,c_{A0}} = \frac{1}{c_{A0}}\,t + \frac{1}{c_{A0}} \;\Rightarrow\; \frac{4}{c_{A0}} = \frac{t}{c_{A0}} + \frac{1}{c_{A0}} \;\Rightarrow\; t = 3\ \text{時間}$$<p>よって \(c_A = 0.25\,c_{A0}\) となるのは、反応を開始してから 3 時間後です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>　水溶液を濃縮するための三重効用蒸発缶がある。蒸発缶の伝熱面積は3缶ともに10 m<sup>2</sup>、第1缶、第2缶、第3缶の操作圧力はそれぞれP<sub>1</sub>＞P<sub>2</sub>＞P<sub>3</sub>、蒸発蒸気温度はT<sub>1</sub>＞T<sub>2</sub>＞T<sub>3</sub>である。第1缶は132℃のスチームで加熱しており、蒸発蒸気温度T<sub>1</sub>は94℃である。第2缶の加熱に用いられた凝縮水量を計測したところ。1時間当たり456 kgであった。各缶での沸点上昇は第1缶で0℃、第2缶で2℃、第3缶で4℃である。各缶の総括伝熱係数（熱貫流係数）は操作圧力、温度に関係なく一定とした場合、第3缶の蒸発蒸気温度T<sub>3</sub>として、最も適切な値はどれか。<br/>　なお、水の蒸発熱及び凝縮熱ともに500 kcal/kgで一定とする。</p></div>
+            <div class="question-text"><p>水溶液を濃縮するための三重効用蒸発缶がある。蒸発缶の伝熱面積は 3 缶ともに \(10\ \mathrm{m^{2}}\)、第 1 缶、第 2 缶、第 3 缶の操作圧力はそれぞれ \(P_1 > P_2 > P_3\)、蒸発蒸気温度は \(T_1 > T_2 > T_3\) である。第 1 缶は 132 ℃ のスチームで加熱しており、蒸発蒸気温度 \(T_1\) は 94 ℃ である。第 2 缶の加熱に用いられた凝縮水量を計測したところ、1 時間当たり 456 kg であった。各缶での沸点上昇は第 1 缶で 0 ℃、第 2 缶で 2 ℃、第 3 缶で 4 ℃ である。各缶の総括伝熱係数（熱貫流係数）は操作圧力、温度に関係なく一定とした場合、第 3 缶の蒸発蒸気温度 \(T_3\) として、最も適切な値はどれか。なお、水の蒸発熱及び凝縮熱ともに \(500\ \mathrm{kcal/kg}\) で一定とする。</p></div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>1番</strong>です。</p><p>三重効用蒸発缶は多重効用蒸発装置の一種です。前缶の蒸発物が次缶の加熱媒体として使用されます。次の缶に進むごとに缶内を減圧することで沸点を下げて温度差を得ます。三重効用蒸発缶は3つの蒸発缶が連結した構成です。</p><div><div><img alt="" loading="lazy" src="../../images/2014/q32/image-617.png" style="max-width: 100%; height: auto;"/><figcaption>三重効用蒸発缶のイメージ</figcaption></div></div><p>伝熱の式Q＝UAΔTの式を用います。総括伝熱係数および伝熱面積は各缶で同じため、UおよびAとして各缶の伝熱量を考えます。第一缶～三缶までの伝熱量をQ<sub>1</sub>, Q<sub>2</sub>,Q<sub>3</sub>、第二缶および第三缶の蒸発蒸気温度をT<sub>2</sub>, T<sub>3</sub>とします。</p><p>蒸発蒸気回収の観点から、第一缶の蒸発蒸気を全て凝縮させる必要があります。第一缶の伝熱量は全て水の蒸発に使われたと考えると、蒸発蒸気を全て凝縮させるには第一缶での伝熱量分の熱を第二缶の加熱に使用する必要があります。つまり第一缶と第二缶の伝熱量は同じ（Q<sub>1</sub>＝Q<sub>2</sub>）です。同様に、第二缶と第三缶の伝熱量も同じです。伝熱量はQで統一して表せます。</p><p>上記内容をまとめると、各缶で伝熱面積A、総括伝熱係数U、伝熱量Qは同じ、蒸発蒸気温度Tのみ異なります。</p><p>第一缶目は蒸気加熱温度132℃、蒸発蒸気温度94℃です。Q＝UAΔT＝UA(132-94)と立式できます。Q/UA＝38です。</p><p>第二缶目は蒸気加熱温度94℃、蒸発蒸気温度T<sub>2</sub>℃です。Q＝UAΔT＝UA(94-T<sub>2</sub>)と立式できます。Q/AU＝38＝94-T<sub>2</sub>より、T<sub>2</sub>＝56です。</p><p>注意点として、T<sub>2</sub>は第二缶の液温です。蒸発に伴い溶質の濃度が上がることで沸点上昇が起こります。当然、蒸発蒸気に溶質は含まれないため、水溶液と蒸発蒸気の温度が異なることを意味します。</p><p>第二缶では2℃沸点上昇していることから、第二缶の蒸発蒸気温度は56-2＝54℃です。</p><p>第三缶目は蒸気加熱温度54℃、蒸発蒸気温度T<sub>3</sub>℃です。Q＝UAΔT＝UA(54-T<sub>3</sub>)と立式できます。Q/AU＝38＝54-T<sub>2</sub>より、T<sub>3</sub>＝16です。第三缶では沸点上昇が4℃起きていることから、蒸発蒸気温度は16-4＝12℃となります。</p>
+<p>正答は<strong>1番</strong>です。</p><p>三重効用蒸発缶は多重効用蒸発装置の一種です。前缶の蒸発物が次缶の加熱媒体として使用されます。次の缶に進むごとに缶内を減圧することで沸点を下げて温度差を得ます。</p><div><img alt="" loading="lazy" src="../../images/2014/q32/image-617.png" style="max-width: 100%; height: auto;"/><figcaption>三重効用蒸発缶のイメージ</figcaption></div><p>伝熱の式 \(Q = U A\,\Delta T\) を用います。総括伝熱係数および伝熱面積は各缶で同じため、各缶の伝熱量は等しく \(Q\) で表せます。</p><p>第 1 缶：\(Q = U A\,(132 - 94) \Rightarrow Q/(UA) = 38\)。<br/>第 2 缶：\(Q/(UA) = 38 = 94 - T_2 \Rightarrow T_2 = 56\ ^\circ\mathrm{C}\)（液温）。沸点上昇 2 ℃ より蒸発蒸気温度は \(56 - 2 = 54\ ^\circ\mathrm{C}\)。<br/>第 3 缶：\(Q/(UA) = 38 = 54 - T_3 \Rightarrow T_3 = 16\ ^\circ\mathrm{C}\)（液温）。沸点上昇 4 ℃ より蒸発蒸気温度は \(16 - 4 = 12\ ^\circ\mathrm{C}\) となります。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>

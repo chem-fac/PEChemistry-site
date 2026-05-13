@@ -20,6 +20,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icon-512.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51WG5358W8"></script>
   <script>
@@ -41,7 +45,7 @@
         <a href="../../#search">検索</a>
         <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener">要点まとめ</a>
         <a href="../../support/">支援する</a>
-        <a href="../../contact/">お問い合わせ</a>
+        <a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a>
       </nav>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -64,7 +68,7 @@
         <!-- Question text -->
         <div class="question-body">
           <div class="question-text-card">
-            <div class="question-text"><p>フェノール濃度がC<sub>0</sub>＝0.10 kg－phenol／m<sup>3</sup>－waterの水溶液がV＝10 m<sup>3</sup>ある。これに活性炭W＝20 kgを投入して、吸着平衡に達したとき、水溶液中のフェノール濃度C［kg－phenol／m<sup>3</sup>－water］として最も近い値はどれか。吸着平衡は活性炭中のフェノール濃度をq*［kg－phenol／kg－活性炭」として、次式のフロインドリッヒ型で表せるとする。<br/>　q*＝0.5C<sup>1/2</sup></p></div>
+            <div class="question-text"><p>フェノール濃度が \(C_0 = 0.10\ \mathrm{kg\text{-}phenol/m^{3}\text{-}water}\) の水溶液が \(V = 10\ \mathrm{m^{3}}\) ある。これに活性炭 \(W = 20\ \mathrm{kg}\) を投入して、吸着平衡に達したとき、水溶液中のフェノール濃度 \(C\ [\mathrm{kg\text{-}phenol/m^{3}\text{-}water}]\) として最も近い値はどれか。吸着平衡は活性炭中のフェノール濃度を \(q^{*}\ [\mathrm{kg\text{-}phenol/kg\text{-}活性炭}]\) として、次式のフロインドリッヒ型で表せるとする。</p>$$q^{*} = 0.5\,C^{1/2}$$</div>
           </div>
         </div>
 
@@ -126,7 +130,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>5番</strong>です。</p><p>フェノール水溶液が10 m<sup>3</sup>あるため、使用するフェノールの量は0.10 × 10＝1 kgです。</p><p>溶液中のフェノールの量と活性炭中のフェノールの量をそれぞれx, yとします。</p><p>物質収支を考えると、x＋y＝1です。</p><p>またq*＝y/20、C＝x/10と考えることが出来ます。</p><p>フロインドリッヒの式より、y/20＝0.5 × (x/10)<sup>1/2</sup>です。</p><p>x＋y＝1、y/20＝0.5 × (x/10)<sup>1/2</sup>で連立方程式を解きます。</p><p>y/20＝0.5 × (x/10)<sup>1/2</sup><br/>y＝10 × (x/10)<sup>1/2</sup><br/>1-x＝10 × (x/10)<sup>1/2</sup><br/>(1-x)<sup>2</sup>＝10<sup>2</sup> × (x/10)<br/>x<sup>2</sup>-2x+1＝10x<br/>x<sup>2</sup>-12x+1＝0<br/>x＝6±√35（解の公式より）</p><p>√35は6弱の値です。xもyもフェノールの量を表しており、最大1 kgであることから、x＝6-√35だと判断できます。√35＝5.915として、x＝6-5.915＝0.085 kgです。</p><p>水溶液中のフェノール濃度C［kg－phenol／m<sup>3</sup>－water］ですので、C＝0.085 kg / 10 m<sup>3</sup>＝0.0085［kg－phenol／m<sup>3</sup>－water］となります。最も近い値は0.0084です。</p>
+<p>正答は<strong>5番</strong>です。</p><p>フェノール水溶液が \(10\ \mathrm{m^{3}}\) あるため、使用するフェノールの量は \(0.10\times 10 = 1\) kg です。</p><p>溶液中のフェノールの量と活性炭中のフェノールの量をそれぞれ \(x, y\) とします。物質収支を考えると、\(x + y = 1\) です。また \(q^{*} = y/20\)、\(C = x/10\) と考えることができます。</p><p>フロインドリッヒの式より、\(y/20 = 0.5\times (x/10)^{1/2}\) です。\(x + y = 1\) と \(y/20 = 0.5\times (x/10)^{1/2}\) で連立方程式を解きます。</p>$$\begin{aligned}y/20 &= 0.5\,(x/10)^{1/2}\\y &= 10\,(x/10)^{1/2}\\1 - x &= 10\,(x/10)^{1/2}\\(1 - x)^{2} &= 10^{2}\,(x/10)\\x^{2} - 2x + 1 &= 10x\\x^{2} - 12x + 1 &= 0\\x &= 6 \pm \sqrt{35}\quad(\text{解の公式より})\end{aligned}$$<p>\(\sqrt{35}\) は 6 弱の値です。\(x\) も \(y\) もフェノールの量を表しており、最大 1 kg であることから、\(x = 6 - \sqrt{35}\) だと判断できます。\(\sqrt{35} \approx 5.915\) として、\(x = 6 - 5.915 = 0.085\) kg です。</p><p>水溶液中のフェノール濃度 \(C\ [\mathrm{kg\text{-}phenol/m^{3}\text{-}water}]\) ですので、\(C = 0.085\ \mathrm{kg}\,/\,10\ \mathrm{m^{3}} = 0.0085\ [\mathrm{kg\text{-}phenol/m^{3}\text{-}water}]\) となります。最も近い値は 0.0084 です。</p>
               </div>
             </div>
           </div>
@@ -190,7 +194,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">サポート</h4>
           <ul class="footer-col-list">
-            <li><a href="../../contact/">お問い合わせ</a></li>
+            <li><a href="https://chem-fac.com/contact-form/" target="_blank" rel="noopener">お問い合わせ</a></li>
             <li><a href="../../faq/">よくある質問</a></li>
           </ul>
         </div>
