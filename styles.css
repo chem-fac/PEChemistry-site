@@ -844,9 +844,17 @@ img {
   line-height: 1.6;
 }
 
-.question-text-card .question-text table tr:first-child td {
+/* thead を持たない表のみ、最初の行を見出し風に強調 */
+.question-text-card .question-text table:not(:has(thead)) tr:first-child td {
   background: #f4f4f4;
   font-weight: 600;
+}
+
+/* data-table クラス指定時は最初の tbody 行を太字背景にしない（thead で見出しを表す） */
+.question-text-card .question-text table.data-table tbody tr:first-child td,
+.question-text-card .question-text table.data-table tbody tr:first-child th {
+  background: transparent;
+  font-weight: normal;
 }
 
 .question-text-card .question-text .notice {
@@ -869,6 +877,207 @@ img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+}
+
+/* 問題文HTML内に直接置かれた画像も中央揃えに */
+.question-text-card .question-text img,
+.question-text-card .question-text > div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 正答ボックスに表示する選択肢画像 */
+.answer-value .answer-image {
+  display: block;
+  margin: 8px 0 0;
+  max-width: 320px;
+  height: auto;
+}
+
+/* ABCD 表形式の選択肢 */
+.choices-abcd-table {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+  background: #fff;
+}
+
+/* tr を flex 化させない */
+.choices-abcd-table .choice-wrapper {
+  display: table-row;
+  align-items: initial;
+  gap: 0;
+}
+
+.choices-abcd-table .choice-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+  margin: 0;
+  table-layout: fixed;
+}
+
+/* セルは枠線なし、行の下線だけで区切る */
+.choices-abcd-table .choice-table tbody td {
+  border: none;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  padding: 12px 14px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.choices-abcd-table .choice-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* .choice-item（番号セル）に乗っている汎用ボタン装飾を全状態で無効化 */
+.choices-abcd-table .choice-item,
+.choices-abcd-table .choice-item.selected,
+.choices-abcd-table .choice-item.correct,
+.choices-abcd-table .choice-item.incorrect-selected,
+.choices-abcd-table .choice-item.incorrect-selected.selected,
+.choices-abcd-table .choice-item.correct.selected,
+.choices-abcd-table .choice-item.answered,
+.choices-abcd-table .choice-item.answered.correct,
+.choices-abcd-table .choice-item.answered.incorrect-selected {
+  display: table-cell !important;
+  flex: none !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--color-border, #e2e8f0) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 12px 6px !important;
+  color: inherit;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.choices-abcd-table .choice-table tbody tr:last-child .choice-item {
+  border-bottom: none !important;
+}
+
+.choices-abcd-table .choice-table thead th {
+  background: var(--color-bg-secondary, #f8fafb);
+  border: none;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  padding: 10px 8px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+  color: var(--color-text-secondary, #64748b);
+}
+
+.choices-abcd-table .choice-table thead th:first-child {
+  width: 36px;
+  padding: 10px 2px;
+}
+
+.choices-abcd-table .choice-table thead th:nth-child(2) {
+  width: 48px;
+  padding: 10px 2px;
+}
+
+.choices-abcd-table .choice-table-row {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.choices-abcd-table .choice-table-row:hover:not(.answered):not(.eliminated) {
+  background-color: var(--color-primary-bg, #e8f5ee);
+}
+
+.choices-abcd-table .choice-table-row.eliminated {
+  opacity: 0.55;
+  text-decoration: line-through;
+  text-decoration-color: var(--color-text-secondary, #888);
+}
+
+.choices-abcd-table .choice-table-row.correct {
+  background-color: var(--color-primary-bg-hover, #d1eadd);
+}
+
+.choices-abcd-table .choice-table-row.correct .choice-num {
+  color: var(--color-primary, #006938);
+  font-weight: 700;
+}
+
+.choices-abcd-table .choice-table-row.incorrect-selected {
+  background-color: #fef2f2;
+}
+
+.choices-abcd-table .choice-table-row.incorrect-selected .choice-num {
+  color: #b91c1c;
+}
+
+/* answered（未選択の他の選択肢）は薄く */
+.choices-abcd-table .choice-table-row.answered:not(.correct):not(.incorrect-selected) {
+  opacity: 0.55;
+}
+
+.choices-abcd-table .choice-table-num {
+  width: 48px;
+  font-weight: 600;
+}
+
+.choices-abcd-table .choice-table-num .choice-num {
+  font-size: 1.05rem;
+}
+
+.choices-abcd-table .choice-table-eliminate {
+  width: 36px;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.choices-abcd-table .choice-table-eliminate:hover {
+  background: #fef2f2;
+}
+
+.choices-abcd-table .choice-table-eliminate:hover .choice-eliminate-btn {
+  color: #b91c1c;
+}
+
+.choices-abcd-table .choice-eliminate-btn {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 12px 0;
+  margin: 0;
+  cursor: pointer;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1;
+  border-radius: 0;
+  text-align: center;
+}
+
+/* 画像選択肢を 2 列固定で並べたいとき（PC 表示でも 2 列） */
+.choices.choices-grid.choices-grid-2col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* data-table（thead 付きデータ表）はカラム幅指定を解除し、内容に応じて調整 */
+.question-text-card .question-text table.data-table th:nth-child(1),
+.question-text-card .question-text table.data-table td:nth-child(1),
+.question-text-card .question-text table.data-table th:nth-child(2),
+.question-text-card .question-text table.data-table td:nth-child(2) {
+  width: auto;
+  min-width: 0;
+}
+.question-text-card .question-text table.data-table {
+  width: auto;
+  min-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ランダム出題ボタン */
@@ -1289,7 +1498,7 @@ img {
 }
 
 .choice-item.incorrect-selected {
-  border-color: #ef4444;
+  border-color: #b91c1c;
   background: #fef2f2;
   cursor: default;
 }
@@ -1299,7 +1508,7 @@ img {
 }
 
 .choice-item.incorrect-selected.selected {
-  box-shadow: 0 0 0 2px #ef4444;
+  box-shadow: 0 0 0 2px #b91c1c;
 }
 
 .choice-item.answered {

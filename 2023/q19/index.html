@@ -73,48 +73,8 @@
         </div>
 
         <!-- Choices -->
-        <div class="choices">
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">①</span>
-              <span class="choice-text">非晶性高分子 / 結晶性高分子 / ゴム状転移 / ランダムコイル / 球晶</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">②</span>
-              <span class="choice-text">非晶性高分子 / 結晶性高分子 / ガラス転移 / ランダムコイル / ラメラ晶</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="true">
-              <span class="choice-num">③</span>
-              <span class="choice-text">結晶性高分子 / 非晶性高分子 / ガラス転移 / ランダムコイル / ラメラ晶</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">④</span>
-              <span class="choice-text">結晶性高分子 / 非晶性高分子 / 固体転移 / ヘリックス / キメラ晶</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">⑤</span>
-              <span class="choice-text">結晶性高分子 / 非晶性高分子 / ガラス転移 / ミセル / 液晶</span>
-            </div>
-          </div>
-
+        <div class="choices choices-abcd-table">
+<table class="choice-table"><thead><tr><th></th><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead><tbody><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">①</span></td><td>非晶性高分子</td><td>結晶性高分子</td><td>ゴム状転移</td><td>ランダムコイル</td><td>球晶</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">②</span></td><td>非晶性高分子</td><td>結晶性高分子</td><td>ガラス転移</td><td>ランダムコイル</td><td>ラメラ晶</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="true"><span class="choice-num">③</span></td><td>結晶性高分子</td><td>非晶性高分子</td><td>ガラス転移</td><td>ランダムコイル</td><td>ラメラ晶</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">④</span></td><td>結晶性高分子</td><td>非晶性高分子</td><td>固体転移</td><td>ヘリックス</td><td>キメラ晶</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">⑤</span></td><td>結晶性高分子</td><td>非晶性高分子</td><td>ガラス転移</td><td>ミセル</td><td>液晶</td></tr></tbody></table>
         </div>
 
         <!-- Answer reveal -->
@@ -130,7 +90,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>結晶を形成する高分子は結晶性高分子と呼ばれます（A）。結晶性高分子を溶融させた後、融点以下に冷却すると分子鎖が折り畳まれ、板状の結晶（ラメラ晶）が形成されます（E）。更にラメラ晶は複雑な階層構造を形成しながら成長し、マイクロメートルサイズの球状の集合体である球晶を形成します。</p><p>対して規則的な形態を示さないまま固体になる高分子は非晶性高分子と呼ばれます（B）。プラスチックにはガラス転移温度があり、この温度より高くなると非晶部分の高分子鎖の運動が活発になります。またガラス転移温度以下まで下げると固体に戻ります（C）。また非晶部分の高分子鎖はランダムコイル状になっています（D）。</p>
+<p>結晶を形成する高分子は結晶性高分子と呼ばれます（A）。結晶性高分子を溶融させた後、融点以下に冷却すると分子鎖が折り畳まれ、板状の結晶（ラメラ晶）が形成されます（E）。更にラメラ晶は複雑な階層構造を形成しながら成長し、マイクロメートルサイズの球状の集合体である球晶を形成します。</p><p>対して規則的な形態を示さないまま固体になる高分子は非晶性高分子と呼ばれます（B）。プラスチックにはガラス転移温度があり、この温度より高くなると非晶部分の高分子鎖の運動が活発になります。またガラス転移温度以下まで下げると固体に戻ります（C）。また非晶部分の高分子鎖はランダムコイル状になっています（D）。</p>
               </div>
             </div>
           </div>

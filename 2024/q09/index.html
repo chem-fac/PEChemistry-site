@@ -73,48 +73,8 @@
         </div>
 
         <!-- Choices -->
-        <div class="choices">
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">①</span>
-              <span class="choice-text">ナフサ / オクタン価 / 水素化 / スルフォラン / 蒸留</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">②</span>
-              <span class="choice-text">ナフサ / 品質 / 水素化 / 四塩化炭素 / 蒸留</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="true">
-              <span class="choice-num">③</span>
-              <span class="choice-text">ナフサ / オクタン価 / 脱水素 / スルフォラン / 蒸留</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">④</span>
-              <span class="choice-text">重油 / 品質 / 脱水素 / 四塩化炭素 / クロマトグラフィー</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">⑤</span>
-              <span class="choice-text">重油 / オクタン価 / 脱水素 / スルフォラン / クロマトグラフィー</span>
-            </div>
-          </div>
-
+        <div class="choices choices-abcd-table">
+<table class="choice-table"><thead><tr><th></th><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead><tbody><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">①</span></td><td>ナフサ</td><td>オクタン価</td><td>水素化</td><td>スルフォラン</td><td>蒸留</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">②</span></td><td>ナフサ</td><td>品質</td><td>水素化</td><td>四塩化炭素</td><td>蒸留</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="true"><span class="choice-num">③</span></td><td>ナフサ</td><td>オクタン価</td><td>脱水素</td><td>スルフォラン</td><td>蒸留</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">④</span></td><td>重油</td><td>品質</td><td>脱水素</td><td>四塩化炭素</td><td>クロマトグラフィー</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">⑤</span></td><td>重油</td><td>オクタン価</td><td>脱水素</td><td>スルフォラン</td><td>クロマトグラフィー</td></tr></tbody></table>
         </div>
 
         <!-- Answer reveal -->
@@ -130,7 +90,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>3番</strong>です。</p><p>石油化学工業では、まずナフサを熱分解することから始まります。</p><p>常圧蒸留装置や接触分解装置から得られたLPGはアルキレーション装置でオクタン価が高められます。パラフィン系炭化水素（イソブタンなど）と、オレフィン系炭化水素（プロピレンやブチレンなど）との反応により、高オクタン価のイソパラフィンを得ます。高温高圧無触媒で製造するプロセスもありますが、商業的には硫酸やフッ化水素等の酸を触媒として用いる接触アルキル化プロセスが広く普及しています。</p><p>脱硫処理された”重質”ナフサは接触改質装置でオクタン価を高め芳香族主体のガソリン基材に改質（リフォーミング）します。そのため接触改質プロセスはベンゼン・トルエン・キシレン（BTX）製造プロセスにもなっています。シクロパラフィンの脱水素化や、パラフィンの環化脱水素化、異性化などにより、主に芳香族と水素が得られます。この時に得られる水素は他工程での水素供給源となります。</p><p>溶剤抽出法は成分の極性差を利用した抽出操作による分離法です。</p>
+<p>石油化学工業では、まずナフサを熱分解することから始まります。</p><p>常圧蒸留装置や接触分解装置から得られたLPGはアルキレーション装置でオクタン価が高められます。パラフィン系炭化水素（イソブタンなど）と、オレフィン系炭化水素（プロピレンやブチレンなど）との反応により、高オクタン価のイソパラフィンを得ます。高温高圧無触媒で製造するプロセスもありますが、商業的には硫酸やフッ化水素等の酸を触媒として用いる接触アルキル化プロセスが広く普及しています。</p><p>脱硫処理された”重質”ナフサは接触改質装置でオクタン価を高め芳香族主体のガソリン基材に改質（リフォーミング）します。そのため接触改質プロセスはベンゼン・トルエン・キシレン（BTX）製造プロセスにもなっています。シクロパラフィンの脱水素化や、パラフィンの環化脱水素化、異性化などにより、主に芳香族と水素が得られます。この時に得られる水素は他工程での水素供給源となります。</p><p>溶剤抽出法は成分の極性差を利用した抽出操作による分離法です。</p>
               </div>
             </div>
           </div>

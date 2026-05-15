@@ -73,48 +73,8 @@
         </div>
 
         <!-- Choices -->
-        <div class="choices">
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">①</span>
-              <span class="choice-text">ダイヤモンド型 / sp<sup>2</sup> / sp<sup>3</sup> / ファンデルワールスカ / 一致しない</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">②</span>
-              <span class="choice-text">ウルツ鉱型 / sp<sup>2</sup> / sp<sup>3</sup> / イオン結合 / 一致する</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">③</span>
-              <span class="choice-text">ダイヤモンド型 / sp<sup>3</sup> / sp<sup>2</sup> / ファンデルワールスカ / 一致する</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">④</span>
-              <span class="choice-text">ウルツ鉱型 / sp<sup>3</sup> / sp<sup>2</sup> / イオン結合 / 一致しない</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="true">
-              <span class="choice-num">⑤</span>
-              <span class="choice-text">ダイヤモンド型 / sp<sup>3</sup> / sp<sup>2</sup> / ファンデルワールスカ / 一致しない</span>
-            </div>
-          </div>
-
+        <div class="choices choices-abcd-table">
+<table class="choice-table"><thead><tr><th></th><th></th><th>ア</th><th>イ</th><th>ウ</th><th>エ</th><th>オ</th></tr></thead><tbody><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">①</span></td><td>ダイヤモンド型</td><td>sp<sub>2</sub></td><td>sp<sub>3</sub></td><td>ファンデルワールスカ</td><td>一致しない</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">②</span></td><td>ウルツ鉱型</td><td>sp<sub>2</sub></td><td>sp<sub>3</sub></td><td>イオン結合</td><td>一致する</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">③</span></td><td>ダイヤモンド型</td><td>sp<sub>3</sub></td><td>sp<sub>2</sub></td><td>ファンデルワールスカ</td><td>一致する</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">④</span></td><td>ウルツ鉱型</td><td>sp<sub>3</sub></td><td>sp<sub>2</sub></td><td>イオン結合</td><td>一致しない</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="true"><span class="choice-num">⑤</span></td><td>ダイヤモンド型</td><td>sp<sub>3</sub></td><td>sp<sub>2</sub></td><td>ファンデルワールスカ</td><td>一致しない</td></tr></tbody></table>
         </div>
 
         <!-- Answer reveal -->
@@ -123,14 +83,14 @@
 
             <div class="answer-box">
               <div class="answer-label">正答</div>
-              <div class="answer-value">⑤ ダイヤモンド型 / sp 3 / sp 2 / ファンデルワールスカ / 一致しない</div>
+              <div class="answer-value">⑤ ダイヤモンド型 / sp<sup>3</sup> / sp<sup>2</sup> / ファンデルワールスカ / 一致しない</div>
             </div>
 
 
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>5番</strong>です。</p><p>グラフェンやグラファイトは同一平面内にsp<sup>2</sup>混成軌道の等価な3つの結合と、1つのπ結合を持ちます。sp<sup>2</sup>混成軌道の3つの結合のおかげで六角形の網目状構造（ハニカム構造）を作ります。またπ軌道は平面全体で結合しており自由電子のように動けることから導電性を持つ要因にもなっています。</p><p>グラファイトの層状構造において、上下の層を結びつけているのはファンデルワールス力です。これは比較的弱い力で、グラファイトが層状に剥がれやすい性質の原因となっています。</p>
+<p>グラフェンやグラファイトは同一平面内にsp<sup>2</sup>混成軌道の等価な3つの結合と、1つのπ結合を持ちます。sp<sup>2</sup>混成軌道の3つの結合のおかげで六角形の網目状構造（ハニカム構造）を作ります。またπ軌道は平面全体で結合しており自由電子のように動けることから導電性を持つ要因にもなっています。</p><p>グラファイトの層状構造において、上下の層を結びつけているのはファンデルワールス力です。これは比較的弱い力で、グラファイトが層状に剥がれやすい性質の原因となっています。</p>
               </div>
             </div>
           </div>

@@ -73,48 +73,8 @@
         </div>
 
         <!-- Choices -->
-        <div class="choices">
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="true">
-              <span class="choice-num">①</span>
-              <span class="choice-text">モノエタノールアミン / アルカリ性 / 加熱 / 高圧 / メタノール</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">②</span>
-              <span class="choice-text">メタノール / 中性 / 加熱 / 常圧 / モノエタノールアミン</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">③</span>
-              <span class="choice-text">モノエタノールアミン / アルカリ性 / 減圧 / 高圧 / 熱炭酸カリウム</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">④</span>
-              <span class="choice-text">熱炭酸カリウム / 弱アルカリ性 / 減圧 / 常圧 / エタノール</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">⑤</span>
-              <span class="choice-text">メタノール / 中性 / 減圧 / 高温 / エタノール</span>
-            </div>
-          </div>
-
+        <div class="choices choices-abcd-table">
+<table class="choice-table"><thead><tr><th></th><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead><tbody><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="true"><span class="choice-num">①</span></td><td>モノエタノールアミン</td><td>アルカリ性</td><td>加熱</td><td>高圧</td><td>メタノール</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">②</span></td><td>メタノール</td><td>中性</td><td>加熱</td><td>常圧</td><td>モノエタノールアミン</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">③</span></td><td>モノエタノールアミン</td><td>アルカリ性</td><td>減圧</td><td>高圧</td><td>熱炭酸カリウム</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">④</span></td><td>熱炭酸カリウム</td><td>弱アルカリ性</td><td>減圧</td><td>常圧</td><td>エタノール</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">⑤</span></td><td>メタノール</td><td>中性</td><td>減圧</td><td>高温</td><td>エタノール</td></tr></tbody></table>
         </div>
 
         <!-- Answer reveal -->
@@ -130,7 +90,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>1番</strong>です。</p><p>化学吸収法において、二酸化炭素は弱酸性を示すためアルカリ性であるアミン類で化学吸収して分離します。中でもモノエタノールアミンは \(\mathrm{CO_2}\) との反応性が高く、質量当たりの \(\mathrm{CO_2}\) 吸収量が多い特徴があります。吸収したアミンの \(\mathrm{CO_2}\) 溶液は加熱することで脱離反応が進むことから、\(\mathrm{CO_2}\) の分離回収が可能です。</p><p>物理吸収法ではメタノールやポリエチレングリコールなどの溶液に高圧・低温で物理吸着します。溶媒に溶ける気体の物質量が圧力に比例するヘンリーの法則を活用しています。減圧することで \(\mathrm{CO_2}\) の分離回収が可能です。</p>
+<p>化学吸収法において、二酸化炭素は弱酸性を示すためアルカリ性であるアミン類で化学吸収して分離します。中でもモノエタノールアミンは \(\mathrm{CO_2}\) との反応性が高く、質量当たりの \(\mathrm{CO_2}\) 吸収量が多い特徴があります。吸収したアミンの \(\mathrm{CO_2}\) 溶液は加熱することで脱離反応が進むことから、\(\mathrm{CO_2}\) の分離回収が可能です。</p><p>物理吸収法ではメタノールやポリエチレングリコールなどの溶液に高圧・低温で物理吸着します。溶媒に溶ける気体の物質量が圧力に比例するヘンリーの法則を活用しています。減圧することで \(\mathrm{CO_2}\) の分離回収が可能です。</p>
               </div>
             </div>
           </div>

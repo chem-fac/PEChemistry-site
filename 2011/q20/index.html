@@ -73,48 +73,8 @@
         </div>
 
         <!-- Choices -->
-        <div class="choices">
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">①</span>
-              <span class="choice-text">ナトリウム / 水素あるいは炭素で還元 / 誘導 / 360 / 530</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">②</span>
-              <span class="choice-text">アルミニウム / 水素あるいは炭素で還元 / 電気分解 / 720 / 1,060</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">③</span>
-              <span class="choice-text">アルミニウム / 酸素あるいは水で酸化 / 電気分解 / 720 / 2,120</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="true">
-              <span class="choice-num">④</span>
-              <span class="choice-text">ナトリウム / 水素あるいは炭素で還元 / 電気分解 / 360 / 1,060</span>
-            </div>
-          </div>
-
-          <div class="choice-wrapper">
-            <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
-            <div class="choice-item" data-correct="false">
-              <span class="choice-num">⑤</span>
-              <span class="choice-text">亜鉛 / 酸素あるいは水で酸化 / 誘導 / 180 / 180</span>
-            </div>
-          </div>
-
+        <div class="choices choices-abcd-table">
+<table class="choice-table"><thead><tr><th></th><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead><tbody><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">①</span></td><td>ナトリウム</td><td>水素あるいは炭素で還元</td><td>誘導</td><td>360</td><td>530</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">②</span></td><td>アルミニウム</td><td>水素あるいは炭素で還元</td><td>電気分解</td><td>720</td><td>1,060</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">③</span></td><td>アルミニウム</td><td>酸素あるいは水で酸化</td><td>電気分解</td><td>720</td><td>2,120</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="true"><span class="choice-num">④</span></td><td>ナトリウム</td><td>水素あるいは炭素で還元</td><td>電気分解</td><td>360</td><td>1,060</td></tr><tr class="choice-wrapper choice-table-row"><td class="choice-table-eliminate"><button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button></td><td class="choice-table-num choice-item" data-correct="false"><span class="choice-num">⑤</span></td><td>亜鉛</td><td>酸素あるいは水で酸化</td><td>誘導</td><td>180</td><td>180</td></tr></tbody></table>
         </div>
 
         <!-- Answer reveal -->
@@ -130,7 +90,7 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>正答は<strong>4番</strong>です。</p><p>アルカリ金属（例：ナトリウム、カリウム）やアルカリ土類金属（例：マグネシウム）は、水溶液中で電気分解すると水が先に反応してしまうため、結晶を加熱融解して行う溶融塩電解が適しています（A）。</p><p>アルミニウムなどの金属は、通常の還元法（水素還元や炭素還元）では還元が困難です。アルミニウムの場合、酸化アルミニウム（アルミナ）を氷晶石と混合して溶融し、電解還元によって金属アルミニウムを得ます（B）。</p><p>ファラデーの法則は電気分解に関する法則であり、溶融塩電解にも適用されます（C）。ファラデー定数の単位で用いられているCは電子1mol当たりの電気量であり単位クーロンです。電気量［C］＝電流［A］×時間［s］で計算できます。</p><p>電流1,000 Aを1時間流したとき、1時間は3,600秒ですので電気量は1,000A×3,600s＝3.6×10<sup>6</sup> Cです。電流効率80%を考慮すると3.6×10<sup>6</sup> × 0.8＝2.88×10<sup>6</sup> Cです。</p><p>ファラデー定数を用いて電気分解で使われる電子のモル数を求めます。2.88×10<sup>6</sup> C / 9.65×10<sup>4</sup> C/mol＝29.8 molとなります。ここで重要なのが電子のモル数ということです。</p><p>マグネシウムと塩素の生成量を計算します。各極の反応は以下の通りです。<br/>陰極側：Mg<sup>2+</sup> + 2e<sup>–</sup> → Mg<br/>陽極側：2Cl<sup>–</sup> → Cl<sub>2</sub> + 2e<sup>–</sup></p><p>1molの電子から0.5molのマグネシウムと塩素が得られる計算となります。<br/>マグネシウム：24.3 × 29.8 mol × 0.5＝362.07 g<br/>塩素：(35.5×2) × 29.8 mol × 0.5＝1057.9 g</p>
+<p>アルカリ金属（例：ナトリウム、カリウム）やアルカリ土類金属（例：マグネシウム）は、水溶液中で電気分解すると水が先に反応してしまうため、結晶を加熱融解して行う溶融塩電解が適しています（A）。</p><p>アルミニウムなどの金属は、通常の還元法（水素還元や炭素還元）では還元が困難です。アルミニウムの場合、酸化アルミニウム（アルミナ）を氷晶石と混合して溶融し、電解還元によって金属アルミニウムを得ます（B）。</p><p>ファラデーの法則は電気分解に関する法則であり、溶融塩電解にも適用されます（C）。ファラデー定数の単位で用いられているCは電子1mol当たりの電気量であり単位クーロンです。電気量［C］＝電流［A］×時間［s］で計算できます。</p><p>電流1,000 Aを1時間流したとき、1時間は3,600秒ですので電気量は1,000A×3,600s＝3.6×10<sup>6</sup> Cです。電流効率80%を考慮すると3.6×10<sup>6</sup> × 0.8＝2.88×10<sup>6</sup> Cです。</p><p>ファラデー定数を用いて電気分解で使われる電子のモル数を求めます。2.88×10<sup>6</sup> C / 9.65×10<sup>4</sup> C/mol＝29.8 molとなります。ここで重要なのが電子のモル数ということです。</p><p>マグネシウムと塩素の生成量を計算します。各極の反応は以下の通りです。<br/>陰極側：Mg<sup>2+</sup> + 2e<sup>–</sup> → Mg<br/>陽極側：2Cl<sup>–</sup> → Cl<sub>2</sub> + 2e<sup>–</sup></p><p>1molの電子から0.5molのマグネシウムと塩素が得られる計算となります。<br/>マグネシウム：24.3 × 29.8 mol × 0.5＝362.07 g<br/>塩素：(35.5×2) × 29.8 mol × 0.5＝1057.9 g</p>
               </div>
             </div>
           </div>
