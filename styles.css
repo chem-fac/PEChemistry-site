@@ -31,7 +31,7 @@
   --color-border-light: #f1f5f9;
   --color-text: #1e293b;
   --color-text-secondary: #64748b;
-  --color-text-muted: #94a3b8;
+  --color-text-muted: #64748b;
 
   /* Spacing */
   --space-xs: 4px;
@@ -150,6 +150,11 @@ img {
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
+  min-width: 0;
+}
+
+.header-logo span {
+  min-width: 0;
 }
 
 .header-logo img {
@@ -208,6 +213,18 @@ img {
   background: var(--color-text);
   border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 /* ============================================
@@ -791,10 +808,38 @@ img {
 }
 
 .question-text-card .question-text p {
-  margin: 0 0 var(--space-sm);
+  margin: 0 0 1.15em;
 }
 
 .question-text-card .question-text p:last-child {
+  margin-bottom: 0;
+}
+
+.question-text-card .question-text ul,
+.question-text-card .question-text ol {
+  margin: 0 0 1.2em;
+  padding-left: 1.35em;
+  list-style-position: outside;
+}
+
+.question-text-card .question-text li {
+  margin: 0.35em 0;
+  padding-left: 0.15em;
+  line-height: 1.9;
+}
+
+.question-text-card .question-text li ul,
+.question-text-card .question-text li ol {
+  margin: 0.35em 0 0.45em;
+  padding-left: 1.25em;
+}
+
+.question-text-card .question-text li::marker {
+  color: var(--color-text-secondary);
+  font-size: 0.85em;
+}
+
+.question-text-card .question-text > :last-child {
   margin-bottom: 0;
 }
 
@@ -903,7 +948,9 @@ img {
   width: 100%;
   border: 1px solid var(--color-border, #e2e8f0);
   border-radius: var(--radius-md, 8px);
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   background: #fff;
 }
 
@@ -1761,9 +1808,68 @@ img {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  font-size: 0.9rem;
-  line-height: 2;
+  font-size: 0.95rem;
+  line-height: 1.95;
   white-space: pre-wrap;
+}
+
+.explanation-content p,
+.explanation-content ul,
+.explanation-content ol,
+.explanation-content li,
+.explanation-content blockquote,
+.explanation-content table,
+.explanation-content figcaption {
+  white-space: normal;
+}
+
+.explanation-content p {
+  margin: 0 0 1.15em;
+}
+
+.explanation-content ul,
+.explanation-content ol {
+  margin: 0 0 1.25em;
+  padding-left: 1.35em;
+  list-style-position: outside;
+}
+
+.explanation-content li {
+  margin: 0.35em 0;
+  padding-left: 0.15em;
+  line-height: 1.9;
+}
+
+.explanation-content li ul,
+.explanation-content li ol {
+  margin: 0.35em 0 0.45em;
+  padding-left: 1.25em;
+}
+
+.explanation-content li::marker {
+  color: var(--color-text-secondary);
+  font-size: 0.85em;
+}
+
+.explanation-content blockquote {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg-secondary);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--color-text-secondary);
+}
+
+.explanation-content figcaption {
+  margin: var(--space-sm) 0 var(--space-lg);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.explanation-content > :last-child {
+  margin-bottom: 0;
 }
 
 /* Article links grid */
@@ -2191,8 +2297,23 @@ img {
     display: flex;
   }
 
+  .header-logo {
+    max-width: calc(100% - 52px);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .header-logo span {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+  }
+
   .mobile-menu-btn {
     display: flex;
+    flex-shrink: 0;
   }
 
   .hero h1 {
@@ -2213,6 +2334,58 @@ img {
 
   .question-hero h1 {
     font-size: 1.15rem;
+  }
+
+  .question-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "num tag arrow"
+      "text text arrow";
+    align-items: center;
+    column-gap: var(--space-sm);
+    row-gap: var(--space-xs);
+    padding: var(--space-md);
+  }
+
+  .question-card-num {
+    grid-area: num;
+    min-width: 0;
+  }
+
+  .question-card .subject-tag {
+    grid-area: tag;
+    justify-self: start;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .question-card-text {
+    grid-area: text;
+    width: 100%;
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+
+  .question-card-arrow {
+    grid-area: arrow;
+    align-self: center;
+  }
+
+  .choices-abcd-table .choice-table,
+  .choices-table {
+    min-width: 560px;
+    table-layout: auto;
+  }
+
+  .choices-abcd-table .choice-table th,
+  .choices-abcd-table .choice-table td,
+  .choices-table th,
+  .choices-table td {
+    white-space: nowrap;
   }
 
   .question-text-card {
@@ -2557,20 +2730,25 @@ img {
 
 @media (max-width: 768px) {
   .share-buttons {
-    left: 0;
-    right: 0;
+    position: static;
+    left: auto;
+    right: auto;
     top: auto;
-    bottom: 0;
+    bottom: auto;
     transform: none;
     flex-direction: row;
     justify-content: center;
     gap: 0;
-    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    margin: 0 auto;
+    background: var(--color-bg-secondary);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-top: 1px solid var(--color-border);
-    padding: 10px 16px;
-    box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.06);
+    padding: 12px 16px;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .share-buttons__label {
@@ -2580,9 +2758,9 @@ img {
   .share-btn {
     width: 44px;
     height: 44px;
-    border: none;
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
-    background: transparent;
+    background: var(--color-surface);
     box-shadow: none;
     flex: 1;
     max-width: 80px;
@@ -2596,9 +2774,5 @@ img {
   .share-btn img {
     width: 22px;
     height: 22px;
-  }
-
-  .footer {
-    padding-bottom: 64px;
   }
 }

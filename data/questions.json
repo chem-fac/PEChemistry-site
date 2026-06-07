@@ -251,7 +251,7 @@
             "無煙炭の石炭化度は、れき青炭の石炭化度より低い。"
           ],
           "answer": 1,
-          "explanation": "燃料比は固定炭素を揮発分で割った値であり、石炭の性状指標として用いられます。この定義を正しく述べている③が適切です。",
+          "explanation": "石炭の分類は、用途や特性値、国や地域の基準によって異なり、一様ではないため①が適切です。②の固定炭素は、工業分析では水分・灰分・揮発分を100から差し引いて求めます。③の燃料比は固定炭素を揮発分で割った値なので、記述は逆です。④⑤も石炭化度の大小関係が逆です。",
           "references": []
         },
         {
@@ -1439,7 +1439,7 @@
               "url": "https://www.electronics.toray/column/polyimide_01.html"
             }
           ],
-          "question_html": "<p>次のA～Eに示すエンジニアリングプラスチックの名称と、その代表的な化学構造式が正しいものの組み合わせとして最も適切なものはどれか。</p><div class=\"table-responsive\"><table class=\"question-table\"><thead><tr><th>項目</th><th>名称</th><th>化学構造式</th></tr></thead><tbody><tr><td>A</td><td>ポリアセタール</td><td><img alt=\"\" loading=\"lazy\" src=\"https://chem-fac.com/wp-content/uploads/image-659.png\" style=\"max-width: 100%; height: auto;\"/></td></tr><tr><td>B</td><td>ポリフェニレンスルフィド</td><td><img alt=\"\" loading=\"lazy\" src=\"https://chem-fac.com/wp-content/uploads/image-660.png\" style=\"max-width: 100%; height: auto;\"/></td></tr><tr><td>C</td><td>ポリフェニレンエーテル</td><td><img alt=\"\" loading=\"lazy\" src=\"https://chem-fac.com/wp-content/uploads/image-661.png\" style=\"max-width: 100%; height: auto;\"/></td></tr><tr><td>D</td><td>ポリエーテルエーテルケトン</td><td><img alt=\"\" loading=\"lazy\" src=\"https://chem-fac.com/wp-content/uploads/image-662.png\" style=\"max-width: 100%; height: auto;\"/></td></tr><tr><td>E</td><td>ポリイミド</td><td><img alt=\"\" loading=\"lazy\" src=\"https://chem-fac.com/wp-content/uploads/image-663.png\" style=\"max-width: 100%; height: auto;\"/></td></tr></tbody></table></div>",
+          "question_html": "<p>次のA～Eに示すエンジニアリングプラスチックの名称と、その代表的な化学構造式が正しいものの組み合わせとして最も適切なものはどれか。</p>",
           "choice_html": [
             "AとB",
             "AとD",
@@ -1462,6 +1462,14 @@
             "AとE / D / BとC",
             "CとD / AとB / E"
           ],
+          "choice_layout": "abcd_table",
+          "choice_table": {
+            "headers": [
+              "重付加",
+              "付加縮合",
+              "縮合重合"
+            ]
+          },
           "answer": 2,
           "explanation": "(A) （ジメチルジクロロシランとナトリウムの反応）：NaClが副生成物として生成される縮合重合反応でポリシランが生成します。 (B) （ジビニルベンゼンとジチオールの反応）：チオール基と二重結合の付加反応による重付加反応です。 (C) （ジイソシアナートとジアミンの反応）：イソシアナート基とアミノ基による重付加反応でポリウレアが生成します。 (D) （フェノールとホルムアルデヒドの反応）：フェノール樹脂を生成する付加縮合反応で、脱水が起こります。 (E) （ビスフェノールAとホスゲンの反応）：ポリカーボネートを生成する縮合重合反応で、HClが副生成物として生成されます。 高分子の重合は、連鎖重合と逐次重合に大別されます。 連鎖重合は、重合開始剤から成長活性種を生成し、この活性種がモノマーに対して連鎖的に攻撃することで進行します。付加重合や縮合重合、開環重合が該当します。 逐次重合は、2官能性モノマーが互いに反応して結合を繰り返すことで進行します。重縮合や重付加が該当します。 重付加は付加反応の繰り返しによって重合が進行します。水素移動による高分子化が主であり、脱離を伴いません。例えばポリウレタン、エポキシが挙げられます。似た言葉の重縮合は2個以上の官能基を持つ分子間で、水やアルコールなどの小分子が脱離しながら重合が進行します。例えばポリアミドやポリエステルが挙げられます。 活性部位が失活しづらく停止段階・連鎖移動がない連鎖重合はリビング重合と呼ばれます。",
           "references": [
@@ -1483,12 +1491,13 @@
             }
           ],
           "question_html": "<p>次のA～Eの重合反応を形式に分類した場合、最も適切な組み合わせはどれか。</p><div><div><img alt=\"\" loading=\"lazy\" src=\"../../images/2024/q21/image-664.png\" style=\"max-width: 100%; height: auto;\"/></div></div>",
+          "show_auto_figure": false,
           "choice_html": [
-            "BとC / A / DとE",
-            "BとC / D / AとE",
-            "AとB / C / DとE",
-            "AとE / D / BとC",
-            "CとD / AとB / E"
+            "重付加：BとC / 付加縮合：A / 縮合重合：DとE",
+            "重付加：BとC / 付加縮合：D / 縮合重合：AとE",
+            "重付加：AとB / 付加縮合：C / 縮合重合：DとE",
+            "重付加：AとE / 付加縮合：D / 縮合重合：BとC",
+            "重付加：CとD / 付加縮合：AとB / 縮合重合：E"
           ],
           "explanation_html": "<div><p>(A) （ジメチルジクロロシランとナトリウムの反応）：NaClが副生成物として生成される縮合重合反応でポリシランが生成します。</p><p>(B) （ジビニルベンゼンとジチオールの反応）：チオール基と二重結合の付加反応による重付加反応です。</p><p>(C) （ジイソシアナートとジアミンの反応）：イソシアナート基とアミノ基による重付加反応でポリウレアが生成します。</p><p>(D) （フェノールとホルムアルデヒドの反応）：フェノール樹脂を生成する付加縮合反応で、脱水が起こります。</p><p>(E) （ビスフェノールAとホスゲンの反応）：ポリカーボネートを生成する縮合重合反応で、HClが副生成物として生成されます。</p></div><p>高分子の重合は、連鎖重合と逐次重合に大別されます。</p><p>連鎖重合は、重合開始剤から成長活性種を生成し、この活性種がモノマーに対して連鎖的に攻撃することで進行します。付加重合や縮合重合、開環重合が該当します。</p><p>逐次重合は、2官能性モノマーが互いに反応して結合を繰り返すことで進行します。重縮合や重付加が該当します。</p><p>重付加は付加反応の繰り返しによって重合が進行します。水素移動による高分子化が主であり、脱離を伴いません。例えばポリウレタン、エポキシが挙げられます。似た言葉の重縮合は2個以上の官能基を持つ分子間で、水やアルコールなどの小分子が脱離しながら重合が進行します。例えばポリアミドやポリエステルが挙げられます。</p><p>活性部位が失活しづらく停止段階・連鎖移動がない連鎖重合はリビング重合と呼ばれます。</p>"
         },
@@ -15367,7 +15376,8 @@
           "answer": 1,
           "explanation": "曲線Aにおいて、常に仕込み中のM 1 モル分率の方が共重合体中のM 1 モル分率よりも大きな値です。モル分率で表されていることから、M 2 では逆の結果となります。仕込み中のM 2 モル分率の方が共重合体中のM 2 モル分率よりも小さな値です。 上記結果より、M 1 の方がM 2 よりも重合速度が速いことを意味します。よってk 11 ＞k 12 、k 22 ＜k 21 となることからr 1 ＞1、r 2 ＜1です。",
           "references": [],
-          "question_html": "<p>2種のビニルモノマー（M<sub>1</sub>とM<sub>2</sub>）間のラジカル共重合における下記の成長反応（1）～（4）の成長速度定数をそれぞれk<sub>11</sub>、k<sub>12</sub>、k<sub>21</sub>、k<sub>22</sub>とする。重合初期に得られる共重合体組成（d［M<sub>1</sub>］/d［M<sub>2</sub>］）は、仕込みモノマー組成（［M<sub>1</sub>］/［M<sub>2</sub>］）とモノマー反応性比（r<sub>1</sub>=k<sub>11</sub>/k<sub>12</sub>、r<sub>2</sub>=k<sub>22</sub>/k<sub>21</sub>）を用いて式（5）で表される。ただし、［M<sub>1</sub>］、［M<sub>2</sub>］はモノマー濃度である。</p><div><div><img alt=\"\" loading=\"lazy\" src=\"../../images/2013/q17/image-416.png\" style=\"max-width: 100%; height: auto;\"/></div></div><p>下図の共重合組成曲線のうち、曲線Cは、仕込みモノマー組成（［M<sub>1</sub>］/［M<sub>2</sub>］）が非常に小さい（グラフの左端寄り）ときは共重合体組成（d［M<sub>1</sub>］/d［M<sub>2</sub>］）が仕込みモノマー組成より大きく、逆に仕込みモノマー組成（［M<sub>1</sub>］/［M<sub>2</sub>］）が非常に大きい（グラフ右端寄り）ときは共重合体組成が仕込みモノマー組成より小さいことを示しており、式（5）を近似すればr<sub>1</sub>＜1、r<sub>2</sub>＜1であることがわかる。<br/>曲線Aの場合のモノマー反応性比として適切なものはどれか。</p><div style=\"text-align:center; margin: var(--space-md) 0;\"><img src=\"../../images/2013/q17/figure.png\" alt=\"共重合組成曲線\" loading=\"lazy\" style=\"max-width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: 16px;\"></div>",
+          "question_html": "<p>2種のビニルモノマー（M<sub>1</sub>とM<sub>2</sub>）間のラジカル共重合における下記の成長反応（1）～（4）の成長速度定数をそれぞれk<sub>11</sub>、k<sub>12</sub>、k<sub>21</sub>、k<sub>22</sub>とする。重合初期に得られる共重合体組成（d［M<sub>1</sub>］/d［M<sub>2</sub>］）は、仕込みモノマー組成（［M<sub>1</sub>］/［M<sub>2</sub>］）とモノマー反応性比（r<sub>1</sub>=k<sub>11</sub>/k<sub>12</sub>、r<sub>2</sub>=k<sub>22</sub>/k<sub>21</sub>）を用いて式（5）で表される。ただし、［M<sub>1</sub>］、［M<sub>2</sub>］はモノマー濃度である。</p><div><div><img alt=\"\" loading=\"lazy\" src=\"../../images/2013/q17/image-416.png\" style=\"max-width: 100%; height: auto;\"/></div></div><p>下図の共重合組成曲線のうち、曲線Cは、仕込みモノマー組成（［M<sub>1</sub>］/［M<sub>2</sub>］）が非常に小さい（グラフの左端寄り）ときは共重合体組成（d［M<sub>1</sub>］/d［M<sub>2</sub>］）が仕込みモノマー組成より大きく、逆に仕込みモノマー組成（［M<sub>1</sub>］/［M<sub>2</sub>］）が非常に大きい（グラフ右端寄り）ときは共重合体組成が仕込みモノマー組成より小さいことを示しており、式（5）を近似すればr<sub>1</sub>＜1、r<sub>2</sub>＜1であることがわかる。<br/>曲線Aの場合のモノマー反応性比として適切なものはどれか。</p><div style=\"text-align:center; margin: var(--space-md) auto;\"><img src=\"../../images/2013/q17/figure.png\" alt=\"共重合組成曲線\" loading=\"lazy\" style=\"max-width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: 16px;\"></div>",
+          "show_auto_figure": false,
           "explanation_html": "<p>曲線Aにおいて、常に仕込み中のM<sub>1</sub>モル分率の方が共重合体中のM<sub>1</sub>モル分率よりも大きな値です。モル分率で表されていることから、M<sub>2</sub>では逆の結果となります。仕込み中のM<sub>2</sub>モル分率の方が共重合体中のM<sub>2</sub>モル分率よりも小さな値です。</p><p>上記結果より、M<sub>1</sub>の方がM<sub>2</sub>よりも重合速度が速いことを意味します。よってk<sub>11</sub>＞k<sub>12</sub>、k<sub>22</sub>＜k<sub>21</sub>となることからr<sub>1</sub>＞1、r<sub>2</sub>＜1です。</p>"
         },
         {
@@ -17317,7 +17327,7 @@
               "url": "https://www.enecho.meti.go.jp/category/others/basic_plan/"
             }
           ],
-          "question_html": "<p>下図は米国、イギリス、中国、ドイツ、日本、フランス、及びロシアの一次エネルギー総供給量をエネルギー源別構成比で表したものである。この図において、日本の一次 エネルギー構成比は、A～Eのうちどれか。</p><div><div><img alt=\"\" loading=\"lazy\" src=\"../../images/2011/q08/image-398.png\" style=\"max-width: 100%; height: auto;\"/></div></div>",
+          "question_html": "<p>下図は米国、イギリス、中国、ドイツ、日本、フランス、及びロシアの一次エネルギー総供給量をエネルギー源別構成比で表したものである。この図において、日本の一次 エネルギー構成比は、A～Eのうちどれか。</p>",
           "choice_html": [
             "A",
             "B",

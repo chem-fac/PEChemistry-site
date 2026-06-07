@@ -5,6 +5,7 @@
 
 (function () {
   let questionsData = null;
+  let loadPromise = null;
   let searchIndex = [];
   const DATA_URL = "data/questions.json";
 
@@ -18,20 +19,51 @@
 
   async function loadData() {
     if (questionsData) return;
+    if (loadPromise) return loadPromise;
+
+    loadPromise = fetch(DATA_URL)
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (json) {
+        questionsData = json;
+        buildIndex();
+
+        // Re-trigger search to handle any input typed while loading
+        const input = document.getElementById("search-input");
+        if (input && input.value) {
+          const query = input.value;
+          renderResults(search(query), query);
+        }
+      })
+      .catch(function (e) {
+        console.error("Failed to load questions data:", e);
+        renderStatus("検索データの読み込みに失敗しました。時間をおいて再度お試しください。");
+      })
+      .finally(function () {
+        loadPromise = null;
+      });
+
+    return loadPromise;
+  }
+
+  function renderStatus(message) {
+    const container = document.getElementById("search-results");
+    if (!container) return;
+    container.innerHTML = '<div class="search-no-results">' + escapeHtml(message) + '</div>';
+  }
+
+  async function ensureDataForQuery(query) {
+    if (!query || query.trim().length < 2) return false;
+    if (questionsData) return true;
+    renderStatus("検索データを読み込み中です...");
     try {
-      const res = await fetch(DATA_URL);
-      questionsData = await res.json();
-      buildIndex();
-      
-      // Re-trigger search to handle any input typed while loading
-      const input = document.getElementById("search-input");
-      if (input && input.value) {
-        const query = input.value;
-        renderResults(search(query), query);
-      }
-    } catch (e) {
-      console.error("Failed to load questions data:", e);
+      await loadData();
+    } catch (_e) {
+      return false;
     }
+    return !!questionsData;
   }
 
   function buildIndex() {
@@ -135,8 +167,14 @@
     });
 
     // Search on input
-    input.addEventListener("input", debounce(function () {
+    input.addEventListener("input", debounce(async function () {
       const query = input.value;
+      if (!query || query.trim().length < 2) {
+        renderResults([], query);
+        return;
+      }
+      const isReady = await ensureDataForQuery(query);
+      if (!isReady) return;
       const results = search(query);
       renderResults(results, query);
     }, 200));

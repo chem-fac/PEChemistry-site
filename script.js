@@ -8,14 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("header-nav");
 
   if (menuBtn && nav) {
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.setAttribute("aria-controls", nav.id || "header-nav");
+
     menuBtn.addEventListener("click", function () {
-      nav.classList.toggle("open");
+      const isOpen = nav.classList.toggle("open");
+      menuBtn.classList.toggle("active", isOpen);
+      menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
     // Close menu when clicking a link
     nav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
         nav.classList.remove("open");
+        menuBtn.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
       });
     });
   }
