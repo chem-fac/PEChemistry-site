@@ -2,3 +2,6 @@ _dev/
 .DS_Store
 Thumbs.db
 .env
+
+# 作業用スクラッチ（ルート直下の _xxx.txt など。配信対象外）
+/_*.txt
