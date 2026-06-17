@@ -1878,6 +1878,27 @@ img {
   text-align: center;
 }
 
+.explanation-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 1.25em;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.explanation-content thead th {
+  background: var(--color-bg-secondary);
+  font-weight: 600;
+}
+
+.explanation-content th,
+.explanation-content td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em 0.7em;
+  text-align: left;
+  vertical-align: top;
+}
+
 .explanation-content > :last-child {
   margin-bottom: 0;
 }
