@@ -1080,6 +1080,7 @@ img {
 
 .choices-abcd-table .choice-table-row.correct {
   background-color: var(--color-primary-bg-hover, #d1eadd);
+  box-shadow: inset 4px 0 0 0 var(--color-primary, #006938);
 }
 
 .choices-abcd-table .choice-table-row.correct .choice-num {
@@ -1578,9 +1579,29 @@ img {
 }
 
 .choice-item.correct {
+  position: relative;
   border-color: var(--color-primary);
   background: var(--color-primary-bg);
+  box-shadow: 0 0 0 2px var(--color-primary);
   cursor: default;
+}
+
+/* 正答であることが一目で分かるよう「正答」ラベルを枠の上に重ねる */
+.choice-item.correct::after {
+  content: "正答";
+  position: absolute;
+  top: -11px;
+  right: 12px;
+  z-index: 2;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 4px 9px;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  box-shadow: var(--shadow-sm);
 }
 
 .choice-item.incorrect-selected {
@@ -1607,6 +1628,19 @@ img {
 .choice-item.answered.correct,
 .choice-item.answered.incorrect-selected {
   opacity: 1;
+}
+
+/* 回答後も正答・誤答の色を確実に残す（.answered のグレー上書きより高い詳細度で再指定） */
+.choice-item.answered.correct {
+  border-color: var(--color-primary);
+  background: var(--color-primary-bg);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.choice-item.answered.incorrect-selected {
+  border-color: #b91c1c;
+  background: #fef2f2;
+  box-shadow: 0 0 0 2px #b91c1c;
 }
 
 .choice-num {
