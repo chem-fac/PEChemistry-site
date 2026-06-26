@@ -2176,6 +2176,13 @@ img {
   color: var(--color-primary);
 }
 
+.footer-notice {
+  margin: 0 0 var(--space-md) 0;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
