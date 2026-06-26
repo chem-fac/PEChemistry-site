@@ -815,6 +815,28 @@ img {
   margin-bottom: 0;
 }
 
+.question-text-card .question-text .statement-list {
+  display: grid;
+  gap: 1.05em;
+  margin: 0 0 1.15em;
+}
+
+.question-text-card .question-text .statement-item {
+  display: grid;
+  grid-template-columns: 2.75em minmax(0, 1fr);
+  column-gap: 0.25em;
+  align-items: start;
+  line-height: 2;
+}
+
+.question-text-card .question-text .statement-label {
+  white-space: nowrap;
+}
+
+.question-text-card .question-text .statement-body {
+  min-width: 0;
+}
+
 .question-text-card .question-text ul,
 .question-text-card .question-text ol {
   margin: 0 0 1.2em;
