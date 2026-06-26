@@ -1138,6 +1138,9 @@ img {
 .choices.choices-grid.choices-grid-2col {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.choices.choices-grid.choices-grid-2col .choice-item.choice-is-image {
+  padding-top: calc(var(--space-md) + 1.75rem);
+}
 
 /* data-table（thead 付きデータ表）はカラム幅指定を解除し、内容に応じて調整 */
 .question-text-card .question-text table.data-table th:nth-child(1),
