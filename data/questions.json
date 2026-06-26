@@ -3602,7 +3602,7 @@
             },
             {
               "title": "技術士（化学部門）一次試験解説",
-              "url": "https://chem-fac.com/pe-first/"
+              "url": "https://pe-chemistry.chem-fac.com/"
             }
           ],
           "question_html": "<p>酵素は生体内において触媒として働く。酵素 E と基質 S が反応して酵素－基質複合体 ES を作り、ES から生成物 P が生じると共に、E は元に戻る。</p>$$\\mathrm{E} + \\mathrm{S}\\;\\underset{k_2}{\\overset{k_1}{\\rightleftarrows}}\\;\\mathrm{ES}\\;\\xrightarrow{k_3}\\;\\mathrm{E} + \\mathrm{P}$$<p>この反応が定常状態であるとき、P の生成速度 \\(r\\) は、次の式で表される。</p>$$r = V_\\mathrm{m}\\,C_\\mathrm{s}\\,/\\,(K_\\mathrm{m} + C_\\mathrm{s})$$<p>ただし、</p>$$K_\\mathrm{m} = (k_2 + k_3)\\,/\\,k_1$$$$V_\\mathrm{m} = k_3\\,C_{\\mathrm{E}0}$$$$C_{\\mathrm{E}0} = C_\\mathrm{E} + C_\\mathrm{ES}$$<p>\\(C_\\mathrm{s}\\) は基質の濃度、\\(C_\\mathrm{E}\\) は酵素の濃度、\\(C_\\mathrm{ES}\\) は酵素－基質複合体 ES の濃度である。ここで、\\(C_\\mathrm{s}\\) を増やした場合の \\(r\\) の最大値として適切なものはどれか。</p>",
@@ -5319,7 +5319,7 @@
           "references": [
             {
               "title": "平成30年度 問20",
-              "url": "https://chem-fac.com/pe-first/chem-2018/q-20/"
+              "url": "https://pe-chemistry.chem-fac.com/2018/q20/"
             }
           ],
           "question_html": "<p>次の記述の【　】に入る語句及び数値の組合せとして、最も適切なものはどれか。</p><p>　平均分子量には数平均分子量【 ア 】、重量平均分子量【 イ 】、z平均分子量（M<sub>z</sub>）などがある。分子量10,000の高分子1モルと分子量1,000の高分子1モルを混合した場合、その数平均分子量は【 ウ 】で、重量平均分子量は【 エ 】となる。また、分子量10,000の高分子1 gと分子量1,000の高分子1 gを混合した場合、その数平均分子量は【 オ 】で、重量平均分子量は【 カ 】となる。</p>",
@@ -6216,7 +6216,7 @@
             },
             {
               "title": "令和2年度 問9",
-              "url": "https://chem-fac.com/pe-first/chem-2020/q-9/"
+              "url": "https://pe-chemistry.chem-fac.com/2020/q09/"
             }
           ],
           "question_html": "<p>我が国の一次エネルギー供給構造（2017年度統計）に関する次の記述のうち、最も不適切なものはどれか。</p>",
@@ -8220,7 +8220,7 @@
             },
             {
               "title": "技術士（化学部門）一次試験解説",
-              "url": "https://chem-fac.com/pe-first/"
+              "url": "https://pe-chemistry.chem-fac.com/"
             }
           ],
           "question_html": "<p>ゴム製水風船に炎をあてても、短時間では風船は破れない。この現象を「気相（燃焼ガス）境膜－ゴム製の壁－液相（水）境膜」とした、「固体壁を通しての 2 流体間の対流伝熱」のモデルで解け。その結果、風船外側表面温度 \\(T_1\\) として最も近い値はどれか。ただし、水の温度 \\(T_3 = 20\\ ^\\circ\\mathrm{C}\\)、水側の伝熱係数 \\(h_3 = 1000\\ \\mathrm{W/(m^{2}\\,K)}\\)、風船ゴムの厚さ \\(\\delta = 200\\ \\mathrm{\\mu m}\\)、風船ゴムの熱伝導率 \\(\\lambda = 0.13\\ \\mathrm{W/(m\\,K)}\\)、燃焼ガス温度 \\(T_0 = 800\\ ^\\circ\\mathrm{C}\\)、燃焼ガス側の伝熱係数 \\(h_0 = 5.0\\ \\mathrm{W/(m^{2}\\,K)}\\) とする。</p><div><img alt=\"\" loading=\"lazy\" src=\"../../images/2019-2/q35/image-604.png\" style=\"max-width: 100%; height: auto;\"/></div>",
@@ -12967,7 +12967,7 @@
             },
             {
               "title": "技術士（化学部門）一次試験解説",
-              "url": "https://chem-fac.com/pe-first/"
+              "url": "https://pe-chemistry.chem-fac.com/"
             }
           ],
           "question_html": "<p>1 辺 4 m の四角形の水槽がある。水槽には底面から高さ 100 mm の所に内径 \\(\\phi 20\\) mm のノズルが付いている。この水槽に水を入れ、そのノズルより排出される水の量を計測したところ 10 秒間に \\(0.013\\ \\mathrm{m^{3}}\\) であった。このときの水槽の液深として次のうち、最も近い値はどれか。なお、ノズルから水が流出するときの圧力損失は考慮しないものとし、ノズルからの水の流出速度はトリチェリの定理</p>$$u = \\sqrt{2gH}$$<p>に従うものとする。\\(u\\)：流出速度 \\([\\mathrm{m/s}]\\)、\\(H\\)：ノズル位置からの水面の高さ \\([\\mathrm{m}]\\)、\\(g\\)：重力加速度 \\(9.8\\ \\mathrm{m/s^{2}}\\)、水の密度 \\(= 1{,}000\\ \\mathrm{kg/m^{3}}\\)</p>",
@@ -14694,11 +14694,11 @@
             },
             {
               "title": "問15",
-              "url": "https://chem-fac.com/pe-first/chem-2014/q-15/"
+              "url": "https://pe-chemistry.chem-fac.com/2014/q15/"
             },
             {
               "title": "問17",
-              "url": "https://chem-fac.com/pe-first/chem-2014/q-17/"
+              "url": "https://pe-chemistry.chem-fac.com/2014/q17/"
             }
           ],
           "question_html": "<p>高分子化学と高分子産業の発展に関する次の記述の【　】に入る語句の組合せとして最も適切なものはどれか。</p><p>　1839年【 A 】は天然ゴムを加硫すると高温にしてもべたつかない高弾性の物質になることを見出し、後のダンロップの空気入りタイヤの発明につながった。1868年ハイアット兄弟はセルロイドを発明し、1905年【 B 】は、ベークライトを発明し、今日のプラスチック産業の発展が始まった。一方、1920年ごろから【 C 】は、セルロースなどが高分子であることを証明し、1953年、ノーベル化学賞が贈られた。1930年代初め、【 D 】は、ナイロンを発明し、合成繊維産業の基礎を築いた。1950年ごろには高分子化学の基礎が確立し、【 E 】は、その集大成として”Principles of Polymer Chemistry”を著し、1974年、ノーベル化学賞が贈られた。</p>",
@@ -17386,7 +17386,7 @@
           "references": [
             {
               "title": "平成30年度 問20",
-              "url": "https://chem-fac.com/pe-first/chem-2018/q-20/"
+              "url": "https://pe-chemistry.chem-fac.com/2018/q20/"
             }
           ],
           "question_html": "<p>分子量が 100,000、200,000、300,000 の高分子がそれぞれ 1 個、2 個、3 個存在する場合の重量平均分子量は、次のどの範囲にあるか。</p>",
