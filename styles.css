@@ -934,6 +934,10 @@ img {
   font-size: 0.92rem;
 }
 
+.question-text-card .question-text .notice:last-child {
+  margin-bottom: 0;
+}
+
 .question-figure {
   margin: var(--space-lg) auto 0;
   padding: 0;
