@@ -625,6 +625,7 @@
           "title": "令和7年度 問22",
           "subject": "無機化学及びセラミックス",
           "question_text": "半導体に関する次の（A）〜（E）の記述のうち、誤っているものの組合せはどれか。\n（A）純物質がそのまま半導体になるものを真性半導体、不純物を混入することによってバンド構造を変えて作られる半導体を不純物半導体という。\n（B）ケイ素や立方晶のゲルマニウムはダイヤモンド型構造を持つ。\n（C）ヒ化ガリウム（ガリウムとヒ素）の結晶は閃亜鉛鉱型構造を持つ。\n（D）純粋なゲルマニウムの電気伝導率は温度が増すと低下する。\n（E）ケイ素に微量のリンを添加するとp型半導体になる。",
+          "question_html": "<p>半導体に関する次の（A）〜（E）の記述のうち、誤っているものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>（A）</span><div class='statement-body'>純物質がそのまま半導体になるものを真性半導体、不純物を混入することによってバンド構造を変えて作られる半導体を不純物半導体という。</div></div><div class='statement-item'><span class='statement-label'>（B）</span><div class='statement-body'>ケイ素や立方晶のゲルマニウムはダイヤモンド型構造を持つ。</div></div><div class='statement-item'><span class='statement-label'>（C）</span><div class='statement-body'>ヒ化ガリウム（ガリウムとヒ素）の結晶は閃亜鉛鉱型構造を持つ。</div></div><div class='statement-item'><span class='statement-label'>（D）</span><div class='statement-body'>純粋なゲルマニウムの電気伝導率は温度が増すと低下する。</div></div><div class='statement-item'><span class='statement-label'>（E）</span><div class='statement-body'>ケイ素に微量のリンを添加するとp型半導体になる。</div></div></div>",
           "choices": [
             "AとB",
             "BとC",
@@ -679,6 +680,7 @@
           "title": "令和7年度 問24",
           "subject": "無機化学及びセラミックス",
           "question_text": "無機結晶物質の欠陥に関する次の（A）〜（E）の記述のうち、誤っているものの組合せはどれか。\n（A）格子間イオンは本来イオンが存在しないサイトにイオンが侵入してできる欠陥である。\n（B）結晶中に生成した陰イオン空孔と陽イオン空孔の対はショットキー欠陥である。\n（C）格子欠陥生成に伴って派生した電子、正孔などは点欠陥ではない。\n（D）空孔は点欠陥である。\n（E）転位は面欠陥である。",
+          "question_html": "<p>無機結晶物質の欠陥に関する次の（A）〜（E）の記述のうち、誤っているものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>（A）</span><div class='statement-body'>格子間イオンは本来イオンが存在しないサイトにイオンが侵入してできる欠陥である。</div></div><div class='statement-item'><span class='statement-label'>（B）</span><div class='statement-body'>結晶中に生成した陰イオン空孔と陽イオン空孔の対はショットキー欠陥である。</div></div><div class='statement-item'><span class='statement-label'>（C）</span><div class='statement-body'>格子欠陥生成に伴って派生した電子、正孔などは点欠陥ではない。</div></div><div class='statement-item'><span class='statement-label'>（D）</span><div class='statement-body'>空孔は点欠陥である。</div></div><div class='statement-item'><span class='statement-label'>（E）</span><div class='statement-body'>転位は面欠陥である。</div></div></div>",
           "choices": [
             "AとB",
             "AとE",
@@ -1068,7 +1070,7 @@
               "url": "https://www.chem-station.com/odos/2009/06/michael-michael-addition.html"
             }
           ],
-          "question_html": "<p>化学反応に関する次のA～Eの記述のうち、最も不適切なものの組合せはどれか。</p><div><p>(A) 1－ブロモ－2－フェニルエタンの塩基によるE2反応は、炭素－臭素結合の自発的開裂から始まる。</p><p>(B) 一般にキラルなハロゲン化アルキルを基質とするSN2反応は、第三級ハロゲン化アル キルよりも第二級の方が進行しやすく、ラセミ体の生成物を与える。</p><p>(C) Diels-Alder反応は典型的な [4+2] 環化付加反応である。</p><p>(D) アルドール反応は塩基触媒存在下の反応が一般的であるが、酸触媒でも進行する。</p><p>(E) α, β－不飽和カルボニル化合物はMichael付加反応の基質になりえる。</p></div>",
+          "question_html": "<p>化学反応に関する次のA～Eの記述のうち、最も不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>1－ブロモ－2－フェニルエタンの塩基によるE2反応は、炭素－臭素結合の自発的開裂から始まる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>一般にキラルなハロゲン化アルキルを基質とするSN2反応は、第三級ハロゲン化アル キルよりも第二級の方が進行しやすく、ラセミ体の生成物を与える。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>Diels-Alder反応は典型的な [4+2] 環化付加反応である。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>アルドール反応は塩基触媒存在下の反応が一般的であるが、酸触媒でも進行する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>α, β－不飽和カルボニル化合物はMichael付加反応の基質になりえる。</div></div></div>",
           "choice_html": [
             "AとB",
             "AとC",
@@ -1993,7 +1995,7 @@
               "url": "https://www.aist.go.jp/Portals/0/resource_images/aist_j/aistinfo/aist_today/vol12_02/vol12_02_p16.pdf"
             }
           ],
-          "question_html": "<p>電気絶縁性セラミックスの熱伝導に関する次のA～Eの記述のうち、最も適切なものの組合せはどれか。</p><div><p>(A) 熱伝導はフォノン（原子振動）が支配的な因子となる。</p><p>(B) 高温では熱伝導率が上昇する。</p><p>(C) 多孔質セラミックスでは、緻密なセラミックスに比べて熱伝導率が高い。</p><p>(D) 不純物元素を含むセラミックスは、純粋なセラミックスに比べて熱伝導率が低い。</p><p>(E) ガラスは同じ組成の結晶質セラミックスに比べて熱伝導率が高い。</p></div>",
+          "question_html": "<p>電気絶縁性セラミックスの熱伝導に関する次のA～Eの記述のうち、最も適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>熱伝導はフォノン（原子振動）が支配的な因子となる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>高温では熱伝導率が上昇する。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>多孔質セラミックスでは、緻密なセラミックスに比べて熱伝導率が高い。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>不純物元素を含むセラミックスは、純粋なセラミックスに比べて熱伝導率が低い。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ガラスは同じ組成の結晶質セラミックスに比べて熱伝導率が高い。</div></div></div>",
           "choice_html": [
             "AとB",
             "CとD",
@@ -3128,7 +3130,7 @@
               "url": "https://kimika.net/r3roppousaimitsu.html"
             }
           ],
-          "question_html": "<p>金属やその結晶に関する次のA～Eの記述のうち、不適切なものの組み合わせはどれか。</p><div><p>(A) 金属元素の大部分は、六方最密充填構造または立方最密充填構造をとる。</p><p>(B) 立方最密充填構造は、体心立方格子である。</p><p>(C) 面心立方格子の単位格子に含まれる原子の数は2個である。</p><p>(D) 体心立方構造では、各原子は周囲の8個の原子と接触する。</p><p>(E) 六方最密充填構造では、各原子は周囲の12個の原子と接触する。</p></div>",
+          "question_html": "<p>金属やその結晶に関する次のA～Eの記述のうち、不適切なものの組み合わせはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>金属元素の大部分は、六方最密充填構造または立方最密充填構造をとる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>立方最密充填構造は、体心立方格子である。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>面心立方格子の単位格子に含まれる原子の数は2個である。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>体心立方構造では、各原子は周囲の8個の原子と接触する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>六方最密充填構造では、各原子は周囲の12個の原子と接触する。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、E",
@@ -3175,7 +3177,7 @@
               "url": "https://www.ceramic.or.jp/museum/contents/hatsuden/hatsuden02.html"
             }
           ],
-          "question_html": "<p>セラミックスの応用製品と典型的な材料についてのA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 高温超電導体：チタン酸バリウム</p><p>(B) 光シャッター：ランタン添加チタン酸ジルコン酸鉛</p><p>(C) 人工骨：水酸アパタイト</p><p>(D) バリスタ：酸化亜鉛</p><p>(E) 発熱体：二酸化ケイ素</p></div>",
+          "question_html": "<p>セラミックスの応用製品と典型的な材料についてのA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>高温超電導体：チタン酸バリウム</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>光シャッター：ランタン添加チタン酸ジルコン酸鉛</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>人工骨：水酸アパタイト</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>バリスタ：酸化亜鉛</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>発熱体：二酸化ケイ素</div></div></div>",
           "choice_html": [
             "A、B",
             "A、E",
@@ -3331,7 +3333,7 @@
               "url": "https://www.aist.go.jp/aist_j/magazine/20231206.html"
             }
           ],
-          "question_html": "<p>炭素同素体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) グラファイトを構成する炭素原子の六員環は金属結合によって結合されている。</p><p>(B) グラファイトの層状構造において面内方向は金属に近い電気伝導性を示す。</p><p>(C) ダイヤモンドは炭素の高圧安定相で、電気伝導性は低く、熱を伝えにくい。</p><p>(D) カーボンナノチューブは炭素六員環が単層あるいは多層の同軸管状につらなった筒状物質で、高い強度を有する。</p><p>(E) C<sub>60</sub>はフラーレンと呼ばれ、炭素の五員12個と、六員環20個からなる。</p></div>",
+          "question_html": "<p>炭素同素体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>グラファイトを構成する炭素原子の六員環は金属結合によって結合されている。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>グラファイトの層状構造において面内方向は金属に近い電気伝導性を示す。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ダイヤモンドは炭素の高圧安定相で、電気伝導性は低く、熱を伝えにくい。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>カーボンナノチューブは炭素六員環が単層あるいは多層の同軸管状につらなった筒状物質で、高い強度を有する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>C<sub>60</sub>はフラーレンと呼ばれ、炭素の五員12個と、六員環20個からなる。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -3378,7 +3380,7 @@
               "url": "https://solid-mater.com/entry/pero"
             }
           ],
-          "question_html": "<p>蛍石型構造とペロブスカイト型構造を持つ化合物に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 蛍石（CaF<sub>2</sub>）の結晶構造では、面心立方ブラベ格子の各格子点に3個のイオン（1個のCa<sup>2+</sup>と2個のF<sup>–</sup>）が配置されており、単位格子当たり12個のイオンがある。</p><p>(B) CaOやY<sub>2</sub>O<sub>3</sub>を固溶させたZrO<sub>2</sub>では、高温ではイオン半径が小さいZr<sup>4+</sup>の拡散係数が大きい。</p><p>(C) CaTiO<sub>3</sub>はペロブスカイト型構造を持ち、Ca<sup>2+</sup>とO<sup>2-</sup>が立方最密充填構造を形成し、Ti<sup>4+</sup>が頂点位置を、O<sup>2-</sup>が面心位置をそれぞれ占め、その体心位置にCa<sup>2+</sup>が配置されている。</p><p>(D) ペロブスカイト型構造を持つ化合物は立方晶とは限らずに、正方品、斜方晶、菱面体晶などの歪んだものも多い。</p><p>(E) Pb(Zr, Ti)O<sub>3</sub>はPbTiO<sub>3</sub>のTi<sup>4+</sup>の位置が不規則にZr<sup>4+</sup>に置換された結晶である。</p></div>",
+          "question_html": "<p>蛍石型構造とペロブスカイト型構造を持つ化合物に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>蛍石（CaF<sub>2</sub>）の結晶構造では、面心立方ブラベ格子の各格子点に3個のイオン（1個のCa<sup>2+</sup>と2個のF<sup>–</sup>）が配置されており、単位格子当たり12個のイオンがある。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>CaOやY<sub>2</sub>O<sub>3</sub>を固溶させたZrO<sub>2</sub>では、高温ではイオン半径が小さいZr<sup>4+</sup>の拡散係数が大きい。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>CaTiO<sub>3</sub>はペロブスカイト型構造を持ち、Ca<sup>2+</sup>とO<sup>2-</sup>が立方最密充填構造を形成し、Ti<sup>4+</sup>が頂点位置を、O<sup>2-</sup>が面心位置をそれぞれ占め、その体心位置にCa<sup>2+</sup>が配置されている。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ペロブスカイト型構造を持つ化合物は立方晶とは限らずに、正方品、斜方晶、菱面体晶などの歪んだものも多い。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>Pb(Zr, Ti)O<sub>3</sub>はPbTiO<sub>3</sub>のTi<sup>4+</sup>の位置が不規則にZr<sup>4+</sup>に置換された結晶である。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、E",
@@ -3779,7 +3781,7 @@
               "url": "https://www2.kek.jp/kids/class/atom/class04-03.html"
             }
           ],
-          "question_html": "<p>有機化合物の構造決定に関する以下の記述（A）〜（E）のうち、正しいものの組み合わせはどれか。</p><div><p>(A) カルボニル基から3原子離れた炭素上に水素を持つアルデヒドやケトンは、次のようなMcLafferty転位という質量スペクトルによる特徴的な開裂を起こす。</p></div><div><div><img alt=\"\" loading=\"lazy\" src=\"../../images/2022/q05/image-526.png\" style=\"max-width: 100%; height: auto;\"/></div></div><div><p>(A) 共役分子に紫外線を照射するとπ電子の1つがHOMOからLUMOへ励起される。共役の程度が大きいほどHOMOとLUMOのエネルギー差は小さくなるので、共役分子の紫外吸収極大波長は短波長側にシフトする。</p><p>(B) アレン　CH<sub>2</sub>＝C=CH<sub>2</sub>の二重結合は共役しているので紫外吸収を持つ。</p><p>(C) ソフトなイオン化法であるマトリクス支援レーザー脱離イオン化（MALDI）法に飛行時間型質量分析計（TOFMS）と組み合わせて測定すると、高分子量の資料でもほとんどフラグメンテーションを起こさずに質量スペクトルが得られる。</p><p>(D) 第一級及び第二級アミンは赤外スペクトルにおいて3300～3500 cm<sup>-1</sup>の領域に存在する特徴的なＮ－Ｈ伸縮吸収によって識別できる。一級アミンは対象伸縮と非対象伸縮に基づく一対の吸収帯をおよそ3450 cm<sup>-1</sup>（対象伸縮）と3350 cm<sup>-1</sup>（非対象伸縮）に第二級アミンは3350 cm<sup>-1</sup>に吸収帯を示す。</p></div>",
+          "question_html": "<p>有機化合物の構造決定に関する以下の記述（A）〜（E）のうち、正しいものの組み合わせはどれか。</p><div class=\"statement-list\"><div class=\"statement-item\"><span class=\"statement-label\">(A)</span><div class=\"statement-body\">カルボニル基から3原子離れた炭素上に水素を持つアルデヒドやケトンは、次のようなMcLafferty転位という質量スペクトルによる特徴的な開裂を起こす。</div></div></div><div><div><img alt=\"\" loading=\"lazy\" src=\"../../images/2022/q05/image-526.png\" style=\"max-width: 100%; height: auto;\"/></div></div><div class=\"statement-list\"><div class=\"statement-item\"><span class=\"statement-label\">(A)</span><div class=\"statement-body\">共役分子に紫外線を照射するとπ電子の1つがHOMOからLUMOへ励起される。共役の程度が大きいほどHOMOとLUMOのエネルギー差は小さくなるので、共役分子の紫外吸収極大波長は短波長側にシフトする。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(B)</span><div class=\"statement-body\">アレン　CH<sub>2</sub>＝C=CH<sub>2</sub>の二重結合は共役しているので紫外吸収を持つ。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(C)</span><div class=\"statement-body\">ソフトなイオン化法であるマトリクス支援レーザー脱離イオン化（MALDI）法に飛行時間型質量分析計（TOFMS）と組み合わせて測定すると、高分子量の資料でもほとんどフラグメンテーションを起こさずに質量スペクトルが得られる。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(D)</span><div class=\"statement-body\">第一級及び第二級アミンは赤外スペクトルにおいて3300～3500 cm<sup>-1</sup>の領域に存在する特徴的なＮ－Ｈ伸縮吸収によって識別できる。一級アミンは対象伸縮と非対象伸縮に基づく一対の吸収帯をおよそ3450 cm<sup>-1</sup>（対象伸縮）と3350 cm<sup>-1</sup>（非対象伸縮）に第二級アミンは3350 cm<sup>-1</sup>に吸収帯を示す。</div></div></div>",
           "choice_html": [
             "Ａ、Ｃ",
             "Ｂ、Ｅ",
@@ -3901,7 +3903,7 @@
               "url": "https://chemblogno1.blogspot.com/2020/08/blog-post_5.html"
             }
           ],
-          "question_html": "<p>　次の3つの化合物A～Cのルイス構造を記したとき、カッコ内に示した元素の形式電荷の組合せとして、最も適切なものはどれか。ただし、ルイス構造では8電子則が常に満たされているものとする。</p><div><p>(A) オゾンO<sub>3</sub>（中心の酸素O）（構造は非環状の曲がった形状）</p><p>(B) 硝酸HO－NO<sub>2</sub>（窒素N）</p><p>(C) 一酸化炭素CO（酸素）</p></div>",
+          "question_html": "<p>　次の3つの化合物A～Cのルイス構造を記したとき、カッコ内に示した元素の形式電荷の組合せとして、最も適切なものはどれか。ただし、ルイス構造では8電子則が常に満たされているものとする。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>オゾンO<sub>3</sub>（中心の酸素O）（構造は非環状の曲がった形状）</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>硝酸HO－NO<sub>2</sub>（窒素N）</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>一酸化炭素CO（酸素）</div></div></div>",
           "choice_html": [
             "-1 / +1 / +1",
             "-1 / -1 / +1",
@@ -4090,7 +4092,7 @@
               "url": "https://www.chiyodacorp.com/jp/service/spera-hydrogen/innovations/"
             }
           ],
-          "question_html": "<p>水素エネルギー技術水素エネルギー技術は、（A）水素製造技術、（B）水素貯蔵・輸送技術、（C）水素供給・利用技術に大別される。次の記述のうち、下線部が最も不適切なものはどれか。</p><div><p>(A) 水素製造技術：水素製造は、水素を他のエネルギーから製造する過程である。製造方法の1つである化石燃料の水蒸気改質とシフト反応により水素を製造する技術は、既に実用化段階にある。<sub>1</sub><u>化石燃料を燃やす場合と異なり、水素を製造する際には、二酸化炭素を発生しない</u>。</p><p>(B) 水素貯蔵・輸送技術：水素を製造地から需要地に効率良く輸送し、一定時間貯蔵するための技術である。輸送技術の1つである高圧ガス輸送は、水素を19.6 MPaに <sub>2</sub><u>加圧してシリンダーに充填し、それを束ねてカードルとして運搬する</u>。別の輸送技術として液化水素輸送がある。これは水素を-253℃以下に <sub>3</sub><u>冷却し、液化水素ローリーなどで運搬する</u>。より高効率な水素輸送技術として、トルエン系有機ハイドライド法の実証研究が進められている。これは、<sub>4</sub><u>水素製造地において、トルエンを水素化してメチルシクロヘキサンとして輸送した後、需要地でメチルシクロヘキサンを脱水素化し、トルエンは水素製造地に戻し再利用するシステムである</u>。</p><p>(C) 水素供給・利用技術：水素の利用先として、燃料電池自動車や定置用燃料電池の実証が進められている。<sub>5</sub><u>燃料電池自動車に水素を供給するためには、水素ステーションなどの供給技術も重要である</u>。</p></div>",
+          "question_html": "<p>水素エネルギー技術水素エネルギー技術は、（A）水素製造技術、（B）水素貯蔵・輸送技術、（C）水素供給・利用技術に大別される。次の記述のうち、下線部が最も不適切なものはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>水素製造技術：水素製造は、水素を他のエネルギーから製造する過程である。製造方法の1つである化石燃料の水蒸気改質とシフト反応により水素を製造する技術は、既に実用化段階にある。<sub>1</sub><u>化石燃料を燃やす場合と異なり、水素を製造する際には、二酸化炭素を発生しない</u>。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>水素貯蔵・輸送技術：水素を製造地から需要地に効率良く輸送し、一定時間貯蔵するための技術である。輸送技術の1つである高圧ガス輸送は、水素を19.6 MPaに <sub>2</sub><u>加圧してシリンダーに充填し、それを束ねてカードルとして運搬する</u>。別の輸送技術として液化水素輸送がある。これは水素を-253℃以下に <sub>3</sub><u>冷却し、液化水素ローリーなどで運搬する</u>。より高効率な水素輸送技術として、トルエン系有機ハイドライド法の実証研究が進められている。これは、<sub>4</sub><u>水素製造地において、トルエンを水素化してメチルシクロヘキサンとして輸送した後、需要地でメチルシクロヘキサンを脱水素化し、トルエンは水素製造地に戻し再利用するシステムである</u>。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>水素供給・利用技術：水素の利用先として、燃料電池自動車や定置用燃料電池の実証が進められている。<sub>5</sub><u>燃料電池自動車に水素を供給するためには、水素ステーションなどの供給技術も重要である</u>。</div></div></div>",
           "explanation_html": "<p>化石燃料から水素を製造する場合（例えば水蒸気改質法）、実際には二酸化炭素が発生します。水素製造方法は様々あり、製造過程でのCO2排出量によって「グレー水素」「ブルー水素」「グリーン水素」などに分類されます。</p><ul><li>グレー水素：化石燃料から製造され、CO<sub>2</sub>を排出</li><li>ブルー水素：化石燃料から製造されるが、CCS/CCUSでCO<sub>2</sub>排出を削減</li><li>グリーン水素：再生可能エネルギーを使用し、製造過程でCO<sub>2</sub>を排出しない</li></ul>"
         },
         {
@@ -4445,7 +4447,7 @@
               "url": "https://solid-mater.com/entry/zns"
             }
           ],
-          "question_html": "<p>代表的な無機化合物の結晶構造に関する次の記述のうち、下線部が最も不適切なものはどれか。</p><div><p>(A) 塩化ナトリウム構造：<sub>1</sub><u>Na<sup>+</sup>とCl<sup>–</sup>の2つの面心立方格子を組合せた構造である</u>。MgOはこの構造を持つ。</p><p>(B) 蛍石構造：<sub>2</sub><u>面心立方格子の各格子点に1個のCa<sup>2+</sup>と2個のF<sup>–</sup>が対になって配置された構造</u>で、単位格子当たり12個のイオンを含む。<sub>3</sub><u>UO<sub>2</sub>はこの構造を持つ</u>。</p><p>(C) ペロブスカイト構造：ABO<sub>3</sub>の組成式を持つ化合物で、Aイオンが酸化物イオンの大きさ程度まで大きくなると、Aイオンがつくる単純立方格子の面心位置に酸化物イオンが配置され、<sub>4</sub><u>両イオンに囲まれた体心位置に、イオン半径の大きなBイオンが配置される</u>。</p><p>(D) 閃亜鉛鉱型構造：ダイヤモンド型立方構造の2つの原子位置をZn<sup>2+</sup>イオンとS<sup>2-</sup>イオンに置き換えた構造である。<sub>5</sub><u>この構造は面心立方格子の格子点に、正負に帯電した2個のイオンを配置した構造と考えることもできる</u>。</p></div>",
+          "question_html": "<p>代表的な無機化合物の結晶構造に関する次の記述のうち、下線部が最も不適切なものはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>塩化ナトリウム構造：<sub>1</sub><u>Na<sup>+</sup>とCl<sup>–</sup>の2つの面心立方格子を組合せた構造である</u>。MgOはこの構造を持つ。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>蛍石構造：<sub>2</sub><u>面心立方格子の各格子点に1個のCa<sup>2+</sup>と2個のF<sup>–</sup>が対になって配置された構造</u>で、単位格子当たり12個のイオンを含む。<sub>3</sub><u>UO<sub>2</sub>はこの構造を持つ</u>。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ペロブスカイト構造：ABO<sub>3</sub>の組成式を持つ化合物で、Aイオンが酸化物イオンの大きさ程度まで大きくなると、Aイオンがつくる単純立方格子の面心位置に酸化物イオンが配置され、<sub>4</sub><u>両イオンに囲まれた体心位置に、イオン半径の大きなBイオンが配置される</u>。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>閃亜鉛鉱型構造：ダイヤモンド型立方構造の2つの原子位置をZn<sup>2+</sup>イオンとS<sup>2-</sup>イオンに置き換えた構造である。<sub>5</sub><u>この構造は面心立方格子の格子点に、正負に帯電した2個のイオンを配置した構造と考えることもできる</u>。</div></div></div>",
           "explanation_html": "<p>ペロブスカイト構造はABX<sub>3</sub>の組成式を持つ化合物で、Aは大きな陽イオン、Bは小さな陽イオン、Xは陰イオンを表します。BはXに八面体型で囲まれています。更にAはBX八面体に囲まれています。両イオンに囲まれた体心位置に配置されるのは、イオン半径の小さなBイオンです（4番）。</p><p>NaCl構造は、Na<sup>+</sup>とCl<sup>–</sup>の2つの面心立方格子を組み合わせた構造です。MgOは塩化ナトリウム構造を取りますが、ZnOは通常、ウルツ鉱型構造（六方晶系）を取ります（1番）。</p><p>蛍石構造（フッ化カルシウム、CaF<sub>2</sub>の構造）は、イオン性化合物に見られる重要な結晶構造の一つです。Ca<sup>2+</sup>イオンが面心立方格子を形成し、F<sup>–</sup>イオンがCa<sup>2+</sup>イオンに対し四面体となるような形で入りこんでいます。単位格子には8個のCa<sup>2+</sup>イオンと4個のF<sup>–</sup>イオンで構成されています（2番）。UO<sub>2</sub>、ThOなどがこの構造を取ります（3番）。</p><p>閃亜鉛鉱型構造は、ダイヤモンド型立方構造を基にしています。Zn<sup>2+</sup>イオンとS<sup>2-</sup>イオンがそれぞれ面心立方格子の格子点の半分を占めます。そのため各イオンは反対の電荷を持つ4つのイオンに四面体的に囲まれた状態になります（5番）。</p>"
         },
         {
@@ -4477,7 +4479,7 @@
               "url": "https://www.material.nagoya-u.ac.jp/yamamoto_takahisa_lab/theme.html"
             }
           ],
-          "question_html": "<p>工業利用されているセラミックスの製造法には無加圧（常圧）焼結法と加圧焼結法がある。加圧焼結法の一種であるホットプレス焼結の特徴に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 大型焼結体を作成する場合、型の強度確保や油圧プレスの大型化等が必要となることがある。</p><p>(B) 焼結体の形状が制限されるが、量産性には優れることが多い。</p><p>(C) 低温で高密度焼結体が得られ、粒成長が抑制される。</p><p>(D) 焼結性が低いため、焼結助剤の添加が重要である。</p><p>(E) 特定方位に粒子が配向することがあり、結晶異方性を利用した材料の製造に使用されることがある。</p></div>",
+          "question_html": "<p>工業利用されているセラミックスの製造法には無加圧（常圧）焼結法と加圧焼結法がある。加圧焼結法の一種であるホットプレス焼結の特徴に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>大型焼結体を作成する場合、型の強度確保や油圧プレスの大型化等が必要となることがある。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>焼結体の形状が制限されるが、量産性には優れることが多い。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>低温で高密度焼結体が得られ、粒成長が抑制される。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>焼結性が低いため、焼結助剤の添加が重要である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>特定方位に粒子が配向することがあり、結晶異方性を利用した材料の製造に使用されることがある。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、C",
@@ -4516,7 +4518,7 @@
               "url": "https://ocw.hokudai.ac.jp/wp-content/uploads/2016/01/ScienceLiteracy1-2009-Text-13.pdf"
             }
           ],
-          "question_html": "<p>半導体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) シリコンやゲルマニウムの結晶はダイヤモンド型構造を持つ。</p><p>(B) ガリウムヒ素は化合物半導体と呼ばれ、閃亜鉛鉱型構造を持つ。</p><p>(C) 純粋なゲルマニウムの電気伝導率は温度が増すと低下する。</p><p>(D) 真性半導体を加熱すると、熱励起によって生成する自由電子と正孔の数は等しい。</p><p>(E) シリコンに微量のリンを添加するとp型半導体となる。</p></div>",
+          "question_html": "<p>半導体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>シリコンやゲルマニウムの結晶はダイヤモンド型構造を持つ。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>ガリウムヒ素は化合物半導体と呼ばれ、閃亜鉛鉱型構造を持つ。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>純粋なゲルマニウムの電気伝導率は温度が増すと低下する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>真性半導体を加熱すると、熱励起によって生成する自由電子と正孔の数は等しい。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>シリコンに微量のリンを添加するとp型半導体となる。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -4551,7 +4553,7 @@
               "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/26431/ferrum8_10_674.pdf"
             }
           ],
-          "question_html": "<p>端成分がA及びBからなる2成分系状態図に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。なお、「\\( \\overline{XY}\\)」という表記は、組成XとYを結ぶ線分の長さを示している。</p><div><p>(A) 領域Ⅱの構成相はAにBが溶解した相である。</p><p>(B) 組成Mの液相を温度T<sub>0</sub>まで冷却したときの固相と液相の量比は\\( \\overline{SM}\\)：\\( \\overline{MO}\\)である。</p><p>(C) T<sub>r</sub>とT<sub>p</sub>の間の温度における領域IVの結晶相は領域Ⅲと領域Vの2相が存在する。</p><p>(D) r点は共晶点、T<sub>r</sub>は共晶温度と呼ばれる。</p><p>(E) T<sub>r</sub>以下の領域VIではIVの結晶相とⅧの結晶相の2相が存在する。</p></div>",
+          "question_html": "<p>端成分がA及びBからなる2成分系状態図に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。なお、「\\( \\overline{XY}\\)」という表記は、組成XとYを結ぶ線分の長さを示している。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>領域Ⅱの構成相はAにBが溶解した相である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>組成Mの液相を温度T<sub>0</sub>まで冷却したときの固相と液相の量比は\\( \\overline{SM}\\)：\\( \\overline{MO}\\)である。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>T<sub>r</sub>とT<sub>p</sub>の間の温度における領域IVの結晶相は領域Ⅲと領域Vの2相が存在する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>r点は共晶点、T<sub>r</sub>は共晶温度と呼ばれる。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>T<sub>r</sub>以下の領域VIではIVの結晶相とⅧの結晶相の2相が存在する。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -4637,7 +4639,7 @@
               "url": "https://www.omu.ac.jp/eng/engm/research/crystal_defects/"
             }
           ],
-          "question_html": "<p>無機結品物質の欠陥における次の記述A～Eのうち、不適切なものの組合せはどれか。</p><div><p>(A) 空孔は点欠陥である。</p><p>(B) 転位は面欠陥である。</p><p>(C) 格子間イオンは本来イオンが存在しないサイトにイオンが侵入してできる欠陥である。</p><p>(D) 結晶中に生成した陰イオン空孔と陽イオン空孔の対はショットキー欠陥である。</p><p>(E) 格子欠陥生成に伴って派生した電子、正孔などは点欠陥ではない。</p></div>",
+          "question_html": "<p>無機結品物質の欠陥における次の記述A～Eのうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>空孔は点欠陥である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>転位は面欠陥である。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>格子間イオンは本来イオンが存在しないサイトにイオンが侵入してできる欠陥である。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>結晶中に生成した陰イオン空孔と陽イオン空孔の対はショットキー欠陥である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>格子欠陥生成に伴って派生した電子、正孔などは点欠陥ではない。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -5539,7 +5541,7 @@
               "url": "https://www.aist.go.jp/Portals/0/resource_images/aist_j/aistinfo/aist_today/vol12_02/vol12_02_p16.pdf"
             }
           ],
-          "question_html": "<p>電気絶縁性セラミックスの熱伝導に関する次のA～Eの記述のうち、適切なものの組合せはどれか。</p><div><p>(A) 熱伝導はフォノン（原子振動）が支配的な因子となる。</p><p>(B) 高温では熱伝導率が上昇する。</p><p>(C) 多孔質セラミックスでは、緻密なセラミックスに比べて熱伝導率が高い。</p><p>(D) 不純物元素を含むセラミックスは、純粋なセラミックスに比べて熱伝導率が低い。</p><p>(E) ガラスは同じ組成の結晶質セラミックスに比べて熱伝導率が高い。</p></div>",
+          "question_html": "<p>電気絶縁性セラミックスの熱伝導に関する次のA～Eの記述のうち、適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>熱伝導はフォノン（原子振動）が支配的な因子となる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>高温では熱伝導率が上昇する。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>多孔質セラミックスでは、緻密なセラミックスに比べて熱伝導率が高い。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>不純物元素を含むセラミックスは、純粋なセラミックスに比べて熱伝導率が低い。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ガラスは同じ組成の結晶質セラミックスに比べて熱伝導率が高い。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、D",
@@ -5617,7 +5619,7 @@
               "url": "https://www.jim.or.jp/journal/m/pdf3/58/10/570.pdf"
             }
           ],
-          "question_html": "<p>多くのセラミックスの製造法として用いられる常圧焼結に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 一般に酸化物粉体は、誘電率の低い非極性溶媒には分散しにくい。</p><p>(B) 分散剤や粒子の表面電位を利用することで、微小粒子の凝集を防ぐことができる。</p><p>(C) プレス形成のような乾式成形では、一般に分散剤やバインダーは用いられない。</p><p>(D) 一般に成形体のバインダー除去が不十分でも、十分高温で焼結すれば緻密化する。</p><p>(E) 高温で高い蒸気圧を持つ酸化物粉体は、緻密化しにくい。</p></div>",
+          "question_html": "<p>多くのセラミックスの製造法として用いられる常圧焼結に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>一般に酸化物粉体は、誘電率の低い非極性溶媒には分散しにくい。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>分散剤や粒子の表面電位を利用することで、微小粒子の凝集を防ぐことができる。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>プレス形成のような乾式成形では、一般に分散剤やバインダーは用いられない。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>一般に成形体のバインダー除去が不十分でも、十分高温で焼結すれば緻密化する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>高温で高い蒸気圧を持つ酸化物粉体は、緻密化しにくい。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、D",
@@ -5730,7 +5732,7 @@
               "url": "https://www.baj.or.jp/battery/knowledge/structure.html"
             }
           ],
-          "question_html": "<p>電池に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) マンガン乾電池は正極に二酸化マンガン、負極に金属亜鉛を用いる。</p><p>(B) 鉛蓄電池の電解質は塩酸である。</p><p>(C) 充電により繰り返し使える電池を二次電池という。</p><p>(D) カソード反応の進行電位と、アノード反応の進行電位の差が電池の作動電圧である。</p><p>(E) リチウム電池では、電解質には水系電解液が用いられる。</p></div>",
+          "question_html": "<p>電池に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>マンガン乾電池は正極に二酸化マンガン、負極に金属亜鉛を用いる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>鉛蓄電池の電解質は塩酸である。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>充電により繰り返し使える電池を二次電池という。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>カソード反応の進行電位と、アノード反応の進行電位の差が電池の作動電圧である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>リチウム電池では、電解質には水系電解液が用いられる。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、D",
@@ -5769,7 +5771,7 @@
               "url": "https://www.omu.ac.jp/eng/engm/research/crystal_defects/"
             }
           ],
-          "question_html": "<p>無機結晶物質の欠陥に関する次のA～Eの記述のうち。不適切なものの組合せはどれか。</p><div><p>(A) イオン半径が異なるイオンが結晶構造中のイオンと置換した結果、通常は原子が占有していない位置に移動した場合、置換イオンと呼ぶ。</p><p>(B) 陽イオンの格子位置にイオンが存在しないとき、陰イオン空孔と呼ぶ。</p><p>(C) 空孔と格子間イオンが組み合わさった欠陥をフレンケル欠陥と呼ぶ。</p><p>(D) 転位とは、結晶中に含まれる線状の結晶欠陥のことで、刃状転位、らせん転位、及び、それらの組合せの混合転位に分類される。</p><p>(E) 焼結体のように方位の異なる結晶が接合した界面を粒界と呼ぶ。</p></div>",
+          "question_html": "<p>無機結晶物質の欠陥に関する次のA～Eの記述のうち。不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>イオン半径が異なるイオンが結晶構造中のイオンと置換した結果、通常は原子が占有していない位置に移動した場合、置換イオンと呼ぶ。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>陽イオンの格子位置にイオンが存在しないとき、陰イオン空孔と呼ぶ。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>空孔と格子間イオンが組み合わさった欠陥をフレンケル欠陥と呼ぶ。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>転位とは、結晶中に含まれる線状の結晶欠陥のことで、刃状転位、らせん転位、及び、それらの組合せの混合転位に分類される。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>焼結体のように方位の異なる結晶が接合した界面を粒界と呼ぶ。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、D",
@@ -6749,7 +6751,7 @@
               "url": "https://semi-journal.jp/basics/si-chem/epitaxial.html"
             }
           ],
-          "question_html": "<p>薄膜形成技術の1つのCVD（ChemicalVaporDeposition）法に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) CVD法とは、気相にある原料から、化学反応を伴って、分子、原子、イオン、ラジカルなどの化学種を基板に堆積させる成膜法の総称である。</p><p>(B) CVD法は、化学反応を励起するためのエネルギー源によって、熱CVD、プラズマCVD、エピタキシャルCVD等と呼ばれる。</p><p>(C) 薄膜成長の際に基板付近だけを加熱する方式のCVDはホットウォールCVDと呼ばれる。</p><p>(D) CVD法では、ガス原料を用いることから、高純度な成膜が可能である。</p><p>(E) CVD法では、マスフローコントローラを用いることで組成制御性がよい成膜が可能である。</p></div>",
+          "question_html": "<p>薄膜形成技術の1つのCVD（ChemicalVaporDeposition）法に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>CVD法とは、気相にある原料から、化学反応を伴って、分子、原子、イオン、ラジカルなどの化学種を基板に堆積させる成膜法の総称である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>CVD法は、化学反応を励起するためのエネルギー源によって、熱CVD、プラズマCVD、エピタキシャルCVD等と呼ばれる。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>薄膜成長の際に基板付近だけを加熱する方式のCVDはホットウォールCVDと呼ばれる。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>CVD法では、ガス原料を用いることから、高純度な成膜が可能である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>CVD法では、マスフローコントローラを用いることで組成制御性がよい成膜が可能である。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、E",
@@ -6784,7 +6786,7 @@
               "url": "https://www.keyence.co.jp/ss/products/marker/lasermarker/basics/principle.jsp"
             }
           ],
-          "question_html": "<p>レーザーに関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) レーザー光は、波長と位相が等しく、干渉する波の振幅が最小となる性質を持つ。</p><p>(B) 白色光は、異なる波長の光が混在しているのでインコヒーレントである。</p><p>(C) 自然放出とは、励起された原子が電磁場など外からの作用と無関係に光（電磁波）を放出して基底状態に戻ることである。</p><p>(D) 励起状態にある原子やイオンの数が、基底状態にある数より多い分布を反転分布という。</p><p>(E) 励起状態の系が入射光で刺激され、基底状態に戻る際に放出される光の波長は、入射光のエネルギーにより変化する。</p></div>",
+          "question_html": "<p>レーザーに関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>レーザー光は、波長と位相が等しく、干渉する波の振幅が最小となる性質を持つ。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>白色光は、異なる波長の光が混在しているのでインコヒーレントである。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>自然放出とは、励起された原子が電磁場など外からの作用と無関係に光（電磁波）を放出して基底状態に戻ることである。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>励起状態にある原子やイオンの数が、基底状態にある数より多い分布を反転分布という。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>励起状態の系が入射光で刺激され、基底状態に戻る際に放出される光の波長は、入射光のエネルギーにより変化する。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、E",
@@ -6859,7 +6861,7 @@
               "url": "https://solid-mater.com/entry/caf2"
             }
           ],
-          "question_html": "<p>蛍石型構造とその関連物質に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 蛍石（フッ化カルシウム：CaF<sub>2</sub>）は、天然には産出しない。</p><p>(B) 蛍石の結晶構造では、面心立方ブラベ格子の各格子点に3個のイオン（1個のCa<sup>2+</sup>と2個のF<sup>–</sup>）が配置されており、単位格子当たり9個のイオンがある。</p><p>(C) 蛍石型（MX<sub>2</sub>型）構造は、CsCl型（MX型）構造のMが一個おきに抜けた派生構造と考えることもできる。</p><p>(D) 純粋なZrO<sub>2</sub>は室温で単斜晶系の歪んだ蛍石型構造であるが、CaOなどを固溶させることで立方晶系の安定化ジルコニアが得られる。</p><p>(E) ZrO<sub>2</sub>にCaOやY<sub>2</sub>O<sub>3</sub>を固溶させると、酸素位置に空孔が生成し、高湿ではイオン半径が大きな○<sup>2-</sup>が拡散でき、この現象を利用した燃料電池が開発されている。</p></div>",
+          "question_html": "<p>蛍石型構造とその関連物質に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>蛍石（フッ化カルシウム：CaF<sub>2</sub>）は、天然には産出しない。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>蛍石の結晶構造では、面心立方ブラベ格子の各格子点に3個のイオン（1個のCa<sup>2+</sup>と2個のF<sup>–</sup>）が配置されており、単位格子当たり9個のイオンがある。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>蛍石型（MX<sub>2</sub>型）構造は、CsCl型（MX型）構造のMが一個おきに抜けた派生構造と考えることもできる。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>純粋なZrO<sub>2</sub>は室温で単斜晶系の歪んだ蛍石型構造であるが、CaOなどを固溶させることで立方晶系の安定化ジルコニアが得られる。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ZrO<sub>2</sub>にCaOやY<sub>2</sub>O<sub>3</sub>を固溶させると、酸素位置に空孔が生成し、高湿ではイオン半径が大きな○<sup>2-</sup>が拡散でき、この現象を利用した燃料電池が開発されている。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、E",
@@ -6890,7 +6892,7 @@
               "url": "https://www.jasco.co.jp/jpn/technique/internet-seminar/sf/sf1.html"
             }
           ],
-          "question_html": "<p>二酸化炭素の温度 \\(T_1 = 293.15\\ \\mathrm{K}\\)、\\(T_2 = 304.15\\ \\mathrm{K}\\)、\\(T_3 = 323.15\\ \\mathrm{K}\\) における等温線を下図に示す（\\(V\\ [\\mathrm{cm^{3}\\cdot mol^{-1}}]\\)：モル容積、\\(P\\ [\\mathrm{MPa}]\\)：圧力）。図中の a～d 点に関する以下の (A)～(E) の記述のうち、不適切なものの組合せはどれか。</p><p>(A) a 点 \\((V_a, P_a)\\) では \\(P_a V_a / (RT_1) < 1\\) である（\\(R = 8.31\\ \\mathrm{cm^{3}\\cdot MPa\\cdot mol^{-1}\\cdot K^{-1}}\\)：気体定数）。<br/>(B) b 点では気体と液体の二相状態にある。<br/>(C) b 点の圧力が温度 \\(T_1\\) の蒸気圧である。<br/>(D) c 点は臨界点であり、気体、液体、固体が共存する。<br/>(E) d 点は超臨界状態なので、圧縮には大きな圧力変化が必要である。</p>",
+          "question_html": "<p>二酸化炭素の温度 \\(T_1 = 293.15\\ \\mathrm{K}\\)、\\(T_2 = 304.15\\ \\mathrm{K}\\)、\\(T_3 = 323.15\\ \\mathrm{K}\\) における等温線を下図に示す（\\(V\\ [\\mathrm{cm^{3}\\cdot mol^{-1}}]\\)：モル容積、\\(P\\ [\\mathrm{MPa}]\\)：圧力）。図中の a～d 点に関する以下の (A)～(E) の記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>a 点 \\((V_a, P_a)\\) では \\(P_a V_a / (RT_1) < 1\\) である（\\(R = 8.31\\ \\mathrm{cm^{3}\\cdot MPa\\cdot mol^{-1}\\cdot K^{-1}}\\)：気体定数）。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>b 点では気体と液体の二相状態にある。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>b 点の圧力が温度 \\(T_1\\) の蒸気圧である。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>c 点は臨界点であり、気体、液体、固体が共存する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>d 点は超臨界状態なので、圧縮には大きな圧力変化が必要である。</div></div></div>",
           "explanation_html": "<p>等温線は、ある温度における体積と圧力の関係を表した図です。圧力をかけるほど体積が小さくなっていることが分かります。点線より下側で凝縮が始まり、気体と液体が共存していることを表します。</p><p>b 点は二相共存線上にあり、気体と液体の二相状態にあることが図から確認できます。また圧力は温度 \\(T_1\\) における蒸気圧であることを意味します。</p><p>c 点は気体と液体の相転移が起こりうる境となる臨界点です。臨界点における温度を臨界温度、圧力を臨界圧力と呼びます。ただし気体、液体、固体が共存する三重点ではありません。</p><p>d 点は超臨界状態ではありません。超臨界状態はどれだけ圧力を上げても液体にならないような臨界点（c 点）よりも高い温度・圧力の領域を指します。</p>"
         },
         {
@@ -7945,7 +7947,7 @@
               "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/26431/ferrum8_10_674.pdf"
             }
           ],
-          "question_html": "<p>端成分がA及びBからなる2成分系状態図に関する次の(A)～(E)の記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 領域Ⅲの構成相はA<sub>2</sub>Bと液相である。</p><p>(B) 組成Mの液相を温度T<sub>n</sub>まで冷却したときの固相と液相の量比は\\( \\overline{AM}\\)：\\(\\overline{MN} \\)である。ここで、\\( \\overline{XY}\\)は組成XとYを結ぶ線分の長さを示す。</p><p>(C) q点は共晶点。T<sub>q</sub>は共晶温度と呼ばれる。</p><p>(D) A<sub>2</sub>B化合物は加熱すると、固相のまま成分AとQに分解する。</p><p>(E) P組成の融液を温度T<sub>p</sub>よりわずかに低温で保持し、種子結晶を浸すことで、A<sub>2</sub>B単結晶が育成できる。</p></div>",
+          "question_html": "<p>端成分がA及びBからなる2成分系状態図に関する次の(A)～(E)の記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>領域Ⅲの構成相はA<sub>2</sub>Bと液相である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>組成Mの液相を温度T<sub>n</sub>まで冷却したときの固相と液相の量比は\\( \\overline{AM}\\)：\\(\\overline{MN} \\)である。ここで、\\( \\overline{XY}\\)は組成XとYを結ぶ線分の長さを示す。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>q点は共晶点。T<sub>q</sub>は共晶温度と呼ばれる。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>A<sub>2</sub>B化合物は加熱すると、固相のまま成分AとQに分解する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>P組成の融液を温度T<sub>p</sub>よりわずかに低温で保持し、種子結晶を浸すことで、A<sub>2</sub>B単結晶が育成できる。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、C",
@@ -9070,7 +9072,7 @@
               "url": "https://ocw.hokudai.ac.jp/wp-content/uploads/2016/01/ScienceLiteracy1-2009-Text-13.pdf"
             }
           ],
-          "question_html": "<p>半導体に関する次のA～Eの記述のうち。不適切なものの組合せはどれか。</p><div><p>(A) ケイ素やゲルマニウムの結晶はダイヤモンド型構造を持つ。</p><p>(B) ガリウムヒ素は化合物半導体と呼ばれ。安定相はウルツ鉱型構造を持つ。</p><p>(C) 純粋なゲルマニウムの電気伝導度は温度が上がると増加する。</p><p>(D) 真性半導体を加熱すると、熱励起によって多数の自由電子と少数の正孔が生成する。</p><p>(E) ケイ素に微量のリンを添加するとn型半導体となる。</p></div>",
+          "question_html": "<p>半導体に関する次のA～Eの記述のうち。不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>ケイ素やゲルマニウムの結晶はダイヤモンド型構造を持つ。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>ガリウムヒ素は化合物半導体と呼ばれ。安定相はウルツ鉱型構造を持つ。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>純粋なゲルマニウムの電気伝導度は温度が上がると増加する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>真性半導体を加熱すると、熱励起によって多数の自由電子と少数の正孔が生成する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ケイ素に微量のリンを添加するとn型半導体となる。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -9136,7 +9138,7 @@
               "url": "https://www.aist.go.jp/aist_j/magazine/20231206.html"
             }
           ],
-          "question_html": "<p>炭素同素体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) グラファイトは炭素の六員環からなる平面が積層した構造である。</p><p>(B) グラファイトの層状構造において面内方向は金属に近い電気伝導性を示す。</p><p>(C) ダイヤモンドは炭素の高圧安定相で、電気伝導性は低く、熱を伝えにくい。</p><p>(D) カーボンナノチューブは炭素六具環が単層あるいは多層の同軸状につらなった筒型物質で、高い強度を有する。</p><p>(E) C<sub>60</sub>はフラーレンと呼ばれ、炭素の五員環20個と、六員環12個からなる。</p></div>",
+          "question_html": "<p>炭素同素体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>グラファイトは炭素の六員環からなる平面が積層した構造である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>グラファイトの層状構造において面内方向は金属に近い電気伝導性を示す。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ダイヤモンドは炭素の高圧安定相で、電気伝導性は低く、熱を伝えにくい。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>カーボンナノチューブは炭素六具環が単層あるいは多層の同軸状につらなった筒型物質で、高い強度を有する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>C<sub>60</sub>はフラーレンと呼ばれ、炭素の五員環20個と、六員環12個からなる。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -9175,7 +9177,7 @@
               "url": "https://www.omu.ac.jp/eng/engm/research/crystal_defects/"
             }
           ],
-          "question_html": "<p>無機結晶物質の欠陥に関する次の記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 結晶構造中のイオンを別のイオンと置換した結果、通常はイオンが占有していない位置に移動した場合、置換イオンと呼ぶ。</p><p>(B) 陽イオンの格子位置にイオンが存在しないとき、陽イオン空孔と呼ぶ。</p><p>(C) 空孔と格子間イオンが組合さった欠陥をフレンケル欠陥と呼ぶ。</p><p>(D) 転位とは、結晶中に含まれる面状の結晶欠陥のことで、刃状転位、らせん転位、及び、それらの組合せの混合転位に分類される。</p><p>(E) 焼結体のように方位の異なる結晶が接合した界面は結晶のイオンの積み重なりが乱れており、これを粒界と呼ぶ。</p></div>",
+          "question_html": "<p>無機結晶物質の欠陥に関する次の記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>結晶構造中のイオンを別のイオンと置換した結果、通常はイオンが占有していない位置に移動した場合、置換イオンと呼ぶ。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>陽イオンの格子位置にイオンが存在しないとき、陽イオン空孔と呼ぶ。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>空孔と格子間イオンが組合さった欠陥をフレンケル欠陥と呼ぶ。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>転位とは、結晶中に含まれる面状の結晶欠陥のことで、刃状転位、らせん転位、及び、それらの組合せの混合転位に分類される。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>焼結体のように方位の異なる結晶が接合した界面は結晶のイオンの積み重なりが乱れており、これを粒界と呼ぶ。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -9210,7 +9212,7 @@
               "url": "https://www.jim.or.jp/journal/m/pdf3/58/10/570.pdf"
             }
           ],
-          "question_html": "<p>多くのセラミックスは、原料粉末粒子の成形体を大気圧下で加熱する常圧焼結によって製造される。常圧焼結に関する次の記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 一般に酸化物粉体は、誘電率の低い非極性溶媒中で分散しやすい。</p><p>(B) 分散剤や粒子の表面電位を利用することで、微小粒子の凝集を防ぐことができる。</p><p>(C) プレス成型のような乾式成形では、一般に分散剤やバインダーは不要である。</p><p>(D) 成形体のバインダー除去が不十分だと焼結に悪影響がある。</p><p>(E) 焼結とは粒子表面や粒子界面の面積を減らすように物質が移動する現象である。</p><p>(F) 高温で高い蒸気圧を持つ酸化物粉体は、緻密化しやすい。</p><p>(G) 焼結体内部の気孔を減らし、粒径を制御することで、多くのセラミックスは透光性を示す。</p></div>",
+          "question_html": "<p>多くのセラミックスは、原料粉末粒子の成形体を大気圧下で加熱する常圧焼結によって製造される。常圧焼結に関する次の記述のうち、不適切なものの組合せはどれか。</p><div class=\"statement-list\"><div class=\"statement-item\"><span class=\"statement-label\">(A)</span><div class=\"statement-body\">一般に酸化物粉体は、誘電率の低い非極性溶媒中で分散しやすい。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(B)</span><div class=\"statement-body\">分散剤や粒子の表面電位を利用することで、微小粒子の凝集を防ぐことができる。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(C)</span><div class=\"statement-body\">プレス成型のような乾式成形では、一般に分散剤やバインダーは不要である。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(D)</span><div class=\"statement-body\">成形体のバインダー除去が不十分だと焼結に悪影響がある。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(E)</span><div class=\"statement-body\">焼結とは粒子表面や粒子界面の面積を減らすように物質が移動する現象である。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(F)</span><div class=\"statement-body\">高温で高い蒸気圧を持つ酸化物粉体は、緻密化しやすい。</div></div><div class=\"statement-item\"><span class=\"statement-label\">(G)</span><div class=\"statement-body\">焼結体内部の気孔を減らし、粒径を制御することで、多くのセラミックスは透光性を示す。</div></div></div>",
           "choice_html": [
             "A、C、F",
             "A、D、F",
@@ -9468,7 +9470,7 @@
               "url": "https://organodata.wiki.fc2.com/wiki/%E6%B0%B4%E3%81%A8%E3%81%AE%E5%85%B1%E6%B2%B8%E6%B7%B7%E5%90%88%E7%89%A9"
             }
           ],
-          "question_html": "<p>有機溶媒に関する次のA～Eの記述の正誤の組合せとして、最も適切なものはどれか。</p><div><p>(A) 20%の水を含むトルエンを常圧で単蒸留すると、まず水が留出し、ついで沸点110.6℃のトルエンが留出する。</p><p>(B) ベンゼンはトルエンより分子量は小さいが、トルエンの融点が～95℃であるのに対して、ペンゼンの融点は5.5℃と高い。</p><p>(C) クロロホルム10 mLと水10 mLとをよく振り混ぜた後に静置すると、クロロホルムは下層として分離する。</p><p>(D) ジェチルエーテル10 mlと水10 mLをよく振り混ぜた後に静置すると、ジェチルエーテルは上層として分離する。</p><p>(E) アセトン10 mLと水10 mLとをよく振り混ぜた後に静置すると、アセトンは下層として分離する。</p></div>",
+          "question_html": "<p>有機溶媒に関する次のA～Eの記述の正誤の組合せとして、最も適切なものはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>20%の水を含むトルエンを常圧で単蒸留すると、まず水が留出し、ついで沸点110.6℃のトルエンが留出する。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>ベンゼンはトルエンより分子量は小さいが、トルエンの融点が～95℃であるのに対して、ペンゼンの融点は5.5℃と高い。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>クロロホルム10 mLと水10 mLとをよく振り混ぜた後に静置すると、クロロホルムは下層として分離する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ジェチルエーテル10 mlと水10 mLをよく振り混ぜた後に静置すると、ジェチルエーテルは上層として分離する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>アセトン10 mLと水10 mLとをよく振り混ぜた後に静置すると、アセトンは下層として分離する。</div></div></div>",
           "choice_html": [
             "正 / 正 / 誤 / 正 / 誤",
             "正 / 正 / 誤 / 誤 / 正",
@@ -10461,7 +10463,7 @@
               "url": "https://solid-mater.com/entry/zns"
             }
           ],
-          "question_html": "<p>代表的な無機化合物の結晶構造に関する次の記述のうち、下線部が最も不適切なものはどれか。</p><div><p>(A) 塩化ナトリウム構造：Na<sup>+</sup>とCl<sup>–</sup>の2つの面心立方格子を組合せた構造である。<sub>1</sub><u>この構造を持つ酸化物には、MgO、ZnOなどがある。</u></p><p>(B) 蛍石構造：面心立方格子の各格子点に1個のCa<sup>+</sup>と2個のF<sup>–</sup>が対になって配置された構造で、<sub>2</sub><u>単位格子当たり12個のイオンを含む。</u><sub>3</sub><u>この構造を持つ酸化物にはUO<sub>2</sub>、ThO<sub>2</sub>などがある。</u></p><p>(C) ペロブスカイト構造：ABO<sub>3</sub>の組成式を持つ化合物で、Aイオンが酸化物イオンの大きさ程度まで大きくなると、Aイオンがつくる単純立方格子の面心位置に酸化物イオンが配置される。そして、<sub>4</sub><u>両イオンに囲まれた体心位置に、イオン半径の小さなBイオンが配置される。</u></p><p>(D) 閃亜鉛鉱型構造：ダイヤモンド型立方構造の2つの原子位置をZn<sup>2+</sup>イオンとS<sup>2-</sup>イオンに置き換えた構造である。<sub>5</sub><u>この構造は面心立方格子の格子点に、正負に帯電した2個のイオンを配置した構造と考えることもできる。</u>単位格子当たり合計8個のイオンが含まれる。</p></div>",
+          "question_html": "<p>代表的な無機化合物の結晶構造に関する次の記述のうち、下線部が最も不適切なものはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>塩化ナトリウム構造：Na<sup>+</sup>とCl<sup>–</sup>の2つの面心立方格子を組合せた構造である。<sub>1</sub><u>この構造を持つ酸化物には、MgO、ZnOなどがある。</u></div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>蛍石構造：面心立方格子の各格子点に1個のCa<sup>+</sup>と2個のF<sup>–</sup>が対になって配置された構造で、<sub>2</sub><u>単位格子当たり12個のイオンを含む。</u><sub>3</sub><u>この構造を持つ酸化物にはUO<sub>2</sub>、ThO<sub>2</sub>などがある。</u></div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ペロブスカイト構造：ABO<sub>3</sub>の組成式を持つ化合物で、Aイオンが酸化物イオンの大きさ程度まで大きくなると、Aイオンがつくる単純立方格子の面心位置に酸化物イオンが配置される。そして、<sub>4</sub><u>両イオンに囲まれた体心位置に、イオン半径の小さなBイオンが配置される。</u></div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>閃亜鉛鉱型構造：ダイヤモンド型立方構造の2つの原子位置をZn<sup>2+</sup>イオンとS<sup>2-</sup>イオンに置き換えた構造である。<sub>5</sub><u>この構造は面心立方格子の格子点に、正負に帯電した2個のイオンを配置した構造と考えることもできる。</u>単位格子当たり合計8個のイオンが含まれる。</div></div></div>",
           "explanation_html": "<p>NaCl構造は、Na<sup>+</sup>とCl<sup>–</sup>の2つの面心立方格子を組み合わせた構造です。MgOは塩化ナトリウム構造を取りますが、ZnOは通常、ウルツ鉱型構造（六方晶系）を取ります（1番）。</p><p>蛍石構造（フッ化カルシウム、CaF<sub>2</sub>の構造）は、イオン性化合物に見られる重要な結晶構造の一つです。Ca<sup>2+</sup>イオンが面心立方格子を形成し、F<sup>–</sup>イオンがCa<sup>2+</sup>イオンに対し四面体となるような形で入りこんでいます。単位格子には8個のCa<sup>2+</sup>イオンと4個のF<sup>–</sup>イオンで構成されています（2番）。UO<sub>2</sub>、ThO2などがこの構造を取ります（3番）。</p><p>ペロブスカイト構造はABO<sub>3</sub>の組成式を持つ化合物で、Aは大きな陽イオン、Bは小さな陽イオン、Xは陰イオンを表します。BはXに八面体型で囲まれています。更にAはBX八面体に囲まれています（4番）。</p><p>閃亜鉛鉱型構造は、ダイヤモンド型立方構造を基にしています。Zn<sup>2+</sup>イオンとS<sup>2-</sup>イオンがそれぞれ面心立方格子の格子点の半分を占めます。そのため各イオンは反対の電荷を持つ4つのイオンに四面体的に囲まれた状態になります（5番）。</p>"
         },
         {
@@ -11238,7 +11240,7 @@
               "url": "https://division.nagase.co.jp/pu-portal/978/"
             }
           ],
-          "question_html": "<p>環状モノマーの開環重合に関する次の記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) <em>ε</em>－カプロラクタムを開環重合するとポリエステルが得られる。</p><p>(B) <em>ε</em>－カプロラクトンを開環重合するとナイロンが得られる。</p><p>(C) エピクロロヒドリンを開環重合するとポリエーテルが得られる。</p><p>(D) ラクチドを開環重合するとポリ乳酸が得られる。</p><p>(E) トリオキサンを開環重合するとポリオキシメチレンが得られる。</p></div>",
+          "question_html": "<p>環状モノマーの開環重合に関する次の記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'><em>ε</em>－カプロラクタムを開環重合するとポリエステルが得られる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'><em>ε</em>－カプロラクトンを開環重合するとナイロンが得られる。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>エピクロロヒドリンを開環重合するとポリエーテルが得られる。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ラクチドを開環重合するとポリ乳酸が得られる。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>トリオキサンを開環重合するとポリオキシメチレンが得られる。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、C",
@@ -11866,7 +11868,7 @@
               "url": "https://www.shikizai.org/Journal/backnumber/vol92/04/107_112.pdf"
             }
           ],
-          "question_html": "<p>炭素Cと水素Hからなる化合物のうち、次の記述のA～Cのすべてに当てはまるものとして、最も適切なものはどれか。</p><div><p>(A) 芳香族化合物に分類できる。</p><p>(B) 重クロロホルム中の<sup>1</sup>H NMRスペクトルでは、すべての水素核の化学シフトはδ6.5からδ8.5に存在する。</p><p>(C) 紫外可視吸収スペクトルにおいて、可視領域に極大吸収を持つ。</p></div>",
+          "question_html": "<p>炭素Cと水素Hからなる化合物のうち、次の記述のA～Cのすべてに当てはまるものとして、最も適切なものはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>芳香族化合物に分類できる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>重クロロホルム中の<sup>1</sup>H NMRスペクトルでは、すべての水素核の化学シフトはδ6.5からδ8.5に存在する。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>紫外可視吸収スペクトルにおいて、可視領域に極大吸収を持つ。</div></div></div>",
           "choice_html": [
             "ナフタレン",
             "フェナントレン",
@@ -11897,7 +11899,7 @@
               "url": "https://chemblogno1.blogspot.com/2020/08/blog-post_5.html"
             }
           ],
-          "question_html": "<p>次の3つの化合物A～Cのルイス構造を記したとき。カッコ内に示した元素の形式電荷の組合せとして、最も適切なものはどれか。ただし、ルイス構造では8電子則は常に満たされているとする。</p><div><p>(A) 一酸化炭素 CO（酸素O）</p><p>(B) 硝酸 HNO<sub>3</sub>（窒素N）</p><p>(C) オゾン O<sub>3</sub>（中心の酸素○）</p></div>",
+          "question_html": "<p>次の3つの化合物A～Cのルイス構造を記したとき。カッコ内に示した元素の形式電荷の組合せとして、最も適切なものはどれか。ただし、ルイス構造では8電子則は常に満たされているとする。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>一酸化炭素 CO（酸素O）</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>硝酸 HNO<sub>3</sub>（窒素N）</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>オゾン O<sub>3</sub>（中心の酸素○）</div></div></div>",
           "choice_html": [
             "+1 / +1 / +1",
             "+1 / +1 / -1",
@@ -12040,7 +12042,7 @@
               "url": "https://www.chem-station.com/odos/2009/06/michael-michael-addition.html"
             }
           ],
-          "question_html": "<p>化学反応に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) Diels-Alder反応は典型的な［4+2］環化付加反応である。</p><p>(B) 1－ブロモ－2－フェニルエタンの塩基によるE2反応は、炭素－臭素結合の自発的開裂から始まる。</p><p>(C) アルドール反応は塩基触媒存在下の反応が一般的であるが、酸触媒でも進行する。</p><p>(D) 一般にキラルなハロゲン化アルキルを基質とするS<sub>N</sub>2反応は、第三級ハロゲン化アルキルよりも第二級の方が進行しやすく、ラセミ体の生成物を与える。</p><p>(E) α, β－不飽和カルボニル化合物はMichael付加反応の基質になりえる。</p></div>",
+          "question_html": "<p>化学反応に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>Diels-Alder反応は典型的な［4+2］環化付加反応である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>1－ブロモ－2－フェニルエタンの塩基によるE2反応は、炭素－臭素結合の自発的開裂から始まる。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>アルドール反応は塩基触媒存在下の反応が一般的であるが、酸触媒でも進行する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>一般にキラルなハロゲン化アルキルを基質とするS<sub>N</sub>2反応は、第三級ハロゲン化アルキルよりも第二級の方が進行しやすく、ラセミ体の生成物を与える。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>α, β－不飽和カルボニル化合物はMichael付加反応の基質になりえる。</div></div></div>",
           "choice_html": [
             "AとB",
             "AとC",
@@ -12192,7 +12194,7 @@
               "url": "https://hess01.sakura.ne.jp/Search/data/30-01-019.pdf"
             }
           ],
-          "question_html": "<p>石油製品の灯油に関する次のA～Eの記述のうち、適切なものの組合せはどれか。</p><div><p>(A) 灯油は、炭素数5～11を中心とする炭化水素成分で構成される。</p><p>(B) 灯火、厨房用などの家庭用灯油が主として生産されている。</p><p>(C) 石油ストーブのように灯芯を使う燃焼器具では、煙や葉が出ないで燃焼することが求められる。そのためには、芳香族炭化水素が多い方が良い。</p><p>(D) 燃料電池用に供する場合の硫黄分は、0.10質量分率%以下に規定されている。</p><p>(E) 引火点が40℃以上である。このため引火の危険性が少なく、取り扱いが容易である。</p></div>",
+          "question_html": "<p>石油製品の灯油に関する次のA～Eの記述のうち、適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>灯油は、炭素数5～11を中心とする炭化水素成分で構成される。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>灯火、厨房用などの家庭用灯油が主として生産されている。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>石油ストーブのように灯芯を使う燃焼器具では、煙や葉が出ないで燃焼することが求められる。そのためには、芳香族炭化水素が多い方が良い。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>燃料電池用に供する場合の硫黄分は、0.10質量分率%以下に規定されている。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>引火点が40℃以上である。このため引火の危険性が少なく、取り扱いが容易である。</div></div></div>",
           "choice_html": [
             "A、B",
             "B、D",
@@ -12480,7 +12482,7 @@
               "url": "https://www.kohyei.com/prod_cat/polyurethane/"
             }
           ],
-          "question_html": "<p>重縮合及び重付加により得られる高分子に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) ヘキサメチレンジアミンとアジピン酸の重縮合により得られるポリアミドはデュポン社によりナイロンと命名され、現在でも代表的な合成繊維として広く使われている。</p><p>(B) エチレングリコールとテレフタル酸の重縮合により合成されるポリエステルはPETと呼ばれ、合成繊維や飲料容器として広く使われている。</p><p>(C) ビスフェノールAとホスゲンの重縮合で合成されるポリエステルの一種であるポリカーボネートは、加工性も耐熱性も良く、コンパクトディスクなどに広く用いられている。</p><p>(D) アルコールとイソシアナート類から重合されるポリウレタンは、典型的な重縮合により合成される高分子である。</p><p>(E) ポリアミドのアミド結合間が芳香環であるアラミドは、ナイロンなどの一般のポリアミドに比べ、耐熱性が低く、引張強度も弱い。</p></div>",
+          "question_html": "<p>重縮合及び重付加により得られる高分子に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>ヘキサメチレンジアミンとアジピン酸の重縮合により得られるポリアミドはデュポン社によりナイロンと命名され、現在でも代表的な合成繊維として広く使われている。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>エチレングリコールとテレフタル酸の重縮合により合成されるポリエステルはPETと呼ばれ、合成繊維や飲料容器として広く使われている。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ビスフェノールAとホスゲンの重縮合で合成されるポリエステルの一種であるポリカーボネートは、加工性も耐熱性も良く、コンパクトディスクなどに広く用いられている。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>アルコールとイソシアナート類から重合されるポリウレタンは、典型的な重縮合により合成される高分子である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ポリアミドのアミド結合間が芳香環であるアラミドは、ナイロンなどの一般のポリアミドに比べ、耐熱性が低く、引張強度も弱い。</div></div></div>",
           "choice_html": [
             "A、B",
             "B、E",
@@ -12615,7 +12617,7 @@
               "url": "https://www.aist.go.jp/aist_j/magazine/20231206.html"
             }
           ],
-          "question_html": "<p>炭素同素体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) C<sub>60</sub>フラーレンは、ヘリウム中で黒鉛電極間に放電を行う際に生じる。</p><p>(B) C<sub>60</sub>フラーレンには炭素の六員環と五員環が含まれる。</p><p>(C) 黒鉛の層状構造において面に垂直な方向は金属に近い電気伝導性を示す。</p><p>(D) ダイヤモンドはきわめて熱を伝えにくく、特殊断熱材としての利用が期待される。</p><p>(E) ダイヤモンド粉体の合成は、一般的に高温高圧下で行われている。</p></div>",
+          "question_html": "<p>炭素同素体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>C<sub>60</sub>フラーレンは、ヘリウム中で黒鉛電極間に放電を行う際に生じる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>C<sub>60</sub>フラーレンには炭素の六員環と五員環が含まれる。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>黒鉛の層状構造において面に垂直な方向は金属に近い電気伝導性を示す。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ダイヤモンドはきわめて熱を伝えにくく、特殊断熱材としての利用が期待される。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ダイヤモンド粉体の合成は、一般的に高温高圧下で行われている。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、E",
@@ -12728,7 +12730,7 @@
               "url": "https://ocw.hokudai.ac.jp/wp-content/uploads/2016/01/ScienceLiteracy1-2009-Text-13.pdf"
             }
           ],
-          "question_html": "<p>半導体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div><p>(A) 純粋なケイ素やゲルマニウム等は半導体であり、電気伝導性は湿度が増すと低下する。</p><p>(B) 不純物半導体にはp型とn型半導体の2種類がある。</p><p>(C) ケイ素にホウ素を添加するとアクセプター準位が形成される。</p><p>(D) ケイ素にリン（P）をドープしたものがp型半導体である。</p><p>(E) 真性半導体は純物質がそのまま半導体となったものである。</p></div>",
+          "question_html": "<p>半導体に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>純粋なケイ素やゲルマニウム等は半導体であり、電気伝導性は湿度が増すと低下する。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>不純物半導体にはp型とn型半導体の2種類がある。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ケイ素にホウ素を添加するとアクセプター準位が形成される。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ケイ素にリン（P）をドープしたものがp型半導体である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>真性半導体は純物質がそのまま半導体となったものである。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、D",
@@ -13250,7 +13252,7 @@
               "url": "https://www.ene100.jp/zumen/1-1-8"
             }
           ],
-          "question_html": "<p>我が国の1次エネルギー供給構造（2013年度）に関する次のA～Eの記述のうち、正しいものの組合せはどれか。</p><div><p>(A)  1次エネルギー供給に占める石油の割合は、60%台である。</p><p>(B) 1次エネルギー供給に占める天然ガスの割合は、40%台である。</p><p>(C) 1次エネルギー供給に占める石炭の割合は、20%台である。</p><p>(D) 1次エネルギー供給に占める再生可能エネルギーの割合は、20%台である。</p><p>(E) 1次エネルギー供給に占める原子力の割合は、10%以下である。</p></div>",
+          "question_html": "<p>我が国の1次エネルギー供給構造（2013年度）に関する次のA～Eの記述のうち、正しいものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>1次エネルギー供給に占める石油の割合は、60%台である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>1次エネルギー供給に占める天然ガスの割合は、40%台である。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>1次エネルギー供給に占める石炭の割合は、20%台である。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>1次エネルギー供給に占める再生可能エネルギーの割合は、20%台である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>1次エネルギー供給に占める原子力の割合は、10%以下である。</div></div></div>",
           "choice_html": [
             "A、C",
             "A、E",
@@ -13852,7 +13854,7 @@
               "url": "https://sekatsu-kagaku.sub.jp/group-17-element.htm"
             }
           ],
-          "question_html": "<p>フッ素、塩素、臭素、ヨウ素に関する次のA～Eの記述のうち、正しいものの組合せはどれか。</p><div><p>(A) 25℃、10<sup>5</sup> Paではどれも気体である。</p><p>(B) 電気陰性度はフッ素が最も小さい。</p><p>(C) フッ素と塩素は電解法で、臭素とヨウ素は塩素での酸化法で製造する。</p><p>(D) フッ素は、フッ酸として多く使用されるが、フッ酸は毒性が強く腐食性がある。</p><p>(E) どれも工業的に生産されるが、塩素の生産量が最も多い。</p></div>",
+          "question_html": "<p>フッ素、塩素、臭素、ヨウ素に関する次のA～Eの記述のうち、正しいものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>25℃、10<sup>5</sup> Paではどれも気体である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>電気陰性度はフッ素が最も小さい。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>フッ素と塩素は電解法で、臭素とヨウ素は塩素での酸化法で製造する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>フッ素は、フッ酸として多く使用されるが、フッ酸は毒性が強く腐食性がある。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>どれも工業的に生産されるが、塩素の生産量が最も多い。</div></div></div>",
           "choice_html": [
             "C、D、E",
             "A、D、E",
@@ -14776,7 +14778,7 @@
               "url": "https://www.asahi-kasei-plastics.com/column/10/"
             }
           ],
-          "question_html": "<p>エンプラ（エンジニアリングプラスチック）などの機能性高分子に関する次のA～Eの記述について、誤っているものの組合せはどれか。</p><div><p>(A) エンプラは、通常100℃以上の温度に耐えることができ、強度も高いプラスチックのことである。</p><p>(B) 芳香族ポリアミド（アラミド）は、脂肪族ポリアミド（例えばナイロン66）よりも耐熱性が高く、高強度であるが、プラスチック成形加工しにくい。</p><p>(C) 代表的なアラミドとして、イソフタル酸ジクロリド（<em>m</em>－フタル酸ジクロリド）と<em>m</em>－フェニレンジアミンから合成されるケブラー（デュポン社の登録商標）がある。</p><p>(D) ポリカルボナート（ポリカーボネート）は、ホスゲンとビスフェノールAから合成でき、耐衝撃性、寸法安定性に優れたエンプラである。</p><p>(E) ポリブチレンテレフタラートは、ポリエチレンテレフタラートより寸法安定性が劣り、結晶化速度が遅いため成形性も悪い。</p></div>",
+          "question_html": "<p>エンプラ（エンジニアリングプラスチック）などの機能性高分子に関する次のA～Eの記述について、誤っているものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>エンプラは、通常100℃以上の温度に耐えることができ、強度も高いプラスチックのことである。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>芳香族ポリアミド（アラミド）は、脂肪族ポリアミド（例えばナイロン66）よりも耐熱性が高く、高強度であるが、プラスチック成形加工しにくい。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>代表的なアラミドとして、イソフタル酸ジクロリド（<em>m</em>－フタル酸ジクロリド）と<em>m</em>－フェニレンジアミンから合成されるケブラー（デュポン社の登録商標）がある。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ポリカルボナート（ポリカーボネート）は、ホスゲンとビスフェノールAから合成でき、耐衝撃性、寸法安定性に優れたエンプラである。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ポリブチレンテレフタラートは、ポリエチレンテレフタラートより寸法安定性が劣り、結晶化速度が遅いため成形性も悪い。</div></div></div>",
           "choice_html": [
             "A、B",
             "B、C",
@@ -15387,7 +15389,7 @@
               "url": "https://organodata.wiki.fc2.com/wiki/%E6%B0%B4%E3%81%A8%E3%81%AE%E5%85%B1%E6%B2%B8%E6%B7%B7%E5%90%88%E7%89%A9"
             }
           ],
-          "question_html": "<p>有機溶媒に関する次の（A）～（E）の記述の正誤について、最も適切な組合せはどれか。</p><div><p>(A) クロロホルム10 mLと水10 mLとをよく振り混ぜた後に静置すると、クロロホルムは下層として分離する。</p><p>(B) ベンゼンはトルエンより分子量は小さいが、トルエンの融点が-95℃であるのに対して、ベンゼンの融点は5.5℃と高い。</p><p>(C) 20%の水を含むトルエンを常圧で単蒸留すると、まず水が留出し、ついで沸点110.6℃のトルエンが留出する。</p><p>(D) ジエチルエーテル10 mLと水10 mLをよく振り混ぜた後に静置すると、ジエチルエーテルは上層として分離する。</p><p>(E) アセトン10 mLと水10 mLとをよく振り混ぜた後に静置すると、アセトンは下層として分離する。</p></div>",
+          "question_html": "<p>有機溶媒に関する次の（A）～（E）の記述の正誤について、最も適切な組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>クロロホルム10 mLと水10 mLとをよく振り混ぜた後に静置すると、クロロホルムは下層として分離する。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>ベンゼンはトルエンより分子量は小さいが、トルエンの融点が-95℃であるのに対して、ベンゼンの融点は5.5℃と高い。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>20%の水を含むトルエンを常圧で単蒸留すると、まず水が留出し、ついで沸点110.6℃のトルエンが留出する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ジエチルエーテル10 mLと水10 mLをよく振り混ぜた後に静置すると、ジエチルエーテルは上層として分離する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>アセトン10 mLと水10 mLとをよく振り混ぜた後に静置すると、アセトンは下層として分離する。</div></div></div>",
           "choice_html": [
             "正 / 正 / 誤 / 誤 / 正",
             "正 / 誤 / 正 / 正 / 誤",
@@ -15434,7 +15436,7 @@
               "url": "https://www.chem-station.com/odos/2009/06/michael-michael-addition.html"
             }
           ],
-          "question_html": "<p>化学反応に関する次の（A）～（E）の記述のうち、誤っているものの組合せはどれか。</p><div><p>(A) Diels-Alder反応は典型的な［4+2］環化付加反応である。</p><p>(B) 1－ブロモ－2－フェニルエタンの塩基によるE2反応は、炭素－臭素結合の自発的開裂から始まる。</p><p>(C) アルドール反応は塩基触媒存在下の反応が一般的であるが、酸触媒でも進行する。</p><p>(D) 一般にキラルなハロゲン化アルキルを基質とするS<sub>N</sub>2反応は、第三級ハロゲン化アルキルよりも第二級のほうが進行しやすく、ラセミ体の生成物を与える。</p><p>(E) Michael付加反応の基質は、α, β－不飽利カルボニル化合物である。</p></div>",
+          "question_html": "<p>化学反応に関する次の（A）～（E）の記述のうち、誤っているものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>Diels-Alder反応は典型的な［4+2］環化付加反応である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>1－ブロモ－2－フェニルエタンの塩基によるE2反応は、炭素－臭素結合の自発的開裂から始まる。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>アルドール反応は塩基触媒存在下の反応が一般的であるが、酸触媒でも進行する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>一般にキラルなハロゲン化アルキルを基質とするS<sub>N</sub>2反応は、第三級ハロゲン化アルキルよりも第二級のほうが進行しやすく、ラセミ体の生成物を与える。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>Michael付加反応の基質は、α, β－不飽利カルボニル化合物である。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、C",
@@ -15730,7 +15732,7 @@
               "url": "https://www.kohyei.com/prod_cat/polyurethane/"
             }
           ],
-          "question_html": "<p>重縮合及び重付加により得られる高分子に関する次のA～Eの記述のうち。誤っているものの組合せはどれか。</p><div><p>(A) ヘキサメチレンジアミンとアジピン酸の重縮合により得られるポリアミドはデュポン社によりナイロンと命名され、現在でも代表的な合成繊維として広く使われている。</p><p>(B) エチレングリコールとテレフタル酸の重付加により合成されるポリエステルはPETと呼ばれ、合成繊維や飲料容器として広く使われている。</p><p>(C) ビスフェノールAとホスゲンの重縮合で合成されるポリエステルの一種であるボリカーボネートは、加工性も耐熱性もよく、コンパクトディスクなどに広く用いられている。</p><p>(D) アルコールとイソシアナート類から重合されるポリウレタンは、典型的な重付加により合成される高分子である。</p><p>(E) ポリアミドのアミド結合間が芳香環であるアラミドは、ナイロンなどの一般のポリアミドに比べ、耐熱性が低く、引張強度も弱い。</p></div>",
+          "question_html": "<p>重縮合及び重付加により得られる高分子に関する次のA～Eの記述のうち。誤っているものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>ヘキサメチレンジアミンとアジピン酸の重縮合により得られるポリアミドはデュポン社によりナイロンと命名され、現在でも代表的な合成繊維として広く使われている。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>エチレングリコールとテレフタル酸の重付加により合成されるポリエステルはPETと呼ばれ、合成繊維や飲料容器として広く使われている。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ビスフェノールAとホスゲンの重縮合で合成されるポリエステルの一種であるボリカーボネートは、加工性も耐熱性もよく、コンパクトディスクなどに広く用いられている。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>アルコールとイソシアナート類から重合されるポリウレタンは、典型的な重付加により合成される高分子である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ポリアミドのアミド結合間が芳香環であるアラミドは、ナイロンなどの一般のポリアミドに比べ、耐熱性が低く、引張強度も弱い。</div></div></div>",
           "choice_html": [
             "A、B",
             "B、E",
@@ -16897,7 +16899,7 @@
               "url": "https://www.asahi-kasei-plastics.com/column/10/"
             }
           ],
-          "question_html": "<p>エンプラ（エンジニアリングプラスチック）などの機能性高分子に関する次のA～Eの記述のうち、誤っているものの組合せはどれか。</p><div><p>(A) エンプラは、通常100℃以上の温度に耐えることができ、強度も高いプラスチックのことである。</p><p>(B) 芳香族ポリアミド（アラミド）は、脂肪族ポリアミド（例えばナイロン66）よりも耐熱性が高く、高強度であるが、プラスチック成形加工しにくい。</p><p>(C) 代表的なアラミドとして、イソフタル酸ジクロリド（<em>m</em>－フタル酸ジクロリド）と<em>m</em>－フェニレンジアミンから合成されるケブラー（デュポン社の登録商標）がある。</p><p>(D) ポリカルボナート（ポリカーボネート）は、ホスゲンとビスフェノールAから合成でき、耐衝撃性、寸法安定性に優れたエンプラである。</p><p>(E) ポリブチレンテレフタラートは、ポリエチレンテレフタラートより寸法安定性が劣り、結晶化速度が遅いため成形性も悪い。</p></div>",
+          "question_html": "<p>エンプラ（エンジニアリングプラスチック）などの機能性高分子に関する次のA～Eの記述のうち、誤っているものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>エンプラは、通常100℃以上の温度に耐えることができ、強度も高いプラスチックのことである。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>芳香族ポリアミド（アラミド）は、脂肪族ポリアミド（例えばナイロン66）よりも耐熱性が高く、高強度であるが、プラスチック成形加工しにくい。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>代表的なアラミドとして、イソフタル酸ジクロリド（<em>m</em>－フタル酸ジクロリド）と<em>m</em>－フェニレンジアミンから合成されるケブラー（デュポン社の登録商標）がある。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>ポリカルボナート（ポリカーボネート）は、ホスゲンとビスフェノールAから合成でき、耐衝撃性、寸法安定性に優れたエンプラである。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>ポリブチレンテレフタラートは、ポリエチレンテレフタラートより寸法安定性が劣り、結晶化速度が遅いため成形性も悪い。</div></div></div>",
           "choice_html": [
             "A、B",
             "B、C",
@@ -18022,7 +18024,7 @@
               "url": "https://www.try-it.jp/chapters-10095/sections-10240/lessons-10241/"
             }
           ],
-          "question_html": "<p>次のA～Eの試薬を用いた重縮合・重付加のうち、ポリ尿素が得られるものとポリイミドが得られるものの組合せはどれか。</p><div><p>(A) ヘキサメチレンジアミンとアジピン酸</p><p>(B) ヘキサメチレンジアミンとヘキサメチレンジイソシアナート</p><p>(C) テトラメチレングリコールとヘキサメチレンジイソシアナート</p><p>(D) <em>p</em>-フェニレンジアミンと無水ピロメリット酸</p><p>(E) <em>p</em>-フェニレンジアミンとテレフタル酸ジクロリド</p></div>",
+          "question_html": "<p>次のA～Eの試薬を用いた重縮合・重付加のうち、ポリ尿素が得られるものとポリイミドが得られるものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>ヘキサメチレンジアミンとアジピン酸</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>ヘキサメチレンジアミンとヘキサメチレンジイソシアナート</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>テトラメチレングリコールとヘキサメチレンジイソシアナート</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'><em>p</em>-フェニレンジアミンと無水ピロメリット酸</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'><em>p</em>-フェニレンジアミンとテレフタル酸ジクロリド</div></div></div>",
           "choice_html": [
             "A、C",
             "A、E",
@@ -18180,7 +18182,7 @@
               "url": "https://www.tytlabs.co.jp/en/japanese/review/rev284pdf/284_013_kawasumi.pdf"
             }
           ],
-          "question_html": "<p>液晶高分子に関する次のA～Eの記述のうち、誤っているものの組合せはどれか。 </p><div><p>(A) 液晶高分子は、メソゲンのつながり方により、主鎖型、側鎖型、及び複合型に分類される。</p><p>(B) リオトロピック液晶高分子は、溶液中で液晶性を発現し、高強度ファイバーの開発に適している。 </p><p>(C) ポリアリラート（ポリアリレート）の多くは融点が高いので、芳香環への置換基の導入や芳香環間への屈曲性スペーサーの導入などにより融点を低下させて、サーモトロピック液晶高分子として用いられる。</p><p>(D) 全芳香族ポリアミドは、主としてサーモトロピック液晶高分子として利用する。</p><p>(E) コンピューターやテレビの表示材料の多くはリオトロピック液晶高分子である。</p></div>",
+          "question_html": "<p>液晶高分子に関する次のA～Eの記述のうち、誤っているものの組合せはどれか。 </p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>液晶高分子は、メソゲンのつながり方により、主鎖型、側鎖型、及び複合型に分類される。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>リオトロピック液晶高分子は、溶液中で液晶性を発現し、高強度ファイバーの開発に適している。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>ポリアリラート（ポリアリレート）の多くは融点が高いので、芳香環への置換基の導入や芳香環間への屈曲性スペーサーの導入などにより融点を低下させて、サーモトロピック液晶高分子として用いられる。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>全芳香族ポリアミドは、主としてサーモトロピック液晶高分子として利用する。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>コンピューターやテレビの表示材料の多くはリオトロピック液晶高分子である。</div></div></div>",
           "choice_html": [
             "A、B",
             "A、C",
@@ -18250,7 +18252,7 @@
               "url": "https://sekatsu-kagaku.sub.jp/group-17-element.htm"
             }
           ],
-          "question_html": "<p>フッ素、塩素、臭素、ヨウ素に関する次のA～Eの記述のうち、正しいものの組合せはどれか。</p><div><p>(A) 25℃、1 bar（10<sup>5</sup> Pa）ではどれも気体である。</p><p>(B) 電気陰性度はフッ素が最も小さい。</p><p>(C) フッ素と塩素は電解法で、臭素とヨウ素は塩素での酸化法で製造する。</p><p>(D) フッ素は、フッ酸として多く使用されるが、フッ酸は毒性が強く腐食性がある。</p><p>(E) どれも工業的に生産されるが、塩素の生産量が最も多い。</p></div>",
+          "question_html": "<p>フッ素、塩素、臭素、ヨウ素に関する次のA～Eの記述のうち、正しいものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>25℃、1 bar（10<sup>5</sup> Pa）ではどれも気体である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>電気陰性度はフッ素が最も小さい。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>フッ素と塩素は電解法で、臭素とヨウ素は塩素での酸化法で製造する。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>フッ素は、フッ酸として多く使用されるが、フッ酸は毒性が強く腐食性がある。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>どれも工業的に生産されるが、塩素の生産量が最も多い。</div></div></div>",
           "choice_html": [
             "A、D",
             "A、D、E",
@@ -18561,7 +18563,7 @@
               "url": "https://chem-fac.com/reynolds-number/"
             }
           ],
-          "question_html": "<p>深さ 1 m の容器に水が満液にしてある。容器の側面の深さ 90 cm のところに、【 ア 】直径 20 mm の孔と【 イ 】直径 10 mm の孔があいている。また、深さ 45 cm のところに、【 ウ 】直径 20 mm の孔と【 エ 】直径 10 mm の孔があいている。次の A～D の記述のうち、誤っているものの組合せはどれか。ただし、孔からの流速はトリチェリーの定理 \\(u = \\sqrt{2gh}\\) が成り立つとする。\\(u\\) は流速、\\(h\\) は液深さ、\\(g\\) は重力の加速度である。</p><p>(A) 【 ア 】と【 イ 】では、ほぼ同じ流速である。<br/>(B) 【 イ 】と【 ウ 】では、ほぼ同じ流量である。<br/>(C) レイノルズ数が最も大きいのは、【 ア 】である。<br/>(D) エタノールで満液にすると、どの孔でも水のときよりも流速が遅くなる。</p>",
+          "question_html": "<p>深さ 1 m の容器に水が満液にしてある。容器の側面の深さ 90 cm のところに、【 ア 】直径 20 mm の孔と【 イ 】直径 10 mm の孔があいている。また、深さ 45 cm のところに、【 ウ 】直径 20 mm の孔と【 エ 】直径 10 mm の孔があいている。次の A～D の記述のうち、誤っているものの組合せはどれか。ただし、孔からの流速はトリチェリーの定理 \\(u = \\sqrt{2gh}\\) が成り立つとする。\\(u\\) は流速、\\(h\\) は液深さ、\\(g\\) は重力の加速度である。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>【 ア 】と【 イ 】では、ほぼ同じ流速である。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>【 イ 】と【 ウ 】では、ほぼ同じ流量である。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>レイノルズ数が最も大きいのは、【 ア 】である。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>エタノールで満液にすると、どの孔でも水のときよりも流速が遅くなる。</div></div></div>",
           "explanation_html": "<p>トリチェリの定理より、液面深さが同じである【 ア 】と【 イ 】では、ほぼ同じ流速です（A 正）。</p><p>【 ウ 】よりも【 イ 】の方が液面深さは 2 倍であるため、流速は【 イ 】の方が \\(\\sqrt{2}\\) 倍となります。ノズル直径は【 ウ 】が 2 倍大きく断面積は 4 倍。流量は流速×断面積で計算でき、【 ウ 】の方が【 イ 】よりも \\(4/\\sqrt{2} \\approx 2.83\\) 倍の流量となります（B 誤）。</p><div class=\"table-responsive\"><table class=\"question-table\"><thead><tr><th>ノズル</th><th>ノズル高さ</th><th>流速</th><th>ノズル直径</th><th>ノズル断面積</th><th>流量</th></tr></thead><tbody><tr><td>【 ア 】</td><td>\\(2H\\)</td><td>\\(\\sqrt{2}\\,u\\)</td><td>\\(2D\\)</td><td>\\(4A\\)</td><td>\\(4\\sqrt{2}\\,uA\\)</td></tr><tr><td>【 イ 】</td><td>\\(2H\\)</td><td>\\(\\sqrt{2}\\,u\\)</td><td>\\(D\\)</td><td>\\(A\\)</td><td>\\(\\sqrt{2}\\,uA\\)</td></tr><tr><td>【 ウ 】</td><td>\\(H\\)</td><td>\\(u\\)</td><td>\\(2D\\)</td><td>\\(4A\\)</td><td>\\(4uA\\)</td></tr><tr><td>【 エ 】</td><td>\\(H\\)</td><td>\\(u\\)</td><td>\\(D\\)</td><td>\\(A\\)</td><td>\\(uA\\)</td></tr></tbody></table></div><p>レイノルズ数 \\(Re = D u \\rho/\\mu\\) は、流速とノズル径が共に一番大きい【 ア 】が最大（C 正）。</p><p>トリチェリーの定理は液深さのみに依存し、エタノールに変更しても流速は変化しません（D 誤）。</p><p>よって誤っているのは B と D です。</p>"
         },
         {
