@@ -167,11 +167,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Show answer and explanation
         answerContent.classList.add("visible");
-
-        // Scroll gracefully to the answer section
-        setTimeout(function() {
-          answerContent.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }, 50);
       });
     });
   }
