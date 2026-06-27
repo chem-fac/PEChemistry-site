@@ -174,6 +174,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Choice-table edge fade (hint that the table scrolls sideways on narrow screens)
+document.addEventListener("DOMContentLoaded", function () {
+  const frames = document.querySelectorAll(".choices-abcd-table");
+  if (frames.length === 0) return;
+
+  frames.forEach(function (frame) {
+    const scroller = frame.querySelector(".choice-table-scroll");
+    if (!scroller) return;
+
+    function update() {
+      const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+      const hasOverflow = maxScroll > 1;
+      const x = scroller.scrollLeft;
+      frame.classList.toggle("show-right-fade", hasOverflow && x < maxScroll - 1);
+      frame.classList.toggle("show-left-fade", hasOverflow && x > 1);
+    }
+
+    scroller.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+    window.addEventListener("load", update);
+    update();
+  });
+});
+
+
 function initShareButtons() {
   if (document.getElementById("share-buttons")) return;
 

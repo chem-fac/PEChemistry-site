@@ -979,10 +979,46 @@ img {
   width: 100%;
   border: 1px solid var(--color-border, #e2e8f0);
   border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+/* 横スクロールは内側ラッパーが担当（フェードは外枠に固定する） */
+.choices-abcd-table .choice-table-scroll {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  background: #fff;
+}
+
+/* スクロール可能なときだけ右端／左端に薄いフェードを表示 */
+.choices-abcd-table::before,
+.choices-abcd-table::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  width: 34px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+.choices-abcd-table::after {
+  right: 1px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 75%);
+  border-radius: 0 var(--radius-md, 8px) var(--radius-md, 8px) 0;
+}
+.choices-abcd-table::before {
+  left: 1px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 75%);
+  border-radius: var(--radius-md, 8px) 0 0 var(--radius-md, 8px);
+}
+.choices-abcd-table.show-right-fade::after {
+  opacity: 1;
+}
+.choices-abcd-table.show-left-fade::before {
+  opacity: 1;
 }
 
 /* tr を flex 化させない */
@@ -1054,7 +1090,7 @@ img {
 }
 
 .choices-abcd-table .choice-table thead th:first-child {
-  width: 36px;
+  width: 48px;
   padding: 10px 2px;
 }
 
@@ -1111,7 +1147,7 @@ img {
 }
 
 .choices-abcd-table .choice-table-eliminate {
-  width: 36px;
+  width: 48px;
   padding: 0 !important;
   cursor: pointer;
 }
@@ -1127,24 +1163,34 @@ img {
 .choices-abcd-table .choice-eliminate-btn {
   display: block;
   width: 100%;
+  /* table-layout:auto（モバイル）でも列がつぶれないよう、タップ領域に下限を設ける */
+  min-width: 44px;
+  min-height: 44px;
   background: transparent;
   border: none;
-  padding: 12px 0;
+  padding: 16px 0;
   margin: 0;
   cursor: pointer;
-  color: #cbd5e1;
-  font-size: 1rem;
+  color: #94a3b8;
+  font-size: 1.25rem;
   line-height: 1;
   border-radius: 0;
   text-align: center;
+}
+
+/* 画像選択肢を 1 列固定で並べたいとき（反応式など横長の構造を大きく見せる） */
+.choices.choices-grid.choices-grid-1col {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 /* 画像選択肢を 2 列固定で並べたいとき（PC 表示でも 2 列） */
 .choices.choices-grid.choices-grid-2col {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.choices.choices-grid.choices-grid-2col .choice-item.choice-is-image {
-  padding-top: calc(var(--space-md) + 1.75rem);
+
+/* 画像選択肢は上部に番号・除外ボタン用の余白を確保し、画像に重ならないようにする */
+.image-choice-wrapper .choice-item.choice-is-image {
+  padding-top: calc(var(--space-md) + 1.6rem);
 }
 
 /* data-table（thead 付きデータ表）はカラム幅指定を解除し、内容に応じて調整 */
@@ -1964,6 +2010,25 @@ img {
 
 .explanation-content > :last-child {
   margin-bottom: 0;
+}
+
+/* 独立行の数式（KaTeX display）は横に長いとはみ出すため、横スクロール可能にする。
+   スマホで長い単位や根号付きの式が画面外に切れるのを防ぐ。問題文・解説の両方に効く。 */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 2px;
+  padding-bottom: 8px;
+}
+
+/* 収まるときは従来どおり中央寄せ、はみ出すときは左端から全体をスクロールできるようにする
+   （max-content + margin:auto。中央寄せのまま overflow させると左端が切れて読めなくなるため） */
+.katex-display > .katex {
+  width: max-content;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Article links grid */
