@@ -166,12 +166,19 @@
       loadData();
     });
 
+    // GA4: 検索機能の利用を1ページ表示につき1回だけ計測
+    let searchTracked = false;
+
     // Search on input
     input.addEventListener("input", debounce(async function () {
       const query = input.value;
       if (!query || query.trim().length < 2) {
         renderResults([], query);
         return;
+      }
+      if (!searchTracked && typeof gtag === "function") {
+        gtag("event", "site_search");
+        searchTracked = true;
       }
       const isReady = await ensureDataForQuery(query);
       if (!isReady) return;

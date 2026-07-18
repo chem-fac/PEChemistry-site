@@ -2,6 +2,11 @@
    Common JavaScript for PE Chemistry Exam Site
    ============================================ */
 
+// GA4 event tracking (quiz engagement)
+function trackEvent(name, params) {
+  if (typeof gtag === "function") gtag("event", name, params || {});
+}
+
 // Mobile menu toggle
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("mobile-menu-btn");
@@ -97,6 +102,7 @@ function initRandomButtons() {
 
   buttons.forEach(function (btn) {
     btn.addEventListener("click", function () {
+      trackEvent("random_question");
       btn.disabled = true;
       pickAndGo().finally(function () { btn.disabled = false; });
     });
@@ -167,6 +173,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Show answer and explanation
         answerContent.classList.add("visible");
+
+        // GA4: 正誤つきで解答を計測（問題はページパスで識別）
+        trackEvent(choice.getAttribute("data-correct") === "true" ? "answer_correct" : "answer_incorrect");
       });
     });
   }
