@@ -117,7 +117,7 @@
 
     let html = "";
     for (const r of results) {
-      const subjectStyle = SUBJECT_COLORS[r.subject] || { bg: "#f1f5f9", color: "#64748b" };
+      const subjectStyle = SUBJECT_COLORS[r.subject] || { bg: "#eef1ee", color: "#4a564e" };
       // Get excerpt from text
       const lowerText = r.text.toLowerCase();
       const lowerQuery = query.toLowerCase().trim().split(/\s+/)[0];

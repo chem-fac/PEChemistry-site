@@ -17,7 +17,7 @@
   <link rel="canonical" href="https://pe-chemistry.chem-fac.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" href="/images/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
@@ -59,12 +59,10 @@
 
     <!-- Hero -->
     <section class="hero">
-      <div class="container">
-        <h1>技術士（化学部門）一次試験 過去問解説</h1>
-        <p class="hero-description">
-          技術士一次試験の専門科目（化学部門）を1問ずつ解説しています。<br>
-          選択肢を押すことで正答と解説が表示されます。
-        </p>
+      <div class="container-wide">
+        <h1>技術士（化学部門）一次試験<br>過去問解説</h1>
+        <p class="hero-description">技術士一次試験の専門科目（化学部門）を1問ずつ解説しています。選択肢を押すことで正答と解説が表示されます。</p>
+        <p class="hero-meta">収録範囲: <span class="num">2011〜2025</span>年度・全<span class="num">16</span>回（再試験含む）・<span class="num">560</span>問</p>
         <div class="hero-actions">
           <button type="button" class="btn-random" data-random-target="root">
             <span class="btn-random-icon">🎲</span>
@@ -75,193 +73,190 @@
     </section>
 
     <!-- Theme Index Promo -->
-    <section class="section" style="padding-bottom: 0;">
-      <div class="container">
-        <a href="./themes/" class="note-promo">
-          <div class="note-promo-content">
-            <h3>テーマ別インデックス（全560問）</h3>
+    <div class="theme-promo-wrap">
+      <div class="container-wide">
+        <a href="./themes/" class="theme-promo">
+          <div class="theme-promo-body">
+            <h2>テーマ別インデックス（全560問）</h2>
             <p>頻出39テーマ別に過去問をまとめて演習。同じ論点の問題を続けて解けます（毎年更新）。</p>
+            <div class="subject-chips" aria-label="専門科目の出題分野">
+              <span class="chip chip-inorg">無機化学及びセラミックス</span>
+              <span class="chip chip-org">有機化学及び燃料</span>
+              <span class="chip chip-poly">高分子化学</span>
+              <span class="chip chip-proc">化学プロセス</span>
+            </div>
           </div>
-          <div class="note-promo-arrow">→</div>
+          <span class="promo-arrow" aria-hidden="true">→</span>
         </a>
       </div>
-    </section>
+    </div>
 
     <!-- Year List -->
-    <section class="section">
-      <div class="container">
-        <div class="section-label">EXAM YEARS</div>
+    <section class="section" id="years">
+      <div class="container-wide">
         <h2 class="section-heading">年度別一覧</h2>
-        <div class="year-grid">
 
-          <a href="2025/" class="year-card">
-            <div>
-              <div class="year-card-year">2025</div>
-              <div class="year-card-label">令和7年度</div>
-              <div class="year-card-count">全35問</div>
+        <div class="recent-grid">
+          <a href="2025/" class="recent-card">
+            <div class="recent-card-top">
+              <span class="recent-year">2025</span>
+              <span class="badge-latest">最新</span>
             </div>
+            <div class="recent-wareki">令和7年度</div>
+            <div class="recent-count">全<span class="num">35</span>問</div>
           </a>
-
-          <a href="2024/" class="year-card">
-            <div>
-              <div class="year-card-year">2024</div>
-              <div class="year-card-label">令和6年度</div>
-              <div class="year-card-count">全35問</div>
+          <a href="2024/" class="recent-card">
+            <div class="recent-card-top">
+              <span class="recent-year">2024</span>
             </div>
+            <div class="recent-wareki">令和6年度</div>
+            <div class="recent-count">全<span class="num">35</span>問</div>
           </a>
-
-          <a href="2023/" class="year-card">
-            <div>
-              <div class="year-card-year">2023</div>
-              <div class="year-card-label">令和5年度</div>
-              <div class="year-card-count">全35問</div>
+          <a href="2023/" class="recent-card">
+            <div class="recent-card-top">
+              <span class="recent-year">2023</span>
             </div>
+            <div class="recent-wareki">令和5年度</div>
+            <div class="recent-count">全<span class="num">35</span>問</div>
           </a>
-
-          <a href="2022/" class="year-card">
-            <div>
-              <div class="year-card-year">2022</div>
-              <div class="year-card-label">令和4年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2021/" class="year-card">
-            <div>
-              <div class="year-card-year">2021</div>
-              <div class="year-card-label">令和3年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2020/" class="year-card">
-            <div>
-              <div class="year-card-year">2020</div>
-              <div class="year-card-label">令和2年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2019-2/" class="year-card">
-            <div>
-              <div class="year-card-year">2019-2</div>
-              <div class="year-card-label">令和元年度（再試験）</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2019/" class="year-card">
-            <div>
-              <div class="year-card-year">2019</div>
-              <div class="year-card-label">令和元年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2018/" class="year-card">
-            <div>
-              <div class="year-card-year">2018</div>
-              <div class="year-card-label">平成30年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2017/" class="year-card">
-            <div>
-              <div class="year-card-year">2017</div>
-              <div class="year-card-label">平成29年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2016/" class="year-card">
-            <div>
-              <div class="year-card-year">2016</div>
-              <div class="year-card-label">平成28年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2015/" class="year-card">
-            <div>
-              <div class="year-card-year">2015</div>
-              <div class="year-card-label">平成27年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2014/" class="year-card">
-            <div>
-              <div class="year-card-year">2014</div>
-              <div class="year-card-label">平成26年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2013/" class="year-card">
-            <div>
-              <div class="year-card-year">2013</div>
-              <div class="year-card-label">平成25年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2012/" class="year-card">
-            <div>
-              <div class="year-card-year">2012</div>
-              <div class="year-card-label">平成24年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
-          <a href="2011/" class="year-card">
-            <div>
-              <div class="year-card-year">2011</div>
-              <div class="year-card-label">平成23年度</div>
-              <div class="year-card-count">全35問</div>
-            </div>
-          </a>
-
         </div>
+
+        <div class="era-group">
+          <div class="era-head">
+            <span class="era-name">令和</span>
+            <span class="era-range"><span class="num">2019〜2022</span>年度・再試験を含む</span>
+          </div>
+          <div class="era-rows">
+            <a href="2022/" class="yr-row">
+              <span class="yr-num">2022</span>
+              <span class="yr-wareki">令和4年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2021/" class="yr-row">
+              <span class="yr-num">2021</span>
+              <span class="yr-wareki">令和3年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2020/" class="yr-row">
+              <span class="yr-num">2020</span>
+              <span class="yr-wareki">令和2年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2019-2/" class="yr-row">
+              <span class="yr-num">2019-2</span>
+              <span class="yr-wareki">令和元年度（再試験）</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2019/" class="yr-row">
+              <span class="yr-num">2019</span>
+              <span class="yr-wareki">令和元年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="era-group">
+          <div class="era-head">
+            <span class="era-name">平成</span>
+            <span class="era-range"><span class="num">2011〜2018</span>年度</span>
+          </div>
+          <div class="era-rows">
+            <a href="2018/" class="yr-row">
+              <span class="yr-num">2018</span>
+              <span class="yr-wareki">平成30年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2017/" class="yr-row">
+              <span class="yr-num">2017</span>
+              <span class="yr-wareki">平成29年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2016/" class="yr-row">
+              <span class="yr-num">2016</span>
+              <span class="yr-wareki">平成28年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2015/" class="yr-row">
+              <span class="yr-num">2015</span>
+              <span class="yr-wareki">平成27年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2014/" class="yr-row">
+              <span class="yr-num">2014</span>
+              <span class="yr-wareki">平成26年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2013/" class="yr-row">
+              <span class="yr-num">2013</span>
+              <span class="yr-wareki">平成25年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2012/" class="yr-row">
+              <span class="yr-num">2012</span>
+              <span class="yr-wareki">平成24年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="2011/" class="yr-row">
+              <span class="yr-num">2011</span>
+              <span class="yr-wareki">平成23年度</span>
+              <span class="yr-count">全35問</span>
+              <span class="yr-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- Search -->
     <section class="search-section" id="search">
-      <div class="container">
-        <div class="section-label">SEARCH</div>
+      <div class="container-wide">
         <h2 class="section-heading">問題を検索</h2>
         <div class="search-box">
-          <input type="text" id="search-input" class="search-input" placeholder="キーワードで検索（例：アルドール、高分子、蒸留）">
+          <input type="text" id="search-input" class="search-input" aria-label="問題を検索" placeholder="キーワードで検索（例：アルドール、高分子、蒸留）">
         </div>
+        <p class="search-hint">問題文・解説の全文から検索できます。</p>
         <div class="search-results" id="search-results"></div>
       </div>
     </section>
 
-    <!-- Note promo -->
+    <!-- 要点まとめ・関連記事 -->
     <section class="section">
-      <div class="container">
-
-    <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener" class="note-promo">
-      <div class="note-promo-content">
-        <h3>技術士（化学部門）一次試験の要点まとめ</h3>
-        <p>試験直前に役立つ要点をまとめました。効率的な学習にご活用ください。</p>
-      </div>
-      <div class="note-promo-arrow">→</div>
-    </a>
-
-        <div class="article-links" style="margin-top: var(--space-lg);">
-          <a href="./articles/pe-chem-benefits/" class="article-link-card">
-            <div class="article-link-card-text">
-              <h4>技術士(化学部門)が得られる特典を調べてみた</h4>
+      <div class="container-wide">
+        <h2 class="section-heading">要点まとめ・関連記事</h2>
+        <div class="link-list">
+          <a href="https://note.com/chem_fac/n/nbc0c6a8a3755" target="_blank" rel="noopener" class="link-row">
+            <div class="link-row-body">
+              <h3>技術士（化学部門）一次試験の要点まとめ<span class="ext-mark" aria-hidden="true">↗</span></h3>
+              <p>試験直前に役立つ要点をまとめました。効率的な学習にご活用ください。</p>
+            </div>
+            <span class="promo-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="./articles/pe-chem-benefits/" class="link-row">
+            <div class="link-row-body">
+              <h3>技術士(化学部門)が得られる特典を調べてみた</h3>
               <p>技術士資格のメリットについて</p>
             </div>
+            <span class="promo-arrow" aria-hidden="true">→</span>
           </a>
-          <a href="./articles/pe-exam-data/" class="article-link-card">
-            <div class="article-link-card-text">
-              <h4>技術士（化学部門）の受験者数や合格者数データ</h4>
+          <a href="./articles/pe-exam-data/" class="link-row">
+            <div class="link-row-body">
+              <h3>技術士（化学部門）の受験者数や合格者数データ</h3>
               <p>過去の試験データまとめ</p>
             </div>
+            <span class="promo-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
@@ -269,8 +264,7 @@
 
     <!-- Profile -->
     <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="section-label">PROFILE</div>
+      <div class="container-wide">
         <h2 class="section-heading">運営者プロフィール</h2>
         <div class="profile-card">
           <div class="profile-header">
@@ -286,7 +280,7 @@
             <li>
               <span class="profile-link-label">運営サイト</span>
               <a href="https://chem-fac.com/" target="_blank" rel="noopener" class="profile-link">ケムファク</a>
-              <span class="profile-link-desc">化学プラント技術の解説サイト</span>
+              <span class="profile-link-desc">プラント技術の解説サイト</span>
             </li>
             <li>
               <span class="profile-link-label">ポッドキャスト</span>
@@ -295,23 +289,23 @@
             </li>
             <li>
               <span class="profile-link-label">外部メディア連載</span>
-              <a href="https://monoist.itmedia.co.jp/mn/series/45879/" target="_blank" rel="noopener" class="profile-link">MONOist「はじめての化学工学」</a>
-              <span class="profile-link-desc">毎月連載</span>
+              <a href="https://monoist.itmedia.co.jp/mn/series/40825/" target="_blank" rel="noopener" class="profile-link">MONOist「はじめての化学工学」</a>
+              <span class="profile-link-desc">製造業向けWebメディアにて毎月連載</span>
             </li>
             <li>
-              <span class="profile-link-label">noteコラム記事</span>
-              <a href="https://note.com/chem_fac" target="_blank" rel="noopener" class="profile-link">かねまるのnote</a>
-              <span class="profile-link-desc">技術コラムを随時更新</span>
+              <span class="profile-link-label">コラム記事</span>
+              <a href="https://note.com/chem_fac" target="_blank" rel="noopener" class="profile-link">note</a>
+              <span class="profile-link-desc">活動レポートや書籍情報など日々の思いを記載</span>
             </li>
             <li>
               <span class="profile-link-label">noteメンバーシップ</span>
               <a href="https://note.com/chem_fac/membership" target="_blank" rel="noopener" class="profile-link">かねまるの「ここだけの話」</a>
-              <span class="profile-link-desc">月額制で限定記事を公開</span>
+              <span class="profile-link-desc">「未完成の思考」「地道なプロセス」「個人的な本音」を、ありのままに共有</span>
             </li>
             <li>
               <span class="profile-link-label">SNS</span>
               <a href="https://x.com/chem_fac" target="_blank" rel="noopener" class="profile-link">X (Twitter) @chem_fac</a>
-              <span class="profile-link-desc">日々の発信</span>
+              <span class="profile-link-desc">日々の発信や宣伝</span>
             </li>
           </ul>
         </div>
@@ -320,8 +314,7 @@
 
     <!-- Changelog -->
     <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="section-label">UPDATES</div>
+      <div class="container-wide">
         <h2 class="section-heading">更新履歴</h2>
         <ul class="changelog-list">
 
