@@ -278,6 +278,34 @@ img {
   margin-bottom: 28px;
 }
 
+/* ヒーロー2カラム（テキスト左＋イラスト右。900px以下で縦積み） */
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 440px;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-art {
+  margin: 0;
+}
+
+.hero-art img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    display: block;
+  }
+  .hero-art {
+    max-width: 400px;
+    margin: 22px auto 0;
+  }
+}
+
 /* ============================================
    SECTION COMMON
    大文字アイブロウは廃止。見出しの weight と
