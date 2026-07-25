@@ -1510,6 +1510,14 @@ img {
   text-align: center;
 }
 
+/* 表形式の「正答」ラベルは番号セルの左上に横書きで表示
+   （汎用の right 基準のままだと幅48pxの番号セル内で折り返して縦書きに見えるため） */
+.choices-abcd-table .choice-item.correct::after {
+  right: auto;
+  left: 2px;
+  white-space: nowrap;
+}
+
 /* 画像選択肢を 1 列固定で並べたいとき（反応式など横長の構造を大きく見せる） */
 .choices.choices-grid.choices-grid-1col {
   grid-template-columns: minmax(0, 1fr);
