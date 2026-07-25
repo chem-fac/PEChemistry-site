@@ -1493,6 +1493,8 @@ img {
 .choices-abcd-table .choice-eliminate-btn {
   display: block;
   width: 100%;
+  /* 汎用ルールの height:44px のままだと padding 16px×2 で×が下にはみ出すため解除 */
+  height: auto;
   /* table-layout:auto（モバイル）でも列がつぶれないよう、タップ領域に下限を設ける */
   min-width: 44px;
   min-height: 44px;
