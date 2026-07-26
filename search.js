@@ -169,6 +169,18 @@
     // GA4: 検索機能の利用を1ページ表示につき1回だけ計測
     let searchTracked = false;
 
+    // GA4: 確定した検索語を標準イベントで送信（入力が1.5秒止まったら1回。
+    // search_term はGA4組み込みディメンションなのでカスタム定義の登録は不要）
+    let lastSentTerm = "";
+    const trackSearchTerm = debounce(function (query) {
+      const term = (query || "").trim();
+      if (term.length < 2 || term === lastSentTerm) return;
+      lastSentTerm = term;
+      if (typeof gtag === "function") {
+        gtag("event", "view_search_results", { search_term: term });
+      }
+    }, 1500);
+
     // Search on input
     input.addEventListener("input", debounce(async function () {
       const query = input.value;
@@ -180,6 +192,7 @@
         gtag("event", "site_search");
         searchTracked = true;
       }
+      trackSearchTerm(query);
       const isReady = await ensureDataForQuery(query);
       if (!isReady) return;
       const results = search(query);
