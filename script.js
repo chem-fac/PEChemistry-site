@@ -7,6 +7,81 @@ function trackEvent(name, params) {
   if (typeof gtag === "function") gtag("event", name, params || {});
 }
 
+// A/B test: question-page continuation after answering
+// A = current layout (random question button below the question navigation)
+// B = move the same button directly below the explanation
+const PE_CONTINUE_EXPERIMENT_ID = "pe_continue_v1";
+let peContinueExperiment = null;
+
+function getOrAssignVariant(experimentId) {
+  const isLocal = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
+  const localOverride = new URLSearchParams(window.location.search).get("ab_" + experimentId);
+  if (isLocal && (localOverride === "A" || localOverride === "B")) return localOverride;
+
+  const storageKey = "ab:" + experimentId;
+
+  try {
+    const saved = window.localStorage.getItem(storageKey);
+    if (saved === "A" || saved === "B") return saved;
+
+    const assigned = Math.random() < 0.5 ? "A" : "B";
+    window.localStorage.setItem(storageKey, assigned);
+    return assigned;
+  } catch (e) {
+    // localStorage may be unavailable in private/restricted browser modes.
+    return Math.random() < 0.5 ? "A" : "B";
+  }
+}
+
+function initPeContinueExperiment() {
+  const answerContent = document.getElementById("answer-content");
+  const explanation = answerContent?.querySelector(".explanation-section");
+  const randomNav = document.querySelector(".random-nav");
+  const randomControl = randomNav?.querySelector('.btn-random[data-random-target="question"]');
+  const nextControl = Array.from(document.querySelectorAll(".question-nav-btn")).find(function (link) {
+    const label = link.querySelector(".question-nav-label");
+    return label?.textContent.trim() === "次の問題";
+  });
+  const continueControls = [nextControl, randomControl].filter(Boolean);
+
+  if (!answerContent || !explanation || !randomNav || !randomControl) return;
+
+  const variant = getOrAssignVariant(PE_CONTINUE_EXPERIMENT_ID);
+  peContinueExperiment = {
+    variant: variant,
+    answered: false,
+    continued: false
+  };
+
+  document.documentElement.setAttribute("data-pe-continue-variant", variant);
+
+  if (variant === "B") {
+    explanation.insertAdjacentElement("afterend", randomNav);
+  }
+
+  continueControls.forEach(function (control) {
+    control.addEventListener("click", function () {
+      if (!peContinueExperiment.answered || peContinueExperiment.continued) return;
+
+      peContinueExperiment.continued = true;
+      const suffix = variant.toLowerCase();
+      const destination = control === randomControl ? "random" : "next";
+
+      trackEvent("pe_continue_" + suffix + "_continue");
+      if (destination === "random") {
+        trackEvent("pe_continue_" + suffix + "_random");
+      }
+    });
+  });
+}
+
+function trackPeContinueAnswer() {
+  if (!peContinueExperiment || peContinueExperiment.answered) return;
+
+  peContinueExperiment.answered = true;
+  trackEvent("pe_continue_" + peContinueExperiment.variant.toLowerCase() + "_answer");
+}
+
 // Mobile menu toggle
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("mobile-menu-btn");
@@ -57,6 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   initShareButtons();
+  initPeContinueExperiment();
   initRandomButtons();
 });
 
@@ -176,6 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // GA4: 正誤つきで解答を計測（問題はページパスで識別）
         trackEvent(choice.getAttribute("data-correct") === "true" ? "answer_correct" : "answer_incorrect");
+        trackPeContinueAnswer();
       });
     });
   }
