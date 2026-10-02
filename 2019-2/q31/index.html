@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>令和元年度（再試験） 問31 | 技術士（化学部門）一次試験 過去問解説</title>
-  <meta name="description" content="技術士一次試験（化学部門）の専門科目 過去問を1問ずつ解説。正答・解説は隠した状態で学習できます。">
+  <title>生成エンタルピーから反応熱を求める｜メタノール脱水｜令和元年度（再試験） 問31・技術士一次試験 化学部門</title>
+  <meta name="description" content="燃焼熱からDMEの生成エンタルピーを求め、メタノール脱水の反応熱を計算します。技術士第一次試験・化学部門、令和元年度（再試験） 問31。">
   <meta name="google-site-verification" content="DwhNqUyZoS2cvsa767Grbm9EmEd0ZS0nRbkTllPUB3I">
-  <meta property="og:title" content="令和元年度（再試験） 問31">
-  <meta property="og:description" content="技術士一次試験（化学部門）の過去問を1問ずつ解説">
+  <meta property="og:title" content="生成エンタルピーから反応熱を求める｜メタノール脱水｜令和元年度（再試験） 問31・技術士一次試験 化学部門">
+  <meta property="og:description" content="燃焼熱からDMEの生成エンタルピーを求め、メタノール脱水の反応熱を計算します。技術士第一次試験・化学部門、令和元年度（再試験） 問31。">
   <meta property="og:url" content="https://pe-chemistry.chem-fac.com/2019-2/q31/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="技術士（化学部門）一次試験 過去問解説">
@@ -60,7 +60,8 @@
     <section class="question-hero">
       <div class="container">
         <h1>
-          令和元年度（再試験） 問31
+          <span class="question-heading-topic">生成エンタルピーから反応熱を求める｜メタノール脱水</span>
+          <span class="question-heading-meta">令和元年度（再試験） 問31</span>
           <span class="subject-tag" data-subject="化学プロセス">化学プロセス</span>
         </h1>
       </div>
@@ -133,7 +134,26 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>ジメチルエーテル（\(\mathrm{CH_3OCH_3}\)）の標準生成エンタルピーが与えられていないため、標準燃焼エンタルピーを使用して計算する必要があります。燃焼反応のエンタルピー変化 \(\Delta H\) を計算する際は、生成物の標準生成エンタルピーの和から反応物の標準生成エンタルピーの和を引きます。</p><p>酸素（\(\mathrm{O_2}\)）は単体元素であり最も安定な形態であるとみなし、標準状態での単体元素の標準生成エンタルピーは定義上 0 kJ/mol とされています。</p><p>ジメチルエーテルの燃焼反応式は</p>$$\mathrm{CH_3OCH_3}(\mathrm{g}) + 3\mathrm{O_2}(\mathrm{g}) \rightarrow 2\mathrm{CO_2}(\mathrm{g}) + 3\mathrm{H_2O}(\mathrm{l})$$<p>です。ジメチルエーテルの標準燃焼エンタルピー、生成物（二酸化炭素と水）の標準生成エンタルピーが既に与えられています。ジメチルエーテルの標準生成エンタルピーを \(X\) とすると、\(-1{,}460.3 = \{(-393.5\times 2) + (-285.8\times 3)\} - X\) と立式できます。\(X = -184.1\) kJ/mol です。</p><p>同様に、メタノール脱水の式に適用して計算します。\(-184.1 + (-285.8) - (-238.6\times 2) = 7\) kJ/mol となります。値がプラスなため吸熱反応です。</p>
+<p><strong>問題の数値から得られる反応熱は、ジメチルエーテル1 molの生成あたり+7.3 kJです。</strong>最も近い値は①の7 kJ/molで、符号が正なので、この問題で指定された物質の状態では吸熱反応です。</p>
+<p>ヘスの法則を用い、①燃焼エンタルピーからジメチルエーテルの生成エンタルピーを求める、②目的の脱水反応に代入する、の2段階で計算します。各物質の生成エンタルピーに反応式の係数を掛け、生成物側の和から反応物側の和を引きます。</p>
+<h3>1．燃焼反応からDMEの標準生成エンタルピーを求める</h3>
+<p>ジメチルエーテル（DME）1 molの完全燃焼を、問題に指定された状態で書きます。(g)は気体、(l)は液体です。</p>
+$$\mathrm{CH_3OCH_3(g)}+3\mathrm{O_2(g)}$$
+$$\rightarrow 2\mathrm{CO_2(g)}+3\mathrm{H_2O(l)}$$
+<p>DME(g)の標準生成エンタルピーを \(X\) kJ/molとします。基準状態の単体であるO<sub>2</sub>(g)の標準生成エンタルピーは0です。燃焼エンタルピーが−1,460.3 kJ/molなので、</p>
+$$-1460.3=\{2(-393.5)+3(-285.8)\}-\{X+3(0)\}$$
+$$-1460.3=-1644.4-X$$
+$$X=-184.1\ \mathrm{kJ/mol}$$
+<p>これで、目的の反応に必要なDME(g)の標準生成エンタルピーが得られました。</p>
+<h3>2．メタノールの脱水反応に代入する</h3>
+<p>求める反応は、メタノール<strong>液体</strong>2 molから、DME<strong>気体</strong>1 molと水<strong>液体</strong>1 molを生成する反応です。</p>
+$$2\mathrm{CH_3OH(l)}\rightarrow\mathrm{CH_3OCH_3(g)}+\mathrm{H_2O(l)}$$
+<p>生成物側はDMEと水が各1 mol、反応物側はメタノールが2 molです。したがって、DME 1 molの生成あたりの反応熱は、</p>
+$$\Delta H=\{(-184.1)+(-285.8)\}-2(-238.6)$$
+$$=-469.9+477.2=+7.3\ \mathrm{kJ/mol\text{-}DME}$$
+<p>よって \(+7.3\simeq +7\) kJ/molとなり、①を選びます。途中の計算結果を「7」と等号で結ばず、選択肢へ丸める段階で近似します。</p>
+<p>気体メタノールや水蒸気の生成エンタルピーを代入すると、別の反応の熱になります。<strong>化学式だけでなく相と係数をそろえること</strong>が、この問題の確認点です。</p>
+<p>反応・燃焼・生成エンタルピーと物質の状態の表記は、<a href="https://iupac.org/wp-content/uploads/2019/05/IUPAC-GB3-2012-2ndPrinting-PDFsearchable.pdf#page=74" target="_blank" rel="noopener">IUPAC Green Book 第3版、2.11.1節（本文60～61ページ）</a>に基づきます。数値計算には本問で与えられた値を用いています。</p>
               </div>
             </div>
           </div>
@@ -154,6 +174,18 @@
 
         <!-- References -->
 
+
+        <!-- Related study links -->
+        <nav class="related-study" aria-labelledby="related-study-title">
+          <h2 id="related-study-title">同じテーマを復習する</h2>
+          <p><a href="/themes/#s4-3">エネルギー収支と反応熱の問題一覧</a></p>
+          <ul>
+            <li><a href="/2022/q30/">標準生成エンタルピーから反応熱（令和4年度 問30）</a></li>
+            <li><a href="/2020/q31/">メタン改質の反応熱と熱源メタン量（令和2年度 問31）</a></li>
+            <li><a href="/2015/q29/">不完全燃焼の発生熱量（平成27年度 問29）</a></li>
+          </ul>
+        </nav>
+        <!-- End related study links -->
 
         <!-- Question navigation -->
         <div class="question-nav" style="margin-top: var(--space-xl);">

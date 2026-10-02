@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>平成28年度 問28 | 技術士（化学部門）一次試験 過去問解説</title>
-  <meta name="description" content="技術士一次試験（化学部門）の専門科目 過去問を1問ずつ解説。正答・解説は隠した状態で学習できます。">
+  <title>コゼニー・カルマン式とは｜充填層の圧力損失｜平成28年度 問28・技術士一次試験 化学部門</title>
+  <meta name="description" content="コゼニー・カルマン式の各記号と適用条件を整理し、充填層の圧力損失を扱う過去問を解説します。技術士第一次試験・化学部門、平成28年度 問28。">
   <meta name="google-site-verification" content="DwhNqUyZoS2cvsa767Grbm9EmEd0ZS0nRbkTllPUB3I">
-  <meta property="og:title" content="平成28年度 問28">
-  <meta property="og:description" content="技術士一次試験（化学部門）の過去問を1問ずつ解説">
+  <meta property="og:title" content="コゼニー・カルマン式とは｜充填層の圧力損失｜平成28年度 問28・技術士一次試験 化学部門">
+  <meta property="og:description" content="コゼニー・カルマン式の各記号と適用条件を整理し、充填層の圧力損失を扱う過去問を解説します。技術士第一次試験・化学部門、平成28年度 問28。">
   <meta property="og:url" content="https://pe-chemistry.chem-fac.com/2016/q28/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="技術士（化学部門）一次試験 過去問解説">
@@ -60,7 +60,8 @@
     <section class="question-hero">
       <div class="container">
         <h1>
-          平成28年度 問28
+          <span class="question-heading-topic">コゼニー・カルマン式とは｜充填層の圧力損失</span>
+          <span class="question-heading-meta">平成28年度 問28</span>
           <span class="subject-tag" data-subject="化学プロセス">化学プロセス</span>
         </h1>
       </div>
@@ -133,7 +134,25 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>Bernoulli の式は、流体のエネルギー保存則に基づき、流体の速度エネルギー、圧力エネルギー、位置エネルギーの関係を示すものです。</p><p>2 番の Kozeny-Carman の式は、例えばバグフィルターのろ布上に形成されたダスト層の圧力損失を計算するときに使われます。</p>
+<h2>式の名前と、表している現象を対応させる</h2>
+<p>最も不適切なのは<strong>⑤</strong>です。速度勾配とせん断応力を結び付けるのはニュートンの粘性法則です。ベルヌーイの式は、圧力・速度・高さの間のエネルギーの関係を表します。</p>
+<div class="table-responsive"><table><caption>流体に関する5つの式の使い分け</caption><thead><tr><th scope="col">式</th><th scope="col">表す内容</th><th scope="col">見分ける語・条件</th></tr></thead><tbody>
+<tr><th scope="row">Fanning（ファニング）</th><td>管内流れの摩擦による圧力損失</td><td>管・摩擦係数</td></tr>
+<tr><th scope="row">Kozeny–Carman（コゼニー・カルマン）</th><td>固体充填層を通る流れの圧力損失</td><td>粒子径・空隙率・低レイノルズ数</td></tr>
+<tr><th scope="row">Hagen–Poiseuille（ハーゲン・ポアズイユ）</th><td>円管内の十分発達した層流の流量と圧力損失</td><td>ニュートン流体・円管・層流</td></tr>
+<tr><th scope="row">連続の式</th><td>質量保存</td><td>流入と流出の質量流量</td></tr>
+<tr><th scope="row">Bernoulli（ベルヌーイ）</th><td>圧力・運動・位置エネルギーの関係</td><td>基本形は定常・非圧縮、粘性損失を無視した流線上</td></tr>
+</tbody></table></div>
+<h3>コゼニー・カルマン式：記号と適用条件</h3>
+<p>球形粒子の充填層を、粘性の影響が支配的な低レイノルズ数で流れる場合の代表的な形は、次のとおりです。\(\Delta p\)は充填層の摩擦による圧力損失の大きさです。</p>
+<p>\[\frac{\Delta p}{L}=180\,\frac{\mu u_0}{d_p^2}\frac{(1-\varepsilon)^2}{\varepsilon^3}\]</p>
+<div class="table-responsive"><table><caption>コゼニー・カルマン式の記号</caption><thead><tr><th scope="col">記号</th><th scope="col">意味</th><th scope="col">SI単位</th></tr></thead><tbody>
+<tr><th scope="row">\(\Delta p\)</th><td>圧力損失</td><td>Pa</td></tr><tr><th scope="row">\(L\)</th><td>充填層の長さ</td><td>m</td></tr><tr><th scope="row">\(\mu\)</th><td>流体の粘度</td><td>Pa·s</td></tr><tr><th scope="row">\(u_0\)</th><td>空塔速度（流量を充填層全断面積で割った値）</td><td>m/s</td></tr><tr><th scope="row">\(d_p\)</th><td>代表粒子径</td><td>m</td></tr><tr><th scope="row">\(\varepsilon\)</th><td>空隙率（充填層体積に占める空隙の割合）</td><td>無次元</td></tr>
+</tbody></table></div>
+<p>空塔速度は、空隙内の平均流速とは異なります。また、係数180は球形粒子を想定した代表値で、粒子形状や充填状態に依存します。慣性の影響が大きい流れに、この粘性支配の式をそのまま適用することはできません。</p>
+<h3>⑤はニュートンの粘性法則との取り違え</h3>
+<p>ニュートン流体の単純なせん断流れでは、せん断応力\(\tau\)は速度勾配に比例し、\(\tau=\mu\,du/dy\)と表されます。一方、ベルヌーイの基本形は\(p/\rho+u^2/2+gz=\text{一定}\)です。式の名前だけでなく、「圧力損失」「質量保存」「エネルギー」「せん断応力」のどれを表すかで区別しましょう。</p>
+<p class="explanation-sources">確認資料：<a href="https://ocw.mit.edu/courses/1-72-groundwater-hydrology-fall-2005/06823bef5f8a6540df23b7a830edb85f_1_72_lecture_2.pdf#page=9" target="_blank" rel="noopener noreferrer">MIT「Aquifers, Porosity, and Darcy’s Law」（空塔速度とKozeny–Carman式、pp.6–9）</a>、<a href="https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/mit8_01scs22_chapter30.pdf" target="_blank" rel="noopener noreferrer">MIT「Navier–Stokes Equations」（ベルヌーイの式・粘性応力）</a>。</p>
               </div>
             </div>
           </div>
@@ -183,6 +202,18 @@
           </details>
         </div>
 
+
+        <!-- Related study links -->
+        <nav class="related-study" aria-labelledby="related-study-title">
+          <h2 id="related-study-title">同じテーマを復習する</h2>
+          <p><a href="/themes/#s4-4">流体の流れの問題一覧</a></p>
+          <ul>
+            <li><a href="/2024/q29/">流体関連式の名称と意味の知識（令和6年度 問29）</a></li>
+            <li><a href="/2016/q29/">非ニュートン流体の知識（平成28年度 問29）</a></li>
+            <li><a href="/2024/q33/">トリチェリの定理・噴水の流速（令和6年度 問33）</a></li>
+          </ul>
+        </nav>
+        <!-- End related study links -->
 
         <!-- Question navigation -->
         <div class="question-nav" style="margin-top: var(--space-xl);">

@@ -3415,3 +3415,95 @@ a.kindle-promo:focus-visible {
     height: 22px;
   }
 }
+
+/* Topic headings and related question navigation */
+.question-heading-topic {
+  flex-basis: 100%;
+  min-width: 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.question-heading-meta {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+.question-hero h1:has(.question-heading-topic) {
+  row-gap: 8px;
+}
+.related-study {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+.related-study h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.related-study p {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+}
+.related-study ul {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 0.85rem;
+}
+.related-study li + li {
+  margin-top: 8px;
+}
+.related-study a {
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.related-study a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+.explanation-content:has(> h2),
+.explanation-content:has(> h3),
+.explanation-content h2,
+.explanation-content h3,
+.explanation-content .table-responsive {
+  white-space: normal;
+}
+.explanation-content h2 {
+  margin: 1.5em 0 0.65em;
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+.explanation-content h3 {
+  margin: 1.2em 0 0.6em;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.explanation-content > h2:first-child,
+.explanation-content > h3:first-child {
+  margin-top: 0;
+}
+.explanation-content .table-responsive table {
+  min-width: 460px;
+  margin-bottom: 0;
+}
+.explanation-content .table-responsive {
+  margin: 1em 0 1.25em;
+}
+.explanation-content .table-responsive caption {
+  padding-bottom: 0.5em;
+  text-align: left;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.explanation-content .explanation-sources,
+.explanation-content .explanation-source {
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+/* End topic headings and related question navigation */

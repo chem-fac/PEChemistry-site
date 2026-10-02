@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>平成23年度 問15 | 技術士（化学部門）一次試験 過去問解説</title>
-  <meta name="description" content="技術士一次試験（化学部門）の専門科目 過去問を1問ずつ解説。正答・解説は隠した状態で学習できます。">
+  <title>モノマー反応性比と共重合組成曲線の読み方｜平成23年度 問15・技術士一次試験 化学部門</title>
+  <meta name="description" content="仕込み組成と共重合体組成の関係から、反応性比r₁・r₂を判断する手順を解説します。技術士第一次試験・化学部門、平成23年度 問15。">
   <meta name="google-site-verification" content="DwhNqUyZoS2cvsa767Grbm9EmEd0ZS0nRbkTllPUB3I">
-  <meta property="og:title" content="平成23年度 問15">
-  <meta property="og:description" content="技術士一次試験（化学部門）の過去問を1問ずつ解説">
+  <meta property="og:title" content="モノマー反応性比と共重合組成曲線の読み方｜平成23年度 問15・技術士一次試験 化学部門">
+  <meta property="og:description" content="仕込み組成と共重合体組成の関係から、反応性比r₁・r₂を判断する手順を解説します。技術士第一次試験・化学部門、平成23年度 問15。">
   <meta property="og:url" content="https://pe-chemistry.chem-fac.com/2011/q15/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="技術士（化学部門）一次試験 過去問解説">
@@ -60,7 +60,8 @@
     <section class="question-hero">
       <div class="container">
         <h1>
-          平成23年度 問15
+          <span class="question-heading-topic">モノマー反応性比と共重合組成曲線の読み方</span>
+          <span class="question-heading-meta">平成23年度 問15</span>
           <span class="subject-tag" data-subject="高分子化学">高分子化学</span>
         </h1>
       </div>
@@ -133,7 +134,31 @@
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>曲線Aにおいて、常に仕込み中のM<sub>1</sub>モル分率の方が共重合体中のM<sub>1</sub>モル分率よりも大きな値です。モル分率で表されていることから、M<sub>2</sub>では逆の結果となります。仕込み中のM<sub>2</sub>モル分率の方が共重合体中のM<sub>2</sub>モル分率よりも小さな値です。</p><p>上記結果より、M<sub>1</sub>の方がM<sub>2</sub>よりも重合速度が速いことを意味します。よってk<sub>11</sub>＞k<sub>12</sub>、k<sub>22</sub>＜k<sub>21</sub>となることからr<sub>1</sub>＞1、r<sub>2</sub>＜1です。</p>
+<h2>共重合組成曲線は横軸と縦軸を区別して読む</h2>
+<p>この問題の正答は①の \(r_1&gt;1,\ r_2&lt;1\) です。曲線Aでは、0と1の端点を除き、<strong>共重合体中のM<sub>1</sub>モル分率が、仕込み中のM<sub>1</sub>モル分率より大きく</strong>なっています。</p>
+<div class="table-responsive">
+  <table>
+    <caption>グラフの軸と対角線の意味</caption>
+    <thead><tr><th scope="col">表示</th><th scope="col">意味</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">横軸 \(f_1\)</th><td>仕込みモノマー中のM<sub>1</sub>モル分率</td></tr>
+      <tr><th scope="row">縦軸 \(F_1\)</th><td>重合初期に得られる共重合体中のM<sub>1</sub>モル分率</td></tr>
+      <tr><th scope="row">対角線 \(F_1=f_1\)</th><td>仕込みと共重合体のM<sub>1</sub>割合が同じ</td></tr>
+      <tr><th scope="row">曲線A：対角線より上</th><td>共重合体には、仕込みより高い割合でM<sub>1</sub>が取り込まれる</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>M<sub>2</sub>のモル分率はそれぞれ \(1-f_1\)、\(1-F_1\) なので、M<sub>2</sub>の割合は逆に、共重合体中の方が仕込み中より小さくなります。</p>
+<h3>モノマー反応性比は「末端ごとの速度定数の比」</h3>
+<p>\[r_1=\frac{k_{11}}{k_{12}},\qquad r_2=\frac{k_{22}}{k_{21}}\]</p>
+<ul>
+  <li>\(r_1&gt;1\)：M<sub>1</sub>末端へのM<sub>1</sub>付加の速度定数 \(k_{11}\) が、M<sub>2</sub>付加の \(k_{12}\) より大きい。</li>
+  <li>\(r_2&lt;1\)：M<sub>2</sub>末端へのM<sub>2</sub>付加の速度定数 \(k_{22}\) が、M<sub>1</sub>付加の \(k_{21}\) より小さい。</li>
+</ul>
+<p>したがって、M<sub>1</sub>とM<sub>2</sub>の濃度が等しい条件で比べると、どちらの末端でもM<sub>1</sub>への付加が起こりやすい組合せです。この性質は、M<sub>1</sub>が仕込みより高い割合で取り込まれる曲線Aと整合します。実際の付加速度にはモノマー濃度も関係するため、反応性比を単に「M<sub>1</sub>全体の重合速度」と読み替えないことが大切です。</p>
+<p>なお、「対角線より上」という位置関係だけで反応性比を一意に決められるわけではありません。この図の曲線Aの正答は、日本技術士会の公式正答でも①とされています。</p>
+<h3>参考資料</h3>
+<p><a href="https://www.engineer.or.jp/c_topics/001/attached/attach_1218_2.pdf" target="_blank" rel="noopener">日本技術士会：平成23年度試験問題の正答（化学部門・問15）</a>／<a href="https://ocw.mit.edu/courses/10-569-synthesis-of-polymers-fall-2006/3ea8fa01121f001de7c2160cb8595922_lec16_10182006.pdf" target="_blank" rel="noopener">MIT「Synthesis of Polymers」Lecture 16：共重合組成と反応性比</a></p>
               </div>
             </div>
           </div>
@@ -154,6 +179,18 @@
 
         <!-- References -->
 
+
+        <!-- Related study links -->
+        <nav class="related-study" aria-labelledby="related-study-title">
+          <h2 id="related-study-title">同じテーマを復習する</h2>
+          <p><a href="/themes/#s2-1">重合の基礎の問題一覧</a></p>
+          <ul>
+            <li><a href="/2021/q17/">共重合組成曲線とモノマー反応性比（令和3年度 問17）</a></li>
+            <li><a href="/2013/q17/">共重合組成曲線とモノマー反応性比（平成25年度 問17）</a></li>
+            <li><a href="/2014/q17/">共重合体の分類（平成26年度 問17）</a></li>
+          </ul>
+        </nav>
+        <!-- End related study links -->
 
         <!-- Question navigation -->
         <div class="question-nav" style="margin-top: var(--space-xl);">
