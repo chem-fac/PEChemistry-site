@@ -7,8 +7,79 @@ function trackEvent(name, params) {
   if (typeof gtag === "function") gtag("event", name, params || {});
 }
 
+// Launch setup: replace this placeholder with the book's Amazon product URL.
+// Until then, show the announcement without a purchase link.
+const KINDLE_BOOK = Object.freeze({
+  amazonUrl: "https://www.amazon.co.jp/dp/REPLACE_WITH_ASIN",
+  title: "技術士第一次試験 化学部門 専門科目 テーマ別完全攻略",
+  description: "過去問560問をもとに、頻出39テーマの要点を整理した解説書です。演習問題は本書に収録せず、このサイトで解けます。"
+});
+
+function initKindlePromotion() {
+  const isAvailable = /^https:\/\/www\.amazon\.co\.jp\/dp\/[A-Z0-9]{10}(?:[/?#]|$)/.test(KINDLE_BOOK.amazonUrl);
+
+  function createLink(placement) {
+    const element = document.createElement(isAvailable ? "a" : "div");
+    if (isAvailable) {
+      element.href = KINDLE_BOOK.amazonUrl;
+      element.target = "_blank";
+      element.rel = "noopener noreferrer";
+      element.addEventListener("click", function () {
+        trackEvent("kindle_book_click", { placement: placement });
+      });
+    }
+    return element;
+  }
+
+  function createCard(placement, headingTag) {
+    const card = createLink(placement);
+    card.className = "kindle-promo";
+
+    const format = document.createElement("span");
+    format.className = "kindle-promo-format";
+    format.textContent = "Kindleでテーマ別に復習";
+
+    const heading = document.createElement(headingTag);
+    heading.textContent = KINDLE_BOOK.title;
+
+    const description = document.createElement("p");
+    description.textContent = KINDLE_BOOK.description;
+
+    const action = document.createElement("span");
+    action.className = "kindle-promo-action";
+    action.textContent = isAvailable ? "Amazonで本を見る ↗" : "Kindle版は発売準備中";
+
+    card.append(format, heading, description, action);
+    return card;
+  }
+
+  document.querySelectorAll("main .note-promo").forEach(function (note) {
+    if (note.parentElement.classList.contains("study-promo")) return;
+    const group = document.createElement("div");
+    group.className = "study-promo";
+    note.before(group);
+    group.append(note, createCard("study", "h3"));
+  });
+
+  const home = document.querySelector("[data-kindle-promo='home']");
+  if (home && !home.firstElementChild) {
+    home.append(createCard("home", "h2"));
+  }
+
+  document.querySelectorAll(".footer-links").forEach(function (footer) {
+    if (footer.querySelector(".kindle-footer-link")) return;
+    const note = footer.querySelector("a[href='https://note.com/chem_fac/n/nbc0c6a8a3755']");
+    if (!note) return;
+    const link = createLink("footer");
+    link.className = "kindle-footer-link";
+    link.textContent = isAvailable ? "Kindle本 ↗" : "Kindle本（発売準備中）";
+    note.after(link);
+  });
+}
+
 // Mobile menu toggle
 document.addEventListener("DOMContentLoaded", function () {
+  initKindlePromotion();
   const menuBtn = document.getElementById("mobile-menu-btn");
   const nav = document.getElementById("header-nav");
 
