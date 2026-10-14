@@ -679,10 +679,25 @@ img {
 }
 
 .kindle-promo {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
   color: var(--color-text);
+  text-decoration: none;
   overflow-wrap: anywhere;
+}
+
+.kindle-promo-body {
+  min-width: 0;
+}
+
+.kindle-cover {
+  flex: none;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  background: var(--color-bg-secondary);
 }
 
 .study-promo > .kindle-promo {
@@ -729,7 +744,8 @@ a.kindle-promo .kindle-promo-action {
 }
 
 .study-promo > a:focus-visible,
-a.kindle-promo:focus-visible {
+a.kindle-promo:focus-visible,
+a.kindle-context:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
 }
@@ -738,14 +754,76 @@ a.kindle-promo:focus-visible {
   padding-top: 40px;
 }
 
-.kindle-home .kindle-promo {
+.kindle-home .kindle-promo,
+.kindle-themes .kindle-promo {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
 }
 
+.kindle-themes {
+  margin: var(--space-lg) 0;
+}
+
+/* Question page (variant B): theme-specific card shown after the explanation */
+.kindle-context {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: var(--space-lg);
+  padding: 14px var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+a.kindle-context:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.kindle-context-body {
+  min-width: 0;
+}
+
+.kindle-context-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.kindle-context p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.kindle-context-action {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
 .kindle-footer-link {
   font-size: inherit;
+}
+
+@media (max-width: 600px) {
+  .kindle-promo,
+  .kindle-context {
+    padding: var(--space-md);
+  }
+
+  .kindle-promo .kindle-cover {
+    width: 52px;
+  }
 }
 
 /* ============================================
@@ -2667,12 +2745,15 @@ a.kindle-promo:focus-visible {
 
 .footer-links {
   display: flex;
-  gap: var(--space-lg);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px var(--space-lg);
 }
 
 .footer-links a {
   font-size: 0.8rem;
   color: var(--color-text-muted);
+  white-space: nowrap;
 }
 
 .footer-links a:hover {

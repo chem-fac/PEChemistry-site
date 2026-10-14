@@ -7,74 +7,205 @@ function trackEvent(name, params) {
   if (typeof gtag === "function") gtag("event", name, params || {});
 }
 
-// Launch setup: replace this placeholder with the book's Amazon product URL.
-// Until then, show the announcement without a purchase link.
+// Kindle book promotion. At launch, paste the Amazon associate link into amazonUrl.
+// Until it is a real Amazon link, the site shows the announcement without a purchase link.
 const KINDLE_BOOK = Object.freeze({
-  amazonUrl: "https://www.amazon.co.jp/dp/REPLACE_WITH_ASIN",
+  amazonUrl: "https://link.amazon/B0bFUwmXz",
   title: "技術士第一次試験 化学部門 専門科目 テーマ別完全攻略",
-  description: "過去問560問をもとに、頻出39テーマの要点を整理した解説書です。演習問題は本書に収録せず、このサイトで解けます。"
+  description: "過去問560問をもとに、頻出39テーマの要点を整理した解説書です。演習問題は本書に収録せず、このサイトで解けます。",
+  cover: "images/book_cover.webp",
+  associateNote: "Amazonのアソシエイトとして、ケムファクは適格販売により収入を得ています。"
 });
 
-function initKindlePromotion() {
-  const isAvailable = /^https:\/\/www\.amazon\.co\.jp\/dp\/[A-Z0-9]{10}(?:[/?#]|$)/.test(KINDLE_BOOK.amazonUrl);
+// A/B test: where the book appears on question pages.
+// A = book card below the answer area (visible before answering, next to the note card)
+// B = theme-specific card right after the explanation (appears only after answering)
+// GA4 events: kindle_ab_{a|b}_view / _answer / _click / _continue
+const KINDLE_EXPERIMENT_ID = "kindle_place_v1";
+let kindleExperiment = null;
 
-  function createLink(placement) {
-    const element = document.createElement(isAvailable ? "a" : "div");
+function getOrAssignVariant(experimentId) {
+  const isLocal = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
+  const localOverride = new URLSearchParams(window.location.search).get("ab_" + experimentId);
+  if (isLocal && (localOverride === "A" || localOverride === "B")) return localOverride;
+
+  const storageKey = "ab:" + experimentId;
+  try {
+    const saved = window.localStorage.getItem(storageKey);
+    if (saved === "A" || saved === "B") return saved;
+    const assigned = Math.random() < 0.5 ? "A" : "B";
+    window.localStorage.setItem(storageKey, assigned);
+    return assigned;
+  } catch (e) {
+    // localStorage may be unavailable in private/restricted browser modes.
+    return Math.random() < 0.5 ? "A" : "B";
+  }
+}
+
+function trackKindleExperiment(step) {
+  if (!kindleExperiment || kindleExperiment.sent[step]) return;
+  if (step === "continue" && !kindleExperiment.sent.answer) return;
+  kindleExperiment.sent[step] = true;
+  trackEvent("kindle_ab_" + kindleExperiment.variant.toLowerCase() + "_" + step);
+}
+
+function isKindleBookAvailable() {
+  return /^https:\/\/(?:www\.amazon\.co\.jp\/(?:[^\/?#]+\/)?(?:dp|gp\/product)\/[A-Z0-9]{10}|link\.amazon\/[A-Za-z0-9]+|amzn\.to\/[A-Za-z0-9]+|amzn\.asia\/d\/[A-Za-z0-9]+)(?:[\/?#]|$)/.test(KINDLE_BOOK.amazonUrl);
+}
+
+function initKindlePromotion() {
+  const isAvailable = isKindleBookAvailable();
+  const siteRoot = getSiteRootFromScript();
+  const answerContent = document.getElementById("answer-content");
+  const explanation = answerContent ? answerContent.querySelector(".explanation-section") : null;
+
+  if (explanation && isAvailable) {
+    kindleExperiment = { variant: getOrAssignVariant(KINDLE_EXPERIMENT_ID), sent: {} };
+    document.documentElement.setAttribute("data-kindle-variant", kindleExperiment.variant);
+    trackKindleExperiment("view");
+  }
+
+  function createLink(placement, tagName) {
+    const element = document.createElement(isAvailable ? "a" : (tagName || "div"));
     if (isAvailable) {
       element.href = KINDLE_BOOK.amazonUrl;
       element.target = "_blank";
-      element.rel = "noopener noreferrer";
+      element.rel = "noopener noreferrer sponsored";
       element.addEventListener("click", function () {
         trackEvent("kindle_book_click", { placement: placement });
+        if (placement === "question_card" || placement === "question_context") {
+          trackKindleExperiment("click");
+        }
       });
     }
     return element;
   }
 
-  function createCard(placement, headingTag) {
+  function createCover(width) {
+    const img = document.createElement("img");
+    img.className = "kindle-cover";
+    img.src = siteRoot + KINDLE_BOOK.cover;
+    img.alt = "";
+    img.width = width;
+    img.height = Math.round(width * 1.6);
+    img.loading = "lazy";
+    img.decoding = "async";
+    return img;
+  }
+
+  function createCard(placement, headingTag, options) {
+    const opts = options || {};
     const card = createLink(placement);
     card.className = "kindle-promo";
 
+    const body = document.createElement("div");
+    body.className = "kindle-promo-body";
+
     const format = document.createElement("span");
     format.className = "kindle-promo-format";
-    format.textContent = "Kindleでテーマ別に復習";
+    format.textContent = opts.label || "運営者の著書";
 
     const heading = document.createElement(headingTag);
     heading.textContent = KINDLE_BOOK.title;
 
     const description = document.createElement("p");
-    description.textContent = KINDLE_BOOK.description;
+    description.textContent = opts.description || KINDLE_BOOK.description;
 
     const action = document.createElement("span");
     action.className = "kindle-promo-action";
-    action.textContent = isAvailable ? "Amazonで本を見る ↗" : "Kindle版は発売準備中";
+    action.textContent = isAvailable ? "Amazonで見る ↗（Kindle Unlimited対象・紙書籍あり）" : "Kindle版は発売準備中";
 
-    card.append(format, heading, description, action);
+    body.append(format, heading, description, action);
+    card.append(createCover(64), body);
     return card;
   }
 
-  document.querySelectorAll("main .note-promo").forEach(function (note) {
-    if (note.parentElement.classList.contains("study-promo")) return;
-    const group = document.createElement("div");
-    group.className = "study-promo";
-    note.before(group);
-    group.append(note, createCard("study", "h3"));
-  });
+  function createContextCard() {
+    const themeLink = document.querySelector(".related-study a[href*='/themes/#s']");
+    const theme = themeLink ? themeLink.textContent.replace(/の問題一覧$/, "").trim() : "";
+
+    const card = createLink("question_context");
+    card.className = "kindle-context";
+
+    const body = document.createElement("div");
+    body.className = "kindle-context-body";
+
+    const label = document.createElement("span");
+    label.className = "kindle-context-label";
+    label.textContent = "このテーマを本で復習（運営者の著書）";
+
+    const text = document.createElement("p");
+    text.textContent = (theme ? "「" + theme + "」" : "このテーマ") +
+      "の要点・原理・頻出のワナを、『" + KINDLE_BOOK.title + "』で1テーマずつ解説しています。";
+
+    const action = document.createElement("span");
+    action.className = "kindle-context-action";
+    action.textContent = "Amazonで見る ↗（Kindle Unlimited対象）";
+
+    body.append(label, text, action);
+    card.append(createCover(48), body);
+    return card;
+  }
+
+  if (kindleExperiment && kindleExperiment.variant === "B") {
+    // Shown inside the answer area, so it appears only after the reader has answered.
+    explanation.after(createContextCard());
+  } else {
+    document.querySelectorAll("main .note-promo").forEach(function (note) {
+      if (note.parentElement.classList.contains("study-promo")) return;
+      const group = document.createElement("div");
+      group.className = "study-promo";
+      note.before(group);
+      group.append(note, createCard(kindleExperiment ? "question_card" : "study", "h3"));
+    });
+  }
+
+  if (kindleExperiment) {
+    const nextControl = Array.from(document.querySelectorAll(".question-nav-btn")).find(function (link) {
+      const label = link.querySelector(".question-nav-label");
+      return label && label.textContent.trim() === "次の問題";
+    });
+    const randomControl = document.querySelector('.random-nav .btn-random[data-random-target="question"]');
+    [nextControl, randomControl].filter(Boolean).forEach(function (control) {
+      control.addEventListener("click", function () { trackKindleExperiment("continue"); });
+    });
+  }
 
   const home = document.querySelector("[data-kindle-promo='home']");
   if (home && !home.firstElementChild) {
     home.append(createCard("home", "h2"));
   }
 
+  const themeToc = document.querySelector("main .theme-toc");
+  if (themeToc && isAvailable && !document.querySelector(".kindle-themes")) {
+    const wrap = document.createElement("aside");
+    wrap.className = "kindle-themes";
+    wrap.setAttribute("aria-label", "書籍のご案内");
+    wrap.append(createCard("themes", "h2", {
+      description: "この一覧と同じ39テーマについて、要点・原理・出題パターン・頻出のワナを1冊にまとめた参考書です。"
+    }));
+    themeToc.before(wrap);
+  }
+
   document.querySelectorAll(".footer-links").forEach(function (footer) {
     if (footer.querySelector(".kindle-footer-link")) return;
     const note = footer.querySelector("a[href='https://note.com/chem_fac/n/nbc0c6a8a3755']");
     if (!note) return;
-    const link = createLink("footer");
+    const link = createLink("footer", "span");
     link.className = "kindle-footer-link";
     link.textContent = isAvailable ? "Kindle本 ↗" : "Kindle本（発売準備中）";
     note.after(link);
   });
+
+  if (isAvailable) {
+    document.querySelectorAll(".footer .footer-notice").forEach(function (notice) {
+      if (notice.nextElementSibling && notice.nextElementSibling.classList.contains("footer-associate")) return;
+      const associate = document.createElement("p");
+      associate.className = "footer-notice footer-associate";
+      associate.textContent = KINDLE_BOOK.associateNote;
+      notice.after(associate);
+    });
+  }
 }
 
 // Mobile menu toggle
@@ -247,6 +378,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // GA4: 正誤つきで解答を計測（問題はページパスで識別）
         trackEvent(choice.getAttribute("data-correct") === "true" ? "answer_correct" : "answer_incorrect");
+        trackKindleExperiment("answer");
       });
     });
   }
