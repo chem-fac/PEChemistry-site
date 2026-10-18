@@ -2,6 +2,9 @@
    PE Chemistry Exam Study Site
    Design System — #006938 green base, 墨系ニュートラル
    (2026-07 再デザイン: _dev/design_mock_202607/top_redesign.html 準拠)
+   (2026-10-18 改訂: 発信運営/サイトデザイン/デザインの決まり.md に合わせ、
+    色を6色＋機能面1色に統一・角丸を 0/2/4px の段に・節の始まりを墨の2px罫線に・
+    淡い緑の面と動きの飾りを撤去)
    ============================================ */
 
 /* --- CSS Custom Properties --- */
@@ -10,35 +13,41 @@
   --color-primary: #006938;
   --color-primary-light: #00875a;
   --color-primary-dark: #004d2a;
-  --color-primary-bg: #e8f5ee;
-  --color-primary-bg-hover: #d1eadd;
+  /* 淡い緑の面は使わない（デザインの決まり 3章）。旧トークン名は
+     テーマ別ページのインラインstyle等が参照しているため、機能面の灰に寄せて残す */
+  --color-primary-bg: #f5f6f5;
+  --color-primary-bg-hover: #f5f6f5;
   --color-primary-ring: rgba(0, 105, 56, 0.14);
 
-  /* Subject colors（彩度を落としブランド緑と調和・白地4.5:1以上） */
+  /* Subject colors（情報としての色。彩度を落としブランド緑と調和・白地4.5:1以上）
+     文字色と細い枠で使う。淡い色の丸いバッジにしない。
+     -bg は search.js が参照するので名前は残し、地は白にする */
   --color-inorganic: #315d84;
-  --color-inorganic-bg: #eef3f8;
+  --color-inorganic-bg: #ffffff;
   --color-organic: #0f6a75;
-  --color-organic-bg: #e9f4f4;
+  --color-organic-bg: #ffffff;
   --color-polymer: #8a5a12;
-  --color-polymer-bg: #f8f2e6;
+  --color-polymer-bg: #ffffff;
   --color-process: #a03a30;
-  --color-process-bg: #f9efed;
+  --color-process-bg: #ffffff;
 
   /* 誤答系（化学プロセス色と同系の落ち着いた赤） */
   --color-danger: #a03a30;
   --color-danger-bg: #f9efed;
 
-  /* Neutral palette（緑がかった墨系） */
+  /* Neutral palette（全サイト共通: 紙・墨・薄墨・罫＋機能面）
+     紙 #fff / 墨 #1c2320（本文・見出し・節の罫線 16.0:1）/ 薄墨 #555f59（補足 6.6:1）
+     罫 #d5dcd8（細い罫線・枠）/ 機能面 #f5f6f5（入力欄・注意書き・結果の地だけ） */
   --color-bg: #ffffff;
-  --color-bg-secondary: #f6f8f6;
-  --color-bg-tertiary: #eef1ee;
+  --color-bg-secondary: #f5f6f5;
+  --color-bg-tertiary: #f5f6f5;
   --color-surface: #ffffff;
-  --color-border: #e4e8e4;
-  --color-border-light: #eef1ee;
-  --color-text: #16211b;
-  --color-text-secondary: #4a564e;
-  --color-text-muted: #4a564e;
-  --color-ink-3: #7c877f; /* 非テキスト（矢印・装飾）専用。本文には使わない */
+  --color-border: #d5dcd8;
+  --color-border-light: #d5dcd8;
+  --color-text: #1c2320;
+  --color-text-secondary: #555f59;
+  --color-text-muted: #555f59;
+  --color-ink-3: #555f59; /* 一覧の行末の矢印など */
 
   /* Spacing */
   --space-xs: 4px;
@@ -49,21 +58,23 @@
   --space-2xl: 48px;
   --space-3xl: 64px;
 
-  /* Typography（本文=Noto Sans JP、Interは数字・年号補助のみ） */
+  /* Typography（和文も数字も Noto Sans JP。数字は tabular-nums で桁をそろえる。
+     欧文書体を数字の飾りに足さない＝デザインの決まり 5章） */
   --font-sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
-  --font-num: 'Inter', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
-  --font-mono: var(--font-num);
+  --font-num: var(--font-sans);
 
   /* Shadows（影は原則なし） */
   --shadow-sm: none;
   --shadow-md: none;
   --shadow-lg: none;
 
-  /* Radius（6px 1スケール。ピルはタグのみ） */
-  --radius-sm: 6px;
-  --radius-md: 6px;
-  --radius-lg: 6px;
-  --radius-xl: 6px;
+  /* Radius（段: 0=一覧・表・節 / 2px=タグ・入力欄 / 4px=ボタン・画像・独立した枠。
+     ピル形は使わない） */
+  --radius-tag: 2px;
+  --radius-sm: 4px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
 
   /* Container */
   --container-max: 860px;
@@ -87,18 +98,22 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-text);
   background: var(--color-bg);
-  line-height: 1.9;
-  font-feature-settings: "palt";
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* 数字・英字は Inter */
+/* 見出しだけ palt で詰める（本文は詰めない） */
+h1, h2, h3, h4 {
+  font-feature-settings: "palt";
+}
+
+/* 数字は本文と同じ書体で桁をそろえる */
 .num {
   font-family: var(--font-num);
   font-variant-numeric: tabular-nums;
@@ -111,11 +126,17 @@ main {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.12s;
 }
 
 a:hover {
   color: var(--color-primary-dark);
+}
+
+/* キーボード操作の現在地は全要素で同じ緑の枠にそろえる */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 img {
@@ -143,9 +164,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -191,7 +210,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
 }
 
@@ -205,7 +224,7 @@ img {
   font-size: 0.85rem;
   color: var(--color-text-secondary);
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.12s;
 }
 
 .header-nav a:hover {
@@ -260,11 +279,12 @@ img {
   font-weight: 900;
   color: var(--color-text);
   line-height: 1.45;
-  letter-spacing: 0.01em;
   margin-bottom: 18px;
 }
 
 .hero-description {
+  /* 導入の1文は見出しの続きとして palt で詰める（全角かっこの前後が空きすぎるため） */
+  font-feature-settings: "palt";
   font-size: 0.98rem;
   color: var(--color-text-secondary);
   max-width: 40em;
@@ -308,8 +328,8 @@ img {
 
 /* ============================================
    SECTION COMMON
-   大文字アイブロウは廃止。見出しの weight と
-   短い緑下線（緑は点使い）で区切る
+   節の始まり＝見出しの上に本文幅いっぱいの墨の罫線（2px）。
+   見出しの中の区切りは細い罫線（1px）。短い色付きの下線は使わない
    ============================================ */
 .section {
   padding: 56px 0 48px;
@@ -324,40 +344,80 @@ img {
   font-weight: 900;
   line-height: 1.5;
   color: var(--color-text);
-  margin-bottom: 26px;
+  margin-bottom: 22px;
+  padding-top: 14px;
+  border-top: 2px solid var(--color-text);
 }
 
-.section-heading::after {
-  content: "";
-  display: block;
-  width: 26px;
-  height: 2px;
-  background: var(--color-primary);
-  margin-top: 10px;
+/* トップの節の強弱（全部を同じ罫線・同じ間隔にしない）
+   本体＝進め方・年度別一覧・問題を検索：墨の2px罫線、間を広く
+   巻末＝関連記事・運営者・更新履歴：墨の1px罫線、見出しを小さく、間を詰めて1つのまとまりに */
+main > #years {
+  padding-top: 72px;
+}
+
+main > #search ~ .section {
+  padding-bottom: 36px; /* 運営者・更新履歴は HTML 側で padding-top: 0 */
+}
+
+main > #search + .section {
+  padding-top: 64px;
+}
+
+/* 見出しの罫線のすぐ下に一覧の罫線を重ねない */
+main > #search ~ .section .link-list {
+  border-top: 0;
+}
+
+main > #search ~ .section .link-row {
+  padding: 14px 4px;
+}
+
+main > #search ~ .section .section-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-top-width: 1px;
+}
+
+main > #search ~ .section:last-of-type {
+  padding-bottom: 64px;
 }
 
 /* ============================================
    YEAR LIST (Top page)
-   直近3年＝大きめカード / 過去年度＝元号グループの罫線区切り行
+   直近3年＝大きい年度番号の3欄（箱にせず、縦の細い罫線で仕切る番組表の形）
+   過去年度＝元号グループの罫線区切り行
    ============================================ */
 .recent-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-md);
+  gap: 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .recent-card {
   display: block;
-  padding: 22px 24px 18px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  padding: 6px 24px 16px;
+  border-left: 1px solid var(--color-border);
   color: var(--color-text);
-  transition: border-color 0.2s ease;
+}
+
+.recent-card:first-child {
+  padding-left: 4px;
+  border-left: 0;
 }
 
 .recent-card:hover {
-  border-color: var(--color-primary);
   color: var(--color-text);
+}
+
+.recent-card:hover .recent-year {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 }
 
 .recent-card-top {
@@ -377,12 +437,10 @@ img {
 }
 
 .badge-latest {
-  font-size: 0.68rem;
+  /* 「最新」は札にせず、年度の後ろの文字で添える */
+  font-size: 0.8125rem;
   font-weight: 700;
   color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  border-radius: 999px; /* バッジ（タグ扱い）のみピル可 */
-  padding: 2px 10px;
   line-height: 1.5;
 }
 
@@ -393,7 +451,7 @@ img {
 }
 
 .recent-count {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin-top: 2px;
 }
@@ -416,7 +474,7 @@ img {
 }
 
 .era-range {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
 }
 
@@ -452,7 +510,7 @@ img {
   font-size: 1rem;
   font-weight: 600;
   min-width: 62px;
-  transition: color 0.15s ease;
+  transition: color 0.12s ease;
 }
 
 .yr-row:hover .yr-num {
@@ -466,7 +524,7 @@ img {
 }
 
 .yr-count {
-  font-size: 0.78rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   white-space: nowrap;
 }
@@ -474,7 +532,7 @@ img {
 .yr-arrow {
   font-size: 0.9rem;
   color: var(--color-ink-3);
-  transition: color 0.15s ease;
+  transition: color 0.12s ease;
 }
 
 .yr-row:hover .yr-arrow {
@@ -499,7 +557,7 @@ img {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   text-decoration: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.12s;
 }
 
 .year-card:hover {
@@ -509,30 +567,28 @@ img {
 
 .year-card-year {
   font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-primary);
 }
 
 .year-card-label {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
 }
 
 .year-card-count {
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   margin-top: 2px;
 }
 
 /* ============================================
-   SEARCH（オフホワイト帯・左寄せ）
+   SEARCH（白地・左寄せ。灰色の帯は敷かない）
    ============================================ */
 .search-section {
-  padding: 52px 0;
-  background: var(--color-bg-secondary);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  padding: 56px 0 16px;
 }
 
 .search-box {
@@ -542,15 +598,15 @@ img {
 
 .search-input {
   width: 100%;
-  padding: 13px 18px;
-  font-size: 0.95rem;
+  padding: 13px 18px 13px 46px;
+  font-size: 1rem;
   font-family: var(--font-sans);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
+  /* 入力欄＝機能面。墨の細枠＋虫眼鏡の印で「検索する所」と分かるようにする */
+  border: 1px solid var(--color-text);
+  border-radius: var(--radius-tag);
+  background: var(--color-bg-secondary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none' stroke='%23555f59' stroke-width='1.8'%3E%3Ccircle cx='8.5' cy='8.5' r='5.75'/%3E%3Cpath d='M12.8 12.8l4.7 4.7' stroke-linecap='square'/%3E%3C/svg%3E") no-repeat 16px 50%;
   color: var(--color-text);
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.12s ease, background-color 0.12s ease;
 }
 
 .search-input::placeholder {
@@ -559,11 +615,16 @@ img {
 
 .search-input:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px var(--color-primary-ring);
+  background-color: var(--color-surface);
+}
+
+.search-input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
 }
 
 .search-hint {
-  font-size: 0.78rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin-top: 10px;
 }
@@ -573,20 +634,24 @@ img {
   max-width: 640px;
 }
 
+/* 検索結果も罫線で区切る一覧（1件ずつ箱にしない） */
+.search-results:not(:empty) {
+  border-top: 1px solid var(--color-border);
+}
+
 .search-result-item {
   display: block;
-  padding: var(--space-md) var(--space-lg);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--space-sm);
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--color-border);
   text-decoration: none;
-  transition: border-color 0.2s;
 }
 
 .search-result-item:hover {
-  border-color: var(--color-primary);
   color: var(--color-text);
+}
+
+.search-result-item:hover .search-result-title {
+  color: var(--color-primary);
 }
 
 .search-result-title {
@@ -596,7 +661,7 @@ img {
 }
 
 .search-result-excerpt {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin-top: 2px;
   overflow: hidden;
@@ -606,16 +671,17 @@ img {
 
 .search-result-tag {
   display: inline-block;
-  font-size: 0.65rem;
-  padding: 1px 8px;
-  border-radius: 100px;
+  font-size: 0.8125rem;
+  padding: 0 6px;
+  border: 1px solid var(--color-border);
+  border-color: color-mix(in srgb, currentColor 45%, #fff);
+  border-radius: var(--radius-tag);
   font-weight: 600;
   margin-right: 6px;
 }
 
 .search-no-results {
-  text-align: center;
-  padding: var(--space-lg);
+  padding: var(--space-md) 4px;
   color: var(--color-text-muted);
   font-size: 0.9rem;
 }
@@ -632,7 +698,7 @@ img {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   text-decoration: none;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.12s ease;
   color: var(--color-text);
 }
 
@@ -649,7 +715,7 @@ img {
 }
 
 .note-promo-content p {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   line-height: 1.6;
 }
@@ -659,7 +725,7 @@ img {
   font-size: 1.15rem;
   color: var(--color-ink-3);
   flex-shrink: 0;
-  transition: color 0.2s ease;
+  transition: color 0.12s ease;
 }
 
 .note-promo:hover .note-promo-arrow {
@@ -696,7 +762,7 @@ img {
   flex: none;
   height: auto;
   border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--color-border);
   background: var(--color-bg-secondary);
 }
 
@@ -709,7 +775,7 @@ img {
   display: block;
   margin-bottom: 6px;
   color: var(--color-primary);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
 }
 
@@ -722,7 +788,7 @@ img {
 }
 
 .kindle-promo p {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
 }
@@ -730,7 +796,7 @@ img {
 .kindle-promo-action {
   display: block;
   margin-top: 10px;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   color: var(--color-text-secondary);
 }
@@ -794,7 +860,7 @@ a.kindle-context:hover {
   display: block;
   margin-bottom: 4px;
   color: var(--color-primary);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
 }
 
@@ -807,7 +873,7 @@ a.kindle-context:hover {
 .kindle-context-action {
   display: block;
   margin-top: 6px;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -819,7 +885,7 @@ a.kindle-context:hover {
 .kindle-promo-sub {
   display: block;
   margin-top: 4px;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
 }
 
@@ -828,7 +894,7 @@ a.kindle-context:hover {
   display: inline-block;
   margin-top: 8px;
   color: var(--color-primary);
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -856,21 +922,26 @@ a.kindle-context:hover {
   margin-left: var(--space-lg);
 }
 
-/* Exam countdown: slim bar under the breadcrumb (pages other than home) */
+/* Exam countdown: 1行の文字情報。帯（地の色）にしない。
+   白地のまま下に細い罫線を1本、数字は本文と同じ大きさで緑の太字（2026-10-18 修正） */
 .exam-countdown-bar {
   border-bottom: 1px solid var(--color-border);
-  background: var(--color-primary-bg);
+  background: transparent;
+}
+
+main > .exam-countdown-bar:first-child .container {
+  max-width: var(--container-wide);
 }
 
 .exam-countdown-bar .container {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 4px var(--space-md);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 0.85rem;
+  justify-content: flex-start;
+  gap: 2px 24px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 0.875rem;
 }
 
 .exam-countdown-text {
@@ -879,48 +950,41 @@ a.kindle-context:hover {
 
 .exam-countdown-text .num {
   margin: 0 2px;
-  font-size: 1.05rem;
+  font-size: inherit;
+  font-weight: 700;
   color: var(--color-primary);
 }
 
 .exam-countdown-bar a {
   color: var(--color-primary);
-  font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .exam-countdown-bar a:hover {
-  text-decoration: underline;
+  color: var(--color-primary-dark);
 }
 
-/* Exam plan on the home page (until the exam day) */
+/* Exam plan on the home page (until the exam day)
+   枠で囲まず、節として墨の2px罫線で始める（中の書籍案内だけが独立した枠） */
 .exam-plan {
-  padding: var(--space-lg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
+  padding: 14px 0 0;
+  border-top: 2px solid var(--color-text);
   scroll-margin-top: 80px;
 }
 
+/* 残り日数はページ上端の1行（.exam-countdown-bar）と同じ内容なので、
+   トップでは2回出さない（script.js は触らず、こちらを隠す） */
 .exam-plan-countdown {
-  display: inline-block;
-  margin-bottom: var(--space-sm);
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: var(--color-primary-bg);
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
-.exam-plan-countdown .num {
-  margin: 0 2px;
-  font-size: 1.15rem;
-  color: var(--color-primary);
+  display: none;
 }
 
 .exam-plan-title {
   margin-bottom: var(--space-md);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  line-height: 1.5;
 }
 
 .exam-plan-steps {
@@ -932,7 +996,7 @@ a.kindle-context:hover {
 
 .exam-plan-steps > li {
   position: relative;
-  padding: 0 0 var(--space-lg) 40px;
+  padding: 0 0 var(--space-lg) 32px;
   counter-increment: exam-step;
 }
 
@@ -941,25 +1005,22 @@ a.kindle-context:hover {
 }
 
 .exam-plan-steps > li::before {
-  content: counter(exam-step);
+  /* 番号は枠に入れず、見出しと同じ行に「1.」と置く */
+  content: counter(exam-step) ".";
   position: absolute;
   top: 0;
   left: 0;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  color: #fff;
+  color: var(--color-primary);
   font-family: var(--font-num);
-  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 28px;
-  text-align: center;
 }
 
 .exam-plan-steps h3 {
-  margin-bottom: 4px;
-  font-size: 0.95rem;
+  margin-bottom: 2px;
+  font-size: 1rem;
   line-height: 28px;
 }
 
@@ -973,17 +1034,40 @@ a.kindle-context:hover {
   margin-top: var(--space-sm);
 }
 
+/* 手順の中の書籍案内は枠で囲まない（枠の中の枠にしない）。
+   上下の細い罫線で区切り、表紙の画像で見分ける */
+.kindle-home .exam-plan-steps .kindle-promo {
+  padding: 14px 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  background: transparent;
+}
+
+.kindle-home .exam-plan-steps a.kindle-promo:hover {
+  background: transparent;
+}
+
+.kindle-home .exam-plan-steps a.kindle-promo:hover h4 {
+  color: var(--color-primary);
+}
+
+.exam-plan-steps .kindle-ku-link,
 .exam-plan-link {
   display: inline-block;
   margin-top: 6px;
   color: var(--color-primary);
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
+.exam-plan-steps .kindle-ku-link:hover,
 .exam-plan-link:hover {
-  text-decoration: underline;
+  color: var(--color-primary-dark);
 }
 
 @media (max-width: 600px) {
@@ -993,19 +1077,15 @@ a.kindle-context:hover {
   }
 
   .exam-plan {
-    padding: var(--space-md);
+    padding: 14px 0 0;
   }
 
   .exam-plan-steps > li {
-    padding-left: 36px;
+    padding-left: 28px;
   }
 
-  .exam-plan-steps .kindle-promo {
-    margin-left: -36px;
-  }
-
-  .exam-plan-steps .kindle-ku-link {
-    margin-left: -36px;
+  .kindle-home .exam-plan-steps .kindle-promo {
+    padding: 14px 0;
   }
 
   .study-promo > .kindle-ku-link {
@@ -1025,23 +1105,30 @@ a.kindle-context:hover {
    テーマ別インデックス プロモ（トップ・フィーチャー行カード）
    ============================================ */
 .theme-promo-wrap {
-  padding: 40px 0 0;
+  padding: 48px 0 0;
 }
 
 .theme-promo {
   display: flex;
   align-items: center;
   gap: var(--space-lg);
-  padding: 26px 30px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  padding: 14px 4px 20px 0;
+  /* 入口の1行なので節の太い罫線ではなく細い罫線（墨）で上下を区切る */
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-border);
   color: var(--color-text);
-  transition: border-color 0.2s ease;
 }
 
 .theme-promo:hover {
-  border-color: var(--color-primary);
   color: var(--color-text);
+}
+
+.theme-promo h2 {
+  transition: color 0.12s ease;
+}
+
+.theme-promo:hover h2 {
+  color: var(--color-primary);
 }
 
 .theme-promo-body {
@@ -1069,25 +1156,27 @@ a.kindle-context:hover {
 
 .chip {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   font-weight: 700;
-  line-height: 1;
-  padding: 5px 12px;
-  border-radius: 999px; /* ピルはタグのみ */
+  line-height: 1.4;
+  padding: 1px 7px;
+  border: 1px solid var(--color-border);
+  border-color: color-mix(in srgb, currentColor 45%, #fff);
+  border-radius: var(--radius-tag);
   white-space: nowrap;
 }
 
-.chip-inorg { color: var(--color-inorganic); background: var(--color-inorganic-bg); }
-.chip-org   { color: var(--color-organic);   background: var(--color-organic-bg); }
-.chip-poly  { color: var(--color-polymer);   background: var(--color-polymer-bg); }
-.chip-proc  { color: var(--color-process);   background: var(--color-process-bg); }
+.chip-inorg { color: var(--color-inorganic); }
+.chip-org   { color: var(--color-organic); }
+.chip-poly  { color: var(--color-polymer); }
+.chip-proc  { color: var(--color-process); }
 
 .promo-arrow {
   margin-left: auto;
   flex-shrink: 0;
   font-size: 1.15rem;
   color: var(--color-ink-3);
-  transition: color 0.2s ease;
+  transition: color 0.12s ease;
 }
 
 .theme-promo:hover .promo-arrow {
@@ -1122,7 +1211,7 @@ a.kindle-context:hover {
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.6;
-  transition: color 0.15s ease;
+  transition: color 0.12s ease;
 }
 
 .link-row:hover h3 {
@@ -1144,7 +1233,7 @@ a.kindle-context:hover {
 }
 
 .ext-mark {
-  font-size: 0.8em;
+  font-size: 0.85em;
   color: var(--color-text-secondary);
   margin-left: 4px;
 }
@@ -1215,7 +1304,7 @@ a.kindle-context:hover {
 }
 
 .note-promo-sm .note-promo-content p {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 /* ============================================
@@ -1244,7 +1333,7 @@ a.kindle-context:hover {
   font-variant-numeric: tabular-nums;
   flex-shrink: 0;
   min-width: 88px;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
 }
 
 .changelog-text {
@@ -1256,7 +1345,7 @@ a.kindle-context:hover {
    ============================================ */
 .breadcrumb {
   padding: var(--space-md) 0;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
 }
 
@@ -1277,7 +1366,7 @@ a.kindle-context:hover {
    YEAR PAGE — Question List
    ============================================ */
 .year-hero {
-  background: var(--color-bg-secondary);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   padding: var(--space-2xl) 0 var(--space-xl);
 }
@@ -1303,15 +1392,15 @@ a.kindle-context:hover {
 
 .subject-filter-btn {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   padding: var(--space-xs) var(--space-md);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-tag);
   border: 1px solid var(--color-border);
   background: var(--color-surface);
   color: var(--color-text-secondary);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: color 0.12s ease, border-color 0.12s ease;
 }
 
 .subject-filter-btn:hover {
@@ -1319,74 +1408,94 @@ a.kindle-context:hover {
   color: var(--color-primary);
 }
 
+/* 選択中＝その色の文字＋その色の枠（2px相当。塗りつぶさない） */
 .subject-filter-btn.active {
-  background: var(--color-primary);
+  background: var(--color-surface);
   border-color: var(--color-primary);
-  color: white;
-}
-
-.subject-filter-btn[data-subject="all"].active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 .subject-filter-btn[data-subject="無機化学及びセラミックス"].active {
-  background: var(--color-inorganic);
   border-color: var(--color-inorganic);
+  box-shadow: inset 0 0 0 1px var(--color-inorganic);
+  color: var(--color-inorganic);
 }
 
 .subject-filter-btn[data-subject="有機化学及び燃料"].active {
-  background: var(--color-organic);
   border-color: var(--color-organic);
+  box-shadow: inset 0 0 0 1px var(--color-organic);
+  color: var(--color-organic);
 }
 
 .subject-filter-btn[data-subject="高分子化学"].active {
-  background: var(--color-polymer);
   border-color: var(--color-polymer);
+  box-shadow: inset 0 0 0 1px var(--color-polymer);
+  color: var(--color-polymer);
 }
 
 .subject-filter-btn[data-subject="化学プロセス"].active {
-  background: var(--color-process);
   border-color: var(--color-process);
+  box-shadow: inset 0 0 0 1px var(--color-process);
+  color: var(--color-process);
 }
 
-/* Question list cards */
+/* Question list: 罫線で区切る一覧（行ごとの箱にしない） */
 .question-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  border-top: 1px solid var(--color-border);
 }
 
 .question-card {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  padding: var(--space-md) var(--space-lg);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  /* 問番号・科目・問題文・矢印を列にそろえる（科目名の長さで問題文の開始位置がずれないように） */
+  display: grid;
+  grid-template-columns: 44px 160px minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: var(--space-md);
+  padding: 14px 4px;
+  background: transparent;
+  border-bottom: 1px solid var(--color-border);
   text-decoration: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
   color: var(--color-text);
+}
+
+/* 一覧の中の科目は枠を付けず、科目の色の文字だけで示す（行ごとに同じ箱が並ばないように） */
+.question-card .subject-tag {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  white-space: normal;
 }
 
 .question-card:hover {
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-sm);
   color: var(--color-text);
 }
 
+.question-card-num,
+.question-card-text,
+.question-card-arrow {
+  transition: color 0.12s ease;
+}
+
+.question-card:hover .question-card-text,
+.question-card:hover .question-card-arrow {
+  color: var(--color-primary);
+}
+
 .question-card-num {
-  font-size: 0.8rem;
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--color-primary);
-  min-width: 40px;
+  min-width: 0;
 }
 
 .question-card-text {
-  flex: 1;
-  font-size: 0.85rem;
-  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  color: var(--color-text);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1399,10 +1508,13 @@ a.kindle-context:hover {
 /* Subject tag */
 .subject-tag {
   display: inline-block;
-  font-size: 0.65rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  padding: 2px 10px;
-  border-radius: 100px;
+  line-height: 1.5;
+  padding: 0 6px;
+  border: 1px solid var(--color-border);
+  border-color: color-mix(in srgb, currentColor 45%, #fff);
+  border-radius: var(--radius-tag);
   white-space: nowrap;
 }
 
@@ -1435,7 +1547,7 @@ a.kindle-context:hover {
    QUESTION PAGE
    ============================================ */
 .question-hero {
-  background: var(--color-bg-secondary);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   padding: var(--space-xl) 0;
 }
@@ -1454,12 +1566,17 @@ a.kindle-context:hover {
   margin: var(--space-xl) 0;
 }
 
+/* 見出し部分から問題文までを詰める（節の上余白＋問題文の上余白で約90px空いていたため） */
+.question-hero + .section {
+  padding-top: 8px;
+}
+
 .question-text-card {
   padding: var(--space-xl);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 2;
   white-space: normal;
 }
@@ -1642,6 +1759,7 @@ a.kindle-context:hover {
   margin: 8px 0 0;
   max-width: 320px;
   height: auto;
+  mix-blend-mode: multiply; /* 白地の構造式画像を結果の灰の地になじませる */
 }
 
 /* ABCD 表形式の選択肢 */
@@ -1672,7 +1790,7 @@ a.kindle-context:hover {
   width: 34px;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.12s ease;
   z-index: 2;
 }
 .choices-abcd-table::after {
@@ -1772,7 +1890,7 @@ a.kindle-context:hover {
 
 .choices-abcd-table .choice-table-row {
   cursor: pointer;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.12s ease;
 }
 
 .choices-abcd-table .choice-table-row:hover:not(.answered):not(.eliminated) {
@@ -1780,14 +1898,15 @@ a.kindle-context:hover {
 }
 
 .choices-abcd-table .choice-table-row.eliminated {
-  opacity: 0.55;
+  color: var(--color-text-secondary);
   text-decoration: line-through;
   text-decoration-color: var(--color-text-secondary);
 }
 
+/* 正答＝緑の枠（2px）＋「正答」の札。淡い緑の塗りや左の太線は使わない */
 .choices-abcd-table .choice-table-row.correct {
-  background-color: var(--color-primary-bg-hover, #d1eadd);
-  box-shadow: inset 4px 0 0 0 var(--color-primary, #006938);
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-primary, #006938);
 }
 
 .choices-abcd-table .choice-table-row.correct .choice-num {
@@ -1796,16 +1915,17 @@ a.kindle-context:hover {
 }
 
 .choices-abcd-table .choice-table-row.incorrect-selected {
-  background-color: var(--color-danger-bg);
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-danger);
 }
 
 .choices-abcd-table .choice-table-row.incorrect-selected .choice-num {
   color: var(--color-danger);
 }
 
-/* answered（未選択の他の選択肢）は薄く */
+/* answered（未選択の他の選択肢）は透かさず、薄墨の文字で読めるまま残す */
 .choices-abcd-table .choice-table-row.answered:not(.correct):not(.incorrect-selected) {
-  opacity: 0.55;
+  color: var(--color-text-secondary);
 }
 
 .choices-abcd-table .choice-table-num {
@@ -1871,13 +1991,11 @@ a.kindle-context:hover {
   white-space: nowrap;
   background: var(--color-primary);
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   line-height: 1;
-  padding: 4px 9px;
-  border-radius: 999px;
-  letter-spacing: 0.08em;
-  box-shadow: var(--shadow-sm);
+  padding: 4px 7px;
+  border-radius: var(--radius-tag);
 }
 
 /* 回答後は×列のホバー（赤）を止める（正答バッジの下地が赤くなるのを防ぐ） */
@@ -1938,7 +2056,7 @@ a.kindle-context:hover {
   border: 1px solid var(--color-primary);
   border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition: background 0.12s ease, border-color 0.12s ease;
 }
 
 .btn-random:hover {
@@ -1968,10 +2086,7 @@ a.kindle-context:hover {
 
 /* 運営者プロフィール（トップページ・tools.chem-fac.com 準拠） */
 .profile-card {
-  padding: 30px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  padding: 4px 0 0;
 }
 
 .profile-header {
@@ -2032,7 +2147,7 @@ a.kindle-context:hover {
 }
 
 .profile-link-label {
-  font-size: 0.78rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   color: var(--color-text-secondary);
   padding-top: 2px;
@@ -2044,7 +2159,7 @@ a.kindle-context:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  transition: color 0.12s ease;
 }
 
 .profile-link::after {
@@ -2068,7 +2183,7 @@ a.kindle-context:hover {
 }
 
 @media (max-width: 768px) {
-  .profile-card { padding: 22px 18px; }
+  .profile-card { padding: 4px 0 0; }
   .profile-links { grid-template-columns: 1fr; }
 }
 
@@ -2109,7 +2224,7 @@ a.kindle-context:hover {
   display: block;
   margin: 0 auto;
   border: 1px solid var(--color-border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   background: #fff;
 }
 
@@ -2213,10 +2328,10 @@ a.kindle-context:hover {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  font-size: 0.9rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
+  line-height: 1.75;
   cursor: pointer;
-  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  transition: border-color 0.12s, background 0.12s, box-shadow 0.12s;
   user-select: none;
 }
 
@@ -2300,7 +2415,7 @@ a.kindle-context:hover {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
-  transition: all 0.2s;
+  transition: color 0.12s ease, border-color 0.12s ease, background-color 0.12s ease;
   padding: 0;
 }
 
@@ -2311,9 +2426,13 @@ a.kindle-context:hover {
 }
 
 .choice-wrapper.eliminated .choice-item {
-  opacity: 0.5;
   background: var(--color-bg-tertiary);
   border-color: var(--color-border);
+}
+
+.choice-wrapper.eliminated .choice-text,
+.choice-wrapper.eliminated .choice-num {
+  color: var(--color-text-secondary);
 }
 
 .choice-wrapper.eliminated .choice-text {
@@ -2339,8 +2458,8 @@ a.kindle-context:hover {
 .choice-item.correct {
   position: relative;
   border-color: var(--color-primary);
-  background: var(--color-primary-bg);
-  box-shadow: 0 0 0 2px var(--color-primary);
+  background: var(--color-surface);
+  box-shadow: 0 0 0 1px var(--color-primary);
   cursor: default;
 }
 
@@ -2353,18 +2472,16 @@ a.kindle-context:hover {
   z-index: 2;
   background: var(--color-primary);
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   line-height: 1;
-  padding: 4px 9px;
-  border-radius: 999px;
-  letter-spacing: 0.08em;
-  box-shadow: var(--shadow-sm);
+  padding: 4px 7px;
+  border-radius: var(--radius-tag);
 }
 
 .choice-item.incorrect-selected {
   border-color: var(--color-danger);
-  background: var(--color-danger-bg);
+  background: var(--color-surface);
   cursor: default;
 }
 
@@ -2376,29 +2493,34 @@ a.kindle-context:hover {
   box-shadow: 0 0 0 2px var(--color-danger);
 }
 
+/* 回答後の他の選択肢は透かさない（opacity で薄めると読みにくい）。
+   枠はそのまま、文字を薄墨にして「選ばれなかった」ことだけ示す */
 .choice-item.answered {
   cursor: default;
-  opacity: 0.5;
-  background: var(--color-bg-tertiary);
+  background: var(--color-surface);
   border-color: var(--color-border);
 }
 
-.choice-item.answered.correct,
-.choice-item.answered.incorrect-selected {
-  opacity: 1;
+.choice-item.answered:not(.correct):not(.incorrect-selected) .choice-text,
+.choice-item.answered:not(.correct):not(.incorrect-selected) .choice-num {
+  color: var(--color-text-secondary);
 }
 
-/* 回答後も正答・誤答の色を確実に残す（.answered のグレー上書きより高い詳細度で再指定） */
+/* 回答後も正答・誤答の枠を確実に残す（.answered の上書きより高い詳細度で再指定） */
 .choice-item.answered.correct {
   border-color: var(--color-primary);
-  background: var(--color-primary-bg);
-  box-shadow: 0 0 0 2px var(--color-primary);
+  background: var(--color-surface);
+  box-shadow: 0 0 0 1px var(--color-primary);
 }
 
 .choice-item.answered.incorrect-selected {
   border-color: var(--color-danger);
-  background: var(--color-danger-bg);
-  box-shadow: 0 0 0 2px var(--color-danger);
+  background: var(--color-surface);
+  box-shadow: 0 0 0 1px var(--color-danger);
+}
+
+.choice-item.answered.incorrect-selected .choice-num {
+  color: var(--color-danger);
 }
 
 .choice-num {
@@ -2475,7 +2597,7 @@ a.kindle-context:hover {
 
 .choices-table tbody tr {
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.12s;
   display: table-row; /* Override display:flex if choice-wrapper is applied */
 }
 
@@ -2505,7 +2627,7 @@ a.kindle-context:hover {
 /* Selected */
 .choices-table tbody tr.selected td:nth-child(n+2) {
   box-shadow: 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
-  background: var(--color-primary-bg);
+  background: transparent;
 }
 .choices-table tbody tr.selected td:nth-child(2) {
   box-shadow: 2px 0 0 0 var(--color-primary) inset, 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
@@ -2521,7 +2643,7 @@ a.kindle-context:hover {
 /* Correct */
 .choices-table tbody tr.correct td:nth-child(n+2) {
   box-shadow: 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
-  background: var(--color-primary-bg);
+  background: transparent;
 }
 .choices-table tbody tr.correct td:nth-child(2) {
   box-shadow: 2px 0 0 0 var(--color-primary) inset, 0 2px 0 0 var(--color-primary) inset, 0 -2px 0 0 var(--color-primary) inset;
@@ -2537,7 +2659,7 @@ a.kindle-context:hover {
 /* Incorrect */
 .choices-table tbody tr.incorrect-selected td:nth-child(n+2) {
   box-shadow: 0 2px 0 0 var(--color-danger) inset, 0 -2px 0 0 var(--color-danger) inset;
-  background: var(--color-danger-bg);
+  background: transparent;
 }
 .choices-table tbody tr.incorrect-selected td:nth-child(2) {
   box-shadow: 2px 0 0 0 var(--color-danger) inset, 0 2px 0 0 var(--color-danger) inset, 0 -2px 0 0 var(--color-danger) inset;
@@ -2556,7 +2678,7 @@ a.kindle-context:hover {
 }
 
 .choices-table tbody tr.eliminated td {
-  opacity: 0.5;
+  color: var(--color-text-secondary);
   background: var(--color-bg-tertiary);
 }
 
@@ -2572,13 +2694,12 @@ a.kindle-context:hover {
 }
 
 .choices-table tbody tr.answered td {
-  opacity: 0.5;
-  background: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
 }
 
 .choices-table tbody tr.answered.correct td,
 .choices-table tbody tr.answered.incorrect-selected td {
-  opacity: 1;
+  color: var(--color-text);
 }
 
 /* Answer & explanation section */
@@ -2610,16 +2731,15 @@ a.kindle-context:hover {
 
 .answer-box {
   padding: var(--space-lg) var(--space-xl);
-  background: var(--color-primary-bg);
+  background: var(--color-bg-secondary);
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-border);
 }
 
 .answer-label {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   color: var(--color-primary);
-  letter-spacing: 0.05em;
   margin-bottom: var(--space-xs);
 }
 
@@ -2639,7 +2759,7 @@ a.kindle-context:hover {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.95;
   white-space: pre-wrap;
 }
@@ -2747,36 +2867,36 @@ a.kindle-context:hover {
 .article-links {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  border-top: 1px solid var(--color-border);
 }
 
 .article-link-card {
   display: flex;
   align-items: center;
   gap: var(--space-md);
-  padding: var(--space-md) var(--space-lg);
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  padding: var(--space-md) 4px;
+  border-bottom: 1px solid var(--color-border);
   text-decoration: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
   color: var(--color-text);
 }
 
 .article-link-card:hover {
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-sm);
   color: var(--color-text);
 }
 
 .article-link-card-text h4 {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 2px;
+  transition: color 0.12s ease;
+}
+
+.article-link-card:hover h4 {
+  color: var(--color-primary);
 }
 
 .article-link-card-text p {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
 }
 
@@ -2786,20 +2906,17 @@ a.kindle-context:hover {
 }
 
 .reference-details {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .reference-summary {
-  padding: var(--space-md) var(--space-lg);
-  font-size: 0.9rem;
-  font-weight: 600;
+  padding: 12px 4px;
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--color-text);
   cursor: pointer;
-  background: var(--color-bg-secondary);
-  transition: background 0.2s;
+  transition: color 0.12s ease;
   list-style: none;
   display: flex;
   align-items: center;
@@ -2811,14 +2928,14 @@ a.kindle-context:hover {
 }
 
 .reference-summary:hover {
-  background: var(--color-border);
+  color: var(--color-primary);
 }
 
 .reference-summary::before {
   content: "▶";
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
-  transition: transform 0.2s;
+  transition: transform 0.12s;
 }
 
 .reference-details[open] .reference-summary::before {
@@ -2828,36 +2945,44 @@ a.kindle-context:hover {
 .reference-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
-  padding: var(--space-md) var(--space-lg);
+  padding: 0 0 var(--space-sm) 22px;
 }
 
 .reference-link {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding: var(--space-md) var(--space-lg);
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--color-text);
-  transition: border-color 0.2s;
 }
 
 .reference-link:hover {
-  border-color: var(--color-primary);
   color: var(--color-text);
 }
 
 .reference-link-title {
   font-weight: 500;
   line-height: 1.5;
+  color: var(--color-primary);
+  transition: color 0.12s ease;
+}
+
+.reference-link:hover .reference-link-title {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.reference-link-domain {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
 }
 
 .reference-link-url {
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   word-break: break-all;
   line-height: 1.4;
@@ -2885,7 +3010,7 @@ a.kindle-context:hover {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--color-text);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.12s, box-shadow 0.12s;
 }
 
 .question-nav-btn:hover {
@@ -2900,7 +3025,7 @@ a.kindle-context:hover {
 }
 
 .question-nav-label {
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   font-weight: 400;
 }
@@ -2919,7 +3044,7 @@ a.kindle-context:hover {
    FOOTER
    ============================================ */
 .footer {
-  background: var(--color-bg-secondary);
+  background: var(--color-bg);
   border-top: 1px solid var(--color-border);
   padding: var(--space-xl) 0;
   margin-top: auto;
@@ -2934,7 +3059,7 @@ a.kindle-context:hover {
 }
 
 .footer-left {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
 }
 
@@ -2946,7 +3071,7 @@ a.kindle-context:hover {
 }
 
 .footer-links a {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   white-space: nowrap;
 }
@@ -2992,7 +3117,7 @@ a.kindle-context:hover {
 
 .footer-notice {
   margin: 0 0 var(--space-md) 0;
-  font-size: 0.78rem;
+  font-size: 0.8125rem;
   line-height: 1.7;
   color: var(--color-text-muted);
 }
@@ -3040,8 +3165,8 @@ a.kindle-context:hover {
 .doc-page h2 {
   font-size: 1.1rem;
   margin: var(--space-xl) 0 var(--space-sm) 0;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--color-border);
+  padding-top: 10px;
+  border-top: 2px solid var(--color-text);
 }
 
 .doc-page p,
@@ -3060,16 +3185,15 @@ a.kindle-context:hover {
 }
 
 .doc-page .doc-meta {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   margin-bottom: var(--space-lg);
 }
 
 .doc-page .qa {
-  margin-bottom: var(--space-md);
-  padding: var(--space-md);
-  background: var(--color-bg-secondary);
-  border-radius: 8px;
+  margin-bottom: 0;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .doc-page .qa .q {
@@ -3122,9 +3246,13 @@ a.kindle-context:hover {
   border-radius: 4px;
   text-decoration: none;
   border: 1px solid var(--color-primary);
-  transition: opacity 0.15s;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
 }
-.support-btn:hover { opacity: 0.85; }
+.support-btn--primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: #fff;
+}
 .support-btn--primary {
   background: var(--color-primary);
   color: #fff;
@@ -3172,25 +3300,48 @@ a.kindle-context:hover {
     top: 60px;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(12px);
+    background: var(--color-bg);
     flex-direction: column;
     padding: var(--space-lg);
     border-bottom: 1px solid var(--color-border);
     gap: var(--space-md);
   }
 
+  /* スマホでは直近3年も行の一覧に（年度番号だけ大きく） */
   .recent-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    border-top: 0;
   }
 
-  .recent-card {
-    padding: 16px 20px 14px;
+  .recent-card,
+  .recent-card:first-child {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    column-gap: 14px;
+    padding: 10px 4px;
+    border-left: 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .recent-card:first-child {
+    border-top: 0;
+  }
+
+  .recent-card-top {
+    margin-bottom: 0;
+  }
+
+  .recent-year {
+    font-size: 1.45rem;
+  }
+
+  .recent-count {
+    margin-top: 0;
   }
 
   .theme-promo {
-    padding: 20px;
+    padding: 14px 0 18px;
     gap: 14px;
   }
 
@@ -3241,16 +3392,17 @@ a.kindle-context:hover {
     font-size: 1.15rem;
   }
 
+  /* スマホ：1行目に問番号・科目・矢印、2行目に問題文を全幅で（右端の矢印で本文を狭めない） */
   .question-card {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
     grid-template-areas:
       "num tag arrow"
-      "text text arrow";
-    align-items: center;
-    column-gap: var(--space-sm);
-    row-gap: var(--space-xs);
-    padding: var(--space-md);
+      "text text text";
+    align-items: baseline;
+    column-gap: 10px;
+    row-gap: 2px;
+    padding: 12px 2px 14px;
   }
 
   .question-card-num {
@@ -3269,7 +3421,7 @@ a.kindle-context:hover {
   .question-card-text {
     grid-area: text;
     width: 100%;
-    color: var(--color-text-secondary);
+    color: var(--color-text);
     line-height: 1.65;
     -webkit-line-clamp: 3;
     line-clamp: 3;
@@ -3277,7 +3429,7 @@ a.kindle-context:hover {
 
   .question-card-arrow {
     grid-area: arrow;
-    align-self: center;
+    align-self: baseline;
   }
 
   .choices-abcd-table .choice-table,
@@ -3343,6 +3495,20 @@ a.kindle-context:hover {
   .yr-wareki {
     font-size: 0.82rem;
   }
+
+  /* 本文16px・palt なしでも選択肢の行長を確保する */
+  .question-text-card {
+    padding: 18px;
+  }
+
+  .choice-wrapper {
+    gap: 6px;
+  }
+
+  .choice-item {
+    padding: 12px 14px;
+    gap: 10px;
+  }
 }
 
 /* モーション抑制環境ではスムーススクロールも止める */
@@ -3363,7 +3529,7 @@ a.kindle-context:hover {
    ARTICLE PAGE
    ============================================ */
 .article-hero {
-  background: var(--color-bg-secondary);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   padding: var(--space-2xl) 0 var(--space-xl);
 }
@@ -3375,7 +3541,7 @@ a.kindle-context:hover {
 }
 
 .article-hero-meta {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   margin-top: var(--space-sm);
 }
@@ -3390,8 +3556,12 @@ a.kindle-context:hover {
   color: var(--color-text);
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-md);
-  padding-bottom: var(--space-sm);
-  border-bottom: 2px solid var(--color-primary);
+  padding-top: 10px;
+  border-top: 2px solid var(--color-text);
+}
+
+.article-body h2:first-child {
+  margin-top: 0;
 }
 
 .article-body h3 {
@@ -3403,7 +3573,7 @@ a.kindle-context:hover {
 }
 
 .article-body p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 2;
   color: var(--color-text);
   margin-bottom: var(--space-md);
@@ -3430,10 +3600,12 @@ a.kindle-context:hover {
   line-height: 1.7;
 }
 
+/* 表の見出し行は緑の帯にせず、墨の文字＋罫線で示す */
 .article-body thead th {
-  background: var(--color-primary);
-  color: #fff;
-  font-weight: 600;
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-text);
+  font-weight: 700;
   padding: var(--space-sm) var(--space-md);
   text-align: left;
   white-space: nowrap;
@@ -3467,7 +3639,7 @@ a.kindle-context:hover {
 .article-body blockquote cite {
   display: block;
   margin-top: var(--space-sm);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   font-style: normal;
 }
@@ -3481,6 +3653,8 @@ a.kindle-context:hover {
 .article-body .article-source h2 {
   font-size: 1rem;
   margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .article-body .article-source ul {
@@ -3491,7 +3665,7 @@ a.kindle-context:hover {
 }
 
 .article-body .article-source li a {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   word-break: break-all;
 }
@@ -3506,7 +3680,7 @@ a.kindle-context:hover {
   }
 
   .article-body table {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
   }
 
   .article-body thead th,
@@ -3529,7 +3703,7 @@ a.kindle-context:hover {
   z-index: 90;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.12s ease;
 }
 
 .share-buttons.visible {
@@ -3537,13 +3711,9 @@ a.kindle-context:hover {
   pointer-events: auto;
 }
 
+/* 英字の小見出し「Share」は出さない（各ボタンに aria-label とツールチップあり） */
 .share-buttons__label {
-  font-family: var(--font-num);
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  text-align: center;
-  margin-bottom: var(--space-xs);
+  display: none;
 }
 
 .share-btn {
@@ -3552,16 +3722,15 @@ a.kindle-context:hover {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: var(--radius-md);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transition: border-color 0.12s ease;
 }
 
+/* ホバーは枠の色だけ（拡大・各社色の塗りはしない） */
 .share-btn:hover {
-  transform: scale(1.15);
-  box-shadow: var(--shadow-md);
+  border-color: var(--color-text);
 }
 
 .share-btn img {
@@ -3570,26 +3739,6 @@ a.kindle-context:hover {
   object-fit: contain;
   border-radius: 4px;
   pointer-events: none;
-}
-
-.share-btn--x:hover {
-  background: #000000;
-  border-color: #000000;
-}
-
-.share-btn--note:hover {
-  background: #41c9b4;
-  border-color: #41c9b4;
-}
-
-.share-btn--line:hover {
-  background: #06c755;
-  border-color: #06c755;
-}
-
-.share-btn--facebook:hover {
-  background: #1877f2;
-  border-color: #1877f2;
 }
 
 .share-btn[data-tooltip] {
@@ -3605,14 +3754,14 @@ a.kindle-context:hover {
   background: var(--color-text);
   color: #ffffff;
   font-family: var(--font-sans);
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.12s ease;
 }
 
 .share-btn[data-tooltip]:hover::after {
@@ -3656,9 +3805,7 @@ a.kindle-context:hover {
     gap: 0;
     width: 100%;
     margin: 0 auto;
-    background: var(--color-bg-secondary);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: var(--color-bg);
     border-top: 1px solid var(--color-border);
     padding: 12px 16px;
     box-shadow: none;
@@ -3681,10 +3828,6 @@ a.kindle-context:hover {
     max-width: 80px;
   }
 
-  .share-btn:hover {
-    transform: none;
-    box-shadow: none;
-  }
 
   .share-btn img {
     width: 22px;
@@ -3709,10 +3852,8 @@ a.kindle-context:hover {
 }
 .related-study {
   margin-top: var(--space-xl);
-  padding: var(--space-lg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
+  padding: 12px 0 0;
+  border-top: 2px solid var(--color-text);
 }
 .related-study h2 {
   margin: 0 0 10px;
@@ -3783,3 +3924,58 @@ a.kindle-context:hover {
   overflow-wrap: anywhere;
 }
 /* End topic headings and related question navigation */
+
+/* ============================================
+   テーマ別インデックス（themes/index.html）
+   ページ内の <style>（生成器 _dev/build_themes_page.py）を上書きする暫定措置。
+   生成器側を同じ値に直したら、このブロックは消してよい。
+   章＝墨の2px罫線、節＝細い罫線（左の太い色線と緑の帯は使わない）
+   ============================================ */
+main .theme-toc {
+  padding: 14px 0 0;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+}
+
+main .theme-toc-link {
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  transition: border-color 0.12s ease;
+}
+
+main .theme-toc-link:hover {
+  background: var(--color-surface);
+}
+
+main .theme-toc-count,
+main .theme-sec-count,
+main .theme-table th {
+  font-size: 0.8125rem;
+}
+
+main .theme-ch {
+  padding: 12px 0 4px;
+  background: none;
+  color: var(--color-text);
+  border-top: 2px solid var(--color-text);
+  border-radius: 0;
+  font-size: 1.25rem;
+}
+
+main .theme-ch-count {
+  opacity: 1;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+main .theme-sec {
+  padding: 10px 0 0;
+  border-left: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+main .theme-table {
+  font-size: 0.875rem;
+}
