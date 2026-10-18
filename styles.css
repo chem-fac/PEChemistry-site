@@ -28,10 +28,20 @@
   --color-organic-bg: #ffffff;
   --color-polymer: #8a5a12;
   --color-polymer-bg: #ffffff;
-  --color-process: #a03a30;
+  --color-process: #7958a7;  /* 紫。以前の #a03a30 は不正解の色と同じ値だった（デザインの決まり §3） */
   --color-process-bg: #ffffff;
 
-  /* 誤答系（化学プロセス色と同系の落ち着いた赤） */
+  /* 分類の差し色8色（4サイト共通の名前。デザインの決まり §3） */
+  --accent-ai: #315d84;
+  --accent-nando: #0f6a75;
+  --accent-odo: #8a5a12;
+  --accent-kon: #283c87;
+  --accent-murasaki: #7958a7;
+  --accent-akamurasaki: #692963;
+  --accent-enji: #a44b61;
+  --accent-bengara: #752b11;
+
+  /* 誤答系（落ち着いた赤） */
   --color-danger: #a03a30;
   --color-danger-bg: #f9efed;
 
