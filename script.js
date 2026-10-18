@@ -384,8 +384,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const subject = btn.getAttribute("data-subject");
 
         // Update active state
-        filterBtns.forEach(function (b) { b.classList.remove("active"); });
+        filterBtns.forEach(function (b) {
+          b.classList.remove("active");
+          b.setAttribute("aria-pressed", "false");
+        });
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
 
         // Filter cards
         const cards = document.querySelectorAll(".question-card");
@@ -513,6 +517,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // Hide all eliminate buttons
         choiceWrappers.forEach(function (w) {
           w.classList.add("answered-global");
+        });
+
+        // 支援技術向け：回答済みの選択肢を無効化し、選んだものを押下状態にする
+        allChoices.forEach(function (c) {
+          const b = c.matches("button") ? c : c.querySelector(".choice-pick");
+          if (!b) return;
+          b.setAttribute("aria-disabled", "true");
+          b.setAttribute("aria-pressed", c === choice ? "true" : "false");
         });
 
         // Show answer and explanation
