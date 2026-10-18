@@ -714,7 +714,8 @@ img {
 }
 
 .kindle-promo h2,
-.kindle-promo h3 {
+.kindle-promo h3,
+.kindle-promo h4 {
   margin-bottom: 6px;
   font-size: 0.95rem;
   line-height: 1.7;
@@ -815,10 +816,159 @@ a.kindle-context:hover {
   font-size: inherit;
 }
 
+.kindle-promo-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+/* Exam countdown: slim bar under the breadcrumb (pages other than home) */
+.exam-countdown-bar {
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-primary-bg);
+}
+
+.exam-countdown-bar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px var(--space-md);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.exam-countdown-text {
+  color: var(--color-text);
+}
+
+.exam-countdown-text .num {
+  margin: 0 2px;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+}
+
+.exam-countdown-bar a {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.exam-countdown-bar a:hover {
+  text-decoration: underline;
+}
+
+/* Exam plan on the home page (until the exam day) */
+.exam-plan {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  scroll-margin-top: 80px;
+}
+
+.exam-plan-countdown {
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--color-primary-bg);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.exam-plan-countdown .num {
+  margin: 0 2px;
+  font-size: 1.15rem;
+  color: var(--color-primary);
+}
+
+.exam-plan-title {
+  margin-bottom: var(--space-md);
+  font-size: 1.1rem;
+}
+
+.exam-plan-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: exam-step;
+}
+
+.exam-plan-steps > li {
+  position: relative;
+  padding: 0 0 var(--space-lg) 40px;
+  counter-increment: exam-step;
+}
+
+.exam-plan-steps > li:last-child {
+  padding-bottom: 0;
+}
+
+.exam-plan-steps > li::before {
+  content: counter(exam-step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-num);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+.exam-plan-steps h3 {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+  line-height: 28px;
+}
+
+.exam-plan-steps p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.exam-plan-steps .kindle-promo {
+  margin-top: var(--space-sm);
+}
+
+.exam-plan-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.exam-plan-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .kindle-promo,
   .kindle-context {
     padding: var(--space-md);
+  }
+
+  .exam-plan {
+    padding: var(--space-md);
+  }
+
+  .exam-plan-steps > li {
+    padding-left: 36px;
+  }
+
+  .exam-plan-steps .kindle-promo {
+    margin-left: -36px;
   }
 
   .kindle-promo .kindle-cover {

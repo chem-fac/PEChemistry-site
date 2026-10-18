@@ -12,10 +12,53 @@ function trackEvent(name, params) {
 const KINDLE_BOOK = Object.freeze({
   amazonUrl: "https://link.amazon/B0bFUwmXz",
   title: "技術士第一次試験 化学部門 専門科目 テーマ別完全攻略",
-  description: "過去問560問をもとに、頻出39テーマの要点を整理した解説書です。演習問題は本書に収録せず、このサイトで解けます。",
+  description: "16回分・560問の出題分析から選んだ頻出39テーマの要点・原理・頻出のワナを、1テーマずつ解説した参考書です。演習問題は本書に収録せず、このサイトで解けます。",
   cover: "images/book_cover.webp",
   associateNote: "Amazonのアソシエイトとして、ケムファクは適格販売により収入を得ています。"
 });
+
+// Exam countdown. Shown until the day before the exam, then hidden automatically.
+// Update EXAM_DATE when the next exam date is officially announced.
+const EXAM_DATE = "2026-11-22";
+const EXAM_LABEL = "第一次試験（11月22日）";
+const NOTE_SUMMARY_URL = "https://note.com/chem_fac/n/nbc0c6a8a3755";
+
+function daysUntilExam() {
+  const now = new Date();
+  const jst = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000);
+  const today = Date.UTC(jst.getFullYear(), jst.getMonth(), jst.getDate());
+  const parts = EXAM_DATE.split("-").map(Number);
+  return Math.round((Date.UTC(parts[0], parts[1] - 1, parts[2]) - today) / 86400000);
+}
+
+function createCountdownText(days) {
+  const text = document.createElement("span");
+  text.className = "exam-countdown-text";
+  text.append(EXAM_LABEL + "まで あと");
+  const num = document.createElement("strong");
+  num.className = "num";
+  num.textContent = String(days);
+  text.append(num, "日");
+  return text;
+}
+
+function initExamCountdownBar(days) {
+  const breadcrumb = document.querySelector("main .breadcrumb");
+  const hero = document.querySelector("main > .hero");
+  if ((!breadcrumb && !hero) || document.querySelector(".exam-countdown-bar")) return;
+  const bar = document.createElement("div");
+  bar.className = "exam-countdown-bar";
+  const inner = document.createElement("div");
+  inner.className = "container";
+  const link = document.createElement("a");
+  link.href = getSiteRootFromScript() + "#exam-plan";
+  link.textContent = "残りの期間の進め方 →";
+  link.addEventListener("click", function () { trackEvent("exam_plan_click", { step: "bar" }); });
+  inner.append(createCountdownText(days), link);
+  bar.append(inner);
+  if (breadcrumb) breadcrumb.after(bar);
+  else hero.before(bar);
+}
 
 // A/B test: where the book appears on question pages.
 // A = book card below the answer area (visible before answering, next to the note card)
@@ -113,11 +156,69 @@ function initKindlePromotion() {
 
     const action = document.createElement("span");
     action.className = "kindle-promo-action";
-    action.textContent = isAvailable ? "Amazonで見る ↗（Kindle Unlimited対象・紙書籍あり）" : "Kindle版は発売準備中";
+    action.textContent = isAvailable ? "Amazonで無料サンプルを読む ↗" : "Kindle版は発売準備中";
 
     body.append(format, heading, description, action);
+    if (isAvailable) {
+      const sub = document.createElement("span");
+      sub.className = "kindle-promo-sub";
+      sub.textContent = "Kindle Unlimited会員は追加料金なしで読めます・紙の本もあります";
+      body.append(sub);
+    }
     card.append(createCover(64), body);
     return card;
+  }
+
+  // Home page before the exam: countdown and the order of study, with the book card as step 1.
+  function createExamPlan(days, card) {
+    const plan = document.createElement("section");
+    plan.className = "exam-plan";
+    plan.id = "exam-plan";
+    plan.setAttribute("aria-label", "試験までの進め方");
+
+    const head = document.createElement("p");
+    head.className = "exam-plan-countdown";
+    head.append(createCountdownText(days));
+
+    const title = document.createElement("h2");
+    title.className = "exam-plan-title";
+    title.textContent = "残りの期間の進め方";
+
+    const list = document.createElement("ol");
+    list.className = "exam-plan-steps";
+
+    function step(heading, text, extra) {
+      const item = document.createElement("li");
+      const h = document.createElement("h3");
+      h.textContent = heading;
+      const p = document.createElement("p");
+      p.textContent = text;
+      item.append(h, p);
+      if (extra) item.append(extra);
+      list.append(item);
+    }
+
+    function stepLink(href, label, stepName, external) {
+      const a = document.createElement("a");
+      a.className = "exam-plan-link";
+      a.href = href;
+      a.textContent = label;
+      if (external) { a.target = "_blank"; a.rel = "noopener"; }
+      a.addEventListener("click", function () { trackEvent("exam_plan_click", { step: stepName }); });
+      return a;
+    }
+
+    step("頻出テーマの要点を押さえる",
+      "16回分・560問の出題分析で選んだ頻出39テーマを、1テーマずつ確認します。", card);
+    step("同じテーマの過去問をまとめて解く",
+      "テーマ別インデックスで、論点ごとに過去問を続けて解けます。",
+      stepLink(siteRoot + "themes/", "テーマ別インデックスへ →", "themes", false));
+    step("直前に要点を見直す",
+      "試験直前の総復習用に、忘れやすい要点をメモ形式でまとめたnoteの有料記事があります。",
+      stepLink(NOTE_SUMMARY_URL, "noteの「要点まとめ」を見る ↗", "note", true));
+
+    plan.append(head, title, list);
+    return plan;
   }
 
   function createContextCard() {
@@ -140,7 +241,7 @@ function initKindlePromotion() {
 
     const action = document.createElement("span");
     action.className = "kindle-context-action";
-    action.textContent = "Amazonで見る ↗（Kindle Unlimited対象）";
+    action.textContent = "Amazonで無料サンプルを読む ↗（Kindle Unlimited対象）";
 
     body.append(label, text, action);
     card.append(createCover(48), body);
@@ -171,9 +272,19 @@ function initKindlePromotion() {
     });
   }
 
+  const examDays = daysUntilExam();
   const home = document.querySelector("[data-kindle-promo='home']");
   if (home && !home.firstElementChild) {
-    home.append(createCard("home", "h2"));
+    if (examDays > 0 && isAvailable) {
+      home.append(createExamPlan(examDays, createCard("home", "h4", {
+        description: "要点・原理・出題パターン・頻出のワナをテーマごとにまとめた参考書です。演習問題は本書に収録せず、このサイトで解けます。"
+      })));
+    } else {
+      home.append(createCard("home", "h2"));
+    }
+  }
+  if (examDays > 0) {
+    initExamCountdownBar(examDays);
   }
 
   const themeToc = document.querySelector("main .theme-toc");
