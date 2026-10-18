@@ -53,7 +53,7 @@ function initExamCountdownBar(days) {
   const link = document.createElement("a");
   link.href = getSiteRootFromScript() + "#exam-plan";
   link.textContent = "残りの期間の進め方 →";
-  link.addEventListener("click", function () { trackEvent("exam_plan_click", { step: "bar" }); });
+  link.addEventListener("click", function () { trackEvent("exam_plan_bar"); });
   inner.append(createCountdownText(days), link);
   bar.append(inner);
   if (breadcrumb) breadcrumb.after(bar);
@@ -204,7 +204,7 @@ function initKindlePromotion() {
       a.href = href;
       a.textContent = label;
       if (external) { a.target = "_blank"; a.rel = "noopener"; }
-      a.addEventListener("click", function () { trackEvent("exam_plan_click", { step: stepName }); });
+      a.addEventListener("click", function () { trackEvent("exam_plan_" + stepName); });
       return a;
     }
 
