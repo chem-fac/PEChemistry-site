@@ -14,7 +14,11 @@ const KINDLE_BOOK = Object.freeze({
   title: "技術士第一次試験 化学部門 専門科目 テーマ別完全攻略",
   description: "16回分・560問の出題分析から選んだ頻出39テーマの要点・原理・頻出のワナを、1テーマずつ解説した参考書です。演習問題は本書に収録せず、このサイトで解けます。",
   cover: "images/book_cover.webp",
-  associateNote: "Amazonのアソシエイトとして、ケムファクは適格販売により収入を得ています。"
+  associateNote: "Amazonのアソシエイトとして、ケムファクは適格販売により収入を得ています。",
+  // Kindle Unlimited free-trial page (associate link). The book is in Kindle Unlimited while enrolled in KDP Select
+  // (term to 2027-01-11). Set inKindleUnlimited to false if the enrollment ends.
+  inKindleUnlimited: true,
+  kuSignupUrl: "https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=pechemistry-22"
 });
 
 // Exam countdown. Shown until the day before the exam, then hidden automatically.
@@ -124,6 +128,22 @@ function initKindlePromotion() {
     return element;
   }
 
+  // Small text link to the Kindle Unlimited free trial, placed next to a book card (never inside it).
+  function createKuLink(onQuestion) {
+    if (!isAvailable || !KINDLE_BOOK.inKindleUnlimited) return null;
+    const link = document.createElement("a");
+    link.className = "kindle-ku-link";
+    link.href = KINDLE_BOOK.kuSignupUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer sponsored";
+    link.textContent = "初めての方はKindle Unlimitedの無料体験でも読めます ↗";
+    link.addEventListener("click", function () {
+      trackEvent("ku_trial_click");
+      if (onQuestion) trackKindleExperiment("click");
+    });
+    return link;
+  }
+
   function createCover(width) {
     const img = document.createElement("img");
     img.className = "kindle-cover";
@@ -208,8 +228,12 @@ function initKindlePromotion() {
       return a;
     }
 
+    const bookBlock = document.createDocumentFragment();
+    bookBlock.append(card);
+    const kuHome = createKuLink(false);
+    if (kuHome) bookBlock.append(kuHome);
     step("頻出テーマの要点を押さえる",
-      "16回分・560問の出題分析で選んだ頻出39テーマを、1テーマずつ確認します。", card);
+      "16回分・560問の出題分析で選んだ頻出39テーマを、1テーマずつ確認します。", bookBlock);
     step("同じテーマの過去問をまとめて解く",
       "テーマ別インデックスで、論点ごとに過去問を続けて解けます。",
       stepLink(siteRoot + "themes/", "テーマ別インデックスへ →", "themes", false));
@@ -250,7 +274,10 @@ function initKindlePromotion() {
 
   if (kindleExperiment && kindleExperiment.variant === "B") {
     // Shown inside the answer area, so it appears only after the reader has answered.
-    explanation.after(createContextCard());
+    const contextCard = createContextCard();
+    explanation.after(contextCard);
+    const kuContext = createKuLink(true);
+    if (kuContext) contextCard.after(kuContext);
   } else {
     document.querySelectorAll("main .note-promo").forEach(function (note) {
       if (note.parentElement.classList.contains("study-promo")) return;
@@ -258,6 +285,8 @@ function initKindlePromotion() {
       group.className = "study-promo";
       note.before(group);
       group.append(note, createCard(kindleExperiment ? "question_card" : "study", "h3"));
+      const kuStudy = createKuLink(!!kindleExperiment);
+      if (kuStudy) group.append(kuStudy);
     });
   }
 
@@ -295,6 +324,8 @@ function initKindlePromotion() {
     wrap.append(createCard("themes", "h2", {
       description: "この一覧と同じ39テーマについて、要点・原理・出題パターン・頻出のワナを1冊にまとめた参考書です。"
     }));
+    const kuThemes = createKuLink(false);
+    if (kuThemes) wrap.append(kuThemes);
     themeToc.before(wrap);
   }
 

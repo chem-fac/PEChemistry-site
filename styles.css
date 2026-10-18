@@ -823,6 +823,39 @@ a.kindle-context:hover {
   color: var(--color-text-secondary);
 }
 
+/* Kindle Unlimited free-trial link: a separate small link next to the book card */
+.kindle-ku-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.kindle-ku-link:hover {
+  text-decoration: underline;
+}
+
+.kindle-ku-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.study-promo > .kindle-promo:not(:last-child) {
+  border-radius: 0;
+}
+
+.study-promo > .kindle-ku-link {
+  display: block;
+  margin-top: 0;
+  padding: 0 var(--space-lg) var(--space-md) calc(var(--space-lg) + 64px + var(--space-md));
+}
+
+.kindle-context + .kindle-ku-link {
+  margin-left: var(--space-lg);
+}
+
 /* Exam countdown: slim bar under the breadcrumb (pages other than home) */
 .exam-countdown-bar {
   border-bottom: 1px solid var(--color-border);
@@ -969,6 +1002,18 @@ a.kindle-context:hover {
 
   .exam-plan-steps .kindle-promo {
     margin-left: -36px;
+  }
+
+  .exam-plan-steps .kindle-ku-link {
+    margin-left: -36px;
+  }
+
+  .study-promo > .kindle-ku-link {
+    padding: 0 var(--space-md) var(--space-md) calc(var(--space-md) + 52px + var(--space-md));
+  }
+
+  .kindle-context + .kindle-ku-link {
+    margin-left: var(--space-md);
   }
 
   .kindle-promo .kindle-cover {
