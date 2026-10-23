@@ -85,7 +85,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <button type="button" class="choice-item" data-correct="true">
               <span class="choice-num">①</span>
-              <span class="choice-text">撹拌レイノルズ数：ρnd<sub>2</sub> /μ</span>
+              <span class="choice-text">撹拌レイノルズ数：ρnd<sup>2</sup>/μ</span>
             </button>
           </div>
 
@@ -101,7 +101,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <button type="button" class="choice-item" data-correct="false">
               <span class="choice-num">③</span>
-              <span class="choice-text">フルード数：n<sub>2</sub> d/g</span>
+              <span class="choice-text">フルード数：n<sup>2</sup>d/g</span>
             </button>
           </div>
 
@@ -109,7 +109,7 @@
             <button class="choice-eliminate-btn" aria-label="選択肢を除外" title="選択肢を除外">×</button>
             <button type="button" class="choice-item" data-correct="false">
               <span class="choice-num">④</span>
-              <span class="choice-text">単位容積当たりの消費動力：N p ρn<sub>3</sub> d<sub>2</sub></span>
+              <span class="choice-text">単位容積当たりの消費動力：N<sub>p</sub>ρn<sup>3</sup>d<sup>2</sup></span>
             </button>
           </div>
 
@@ -129,14 +129,14 @@
 
             <div class="answer-box">
               <div class="answer-label">正答</div>
-              <div class="answer-value">① 撹拌レイノルズ数：ρnd<sub>2</sub> /μ</div>
+              <div class="answer-value">① 撹拌レイノルズ数：ρnd<sup>2</sup>/μ</div>
             </div>
 
 
             <!-- Explanation display -->
             <div class="explanation-section">
               <div class="explanation-content" id="explanation-content">
-<p>大型撹拌槽での回転数 \(n_2\) が最も小さくなるのは、翼直径 \(d\) に対する累乗が大きく、翼回転数 \(n\) に対する累乗が小さい変数量です。よって撹拌レイノルズ数が該当します。</p><ol><li><strong>撹拌レイノルズ数</strong>：\(\rho\,n_2\,d_2^{2}/\mu = \rho\,n_1\,d_1^{2}/\mu\)、\(n_2/n_1 = (d_2/d_1)^{2}\)</li><li><strong>翼回転数</strong>：\(n_2 = n_1\)、\(n_2/n_1 = (d_2/d_1)^{0}\)</li><li><strong>フルード数</strong>：\(n_2^{2}\,d_2/g = n_1^{2}\,d_1/g\)、\(n_2/n_1 = (d_2/d_1)^{1/2}\)</li><li><strong>単位容積当たりの消費動力</strong>：\(N_p\,\rho\,n_2^{3}\,d_2^{2} = N_p\,\rho\,n_1^{3}\,d_1^{2}\)、\(n_2/n_1 = (d_2/d_1)^{2/3}\)</li><li><strong>翼先端速度</strong>：\(\pi\,n_2\,d_2 = \pi\,n_1\,d_1\)、\(n_2/n_1 = (d_2/d_1)^{1}\)</li></ol>
+<p>スケールアップ前を添字1、スケールアップ後を添字2とします。相似形で大型化するとd<sub>2</sub>＞d<sub>1</sub>なので、d<sub>1</sub>/d<sub>2</sub>が1より小さいことを踏まえ、各変数量を一定にした回転数の比を求めます。</p><p>1番の撹拌レイノルズ数を一定にすると、\(\rho n_2d_2^2/\mu=\rho n_1d_1^2/\mu\)より、\(n_2/n_1=(d_1/d_2)^2\)です。</p><p>2番の翼回転数を一定にすると、\(n_2=n_1\)なので、\(n_2/n_1=1=(d_1/d_2)^0\)です。</p><p>3番のフルード数が一定という条件は\(n_2^2d_2/g=n_1^2d_1/g\)であり、回転数の比は\(n_2/n_1=(d_1/d_2)^{1/2}\)となります。</p><p>4番の単位容積当たりの消費動力を一定にすると、\(N_p\rho n_2^3d_2^2=N_p\rho n_1^3d_1^2\)より、\(n_2/n_1=(d_1/d_2)^{2/3}\)です。ここでは乱流域を想定し、動力数N<sub>p</sub>は一定として計算しています。</p><p>5番の翼先端速度を一定にすると、\(\pi n_2d_2=\pi n_1d_1\)より、\(n_2/n_1=d_1/d_2\)です。</p><p>1より小さい数では指数が大きいほど値が小さくなります。したがって、回転数n<sub>2</sub>が最も小さくなるのは、指数が2の1番です。</p>
               </div>
             </div>
           </div>
