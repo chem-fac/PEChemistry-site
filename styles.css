@@ -192,7 +192,7 @@ img {
   gap: var(--space-sm);
   font-weight: 700;
   font-size: 1rem;
-  color: var(--color-primary);
+  color: var(--color-text);
   text-decoration: none;
   min-width: 0;
 }
