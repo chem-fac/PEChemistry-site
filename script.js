@@ -58,7 +58,13 @@ function initExamCountdownBar(days) {
   link.href = getSiteRootFromScript() + "#exam-plan";
   link.textContent = "残りの期間の進め方 →";
   link.addEventListener("click", function () { trackEvent("exam_plan_bar"); });
-  inner.append(createCountdownText(days), link);
+  const note = document.createElement("a");
+  note.href = NOTE_SUMMARY_URL;
+  note.target = "_blank";
+  note.rel = "noopener";
+  note.textContent = "直前の見直しに：noteの要点まとめ ↗";
+  note.addEventListener("click", function () { trackEvent("exam_plan_bar_note"); });
+  inner.append(createCountdownText(days), link, note);
   bar.append(inner);
   if (breadcrumb) breadcrumb.after(bar);
   else hero.before(bar);
