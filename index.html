@@ -105,6 +105,25 @@
       </div>
     </div>
 
+    <!-- お知らせ -->
+    <div class="notice-wrap" data-until="2027-01-17">
+      <div class="container-wide">
+        <a href="https://chem-fac.com/news/molmarket-2027/" target="_blank" rel="noopener" class="notice-row">
+          <span class="notice-kind">お知らせ</span>
+          <span class="notice-body">
+            <span class="notice-title">2027年1月17日（日）、科学書の即売会「モルマーケット」に出展します<span class="ext-mark" aria-hidden="true">↗</span></span>
+            <span class="notice-text">主催は化学工業日報社、会場は東京・蒲田の大田区産業プラザPiOです。運営者のかねまるが、ケムファクとして書籍や雑貨を頒布します。</span>
+          </span>
+          <span class="promo-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".notice-wrap[data-until]").forEach(function (el) {
+        if (Date.now() > Date.parse(el.dataset.until + "T23:59:59+09:00")) el.remove();
+      });
+    </script>
+
     <!-- Year List -->
     <section class="section" id="years">
       <div class="container-wide">

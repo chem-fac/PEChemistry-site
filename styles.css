@@ -1191,6 +1191,71 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 /* ============================================
+   お知らせ（トップ・テーマ別インデックスの行の下に続ける1行）
+   theme-promo の下の罫線を上の区切りに使い、下だけ細い罫線で閉じる
+   ============================================ */
+.notice-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 14px 4px 16px 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.notice-row:hover {
+  color: var(--color-text);
+}
+
+.notice-kind {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 2px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 1px 7px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-tag);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.notice-body {
+  min-width: 0;
+}
+
+.notice-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.6;
+  transition: color 0.12s ease;
+}
+
+.notice-row:hover .notice-title {
+  color: var(--color-primary);
+}
+
+.notice-text {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.notice-row:hover .promo-arrow {
+  color: var(--color-primary);
+}
+
+@media (max-width: 600px) {
+  .notice-row {
+    gap: 12px;
+    padding: 12px 0 14px;
+  }
+}
+
+/* ============================================
    要点まとめ・関連記事（罫線リスト）
    ============================================ */
 .link-list {
