@@ -3878,7 +3878,42 @@ main > .exam-countdown-bar:first-child .container {
   }
 }
 
-@media (max-width: 768px) {
+/* 左の余白にボタンが収まらない幅では、浮かせずにページの最後へ横1列で出す（本文に重ねない）。
+   本文の幅が860px（.container）のページは960px以下、1120px（.container-wide）のページは1240px以下。 */
+@media (max-width: 1240px) {
+  body:has(.container-wide) .share-buttons {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    padding: 12px 16px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body:has(.container-wide) .share-btn {
+    width: 44px;
+    height: 44px;
+    flex: 1;
+    max-width: 80px;
+  }
+
+  body:has(.container-wide) .share-btn img {
+    width: 22px;
+    height: 22px;
+  }
+
+  body:has(.container-wide) .share-btn[data-tooltip]::after {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
   .share-buttons {
     position: static;
     left: auto;
