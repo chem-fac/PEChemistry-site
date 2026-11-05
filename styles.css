@@ -1850,6 +1850,7 @@ main > .exam-countdown-bar:first-child .container {
 
 /* 横スクロールは内側ラッパーが担当（フェードは外枠に固定する） */
 .choices-abcd-table .choice-table-scroll {
+  position: relative;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
@@ -2613,6 +2614,7 @@ main > .exam-countdown-bar:first-child .container {
    CHOICES TABLE (for matrix-style questions)
    ============================================ */
 .table-responsive {
+  position: relative;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-bottom: var(--space-md);
@@ -2836,7 +2838,6 @@ main > .exam-countdown-bar:first-child .container {
   border-radius: var(--radius-md);
   font-size: 1rem;
   line-height: 1.95;
-  white-space: pre-wrap;
 }
 
 .explanation-content p,
@@ -2922,6 +2923,8 @@ main > .exam-countdown-bar:first-child .container {
 /* 独立行の数式（KaTeX display）は横に長いとはみ出すため、横スクロール可能にする。
    スマホで長い単位や根号付きの式が画面外に切れるのを防ぐ。問題文・解説の両方に効く。 */
 .katex-display {
+  /* 数式の読み上げ用の隠れた部品（position:absolute）をこの枠の中に収め、スマホでページ全体が横にずれるのを防ぐ */
+  position: relative;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
@@ -3524,6 +3527,12 @@ main > .exam-countdown-bar:first-child .container {
     padding: var(--space-lg);
   }
 
+  /* 正答と解説の枠も問題文の枠と同じ内側の余白にして、スマホで1行に入る字数を増やす */
+  .answer-box,
+  .explanation-content {
+    padding: var(--space-lg);
+  }
+
   .question-nav {
     flex-direction: column;
   }
@@ -3572,7 +3581,9 @@ main > .exam-countdown-bar:first-child .container {
   }
 
   /* 本文16px・palt なしでも選択肢の行長を確保する */
-  .question-text-card {
+  .question-text-card,
+  .answer-box,
+  .explanation-content {
     padding: 18px;
   }
 
