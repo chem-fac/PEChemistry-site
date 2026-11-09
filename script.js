@@ -321,6 +321,15 @@ function initKindlePromotion() {
   if (examDays > 0) {
     initExamCountdownBar(examDays);
   }
+  // Last two weeks before the exam: the note card on question pages says what it is for now.
+  // The original sentence comes back automatically on the exam day.
+  if (answerContent && examDays > 0 && examDays <= 14) {
+    document.querySelectorAll("main a.note-promo[href='" + NOTE_SUMMARY_URL + "'] .note-promo-content p").forEach(function (p) {
+      if (p.dataset.examLead) return;
+      p.dataset.examLead = "1";
+      p.textContent = "試験まであと" + examDays + "日。直前の見直し用に、" + p.textContent;
+    });
+  }
 
   const themeToc = document.querySelector("main .theme-toc");
   if (themeToc && isAvailable && !document.querySelector(".kindle-themes")) {
