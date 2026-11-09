@@ -5811,7 +5811,7 @@
           "references": [
             {
               "title": "電池の構造と反応式（例）",
-              "url": "https://www.baj.or.jp/battery/knowledge/structure.html"
+              "url": "https://web.archive.org/web/20260216144631/https://www.baj.or.jp/battery/knowledge/structure.html"
             }
           ],
           "question_html": "<p>電池に関する次のA～Eの記述のうち、不適切なものの組合せはどれか。</p><div class='statement-list'><div class='statement-item'><span class='statement-label'>(A)</span><div class='statement-body'>マンガン乾電池は正極に二酸化マンガン、負極に金属亜鉛を用いる。</div></div><div class='statement-item'><span class='statement-label'>(B)</span><div class='statement-body'>鉛蓄電池の電解質は塩酸である。</div></div><div class='statement-item'><span class='statement-label'>(C)</span><div class='statement-body'>充電により繰り返し使える電池を二次電池という。</div></div><div class='statement-item'><span class='statement-label'>(D)</span><div class='statement-body'>カソード反応の進行電位と、アノード反応の進行電位の差が電池の作動電圧である。</div></div><div class='statement-item'><span class='statement-label'>(E)</span><div class='statement-body'>リチウム電池では、電解質には水系電解液が用いられる。</div></div></div>",
@@ -15242,7 +15242,7 @@
           "references": [
             {
               "title": "電池の構造と反応式（例）",
-              "url": "https://www.baj.or.jp/battery/knowledge/structure.html"
+              "url": "https://web.archive.org/web/20260216144631/https://www.baj.or.jp/battery/knowledge/structure.html"
             }
           ],
           "question_html": "<p>電池に関する次の記述のうち、最も不適切なものはどれか。</p>",
