@@ -62,7 +62,7 @@ function initExamCountdownBar(days) {
   note.href = NOTE_SUMMARY_URL;
   note.target = "_blank";
   note.rel = "noopener";
-  note.textContent = "直前の見直しに：noteの要点まとめ ↗";
+  note.textContent = "直前の見直しに：noteの要点まとめ";
   note.addEventListener("click", function () { trackEvent("exam_plan_bar_note"); });
   inner.append(createCountdownText(days), link, note);
   bar.append(inner);
@@ -142,7 +142,7 @@ function initKindlePromotion() {
     link.href = KINDLE_BOOK.kuSignupUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer sponsored";
-    link.textContent = "初めての方はKindle+の無料体験でも読めます ↗";
+    link.textContent = "初めての方はKindle+の無料体験でも読めます";
     link.addEventListener("click", function () {
       trackEvent("ku_trial_click");
       if (onQuestion) trackKindleExperiment("click");
@@ -182,7 +182,7 @@ function initKindlePromotion() {
 
     const action = document.createElement("span");
     action.className = "kindle-promo-action";
-    action.textContent = isAvailable ? "Amazonで無料サンプルを読む ↗" : "Kindle版は発売準備中";
+    action.textContent = isAvailable ? "Amazonで無料サンプルを読む" : "Kindle版は発売準備中";
 
     body.append(format, heading, description, action);
     if (isAvailable) {
@@ -245,7 +245,7 @@ function initKindlePromotion() {
       stepLink(siteRoot + "themes/", "テーマ別インデックスへ →", "themes", false));
     step("直前に要点を見直す",
       "試験直前の総復習用に、忘れやすい要点をメモ形式でまとめたnoteの有料記事があります。",
-      stepLink(NOTE_SUMMARY_URL, "noteの「要点まとめ」を見る ↗", "note", true));
+      stepLink(NOTE_SUMMARY_URL, "noteの「要点まとめ」を見る", "note", true));
 
     plan.append(head, title, list);
     return plan;
@@ -271,7 +271,7 @@ function initKindlePromotion() {
 
     const action = document.createElement("span");
     action.className = "kindle-context-action";
-    action.textContent = "Amazonで無料サンプルを読む ↗（Kindle+対象）";
+    action.textContent = "Amazonで無料サンプルを読む（Kindle+対象）";
 
     body.append(label, text, action);
     card.append(createCover(48), body);
@@ -350,7 +350,7 @@ function initKindlePromotion() {
     if (!note) return;
     const link = createLink("footer", "span");
     link.className = "kindle-footer-link";
-    link.textContent = isAvailable ? "Kindle本 ↗" : "Kindle本（発売準備中）";
+    link.textContent = isAvailable ? "Kindle本" : "Kindle本（発売準備中）";
     note.after(link);
   });
 
