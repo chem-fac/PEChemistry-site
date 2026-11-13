@@ -7,10 +7,12 @@ function trackEvent(name, params) {
   if (typeof gtag === "function") gtag("event", name, params || {});
 }
 
-// Kindle book promotion. At launch, paste the Amazon associate link into amazonUrl.
+// Kindle book promotion. amazonUrl is the associate link to the Kindle edition.
 // Until it is a real Amazon link, the site shows the announcement without a purchase link.
+// Keep the full /dp/ URL, not a link.amazon short link: short links open the Amazon Shopping app
+// on phones, where Kindle books cannot be bought. nodl=1 keeps iPhone Safari on the web page.
 const KINDLE_BOOK = Object.freeze({
-  amazonUrl: "https://link.amazon/B0bFUwmXz",
+  amazonUrl: "https://www.amazon.co.jp/dp/B0HMZ7PPQX?tag=pechemistry-22&nodl=1",
   title: "技術士第一次試験 化学部門 専門科目 テーマ別完全攻略",
   description: "16回分・560問の出題分析から選んだ頻出39テーマの要点・原理・頻出のワナを、1テーマずつ解説した参考書です。演習問題は本書に収録せず、このサイトで解けます。",
   cover: "images/book_cover.webp",
