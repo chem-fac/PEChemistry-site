@@ -595,7 +595,7 @@ function initShareButtons() {
   shareContainer.id = "share-buttons";
 
   shareContainer.innerHTML = `
-    <span class="share-buttons__label">Share</span>
+    <span class="share-buttons__label">共有</span>
     <a href="https://x.com/intent/tweet?url=${pageUrl}&text=${pageTitle}&via=chem_fac"
        target="_blank" rel="noopener noreferrer"
        class="share-btn share-btn--x" data-tooltip="Xでシェア" aria-label="Xでシェア">
