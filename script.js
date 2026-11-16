@@ -72,6 +72,38 @@ function initExamCountdownBar(days) {
   else hero.before(bar);
 }
 
+// From the exam day for two weeks: the same line says where the official answers are
+// published and where to review. Hidden automatically after POST_EXAM_DAYS.
+const POST_EXAM_DAYS = 14;
+const OFFICIAL_ANSWERS_URL = "https://www.engineer.or.jp/c_categories/index02012.html";
+
+function initPostExamBar() {
+  const breadcrumb = document.querySelector("main .breadcrumb");
+  const hero = document.querySelector("main > .hero");
+  if ((!breadcrumb && !hero) || document.querySelector(".exam-countdown-bar")) return;
+  const bar = document.createElement("div");
+  bar.className = "exam-countdown-bar post-exam-bar";
+  const inner = document.createElement("div");
+  inner.className = "container";
+  const text = document.createElement("span");
+  text.className = "exam-countdown-text";
+  text.textContent = EXAM_LABEL + "の正答は、日本技術士会のサイトで公表されます。";
+  const official = document.createElement("a");
+  official.href = OFFICIAL_ANSWERS_URL;
+  official.target = "_blank";
+  official.rel = "noopener";
+  official.textContent = "日本技術士会の正答のページ";
+  official.addEventListener("click", function () { trackEvent("post_exam_bar_official"); });
+  const themes = document.createElement("a");
+  themes.href = getSiteRootFromScript() + "themes/";
+  themes.textContent = "解き直しはテーマ別の目次から →";
+  themes.addEventListener("click", function () { trackEvent("post_exam_bar_themes"); });
+  inner.append(text, official, themes);
+  bar.append(inner);
+  if (breadcrumb) breadcrumb.after(bar);
+  else hero.before(bar);
+}
+
 // A/B test: where the book appears on question pages.
 // A = book card below the answer area (visible before answering, next to the note card)
 // B = theme-specific card right after the explanation (appears only after answering)
@@ -322,6 +354,8 @@ function initKindlePromotion() {
   }
   if (examDays > 0) {
     initExamCountdownBar(examDays);
+  } else if (examDays >= -POST_EXAM_DAYS) {
+    initPostExamBar();
   }
   // Last two weeks before the exam: the note card on question pages says what it is for now.
   // The original sentence comes back automatically on the exam day.
