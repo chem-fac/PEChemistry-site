@@ -58,7 +58,7 @@ function initExamCountdownBar(days) {
   inner.className = "container";
   const link = document.createElement("a");
   link.href = getSiteRootFromScript() + "#exam-plan";
-  link.textContent = "残りの期間の進め方 →";
+  link.textContent = "残りの期間の進め方";
   link.addEventListener("click", function () { trackEvent("exam_plan_bar"); });
   const note = document.createElement("a");
   note.href = NOTE_SUMMARY_URL;
@@ -96,7 +96,7 @@ function initPostExamBar() {
   official.addEventListener("click", function () { trackEvent("post_exam_bar_official"); });
   const themes = document.createElement("a");
   themes.href = getSiteRootFromScript() + "themes/";
-  themes.textContent = "解き直しはテーマ別の目次から →";
+  themes.textContent = "解き直しはテーマ別の目次から";
   themes.addEventListener("click", function () { trackEvent("post_exam_bar_themes"); });
   inner.append(text, official, themes);
   bar.append(inner);
@@ -276,7 +276,7 @@ function initKindlePromotion() {
       "16回分・560問の出題分析で選んだ頻出39テーマを、1テーマずつ確認します。", bookBlock);
     step("同じテーマの過去問をまとめて解く",
       "テーマ別インデックスで、論点ごとに過去問を続けて解けます。",
-      stepLink(siteRoot + "themes/", "テーマ別インデックスへ →", "themes", false));
+      stepLink(siteRoot + "themes/", "テーマ別インデックスへ", "themes", false));
     step("直前に要点を見直す",
       "試験直前の総復習用に、忘れやすい要点をメモ形式でまとめたnoteの有料記事があります。",
       stepLink(NOTE_SUMMARY_URL, "noteの「要点まとめ」を見る", "note", true));
