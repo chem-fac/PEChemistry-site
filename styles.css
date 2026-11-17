@@ -228,7 +228,7 @@ img {
 }
 
 .header-nav a {
-  font-size: 0.85rem;
+  font-size: 0.9375rem;
   color: var(--color-text-secondary);
   font-weight: 500;
   transition: color 0.12s;
@@ -282,7 +282,7 @@ img {
 }
 
 .hero h1 {
-  font-size: clamp(1.5rem, 1.05rem + 1.9vw, 2.15rem);
+  font-size: clamp(1.5rem, 1.05rem + 1.9vw, 2rem);
   font-weight: 900;
   color: var(--color-text);
   line-height: 1.45;
@@ -292,7 +292,7 @@ img {
 .hero-description {
   /* 導入の1文は見出しの続きとして palt で詰める（全角かっこの前後が空きすぎるため） */
   font-feature-settings: "palt";
-  font-size: 0.98rem;
+  font-size: 1rem;
   color: var(--color-text-secondary);
   max-width: 40em;
   margin-bottom: var(--space-sm);
@@ -300,7 +300,7 @@ img {
 }
 
 .hero-meta {
-  font-size: 0.82rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin-bottom: 28px;
 }
@@ -347,7 +347,7 @@ img {
 }
 
 .section-heading {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 900;
   line-height: 1.5;
   color: var(--color-text);
@@ -381,7 +381,7 @@ main > #search ~ .section .link-row {
 }
 
 main > #search ~ .section .section-heading {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
   padding-top: 10px;
   margin-bottom: 10px;
@@ -437,7 +437,7 @@ main > #search ~ .section:last-of-type {
 .recent-year {
   font-family: var(--font-num);
   font-variant-numeric: tabular-nums;
-  font-size: 1.85rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--color-primary);
   line-height: 1.2;
@@ -452,7 +452,7 @@ main > #search ~ .section:last-of-type {
 }
 
 .recent-wareki {
-  font-size: 0.92rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--color-text);
 }
@@ -525,7 +525,7 @@ main > #search ~ .section:last-of-type {
 }
 
 .yr-wareki {
-  font-size: 0.88rem;
+  font-size: 0.9375rem;
   flex: 1;
   min-width: 0;
 }
@@ -537,7 +537,7 @@ main > #search ~ .section:last-of-type {
 }
 
 .yr-arrow {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--color-ink-3);
   transition: color 0.12s ease;
 }
@@ -575,7 +575,7 @@ main > #search ~ .section:last-of-type {
 .year-card-year {
   font-family: var(--font-num);
   font-variant-numeric: tabular-nums;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -663,7 +663,7 @@ main > #search ~ .section:last-of-type {
 
 .search-result-title {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--color-text);
 }
 
@@ -690,7 +690,7 @@ main > #search ~ .section:last-of-type {
 .search-no-results {
   padding: var(--space-md) 4px;
   color: var(--color-text-muted);
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
 }
 
 /* ============================================
@@ -715,7 +715,7 @@ main > #search ~ .section:last-of-type {
 }
 
 .note-promo-content h3 {
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--color-text);
   margin-bottom: 4px;
@@ -729,7 +729,7 @@ main > #search ~ .section:last-of-type {
 
 .note-promo-arrow {
   margin-left: auto;
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   color: var(--color-ink-3);
   flex-shrink: 0;
   transition: color 0.12s ease;
@@ -790,7 +790,7 @@ main > #search ~ .section:last-of-type {
 .kindle-promo h3,
 .kindle-promo h4 {
   margin-bottom: 6px;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   line-height: 1.7;
 }
 
@@ -872,7 +872,7 @@ a.kindle-context:hover {
 }
 
 .kindle-context p {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   line-height: 1.7;
   color: var(--color-text-secondary);
 }
@@ -948,7 +948,7 @@ main > .exam-countdown-bar:first-child .container {
   gap: 2px 24px;
   padding-top: 7px;
   padding-bottom: 7px;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .exam-countdown-text {
@@ -989,7 +989,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .exam-plan-title {
   margin-bottom: var(--space-md);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 900;
   line-height: 1.5;
 }
@@ -1032,7 +1032,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .exam-plan-steps p {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   line-height: 1.7;
   color: var(--color-text-secondary);
 }
@@ -1065,7 +1065,7 @@ main > .exam-countdown-bar:first-child .container {
   display: inline-block;
   margin-top: 6px;
   color: var(--color-primary);
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -1143,13 +1143,13 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .theme-promo h2 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
 .theme-promo p {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   max-width: 40em;
 }
@@ -1181,7 +1181,7 @@ main > .exam-countdown-bar:first-child .container {
 .promo-arrow {
   margin-left: auto;
   flex-shrink: 0;
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   color: var(--color-ink-3);
   transition: color 0.12s ease;
 }
@@ -1227,7 +1227,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .notice-title {
   display: block;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.6;
   transition: color 0.12s ease;
@@ -1239,7 +1239,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .notice-text {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin-top: 2px;
 }
@@ -1280,7 +1280,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .link-row h3 {
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.6;
   transition: color 0.12s ease;
@@ -1291,7 +1291,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .link-row p {
-  font-size: 0.82rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin-top: 1px;
 }
@@ -1323,7 +1323,7 @@ main > .exam-countdown-bar:first-child .container {
   border-collapse: separate;
   border-spacing: 0;
   margin-top: var(--space-md);
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -1379,7 +1379,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .note-promo-sm .note-promo-content h3 {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
 }
 
 .note-promo-sm .note-promo-content p {
@@ -1398,7 +1398,7 @@ main > .exam-countdown-bar:first-child .container {
   gap: 20px;
   align-items: baseline;
   padding: 10px 4px;
-  font-size: 0.87rem;
+  font-size: 0.8125rem;
   border-bottom: 1px solid var(--color-border-light);
 }
 
@@ -1456,7 +1456,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .year-hero-sub {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin-top: var(--space-xs);
 }
@@ -1569,14 +1569,14 @@ main > .exam-countdown-bar:first-child .container {
 .question-card-num {
   font-family: var(--font-num);
   font-variant-numeric: tabular-nums;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--color-primary);
   min-width: 0;
 }
 
 .question-card-text {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--color-text);
   overflow: hidden;
   display: -webkit-box;
@@ -1622,7 +1622,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .question-card-arrow {
   color: var(--color-text-muted);
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
 }
 
 /* ============================================
@@ -1635,7 +1635,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .question-hero h1 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -1776,7 +1776,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .question-text-card .question-text figcaption {
   margin-top: var(--space-xs);
-  font-size: 0.88rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary, #666);
   text-align: center;
 }
@@ -1916,7 +1916,7 @@ main > .exam-countdown-bar:first-child .container {
   text-align: center;
   vertical-align: middle;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
 }
 
 .choices-abcd-table .choice-table tbody tr:last-child td {
@@ -2017,7 +2017,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .choices-abcd-table .choice-table-num .choice-num {
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .choices-abcd-table .choice-table-eliminate {
@@ -2131,7 +2131,7 @@ main > .exam-countdown-bar:first-child .container {
   align-items: center;
   gap: 9px;
   font-family: var(--font-sans);
-  font-size: 0.92rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   padding: 12px 24px;
   background: var(--color-primary);
@@ -2152,7 +2152,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .btn-random-sm {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   padding: 9px 18px;
 }
 
@@ -2196,7 +2196,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .profile-name {
   font-family: var(--font-sans);
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-text);
   margin-bottom: 6px;
@@ -2206,7 +2206,7 @@ main > .exam-countdown-bar:first-child .container {
   margin: 0;
   line-height: 1.85;
   color: var(--color-text-secondary);
-  font-size: 0.92rem;
+  font-size: 0.9375rem;
   max-width: 40em;
 }
 
@@ -2225,7 +2225,7 @@ main > .exam-countdown-bar:first-child .container {
   grid-template-columns: 130px 1fr;
   gap: 2px 14px;
   align-items: baseline;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   line-height: 1.6;
 }
 
@@ -2256,7 +2256,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .profile-link-desc {
   grid-column: 2;
-  font-size: 0.82rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   line-height: 1.5;
 }
@@ -2294,7 +2294,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .question-inline-figure-label {
   margin-bottom: var(--space-xs);
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--color-text-secondary);
 }
@@ -2392,7 +2392,7 @@ main > .exam-countdown-bar:first-child .container {
   top: 8px;
   left: 12px;
   z-index: 10;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: bold;
   color: var(--color-text);
   pointer-events: none;
@@ -2407,7 +2407,7 @@ main > .exam-countdown-bar:first-child .container {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   line-height: 1.75;
   cursor: pointer;
   transition: border-color 0.12s, background 0.12s, box-shadow 0.12s;
@@ -2458,7 +2458,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .choice-item.choice-only-number .choice-num {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .choice-image {
@@ -2477,7 +2477,7 @@ main > .exam-countdown-bar:first-child .container {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   box-shadow: var(--shadow-sm);
 }
 
@@ -2628,7 +2628,7 @@ main > .exam-countdown-bar:first-child .container {
   border-collapse: separate;
   border-spacing: 0;
   min-width: 500px;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
 }
 
 .choices-table th {
@@ -2824,7 +2824,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .answer-value {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-primary-dark);
 }
@@ -2892,7 +2892,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .explanation-content figcaption {
   margin: var(--space-sm) 0 var(--space-lg);
-  font-size: 0.82rem;
+  font-size: 0.8125rem;
   line-height: 1.7;
   color: var(--color-text-secondary);
   text-align: center;
@@ -2902,7 +2902,7 @@ main > .exam-countdown-bar:first-child .container {
   border-collapse: collapse;
   width: 100%;
   margin: 0 0 1.25em;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   line-height: 1.7;
 }
 
@@ -2993,7 +2993,7 @@ main > .exam-countdown-bar:first-child .container {
 
 .reference-summary {
   padding: 12px 4px;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--color-text);
   cursor: pointer;
@@ -3036,7 +3036,7 @@ main > .exam-countdown-bar:first-child .container {
   padding: 10px 0;
   border-top: 1px solid var(--color-border);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--color-text);
 }
 
@@ -3088,7 +3088,7 @@ main > .exam-countdown-bar:first-child .container {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: var(--color-text);
   transition: border-color 0.12s, box-shadow 0.12s;
@@ -3171,7 +3171,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .footer-col-title {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   margin: 0 0 var(--space-sm) 0;
   color: var(--color-text);
@@ -3187,7 +3187,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .footer-col-list a {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   text-decoration: none;
 }
@@ -3219,7 +3219,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .doc-page .breadcrumb {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   margin-bottom: var(--space-lg);
 }
@@ -3239,12 +3239,12 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .doc-page h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 0 0 var(--space-xs) 0;
 }
 
 .doc-page h2 {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   margin: var(--space-xl) 0 var(--space-sm) 0;
   padding-top: 10px;
   border-top: 2px solid var(--color-text);
@@ -3322,7 +3322,7 @@ main > .exam-countdown-bar:first-child .container {
 .support-btn {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   border-radius: 4px;
   text-decoration: none;
@@ -3414,7 +3414,7 @@ main > .exam-countdown-bar:first-child .container {
   }
 
   .recent-year {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
   }
 
   .recent-count {
@@ -3440,7 +3440,7 @@ main > .exam-countdown-bar:first-child .container {
 
   .header-logo {
     max-width: calc(100% - 52px);
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
     line-height: 1.35;
   }
 
@@ -3470,7 +3470,7 @@ main > .exam-countdown-bar:first-child .container {
   }
 
   .question-hero h1 {
-    font-size: 1.15rem;
+    font-size: 1.125rem;
   }
 
   /* スマホ：1行目に問番号・科目・矢印、2行目に問題文を全幅で（右端の矢印で本文を狭めない） */
@@ -3572,15 +3572,15 @@ main > .exam-countdown-bar:first-child .container {
   }
 
   .header-logo span {
-    font-size: 0.82rem;
+    font-size: 0.8125rem;
   }
 
   .section-heading {
-    font-size: 1.15rem;
+    font-size: 1.125rem;
   }
 
   .yr-wareki {
-    font-size: 0.82rem;
+    font-size: 0.8125rem;
   }
 
   /* 本文16px・palt なしでも選択肢の行長を確保する */
@@ -3640,7 +3640,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .article-body h2 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-text);
   margin-top: var(--space-2xl);
@@ -3654,7 +3654,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 
 .article-body h3 {
-  font-size: 1.05rem;
+  font-size: 1.125rem;
   font-weight: 600;
   color: var(--color-text);
   margin-top: var(--space-xl);
@@ -3685,7 +3685,7 @@ main > .exam-countdown-bar:first-child .container {
 .article-body table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   line-height: 1.7;
 }
 
@@ -3720,7 +3720,7 @@ main > .exam-countdown-bar:first-child .container {
   background: var(--color-bg-secondary);
   border-left: 1px solid var(--color-border);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   color: var(--color-text-secondary);
   line-height: 1.8;
 }
@@ -3765,7 +3765,7 @@ main > .exam-countdown-bar:first-child .container {
 
 @media (max-width: 768px) {
   .article-hero h1 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .article-body table {
@@ -3967,7 +3967,7 @@ main > .exam-countdown-bar:first-child .container {
   overflow-wrap: anywhere;
 }
 .question-heading-meta {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   color: var(--color-text-secondary);
 }
@@ -3986,12 +3986,12 @@ main > .exam-countdown-bar:first-child .container {
 }
 .related-study p {
   margin: 0 0 10px;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
 }
 .related-study ul {
   margin: 0;
   padding-left: 1.2em;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
 }
 .related-study li + li {
   margin-top: 8px;
@@ -4014,7 +4014,7 @@ main > .exam-countdown-bar:first-child .container {
 }
 .explanation-content h2 {
   margin: 1.5em 0 0.65em;
-  font-size: 1.12rem;
+  font-size: 1.125rem;
   line-height: 1.6;
 }
 .explanation-content h3 {
@@ -4036,12 +4036,12 @@ main > .exam-countdown-bar:first-child .container {
 .explanation-content .table-responsive caption {
   padding-bottom: 0.5em;
   text-align: left;
-  font-size: 0.82rem;
+  font-size: 0.8125rem;
   font-weight: 600;
 }
 .explanation-content .explanation-sources,
 .explanation-content .explanation-source {
-  font-size: 0.82rem;
+  font-size: 0.8125rem;
   line-height: 1.75;
   color: var(--color-text-secondary);
   white-space: normal;
@@ -4064,7 +4064,7 @@ main .theme-toc {
 
 main .theme-toc-link {
   border-radius: var(--radius-md);
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   transition: border-color 0.12s ease;
 }
 
@@ -4090,7 +4090,7 @@ main .theme-ch {
 main .theme-ch-count {
   opacity: 1;
   color: var(--color-text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
 }
 
 main .theme-sec {
@@ -4100,7 +4100,13 @@ main .theme-sec {
 }
 
 main .theme-table {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 600px) {
+  main .theme-table {
+    font-size: 0.8125rem;
+  }
 }
 
 /* ============================================
@@ -4198,7 +4204,7 @@ button.choice-item:focus-visible,
 
 /* トップのランダムの隣：年度・検索への文字リンク */
 .hero-link {
-  font-size: 0.92rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: var(--color-primary);
   text-decoration: underline;
@@ -4216,7 +4222,7 @@ button.choice-item:focus-visible,
   color: var(--color-primary);
   border-color: transparent;
   padding: 6px 0;
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
